@@ -1,6 +1,7 @@
 import os
 import re
 import asyncio
+import aiohttp
 from openai import AsyncOpenAI
 from ollama import AsyncClient
 from sift.config import Config
@@ -70,6 +71,32 @@ class AIRenamer:
             return f"-- [AI Renamer Error] Ollama call failed: {str(e)}\n\n{code}"
 
     @classmethod
+    async def rename_vercel(cls, code: str) -> str:
+        """
+        Refactors variable and function names using the free Vercel Renamer API.
+        """
+        try:
+            url = "https://renamer-api.vercel.app/api/rename"
+            headers = {
+                "x-api-key": "33ms-DHJHS-24633",
+                "Content-Type": "application/json"
+            }
+            async with aiohttp.ClientSession() as session:
+                async with session.post(url, json={"code": code}, headers=headers) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        renamed = data.get("renamedCode")
+                        if renamed:
+                            return renamed
+                        else:
+                            return f"-- [AI Renamer Error] Vercel API returned empty renamedCode: {data}\n\n{code}"
+                    else:
+                        text = await response.text()
+                        return f"-- [AI Renamer Error] Vercel API status code {response.status}: {text}\n\n{code}"
+        except Exception as e:
+            return f"-- [AI Renamer Error] Vercel API request failed: {str(e)}\n\n{code}"
+
+    @classmethod
     async def rename(cls, code: str, provider: str = "openai", api_key: str = None) -> str:
         """
         Renames variables/functions in Lua code. Handles key fallback to config.
@@ -84,9 +111,12 @@ class AIRenamer:
         if provider == "openai":
             key = api_key or Config.OPENAI_API_KEY
             if not key:
-                return f"-- [AI Renamer Error] OpenAI API Key is missing. Add it to your config/env.\n\n{code}"
+                # Fallback to the free Vercel API
+                return await cls.rename_vercel(code_str)
             return await cls.rename_openai(code_str, key)
         elif provider == "ollama":
             return await cls.rename_ollama(code_str, Config.OLLAMA_HOST, Config.OLLAMA_MODEL)
+        elif provider == "vercel":
+            return await cls.rename_vercel(code_str)
         else:
             return f"-- [AI Renamer Error] Unsupported AI provider '{provider}'.\n\n{code}"

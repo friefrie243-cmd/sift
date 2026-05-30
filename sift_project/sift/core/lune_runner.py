@@ -99,9 +99,11 @@ class LuneRunner:
             
         dumper_path = os.path.join("sift", "resources", "dumper.lua")
         if not os.path.exists(dumper_path):
-            dumper_path = "./zala-src-main/dumper.lua"
+            dumper_path = "./dumper-and-env-loggers-main/dumper-and-env-loggers-main/zala-src-main/dumper.lua"
             
-        cmd = ["lua5.3", dumper_path, input_path, output_path, key, place_id]
+        # Cross-platform check for lua interpreter
+        lua_bin = shutil.which("lua5.3") or shutil.which("lua") or shutil.which("lua53") or "lua5.3"
+        cmd = [lua_bin, dumper_path, input_path, output_path, key, place_id]
         
         success = False
         console_log = ""
@@ -130,6 +132,196 @@ class LuneRunner:
                 
         except Exception as e:
             console_log += f"\nDumper Error: {str(e)}"
+        finally:
+            if os.path.exists(input_path):
+                try: os.remove(input_path)
+                except: pass
+            if os.path.exists(output_path):
+                try: os.remove(output_path)
+                except: pass
+                
+        return success, output_code, console_log
+
+    @staticmethod
+    async def run_unveilr(input_code: str) -> tuple[bool, str, str]:
+        """
+        Runs the UnveilR dumper (the-big-unveilr-v1-main/hi.luau) via Lune.
+        """
+        import uuid
+        job_id = str(uuid.uuid4())
+        temp_input_name = f"in_{job_id}.lua"
+        temp_output_name = f"out_{job_id}.lua"
+        
+        input_path = os.path.join(Config.ORIGINAL_DIR, temp_input_name)
+        output_path = os.path.join(Config.DUMPED_DIR, temp_output_name)
+        
+        with open(input_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(input_code)
+            
+        script_dir = os.path.abspath("dumper-and-env-loggers-main/dumper-and-env-loggers-main/the-big-unveilr-v1-main")
+        script_path = os.path.join(script_dir, "hi.luau")
+        
+        cmd = [
+            Config.LUNE_PATH,
+            "run",
+            script_path,
+            os.path.abspath(input_path),
+            "--raw",
+            f"--outfile={os.path.abspath(output_path)}"
+        ]
+        
+        success = False
+        console_log = ""
+        output_code = ""
+        
+        try:
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                cwd=script_dir,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            try:
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
+                
+                if os.path.exists(output_path):
+                    with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
+                        output_code = f.read()
+                    if len(output_code.strip()) > 0:
+                        success = True
+            except asyncio.TimeoutError:
+                try: process.kill()
+                except: pass
+                console_log = "UnveilR timed out."
+        except Exception as e:
+            console_log += f"\nUnveilR Error: {str(e)}"
+        finally:
+            if os.path.exists(input_path):
+                try: os.remove(input_path)
+                except: pass
+            if os.path.exists(output_path):
+                try: os.remove(output_path)
+                except: pass
+                
+        return success, output_code, console_log
+
+    @staticmethod
+    async def run_mimic(input_code: str) -> tuple[bool, str, str]:
+        """
+        Runs the Mimic dumper (Mimic/main.luau) via Lune.
+        """
+        import uuid
+        job_id = str(uuid.uuid4())
+        temp_input_name = f"in_{job_id}.lua"
+        temp_output_name = f"out_{job_id}.lua"
+        
+        input_path = os.path.join(Config.ORIGINAL_DIR, temp_input_name)
+        output_path = os.path.join(Config.DUMPED_DIR, temp_output_name)
+        
+        with open(input_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(input_code)
+            
+        script_dir = os.path.abspath("dumper-and-env-loggers-main/dumper-and-env-loggers-main/Mimic")
+        script_path = os.path.join(script_dir, "main.luau")
+        
+        cmd = [
+            Config.LUNE_PATH,
+            "run",
+            script_path,
+            os.path.abspath(input_path),
+            os.path.abspath(output_path)
+        ]
+        
+        success = False
+        console_log = ""
+        output_code = ""
+        
+        try:
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                cwd=script_dir,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            try:
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
+                
+                if os.path.exists(output_path):
+                    with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
+                        output_code = f.read()
+                    if len(output_code.strip()) > 0:
+                        success = True
+            except asyncio.TimeoutError:
+                try: process.kill()
+                except: pass
+                console_log = "Mimic timed out."
+        except Exception as e:
+            console_log += f"\nMimic Error: {str(e)}"
+        finally:
+            if os.path.exists(input_path):
+                try: os.remove(input_path)
+                except: pass
+            if os.path.exists(output_path):
+                try: os.remove(output_path)
+                except: pass
+                
+        return success, output_code, console_log
+
+    @staticmethod
+    async def run_mimic2(input_code: str) -> tuple[bool, str, str]:
+        """
+        Runs the Mimic2 dumper (Mimic2/main.luau) via Lune.
+        """
+        import uuid
+        job_id = str(uuid.uuid4())
+        temp_input_name = f"in_{job_id}.lua"
+        temp_output_name = f"out_{job_id}.lua"
+        
+        input_path = os.path.join(Config.ORIGINAL_DIR, temp_input_name)
+        output_path = os.path.join(Config.DUMPED_DIR, temp_output_name)
+        
+        with open(input_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(input_code)
+            
+        script_dir = os.path.abspath("dumper-and-env-loggers-main/dumper-and-env-loggers-main/Mimic2")
+        script_path = os.path.join(script_dir, "main.luau")
+        
+        cmd = [
+            Config.LUNE_PATH,
+            "run",
+            script_path,
+            os.path.abspath(input_path),
+            os.path.abspath(output_path)
+        ]
+        
+        success = False
+        console_log = ""
+        output_code = ""
+        
+        try:
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                cwd=script_dir,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            try:
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
+                
+                if os.path.exists(output_path):
+                    with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
+                        output_code = f.read()
+                    if len(output_code.strip()) > 0:
+                        success = True
+            except asyncio.TimeoutError:
+                try: process.kill()
+                except: pass
+                console_log = "Mimic2 timed out."
+        except Exception as e:
+            console_log += f"\nMimic2 Error: {str(e)}"
         finally:
             if os.path.exists(input_path):
                 try: os.remove(input_path)

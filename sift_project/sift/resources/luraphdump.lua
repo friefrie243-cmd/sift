@@ -5,14 +5,14 @@ getfenv().require=function()end
 local clock=os.clock
 local startt=clock()
 local commercial=false
-local inpath=commercial and "" or "dumps\\original\\"
-local outpath=commercial and "" or "dumps\\dumped\\"
+local inpath=commercial and "" or "dumps/original/"
+local outpath=commercial and "" or "dumps/dumped/"
 
-local fs = fs or require("@25msrequireluvsu/fs")
-local process = process or require("@25msrequireluvsu/process")
-local luau = luau or require("@25msrequireluvsu/luau")
-local roblox=not commercial and require("@25msrequireluvsu/roblox") or {}
-local task=require("@25msrequireluvsu/task")
+local fs = fs or require("@lune/fs")
+local process = process or require("@lune/process")
+local luau = luau or require("@lune/luau")
+local roblox={}
+local task=require("@lune/task")
 local targetfilename=process.args[1]
 if not targetfilename then
     print("lol you didnt put a filename or luarmor link")
@@ -23,7 +23,7 @@ if not (LRMPath or fs.isFile(inpath..targetfilename)) then
     print("lol that file doesnt exist")
     return
 end
-local request=(net or require("@25msrequireluvsu/net")).request
+local request=(net or require("@lune/net")).request
 local input = LRMPath and (function()
     local cont=request({url=targetfilename:gsub("loaders","l"),method ="GET",headers={["User-Agent"]="Xeno/RobloxApp/V1.0.9"}}).body
     targetfilename=LRMPath
