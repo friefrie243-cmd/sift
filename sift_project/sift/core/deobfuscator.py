@@ -1,4 +1,5 @@
 import os
+import re
 import asyncio
 from sift.core.detector import ObfuscatorDetector
 from sift.core.ironbrew import IronBrewDeobfuscator
