@@ -36,4 +36,4 @@ ENV JAVA_PATH=java
 ENV UNLUAC_JAR_PATH=/app/deobfuscate/unluac.jar
 
 # Run both the web backend and the Discord bot
-CMD ["python", "sift/main.py"]
+CMD ["python", "-m", "sift.main"]
