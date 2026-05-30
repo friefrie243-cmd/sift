@@ -3,7 +3,7 @@ FROM python:3.11-slim
 
 # Install system dependencies (Java JDK for unluac.jar, curl for downloading lune)
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    openjdk-17-jre-headless \
+    default-jre-headless \
     curl \
     ca-certificates \
     unzip \
