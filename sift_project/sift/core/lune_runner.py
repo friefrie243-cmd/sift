@@ -1,0 +1,141 @@
+import os
+import subprocess
+import asyncio
+import shutil
+from sift.config import Config
+
+class LuneRunner:
+    @staticmethod
+    async def run_lune_script(script_name: str, input_code: str, output_suffix: str = ".lua") -> tuple[bool, str, str]:
+        """
+        Writes input_code to a temp file, runs the specified Lune script (e.g. httplog2.lua or luraphdump.lua),
+        and returns (success, output_code, console_output).
+        """
+        # Ensure temporary files are isolated by using unique names
+        import uuid
+        job_id = str(uuid.uuid4())
+        
+        temp_input_name = f"in_{job_id}.lua"
+        temp_output_name = f"in_{job_id}{output_suffix}"
+        
+        input_path = os.path.join(Config.ORIGINAL_DIR, temp_input_name)
+        output_path = os.path.join(Config.DUMPED_DIR, temp_output_name)
+        
+        # Write input file
+        with open(input_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(input_code)
+            
+        script_path = os.path.join("sift", "resources", script_name)
+        if not os.path.exists(script_path):
+            # Try workspace root search fallback
+            script_path = os.path.join("dumper-and-env-loggers-main", "sift", "resources", script_name)
+            if not os.path.exists(script_path):
+                script_path = os.path.join("25ms", script_name) # fallback to original 25ms folder
+                
+        # Build command: lune run <script_path> <filename>
+        cmd = [Config.LUNE_PATH, "run", script_path, temp_input_name]
+        
+        success = False
+        console_log = ""
+        output_code = ""
+        
+        try:
+            # We set a hard timeout of 30 seconds to prevent infinite loops in env loggers
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            
+            try:
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
+                console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
+                
+                if process.returncode == 0 or os.path.exists(output_path):
+                    success = True
+            except asyncio.TimeoutError:
+                try:
+                    process.kill()
+                except:
+                    pass
+                console_log = "Execution timed out (30s limit exceeded). Infinite loop or anti-tamper detected."
+                
+            # If successful or output file exists, read it
+            if os.path.exists(output_path):
+                with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
+                    output_code = f.read()
+                    
+        except Exception as e:
+            console_log += f"\nRunner Error: {str(e)}"
+        finally:
+            # Cleanup temp files
+            if os.path.exists(input_path):
+                try: os.remove(input_path)
+                except: pass
+            if os.path.exists(output_path):
+                try: os.remove(output_path)
+                except: pass
+                
+        return success, output_code, console_log
+
+    @staticmethod
+    async def run_lua_dumper(input_code: str, key: str = "NoKey", place_id: str = "123456789") -> tuple[bool, str, str]:
+        """
+        Runs the Lua 5.3 dumper.lua fallback.
+        """
+        import uuid
+        job_id = str(uuid.uuid4())
+        
+        temp_input_name = f"in_{job_id}.lua"
+        temp_output_name = f"out_{job_id}.lua"
+        
+        # We write to temp dir
+        os.makedirs(Config.TEMP_DIR, exist_ok=True)
+        input_path = os.path.join(Config.TEMP_DIR, temp_input_name)
+        output_path = os.path.join(Config.TEMP_DIR, temp_output_name)
+        
+        with open(input_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(input_code)
+            
+        dumper_path = os.path.join("sift", "resources", "dumper.lua")
+        if not os.path.exists(dumper_path):
+            dumper_path = "./zala-src-main/dumper.lua"
+            
+        cmd = ["lua5.3", dumper_path, input_path, output_path, key, place_id]
+        
+        success = False
+        console_log = ""
+        output_code = ""
+        
+        try:
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            
+            try:
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
+                
+                if os.path.exists(output_path):
+                    with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
+                        output_code = f.read()
+                    if len(output_code.strip()) > 0:
+                        success = True
+            except asyncio.TimeoutError:
+                try: process.kill()
+                except: pass
+                console_log = "Dumper timed out."
+                
+        except Exception as e:
+            console_log += f"\nDumper Error: {str(e)}"
+        finally:
+            if os.path.exists(input_path):
+                try: os.remove(input_path)
+                except: pass
+            if os.path.exists(output_path):
+                try: os.remove(output_path)
+                except: pass
+                
+        return success, output_code, console_log

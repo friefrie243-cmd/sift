@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sift - Lua Deobfuscation & Reverse Engineering Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0813;
+            --panel-bg: rgba(22, 17, 38, 0.7);
+            --border-color: rgba(187, 134, 252, 0.15);
+            --primary: #9d4edd;
+            --primary-glow: rgba(157, 78, 221, 0.4);
+            --secondary: #c77dff;
+            --text-color: #f1ecf9;
+            --text-muted: #a594bd;
+            --success: #38b000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 10% 20%, rgba(90, 24, 154, 0.15) 0%, transparent 40%),
+                              radial-gradient(circle at 90% 80%, rgba(60, 9, 108, 0.15) 0%, transparent 40%);
+            color: var(--text-color);
+            font-family: 'Outfit', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 40px;
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
+            background: rgba(11, 8, 19, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-color);
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .container {
+            max-width: 1600px;
+            width: 100%;
+            margin: 40px auto;
+            padding: 0 40px;
+            flex-grow: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .panel {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(8px);
+            position: relative;
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .panel-title {
+            font-size: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        select, button, input {
+            background: rgba(36, 28, 59, 0.6);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        select:focus, input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 8px var(--primary-glow);
+        }
+
+        button {
+            cursor: pointer;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px var(--primary-glow);
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .editor-container {
+            flex-grow: 1;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        textarea {
+            width: 100%;
+            flex-grow: 1;
+            background: rgba(15, 12, 26, 0.8);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            color: #d8cde9;
+            padding: 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            resize: none;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        textarea:focus {
+            border-color: var(--primary);
+        }
+
+        .console-panel {
+            background: #060409;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: #a594bd;
+            height: 150px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            SIFT <span>ENGINE</span>
+        </div>
+        <div class="nav-links">
+            <a href="https://sift.win" target="_blank">Website</a>
+            <a href="#api">API docs</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Input Panel -->
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-title">Input Script</div>
+                <div class="controls">
+                    <select id="mode">
+                        <option value="auto">Auto Detect</option>
+                        <option value="IronBrew">IronBrew</option>
+                        <option value="Luraph">Luraph</option>
+                        <option value="Moonsec">Moonsec</option>
+                        <option value="Prometheus">Prometheus</option>
+                        <option value="Bytecode">Bytecode</option>
+                    </select>
+                    <button id="deobf-btn" onclick="runDeobf()">Deobfuscate</button>
+                </div>
+            </div>
+            <div class="editor-container">
+                <textarea id="input-code" placeholder="Paste your obfuscated Lua script or Hex bytecode here..."></textarea>
+            </div>
+        </div>
+
+        <!-- Output Panel -->
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-title">Output Code</div>
+                <div class="controls">
+                    <select id="ai-provider">
+                        <option value="openai">OpenAI API</option>
+                        <option value="ollama">Local Ollama</option>
+                    </select>
+                    <input type="password" id="api-key" placeholder="AI API Key (Optional)">
+                    <button id="rename-btn" onclick="runRename()">AI Rename</button>
+                </div>
+            </div>
+            <div class="editor-container">
+                <textarea id="output-code" readonly placeholder="Resulting code will appear here..."></textarea>
+            </div>
+            <div class="panel-title">Execution Logs</div>
+            <div class="console-panel" id="console-logs">System initialized. Ready for operations.</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Sift Reverse Engineering. Provided for reverse engineering and educational study.
+    </footer>
+
+    <script>
+        function log(message) {
+            const consoleBox = document.getElementById("console-logs");
+            consoleBox.textContent += "\\n" + message;
+            consoleBox.scrollTop = consoleBox.scrollHeight;
+        }
+
+        async function runDeobf() {
+            const code = document.getElementById("input-code").value;
+            const mode = document.getElementById("mode").value;
+            const btn = document.getElementById("deobf-btn");
+            
+            if (!code.trim()) {
+                alert("Please paste some script first!");
+                return;
+            }
+            
+            btn.disabled = true;
+            btn.textContent = "Processing...";
+            log("[*] Sending code to Sift engine...");
+
+            try {
+                const response = await fetch("/api/deobf", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ code, mode })
+                });
+                const data = await response.json();
+                
+                if (data.success) {
+                    document.getElementById("output-code").value = data.output_code;
+                    log(data.console_log);
+                    log("[+] Deobfuscation complete!");
+                } else {
+                    log("[!] Sift Engine returned an error.");
+                    log(data.console_log);
+                }
+            } catch (err) {
+                log("[!] Communication error with Sift backend: " + err.message);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = "Deobfuscate";
+            }
+        }
+
+        async function runRename() {
+            const code = document.getElementById("output-code").value;
+            const provider = document.getElementById("ai-provider").value;
+            const apiKey = document.getElementById("api-key").value;
+            const btn = document.getElementById("rename-btn");
+
+            if (!code.trim()) {
+                alert("No output code to rename! Run deobfuscate first.");
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = "AI Renaming...";
+            log("[*] Sending code to LLM for variable renaming...");
+
+            try {
+                const response = await fetch("/api/rename", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ code, provider, api_key: apiKey })
+                });
+                const data = await response.json();
+
+                if (data.success) {
+                    document.getElementById("output-code").value = data.renamed_code;
+                    log("[+] Variables renamed successfully!");
+                } else {
+                    log("[!] Variable renaming failed.");
+                    log(data.renamed_code);
+                }
+            } catch (err) {
+                log("[!] Communication error with Sift AI agent: " + err.message);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = "AI Rename";
+            }
+        }
+    </script>
+</body>
+</html>
