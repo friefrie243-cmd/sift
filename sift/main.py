@@ -1,10 +1,35 @@
 import sys
 import argparse
 import asyncio
+import os
 import uvicorn
 import discord
 from sift.config import Config
 from sift.bot.bot import bot
+from sift.bot.state import BotManager
+
+class DualWriter:
+    def __init__(self, original_stream, log_file_path):
+        self.original_stream = original_stream
+        self.log_file_path = log_file_path
+
+    def write(self, data):
+        self.original_stream.write(data)
+        self.original_stream.flush()
+        try:
+            with open(self.log_file_path, "a", encoding="utf-8") as f:
+                f.write(data)
+        except Exception:
+            pass
+
+    def flush(self):
+        self.original_stream.flush()
+
+# Setup DualWriter redirect on start
+os.makedirs("dumps", exist_ok=True)
+log_file_path = os.path.join("dumps", "sift_system.log")
+sys.stdout = DualWriter(sys.stdout, log_file_path)
+sys.stderr = DualWriter(sys.stderr, log_file_path)
 
 async def start_web():
     config = uvicorn.Config("sift.backend.server:app", host=Config.HOST, port=Config.PORT, log_level="info")
@@ -12,63 +37,26 @@ async def start_web():
     await server.serve()
 
 async def start_bot():
-    token = Config.DISCORD_TOKEN
-    if not token:
-        print("[!] Error: No Discord bot token found in env or config.")
-        return
-    print("[*] Starting Discord Bot...")
-    try:
-        await bot.start(token)
-    except discord.PrivilegedIntentsRequired:
-        print("[!] Warning: Privileged Message Content Intent is not enabled in the Discord Developer Portal.")
-        print("[*] Retrying connection without Message Content Intent (slash commands only)...")
-        try:
-            await bot.close()
-        except:
-            pass
-        intents = discord.Intents.default()
-        intents.message_content = False
-        bot.intents = intents
-        await bot.start(token)
-    except Exception as e:
-        print(f"[!] Discord Bot failed to run: {e}")
+    print("[*] Starting Discord Bot via BotManager...")
+    await BotManager.start()
+    # Keep task running
+    while True:
+        await asyncio.sleep(3600)
 
 async def start_both():
-    # Run uvicorn and discord bot concurrently on the same loop
+    # Start bot concurrently
+    await BotManager.start()
+    
+    # Run uvicorn web server
     config = uvicorn.Config("sift.backend.server:app", host=Config.HOST, port=Config.PORT, log_level="info")
     server = uvicorn.Server(config)
     
-    token = Config.DISCORD_TOKEN
-    bot_task = None
-    if token:
-        print("[*] Starting Discord Bot concurrently...")
-        async def run_bot_safe():
-            try:
-                await bot.start(token)
-            except discord.PrivilegedIntentsRequired:
-                print("[!] Warning: Privileged Message Content Intent is not enabled in the Discord Developer Portal.")
-                print("[*] Retrying connection without Message Content Intent (slash commands only)...")
-                try:
-                    await bot.close()
-                except:
-                    pass
-                intents = discord.Intents.default()
-                intents.message_content = False
-                bot.intents = intents
-                await bot.start(token)
-            except Exception as e:
-                print(f"[!] Discord Bot failed to run: {e}")
-        bot_task = asyncio.create_task(run_bot_safe())
-    else:
-        print("[!] No Discord token found, bot will not start.")
-        
     print(f"[*] Starting FastAPI Web Server on http://{Config.HOST}:{Config.PORT}...")
     await server.serve()
     
-    if bot_task:
-        print("[*] Shutting down Discord Bot...")
-        await bot.close()
-        await bot_task
+    # Shutdown
+    print("[*] Shutting down Discord Bot...")
+    await BotManager.stop()
 
 def main():
     parser = argparse.ArgumentParser(description="Sift Reverse Engineering Tool Suite Launcher")
@@ -85,6 +73,7 @@ def main():
             asyncio.run(start_bot())
         except KeyboardInterrupt:
             print("\n[*] Shutting down Discord Bot...")
+            asyncio.run(BotManager.stop())
     elif args.web and not args.bot:
         print(f"[*] Launching Sift FastAPI Web Server on http://{Config.HOST}:{Config.PORT}...")
         try:
@@ -98,6 +87,7 @@ def main():
             asyncio.run(start_both())
         except KeyboardInterrupt:
             print("\n[*] Shutting down Sift Tool Suite...")
+            asyncio.run(BotManager.stop())
 
 if __name__ == "__main__":
     main()

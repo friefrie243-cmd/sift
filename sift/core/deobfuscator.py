@@ -7,27 +7,56 @@ from sift.core.lune_runner import LuneRunner
 from sift.core.decompiler import Decompiler
 from sift.config import Config
 
+def is_valid_lua_output(code: str) -> bool:
+    if not code or not code.strip():
+        return False
+    lower_code = code.lower()
+    invalid_keywords = ["tamper detected", "execution halted", "infinitelooperror", "runner error", "dumper error", "traceback"]
+    for keyword in invalid_keywords:
+        if keyword in lower_code:
+            return False
+    if code.startswith("-- Sift Ultimate Fallback"):
+        return False
+    # Check if there is actual code lines
+    non_empty_lines = [l for l in code.splitlines() if l.strip() and not l.strip().startswith("--")]
+    if len(non_empty_lines) < 2:
+        return False
+    return True
+
 class DeobfuscatorEngine:
     @classmethod
-    async def run_all_dynamic_loggers(cls, code: str, console_log: str) -> tuple[bool, str, str]:
+    async def run_all_dynamic_loggers(cls, code: str, console_log: str, include_loggers: bool = False) -> tuple[bool, str, str]:
         """
         Runs all available Lune and Lua environment loggers/dumpers in sequence,
         logs their progress, and selects the most complete/longest deobfuscated output.
         """
-        methods = [
-            ("Lune httplog2", lambda c: LuneRunner.run_lune_script("httplog2.lua", c)),
-            ("UnveilR", lambda c: LuneRunner.run_unveilr(c)),
+        all_methods = [
             ("Mimic", lambda c: LuneRunner.run_mimic(c)),
             ("Mimic2", lambda c: LuneRunner.run_mimic2(c)),
+            ("UnveilR", lambda c: LuneRunner.run_unveilr(c)),
+            ("FlameCoderV3", lambda c: LuneRunner.run_flame(c)),
+            ("Polyester", lambda c: LuneRunner.run_polyester(c)),
+            ("PenguEnv", lambda c: LuneRunner.run_pengu(c)),
+            ("Zala Dumper", lambda c: LuneRunner.run_zala(c)),
+            ("Larry Premium", lambda c: LuneRunner.run_larry_premium(c)),
+            ("Larry Regular", lambda c: LuneRunner.run_larry_regular(c)),
+            ("Kolenv Dumper", lambda c: LuneRunner.run_kolenv(c)),
+            ("Kolenv Dumper (New)", lambda c: LuneRunner.run_kolenv_new(c)),
+            ("Lune httplog2", lambda c: LuneRunner.run_lune_script("httplog2.lua", c)),
+            ("25ms HttpLog", lambda c: LuneRunner.run_httplog_25ms(c)),
+            ("25ms LoadstringLog", lambda c: LuneRunner.run_loadstringlog_25ms(c)),
             ("Lua 5.3 Fallback", lambda c: LuneRunner.run_lua_dumper(c))
         ]
+
+        trace_logger_names = {"Lune httplog2", "25ms HttpLog", "25ms LoadstringLog"}
+        methods = [m for m in all_methods if include_loggers or m[0] not in trace_logger_names]
 
         success_outputs = []
         for name, run_func in methods:
             console_log += f"[*] Running {name}...\n"
             try:
                 ok, out, log = await run_func(code)
-                # Keep console log logs concise in the output panel
+                # Keep console logs concise in the output panel
                 lines = log.splitlines() if log else []
                 if len(lines) > 20:
                     concise_log = "\n".join(lines[:10]) + f"\n... [Truncated {len(lines)-20} lines of console output] ...\n" + "\n".join(lines[-10:])
@@ -35,20 +64,18 @@ class DeobfuscatorEngine:
                     concise_log = log or ""
                 console_log += concise_log + "\n"
                 
-                # Check if it succeeded and returned actual decompiled/deobfuscated Lua code,
-                # not just the static string extraction header or nothing.
-                if ok and out.strip() and not out.startswith("-- Sift Ultimate Fallback"):
+                if ok and is_valid_lua_output(out):
                     success_outputs.append((name, out))
                     console_log += f"[+] {name} succeeded ({len(out.splitlines())} lines).\n"
                 else:
-                    console_log += f"[-] {name} failed or returned empty/fallback.\n"
+                    console_log += f"[-] {name} failed or returned empty/invalid output.\n"
             except Exception as e:
                 console_log += f"[!] {name} failed with error: {str(e)}\n"
 
         if success_outputs:
             # Prioritize dumpers over trace loggers
-            dumpers = [x for x in success_outputs if x[0] != "Lune httplog2"]
-            loggers = [x for x in success_outputs if x[0] == "Lune httplog2"]
+            dumpers = [x for x in success_outputs if x[0] not in trace_logger_names]
+            loggers = [x for x in success_outputs if x[0] in trace_logger_names]
             if dumpers:
                 dumpers.sort(key=lambda x: len(x[1]), reverse=True)
                 best_name, best_out = dumpers[0]
@@ -62,20 +89,33 @@ class DeobfuscatorEngine:
             return False, "", console_log
 
     @classmethod
-    async def run_all_deobfuscators_concurrently(cls, code: str) -> tuple[bool, str, str, list]:
+    async def run_all_deobfuscators_concurrently(cls, code: str, include_loggers: bool = False) -> tuple[bool, str, str, list]:
         """
         Runs all available deobfuscators concurrently via asyncio.gather and returns
         (success, best_output, console_log, all_outputs_list).
         """
-        methods = [
+        all_methods = [
             ("IronBrew (Static)", lambda c: asyncio.to_thread(IronBrewDeobfuscator.deobfuscate, c)),
-            ("Lune httplog2", lambda c: LuneRunner.run_lune_script("httplog2.lua", c)),
             ("Luraph Dumper", lambda c: LuneRunner.run_lune_script("luraphdump.lua", c)),
-            ("UnveilR", lambda c: LuneRunner.run_unveilr(c)),
             ("Mimic", lambda c: LuneRunner.run_mimic(c)),
             ("Mimic2", lambda c: LuneRunner.run_mimic2(c)),
+            ("UnveilR", lambda c: LuneRunner.run_unveilr(c)),
+            ("FlameCoderV3", lambda c: LuneRunner.run_flame(c)),
+            ("Polyester", lambda c: LuneRunner.run_polyester(c)),
+            ("PenguEnv", lambda c: LuneRunner.run_pengu(c)),
+            ("Zala Dumper", lambda c: LuneRunner.run_zala(c)),
+            ("Larry Premium", lambda c: LuneRunner.run_larry_premium(c)),
+            ("Larry Regular", lambda c: LuneRunner.run_larry_regular(c)),
+            ("Kolenv Dumper", lambda c: LuneRunner.run_kolenv(c)),
+            ("Kolenv Dumper (New)", lambda c: LuneRunner.run_kolenv_new(c)),
+            ("Lune httplog2", lambda c: LuneRunner.run_lune_script("httplog2.lua", c)),
+            ("25ms HttpLog", lambda c: LuneRunner.run_httplog_25ms(c)),
+            ("25ms LoadstringLog", lambda c: LuneRunner.run_loadstringlog_25ms(c)),
             ("Lua 5.3 Fallback", lambda c: LuneRunner.run_lua_dumper(c))
         ]
+
+        trace_logger_names = {"Lune httplog2", "25ms HttpLog", "25ms LoadstringLog"}
+        methods = [m for m in all_methods if include_loggers or m[0] not in trace_logger_names]
 
         async def run_method(name, func):
             try:
@@ -84,8 +124,7 @@ class DeobfuscatorEngine:
                 out = res[1]
                 log = res[2] if len(res) > 2 else ""
                 
-                # Check if it succeeded and returned actual decompiled/deobfuscated Lua code
-                is_valid = bool(ok and out.strip() and not out.startswith("-- Sift Ultimate Fallback"))
+                is_valid = bool(ok and is_valid_lua_output(out))
                 return {
                     "name": name,
                     "success": is_valid,
@@ -107,7 +146,7 @@ class DeobfuscatorEngine:
         
         # Sort successful outputs: prioritize dumpers over trace loggers, then sort by length descending
         def sort_key(item):
-            is_dumper = item["name"] != "Lune httplog2"
+            is_dumper = item["name"] not in trace_logger_names
             return (1 if is_dumper else 0, len(item["output_code"]))
         
         successful.sort(key=sort_key, reverse=True)
@@ -132,7 +171,7 @@ class DeobfuscatorEngine:
             if r["success"]:
                 console_log += f"[+] {r['name']} succeeded ({len(r['output_code'].splitlines())} lines).\n\n"
             else:
-                console_log += f"[-] {r['name']} failed or returned empty.\n\n"
+                console_log += f"[-] {r['name']} failed or returned empty/invalid output.\n\n"
 
         if successful:
             best = successful[0]
@@ -149,7 +188,7 @@ class DeobfuscatorEngine:
             return True, output_code, console_log, all_outputs_list
 
     @classmethod
-    async def deobfuscate(cls, code: str, mode: str = "auto", all_outputs: bool = False) -> tuple[bool, str, str, str, list]:
+    async def deobfuscate(cls, code: str, mode: str = "auto", all_outputs: bool = False, include_loggers: bool = False) -> tuple[bool, str, str, str, list]:
         """
         Main entry point for deobfuscation.
         Returns (success, output_code, console_log, detected_type, all_outputs_list)
@@ -161,7 +200,7 @@ class DeobfuscatorEngine:
 
         # If user explicitly requested multi-engine deobfuscation
         if all_outputs:
-            success, output_code, console_log, all_outputs_list = await cls.run_all_deobfuscators_concurrently(code)
+            success, output_code, console_log, all_outputs_list = await cls.run_all_deobfuscators_concurrently(code, include_loggers)
             return success, output_code, console_log, detected_type, all_outputs_list
 
         console_log = f"[*] Detected Obfuscator: {detected_type}\n"
@@ -173,9 +212,13 @@ class DeobfuscatorEngine:
             success, output_code, ib_log = IronBrewDeobfuscator.deobfuscate(code)
             console_log += ib_log
             if not success:
-                console_log += "[*] Static deobfuscation failed. Falling back to dynamic Lune environment logger...\n"
-                success, output_code, runner_log = await LuneRunner.run_lune_script("httplog2.lua", code)
-                console_log += runner_log
+                if include_loggers:
+                    console_log += "[*] Static deobfuscation failed. Falling back to dynamic Lune environment logger...\n"
+                    success, output_code, runner_log = await LuneRunner.run_lune_script("httplog2.lua", code)
+                    console_log += runner_log
+                else:
+                    console_log += "[*] Static deobfuscation failed and trace loggers disabled. Falling back to dynamic dumpers...\n"
+                    success, output_code, console_log = await cls.run_all_dynamic_loggers(code, console_log, include_loggers)
                 
         elif detected_type == "Luraph":
             console_log += "[*] Launching specialized Luraph dumper...\n"
@@ -184,7 +227,7 @@ class DeobfuscatorEngine:
             
         elif detected_type in ["Moonsec", "Prometheus", "Moonveil", "Soteria", "WynnSfuscate"]:
             console_log += f"[*] Launching dynamic deobfuscation chain for {detected_type}...\n"
-            success, output_code, console_log = await cls.run_all_dynamic_loggers(code, console_log)
+            success, output_code, console_log = await cls.run_all_dynamic_loggers(code, console_log, include_loggers)
             
         elif detected_type == "Bytecode":
             console_log += "[*] Bytecode detected. Launching decompiler...\n"
@@ -214,7 +257,7 @@ class DeobfuscatorEngine:
                 
         else:
             console_log += "[*] Obfuscator unknown. Launching dynamic deobfuscation chain...\n"
-            success, output_code, console_log = await cls.run_all_dynamic_loggers(code, console_log)
+            success, output_code, console_log = await cls.run_all_dynamic_loggers(code, console_log, include_loggers)
 
         if not success or not output_code.strip():
             console_log += "[!] All deobfuscators failed. Extracting strings/upvalues statically...\n"

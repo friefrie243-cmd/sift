@@ -17,7 +17,7 @@ USER_AGENTS = [
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ]
 
-IMPERSONATES = ["chrome110", "chrome120", "firefox117", "safari15_5"]
+IMPERSONATES = ["chrome110", "chrome120", "safari15_5"]
 
 class AdvancedFetcher:
     @staticmethod
@@ -37,26 +37,44 @@ class AdvancedFetcher:
 
             try:
                 if HAS_CURL_CFFI:
-                    # Select random browser impersonation
-                    browser = random.choice(IMPERSONATES)
-                    
-                    # Run curl_requests in an executor since it is synchronous
-                    def perform_curl():
-                        proxies = {"http": proxy, "https": proxy} if proxy else None
-                        r = curl_requests.get(
-                            url,
-                            headers=headers,
-                            impersonate=browser,
-                            proxies=proxies,
-                            timeout=15
-                        )
-                        return r.status_code, r.text
+                    try:
+                        # Select random browser impersonation
+                        browser = random.choice(IMPERSONATES)
+                        
+                        # Run curl_requests in an executor since it is synchronous
+                        def perform_curl():
+                            proxies = {"http": proxy, "https": proxy} if proxy else None
+                            r = curl_requests.get(
+                                url,
+                                headers=headers,
+                                impersonate=browser,
+                                proxies=proxies,
+                                timeout=15
+                            )
+                            return r.status_code, r.text
 
-                    status, text = await asyncio.get_event_loop().run_in_executor(None, perform_curl)
-                    if status == 200:
-                        return True, text
-                    else:
-                        last_error = f"HTTP status code {status}"
+                        status, text = await asyncio.get_event_loop().run_in_executor(None, perform_curl)
+                        if status == 200:
+                            return True, text
+                        else:
+                            last_error = f"HTTP status code {status}"
+                    except Exception as curl_err:
+                        # Fallback to standard requests
+                        def perform_requests():
+                            proxies = {"http": proxy, "https": proxy} if proxy else None
+                            r = requests.get(
+                                url,
+                                headers=headers,
+                                proxies=proxies,
+                                timeout=15
+                            )
+                            return r.status_code, r.text
+
+                        status, text = await asyncio.get_event_loop().run_in_executor(None, perform_requests)
+                        if status == 200:
+                            return True, text
+                        else:
+                            last_error = f"HTTP status code {status} (Fallback after curl_cffi error: {curl_err})"
                 else:
                     # Fallback to standard requests in executor
                     def perform_requests():

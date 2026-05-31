@@ -29,6 +29,18 @@ class Config:
     ORIGINAL_DIR = os.getenv("ORIGINAL_DIR", "./dumps/original")
     DUMPED_DIR = os.getenv("DUMPED_DIR", "./dumps/dumped")
 
+    @classmethod
+    def reload(cls):
+        from dotenv import load_dotenv
+        load_dotenv(override=True)
+        cls.DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", os.getenv("BOT_TOKEN", ""))
+        cls.BOT_PREFIX = os.getenv("BOT_PREFIX", "!")
+        cls.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+        cls.OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+        cls.OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "codellama")
+        cls.API_KEY = os.getenv("SIFT_API_KEY", "sift_secret_key_1337")
+
+
 # Create directories if they do not exist
 for directory in [Config.TEMP_DIR, Config.ORIGINAL_DIR, Config.DUMPED_DIR]:
     os.makedirs(directory, exist_ok=True)

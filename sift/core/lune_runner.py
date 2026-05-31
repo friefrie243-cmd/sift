@@ -319,3 +319,148 @@ class LuneRunner:
                 except: pass
 
         return success, output_code, console_log
+
+    @staticmethod
+    async def run_lua_dumper_generic(script_name: str, input_code: str, key: str = "NoKey", place_id: str = "123456789") -> tuple[bool, str, str]:
+        """
+        Runs a Lua 5.3 dumper script with standard arguments.
+        """
+        job_id = str(uuid.uuid4())
+        temp_input_name = f"in_{job_id}.lua"
+        temp_output_name = f"out_{job_id}.lua"
+
+        os.makedirs(Config.TEMP_DIR, exist_ok=True)
+        input_path = os.path.join(Config.TEMP_DIR, temp_input_name)
+        output_path = os.path.join(Config.TEMP_DIR, temp_output_name)
+
+        with open(input_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(input_code)
+
+        dumper_path = os.path.join("sift", "resources", script_name)
+        lua_bin = shutil.which("lua5.3") or shutil.which("lua") or shutil.which("lua53") or "lua5.3"
+        cmd = [lua_bin, dumper_path, input_path, output_path, key, place_id]
+
+        success = False
+        console_log = ""
+        output_code = ""
+
+        try:
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            try:
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
+                if os.path.exists(output_path):
+                    with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
+                        output_code = f.read()
+                    if len(output_code.strip()) > 0:
+                        success = True
+            except asyncio.TimeoutError:
+                try: process.kill()
+                except: pass
+                console_log = f"{script_name} timed out."
+        except Exception as e:
+            console_log += f"\n{script_name} Error: {str(e)}"
+        finally:
+            if os.path.exists(input_path):
+                try: os.remove(input_path)
+                except: pass
+        return success, output_code, console_log
+
+    @staticmethod
+    async def run_lune_dumper_generic(script_name: str, input_code: str) -> tuple[bool, str, str]:
+        """
+        Runs a Lune dumper script with input and output paths.
+        """
+        job_id = str(uuid.uuid4())
+        temp_input_name = f"in_{job_id}.lua"
+        temp_output_name = f"out_{job_id}.lua"
+
+        input_path = os.path.join(Config.ORIGINAL_DIR, temp_input_name)
+        output_path = os.path.join(Config.DUMPED_DIR, temp_output_name)
+
+        with open(input_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(input_code)
+
+        script_path = os.path.join("sift", "resources", script_name)
+        cmd = [
+            Config.LUNE_PATH,
+            "run",
+            script_path,
+            os.path.abspath(input_path),
+            os.path.abspath(output_path)
+        ]
+
+        success = False
+        console_log = ""
+        output_code = ""
+
+        try:
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            try:
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
+                if os.path.exists(output_path):
+                    with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
+                        output_code = f.read()
+                    if len(output_code.strip()) > 0:
+                        success = True
+            except asyncio.TimeoutError:
+                try: process.kill()
+                except: pass
+                console_log = f"{script_name} timed out."
+        except Exception as e:
+            console_log += f"\n{script_name} Error: {str(e)}"
+        finally:
+            if os.path.exists(input_path):
+                try: os.remove(input_path)
+                except: pass
+        return success, output_code, console_log
+
+    @staticmethod
+    async def run_zala(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lua_dumper_generic("zala_dumper.lua", input_code)
+
+    @staticmethod
+    async def run_larry_premium(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lua_dumper_generic("larry_dumper.lua", input_code)
+
+    @staticmethod
+    async def run_larry_regular(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lua_dumper_generic("larry_regular.lua", input_code)
+
+    @staticmethod
+    async def run_flame(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lune_dumper_generic("flame_dumper.lua", input_code)
+
+    @staticmethod
+    async def run_polyester(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lune_dumper_generic("polyester_dumper.lua", input_code)
+
+    @staticmethod
+    async def run_pengu(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lune_dumper_generic("pengu_dumper.lua", input_code)
+
+    @staticmethod
+    async def run_kolenv(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lua_dumper_generic("kolenv_dumper.lua", input_code)
+
+    @staticmethod
+    async def run_kolenv_new(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lua_dumper_generic("kolenv_dumper_new.lua", input_code)
+
+    @staticmethod
+    async def run_httplog_25ms(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lune_script("httplog_25ms.lua", input_code)
+
+    @staticmethod
+    async def run_loadstringlog_25ms(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lune_script("loadstringlog_25ms.lua", input_code)
+
