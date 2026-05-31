@@ -157,7 +157,19 @@ local Success, T = pcall(function()
     return require("../Libraries/Types.luau")
 end)
 
-local Types = Success and T or require("./Libraries/Types.luau")
+local Types
+if Success then
+    Types = T
+else
+    local Success2, T2 = pcall(function()
+        return require("./Libraries/Types.luau")
+    end)
+    if Success2 then
+        Types = T2
+    else
+        Types = require("./Types.luau")
+    end
+end
 
 local function GetActualPath(Path)
     local Result = Path;

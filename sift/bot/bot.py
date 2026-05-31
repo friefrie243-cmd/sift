@@ -16,7 +16,6 @@ from sift.core.lune_runner import LuneRunner
 # Set up intents
 intents = discord.Intents.default()
 intents.message_content = True
-intents.members = True
 
 bot = commands.Bot(command_prefix=Config.BOT_PREFIX, intents=intents)
 
@@ -65,12 +64,20 @@ def get_premium_embed(title: str, description: str, color: int = 0x9d4edd) -> di
     embed.set_footer(text="Sift Reverse Engineering • Premium Edition")
     return embed
 
-async def fetch_code_from_msg(ctx, arg: str = None) -> tuple[str, str]:
+async def fetch_code_from_msg(ctx, arg: str = None, file: discord.Attachment = None) -> tuple[str, str]:
     """
-    Utility helper that extracts code from message attachments, pastebin links, or raw text.
+    Utility helper that extracts code from message attachments, slash command attachments, pastebin links, or raw text.
     """
-    # 1. Check attachments
-    if ctx.message.attachments:
+    # 1. Check slash command attachment
+    if file is not None:
+        try:
+            content = await file.read()
+            return content.decode("utf-8", errors="ignore"), file.filename
+        except Exception as e:
+            return "", ""
+
+    # 2. Check prefix command message attachments
+    if hasattr(ctx, "message") and ctx.message and ctx.message.attachments:
         attachment = ctx.message.attachments[0]
         try:
             content = await attachment.read()
@@ -78,7 +85,7 @@ async def fetch_code_from_msg(ctx, arg: str = None) -> tuple[str, str]:
         except Exception as e:
             return "", ""
 
-    # 2. Check pastebin/raw github link inside text
+    # 3. Check pastebin/raw github link inside text
     if arg and arg.startswith("https://"):
         try:
             async with aiohttp.ClientSession() as session:
@@ -97,7 +104,7 @@ async def fetch_code_from_msg(ctx, arg: str = None) -> tuple[str, str]:
         except:
             pass
 
-    # 3. Code blocks or raw text
+    # 4. Code blocks or raw text
     if arg:
         code_block_match = re.search(r"```(?:lua)?\n(.*?)```", arg, re.DOTALL | re.IGNORECASE)
         if code_block_match:
@@ -116,161 +123,149 @@ async def on_ready():
     except Exception as e:
         print(f"[*] Failed to sync slash commands: {e}")
 
-@bot.command(name="deobf")
-async def cmd_deobf(ctx, *, arg: str = None):
-    """
-    Deobfuscates a Lua script. Detects engine automatically.
-    """
-    async with ctx.typing():
-        code, filename = await fetch_code_from_msg(ctx, arg)
-        if not code:
-            await ctx.reply(embed=get_premium_embed("Error", "Please upload a Lua file, paste a link, or write code block.", 0xd90429))
-            return
-            
-        success, out_code, log_details, detected_type, _ = await DeobfuscatorEngine.deobfuscate(code)
+@bot.hybrid_command(name="deobf", description="Deobfuscates a Lua script. Detects engine automatically.")
+@app_commands.describe(arg="The Lua code, code block, or URL to fetch", file="The Lua file to deobfuscate")
+async def cmd_deobf(ctx, arg: str = None, file: discord.Attachment = None):
+    await ctx.defer()
+    code, filename = await fetch_code_from_msg(ctx, arg, file)
+    if not code:
+        await ctx.send(embed=get_premium_embed("Error", "Please upload a Lua file, paste a link, or write code block.", 0xd90429))
+        return
         
-        # Render clean purple embed
-        embed = get_premium_embed(
-            "🔮 Sift Deobfuscation Result",
-            f"**File Name**: `{filename}`\n**Detected Engine**: `{detected_type}`\n\n**Engine Output Details**:\n```ansi\n\u001b[0;35m{log_details[:400]}...\u001b[0m\n```"
-        )
-        
-        # Prepare output attachment
-        fp = io.BytesIO(out_code.encode("utf-8"))
-        fp.seek(0)
-        file = discord.File(fp=fp, filename=f"sift_deobf_{filename}")
-        
-        # Attach the interactive Sift AI renaming button
-        view = SiftRenameView(out_code, ctx.author.id)
-        await ctx.reply(embed=embed, file=file, view=view)
+    success, out_code, log_details, detected_type, _ = await DeobfuscatorEngine.deobfuscate(code)
+    
+    # Render clean purple embed
+    embed = get_premium_embed(
+        "🔮 Sift Deobfuscation Result",
+        f"**File Name**: `{filename}`\n**Detected Engine**: `{detected_type}`\n\n**Engine Output Details**:\n```ansi\n\u001b[0;35m{log_details[:400]}...\u001b[0m\n```"
+    )
+    
+    # Prepare output attachment
+    fp = io.BytesIO(out_code.encode("utf-8"))
+    fp.seek(0)
+    file_attachment = discord.File(fp=fp, filename=f"sift_deobf_{filename}")
+    
+    # Attach the interactive Sift AI renaming button
+    view = SiftRenameView(out_code, ctx.author.id)
+    await ctx.send(embed=embed, file=file_attachment, view=view)
 
-@bot.command(name="dump")
-async def cmd_dump(ctx, *, arg: str = None):
-    """
-    Dynamic falling back constants/strings dumper.
-    """
-    async with ctx.typing():
-        code, filename = await fetch_code_from_msg(ctx, arg)
-        if not code:
-            await ctx.reply(embed=get_premium_embed("Error", "Please provide a script.", 0xd90429))
-            return
-            
-        success, out_code, console_log = await LuneRunner.run_lua_dumper(code)
+@bot.hybrid_command(name="dump", description="Dynamic falling back constants/strings dumper.")
+@app_commands.describe(arg="The Lua code, code block, or URL to fetch", file="The Lua file to dump constants from")
+async def cmd_dump(ctx, arg: str = None, file: discord.Attachment = None):
+    await ctx.defer()
+    code, filename = await fetch_code_from_msg(ctx, arg, file)
+    if not code:
+        await ctx.send(embed=get_premium_embed("Error", "Please provide a script.", 0xd90429))
+        return
         
-        embed = get_premium_embed(
-            "📦 Constants/Upvalues Dumper",
-            f"**File**: `{filename}`\n**Status**: `{'Success' if success else 'Failed'}`"
-        )
-        
-        fp = io.BytesIO(out_code.encode("utf-8") if out_code else b"-- No Output")
-        fp.seek(0)
-        file = discord.File(fp=fp, filename=f"dump_{filename}")
-        
-        await ctx.reply(embed=embed, file=file)
+    success, out_code, console_log = await LuneRunner.run_lua_dumper(code)
+    
+    embed = get_premium_embed(
+        "📦 Constants/Upvalues Dumper",
+        f"**File**: `{filename}`\n**Status**: `{'Success' if success else 'Failed'}`"
+    )
+    
+    fp = io.BytesIO(out_code.encode("utf-8") if out_code else b"-- No Output")
+    fp.seek(0)
+    file_attachment = discord.File(fp=fp, filename=f"dump_{filename}")
+    
+    await ctx.send(embed=embed, file=file_attachment)
 
-@bot.command(name="envlog")
-async def cmd_envlog(ctx, *, arg: str = None):
-    """
-    Instruments code and log all environment interactions (globals, metatables, loadstrings).
-    """
-    async with ctx.typing():
-        code, filename = await fetch_code_from_msg(ctx, arg)
-        if not code:
-            await ctx.reply(embed=get_premium_embed("Error", "Please provide a script.", 0xd90429))
-            return
-            
-        success, out_code, console_log = await LuneRunner.run_lune_script("httplog2.lua", code)
+@bot.hybrid_command(name="envlog", description="Instruments code and log all environment interactions.")
+@app_commands.describe(arg="The Lua code, code block, or URL to fetch", file="The Lua file to instrument")
+async def cmd_envlog(ctx, arg: str = None, file: discord.Attachment = None):
+    await ctx.defer()
+    code, filename = await fetch_code_from_msg(ctx, arg, file)
+    if not code:
+        await ctx.send(embed=get_premium_embed("Error", "Please provide a script.", 0xd90429))
+        return
         
-        embed = get_premium_embed(
-            "📋 Environment Logging Complete",
-            f"**File**: `{filename}`\n**Captured Events**: `{len(out_code.splitlines()) if out_code else 0} lines`"
-        )
-        
-        fp = io.BytesIO(out_code.encode("utf-8") if out_code else b"-- No Logger Output")
-        fp.seek(0)
-        file = discord.File(fp=fp, filename=f"envlog_{filename}")
-        
-        await ctx.reply(embed=embed, file=file)
+    success, out_code, console_log = await LuneRunner.run_lune_script("httplog2.lua", code)
+    
+    embed = get_premium_embed(
+        "📋 Environment Logging Complete",
+        f"**File**: `{filename}`\n**Captured Events**: `{len(out_code.splitlines()) if out_code else 0} lines`"
+    )
+    
+    fp = io.BytesIO(out_code.encode("utf-8") if out_code else b"-- No Logger Output")
+    fp.seek(0)
+    file_attachment = discord.File(fp=fp, filename=f"envlog_{filename}")
+    
+    await ctx.send(embed=embed, file=file_attachment)
 
-@bot.command(name="fetch")
+@bot.hybrid_command(name="fetch", description="Retrieves web content bypassing blocks via user-agent rotation.")
+@app_commands.describe(url="The URL to fetch")
 async def cmd_fetch(ctx, url: str):
-    """
-    Retrieves web content bypassing blocks via user-agent rotation and TLS.
-    """
-    async with ctx.typing():
-        success, content = await AdvancedFetcher.fetch(url)
-        
-        if success:
-            embed = get_premium_embed("🔗 Sift Fetcher Success", f"Successfully fetched `{url}`")
-            fp = io.BytesIO(content.encode("utf-8"))
-            fp.seek(0)
-            file = discord.File(fp=fp, filename="fetched.lua")
-            await ctx.reply(embed=embed, file=file)
-        else:
-            await ctx.reply(embed=get_premium_embed("Fetch Failed", content, 0xd90429))
-
-@bot.command(name="decompile")
-async def cmd_decompile(ctx, *, arg: str = None):
-    """
-    Decompiles Lua 5.1 / Luau bytecode.
-    """
-    async with ctx.typing():
-        code, filename = await fetch_code_from_msg(ctx, arg)
-        if not code:
-            await ctx.reply("Provide Hex string or .luac bytecode file.")
-            return
-            
-        job_id = str(asyncio.get_event_loop().time())
-        temp_in = os.path.join(Config.TEMP_DIR, f"cmd_{job_id}.luac")
-        temp_out = os.path.join(Config.TEMP_DIR, f"cmd_{job_id}.lua")
-        
-        try:
-            # Handle binary write
-            try:
-                bytecode = bytes.fromhex(code.strip())
-            except:
-                bytecode = code.encode("utf-8", errors="ignore")
-                
-            with open(temp_in, "wb") as f:
-                f.write(bytecode)
-                
-            success, details = await Decompiler.decompile(temp_in, temp_out)
-            
-            if success and os.path.exists(temp_out):
-                with open(temp_out, "r", encoding="utf-8", errors="ignore") as f:
-                    out_src = f.read()
-                
-                embed = get_premium_embed("⚡ Sift Bytecode Decompiler", f"**File**: `{filename}`\n**Detail**: `{details}`")
-                fp = io.BytesIO(out_src.encode("utf-8"))
-                fp.seek(0)
-                file = discord.File(fp=fp, filename=f"decompiled_{filename.replace('.luac', '.lua')}")
-                await ctx.reply(embed=embed, file=file)
-            else:
-                await ctx.reply(embed=get_premium_embed("Decompilation Failed", details, 0xd90429))
-        except Exception as e:
-            await ctx.reply(f"Decompile failed: {str(e)}")
-        finally:
-            if os.path.exists(temp_in): os.remove(temp_in)
-            if os.path.exists(temp_out): os.remove(temp_out)
-
-@bot.command(name="rename")
-async def cmd_rename(ctx, *, arg: str = None):
-    """
-    Uses OpenAI/Ollama LLM to rename variables/functions to descriptive names.
-    """
-    async with ctx.typing():
-        code, filename = await fetch_code_from_msg(ctx, arg)
-        if not code:
-            await ctx.reply("Provide a script to rename.")
-            return
-            
-        renamed = await AIRenamer.rename(code)
-        
-        embed = get_premium_embed("✨ AI Rename Refactor", f"Renamed variables in `{filename}`")
-        fp = io.BytesIO(renamed.encode("utf-8"))
+    await ctx.defer()
+    success, content = await AdvancedFetcher.fetch(url)
+    
+    if success:
+        embed = get_premium_embed("🔗 Sift Fetcher Success", f"Successfully fetched `{url}`")
+        fp = io.BytesIO(content.encode("utf-8"))
         fp.seek(0)
-        file = discord.File(fp=fp, filename=f"renamed_{filename}")
-        await ctx.reply(embed=embed, file=file)
+        file_attachment = discord.File(fp=fp, filename="fetched.lua")
+        await ctx.send(embed=embed, file=file_attachment)
+    else:
+        await ctx.send(embed=get_premium_embed("Fetch Failed", content, 0xd90429))
+
+@bot.hybrid_command(name="decompile", description="Decompiles Lua 5.1 / Luau bytecode.")
+@app_commands.describe(arg="Hex string or bytecode file content", file="The compiled .luac bytecode file to decompile")
+async def cmd_decompile(ctx, arg: str = None, file: discord.Attachment = None):
+    await ctx.defer()
+    code, filename = await fetch_code_from_msg(ctx, arg, file)
+    if not code:
+        await ctx.send("Provide Hex string or .luac bytecode file.")
+        return
+        
+    job_id = str(asyncio.get_event_loop().time())
+    temp_in = os.path.join(Config.TEMP_DIR, f"cmd_{job_id}.luac")
+    temp_out = os.path.join(Config.TEMP_DIR, f"cmd_{job_id}.lua")
+    
+    try:
+        # Handle binary write
+        try:
+            bytecode = bytes.fromhex(code.strip())
+        except:
+            bytecode = code.encode("utf-8", errors="ignore")
+            
+        with open(temp_in, "wb") as f:
+            f.write(bytecode)
+            
+        success, details = await Decompiler.decompile(temp_in, temp_out)
+        
+        if success and os.path.exists(temp_out):
+            with open(temp_out, "r", encoding="utf-8", errors="ignore") as f:
+                out_src = f.read()
+            
+            embed = get_premium_embed("⚡ Sift Bytecode Decompiler", f"**File**: `{filename}`\n**Detail**: `{details}`")
+            fp = io.BytesIO(out_src.encode("utf-8"))
+            fp.seek(0)
+            file_attachment = discord.File(fp=fp, filename=f"decompiled_{filename.replace('.luac', '.lua')}")
+            await ctx.send(embed=embed, file=file_attachment)
+        else:
+            await ctx.send(embed=get_premium_embed("Decompilation Failed", details, 0xd90429))
+    except Exception as e:
+        await ctx.send(f"Decompile failed: {str(e)}")
+    finally:
+        if os.path.exists(temp_in): os.remove(temp_in)
+        if os.path.exists(temp_out): os.remove(temp_out)
+
+@bot.hybrid_command(name="rename", description="Uses AI LLM to rename variables/functions to descriptive names.")
+@app_commands.describe(arg="The Lua code, code block, or URL to fetch", file="The Lua file to rename variables in")
+async def cmd_rename(ctx, arg: str = None, file: discord.Attachment = None):
+    await ctx.defer()
+    code, filename = await fetch_code_from_msg(ctx, arg, file)
+    if not code:
+        await ctx.send("Provide a script to rename.")
+        return
+        
+    renamed = await AIRenamer.rename(code)
+    
+    embed = get_premium_embed("✨ AI Rename Refactor", f"Renamed variables in `{filename}`")
+    fp = io.BytesIO(renamed.encode("utf-8"))
+    fp.seek(0)
+    file_attachment = discord.File(fp=fp, filename=f"renamed_{filename}")
+    await ctx.send(embed=embed, file=file_attachment)
 
 # Run bot
 def run_discord_bot(token: str = None):

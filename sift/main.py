@@ -2,6 +2,7 @@ import sys
 import argparse
 import asyncio
 import uvicorn
+import discord
 from sift.config import Config
 from sift.bot.bot import bot
 
@@ -18,6 +19,17 @@ async def start_bot():
     print("[*] Starting Discord Bot...")
     try:
         await bot.start(token)
+    except discord.PrivilegedIntentsRequired:
+        print("[!] Warning: Privileged Message Content Intent is not enabled in the Discord Developer Portal.")
+        print("[*] Retrying connection without Message Content Intent (slash commands only)...")
+        try:
+            await bot.close()
+        except:
+            pass
+        intents = discord.Intents.default()
+        intents.message_content = False
+        bot.intents = intents
+        await bot.start(token)
     except Exception as e:
         print(f"[!] Discord Bot failed to run: {e}")
 
@@ -30,7 +42,23 @@ async def start_both():
     bot_task = None
     if token:
         print("[*] Starting Discord Bot concurrently...")
-        bot_task = asyncio.create_task(bot.start(token))
+        async def run_bot_safe():
+            try:
+                await bot.start(token)
+            except discord.PrivilegedIntentsRequired:
+                print("[!] Warning: Privileged Message Content Intent is not enabled in the Discord Developer Portal.")
+                print("[*] Retrying connection without Message Content Intent (slash commands only)...")
+                try:
+                    await bot.close()
+                except:
+                    pass
+                intents = discord.Intents.default()
+                intents.message_content = False
+                bot.intents = intents
+                await bot.start(token)
+            except Exception as e:
+                print(f"[!] Discord Bot failed to run: {e}")
+        bot_task = asyncio.create_task(run_bot_safe())
     else:
         print("[!] No Discord token found, bot will not start.")
         

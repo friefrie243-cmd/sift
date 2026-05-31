@@ -46,9 +46,15 @@ class DeobfuscatorEngine:
                 console_log += f"[!] {name} failed with error: {str(e)}\n"
 
         if success_outputs:
-            # Sort by output length descending to pick the most complete dump
-            success_outputs.sort(key=lambda x: len(x[1]), reverse=True)
-            best_name, best_out = success_outputs[0]
+            # Prioritize dumpers over trace loggers
+            dumpers = [x for x in success_outputs if x[0] != "Lune httplog2"]
+            loggers = [x for x in success_outputs if x[0] == "Lune httplog2"]
+            if dumpers:
+                dumpers.sort(key=lambda x: len(x[1]), reverse=True)
+                best_name, best_out = dumpers[0]
+            else:
+                loggers.sort(key=lambda x: len(x[1]), reverse=True)
+                best_name, best_out = loggers[0]
             console_log += f"[+] Selected best output from {best_name}.\n"
             return True, best_out, console_log
         else:
@@ -98,13 +104,21 @@ class DeobfuscatorEngine:
         
         # Compile successful outputs
         successful = [r for r in results if r["success"]]
+        
+        # Sort successful outputs: prioritize dumpers over trace loggers, then sort by length descending
+        def sort_key(item):
+            is_dumper = item["name"] != "Lune httplog2"
+            return (1 if is_dumper else 0, len(item["output_code"]))
+        
+        successful.sort(key=sort_key, reverse=True)
+        
         all_outputs_list = [
             {
                 "name": r["name"],
                 "output_code": r["output_code"],
                 "console_log": r["console_log"]
             }
-            for r in results if r["success"]
+            for r in successful
         ]
         
         console_log = "[*] Running all deobfuscators concurrently...\n"
@@ -121,7 +135,6 @@ class DeobfuscatorEngine:
                 console_log += f"[-] {r['name']} failed or returned empty.\n\n"
 
         if successful:
-            successful.sort(key=lambda x: len(x["output_code"]), reverse=True)
             best = successful[0]
             console_log += f"[+] Selected best output from {best['name']}.\n"
             return True, best["output_code"], console_log, all_outputs_list

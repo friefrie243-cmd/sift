@@ -146,8 +146,10 @@ class LuneRunner:
         with open(input_path, "w", encoding="utf-8", newline="\n") as f:
             f.write(input_code)
 
-        # Fixed path — resources are at repo root, not nested under dumper-and-env-loggers-main
+        # Resolve script path (check workspace root, then nested subdirectory)
         script_dir = os.path.abspath("the-big-unveilr-v1-main")
+        if not os.path.exists(script_dir):
+            script_dir = os.path.abspath(os.path.join("dumper-and-env-loggers-main", "the-big-unveilr-v1-main"))
         script_path = os.path.join(script_dir, "hi.luau")
 
         cmd = [
@@ -209,8 +211,10 @@ class LuneRunner:
         with open(input_path, "w", encoding="utf-8", newline="\n") as f:
             f.write(input_code)
 
-        # Fixed path — Mimic is at repo root
+        # Resolve script path (check workspace root, then nested subdirectory)
         script_dir = os.path.abspath("Mimic")
+        if not os.path.exists(script_dir):
+            script_dir = os.path.abspath(os.path.join("dumper-and-env-loggers-main", "Mimic"))
         script_path = os.path.join(script_dir, "main.luau")
 
         cmd = [
@@ -269,8 +273,10 @@ class LuneRunner:
         with open(input_path, "w", encoding="utf-8", newline="\n") as f:
             f.write(input_code)
 
-        # Fixed path — Mimic2 is at repo root
+        # Resolve script path (check workspace root, then nested subdirectory)
         script_dir = os.path.abspath("Mimic2")
+        if not os.path.exists(script_dir):
+            script_dir = os.path.abspath(os.path.join("dumper-and-env-loggers-main", "Mimic2"))
         script_path = os.path.join(script_dir, "main.luau")
 
         cmd = [
