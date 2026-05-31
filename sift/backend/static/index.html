@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sift - Lua Deobfuscation & Reverse Engineering Engine</title>
+    <meta name="description" content="Sift Engine — Premium Lua deobfuscation, reverse engineering, and AI-powered variable renaming tool. Supports Moonsec, Luraph, IronBrew, Prometheus, and more.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -18,6 +19,7 @@
             --text-color: #f1ecf9;
             --text-muted: #a594bd;
             --success: #38b000;
+            --error: #d90429;
         }
 
         * {
@@ -107,7 +109,7 @@
             padding: 24px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 16px;
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
             backdrop-filter: blur(8px);
             position: relative;
@@ -119,6 +121,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
         }
 
         .panel-title {
@@ -131,11 +135,12 @@
 
         .controls {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             flex-wrap: wrap;
+            align-items: center;
         }
 
-        select, button, input {
+        select, button, input[type="text"], input[type="password"] {
             background: rgba(36, 28, 59, 0.6);
             border: 1px solid var(--border-color);
             color: var(--text-color);
@@ -157,6 +162,7 @@
             font-weight: 600;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             border: none;
+            white-space: nowrap;
         }
 
         button:hover {
@@ -171,9 +177,76 @@
             box-shadow: none;
         }
 
+        button.secondary-btn {
+            background: rgba(36, 28, 59, 0.8);
+            border: 1px solid var(--border-color);
+        }
+
+        button.secondary-btn:hover {
+            border-color: var(--primary);
+            background: rgba(50, 38, 80, 0.8);
+        }
+
+        button.success-btn {
+            background: linear-gradient(135deg, #2d6a4f, #38b000);
+        }
+
+        .input-methods {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .url-input-row {
+            display: flex;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .url-input-row input[type="text"] {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        .file-upload-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            background: rgba(36, 28, 59, 0.6);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .file-upload-label:hover {
+            border-color: var(--primary);
+            background: rgba(50, 38, 80, 0.8);
+        }
+
+        .file-upload-label input[type="file"] {
+            display: none;
+        }
+
+        .file-name-display {
+            font-size: 12px;
+            color: var(--text-muted);
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
         .editor-container {
             flex-grow: 1;
-            min-height: 500px;
+            min-height: 420px;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -214,12 +287,81 @@
             word-break: break-all;
         }
 
+        .output-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
             border-top: 1px solid var(--border-color);
             color: var(--text-muted);
             font-size: 14px;
+        }
+
+        /* Status indicator */
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+            animation: pulse 2s infinite;
+        }
+        .status-dot.online { background: var(--success); }
+        .status-dot.processing { background: #f77f00; }
+        .status-dot.error { background: var(--error); }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* Drag & drop overlay */
+        .drop-overlay {
+            display: none;
+            position: absolute;
+            inset: 0;
+            background: rgba(157, 78, 221, 0.15);
+            border: 2px dashed var(--primary);
+            border-radius: 16px;
+            z-index: 10;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--secondary);
+            pointer-events: none;
+        }
+
+        .panel.dragover .drop-overlay {
+            display: flex;
+        }
+
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: rgba(22, 17, 38, 0.95);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 14px 20px;
+            color: var(--text-color);
+            font-size: 14px;
+            z-index: 1000;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+            max-width: 400px;
+        }
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
         }
     </style>
 </head>
@@ -236,7 +378,8 @@
 
     <div class="container">
         <!-- Input Panel -->
-        <div class="panel">
+        <div class="panel" id="input-panel">
+            <div class="drop-overlay">📁 Drop .lua or .txt file here</div>
             <div class="panel-header">
                 <div class="panel-title">Input Script</div>
                 <div class="controls">
@@ -251,25 +394,47 @@
                     <button id="deobf-btn" onclick="runDeobf()">Deobfuscate</button>
                 </div>
             </div>
+
+            <!-- URL Input -->
+            <div class="url-input-row">
+                <input type="text" id="url-input" placeholder="Paste loadstring URL, raw GitHub link, or Pastebin link...">
+                <button class="secondary-btn" id="fetch-btn" onclick="fetchFromUrl()">⬇ Fetch & Deobf</button>
+            </div>
+
+            <!-- File Upload -->
+            <div class="input-methods">
+                <label class="file-upload-label" id="file-upload-area">
+                    📁 Upload .lua / .txt
+                    <input type="file" id="file-input" accept=".lua,.txt,.luau" onchange="handleFileSelect(event)">
+                </label>
+                <span class="file-name-display" id="file-name-display"></span>
+            </div>
+
             <div class="editor-container">
-                <textarea id="input-code" placeholder="Paste your obfuscated Lua script or Hex bytecode here..."></textarea>
+                <textarea id="input-code" placeholder="Paste your obfuscated Lua script here, or use URL / file upload above..."></textarea>
             </div>
         </div>
 
         <!-- Output Panel -->
         <div class="panel">
             <div class="panel-header">
-                <div class="panel-title">Output Code</div>
-                <div class="controls">
-                    <select id="ai-provider">
-                        <option value="vercel">Free Renamer (Vercel API)</option>
-                        <option value="openai">OpenAI API</option>
-                        <option value="ollama">Local Ollama</option>
-                    </select>
-                    <input type="password" id="api-key" placeholder="AI API Key (Optional)">
-                    <button id="rename-btn" onclick="runRename()">AI Rename</button>
+                <div class="panel-title"><span class="status-dot online" id="status-dot"></span>Output Code</div>
+                <div class="output-actions">
+                    <button class="success-btn" id="download-btn" onclick="downloadOutput()" disabled>⬇ Download .lua</button>
                 </div>
             </div>
+
+            <!-- AI Rename controls -->
+            <div class="controls">
+                <select id="ai-provider">
+                    <option value="vercel">Free Renamer (Vercel API)</option>
+                    <option value="openai">OpenAI API</option>
+                    <option value="ollama">Local Ollama</option>
+                </select>
+                <input type="password" id="api-key" placeholder="AI API Key (Optional)">
+                <button id="rename-btn" onclick="runRename()">✨ AI Rename</button>
+            </div>
+
             <div class="editor-container">
                 <textarea id="output-code" readonly placeholder="Resulting code will appear here..."></textarea>
             </div>
@@ -282,51 +447,188 @@
         &copy; 2026 Sift Reverse Engineering. Provided for reverse engineering and educational study.
     </footer>
 
+    <div class="toast" id="toast"></div>
+
     <script>
+        let currentJobId = null;
+
         function log(message) {
             const consoleBox = document.getElementById("console-logs");
-            consoleBox.textContent += "\\n" + message;
+            consoleBox.textContent += "\n" + message;
             consoleBox.scrollTop = consoleBox.scrollHeight;
         }
 
+        function showToast(message, duration = 3000) {
+            const toast = document.getElementById("toast");
+            toast.textContent = message;
+            toast.classList.add("show");
+            setTimeout(() => toast.classList.remove("show"), duration);
+        }
+
+        function setStatus(state) {
+            const dot = document.getElementById("status-dot");
+            dot.className = "status-dot " + state;
+        }
+
+        function enableDownload(jobId) {
+            currentJobId = jobId;
+            const btn = document.getElementById("download-btn");
+            btn.disabled = !jobId;
+        }
+
+        // ─── File Upload ───
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const display = document.getElementById("file-name-display");
+            display.textContent = file.name;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById("input-code").value = e.target.result;
+                showToast(`Loaded ${file.name} (${(file.size / 1024).toFixed(1)} KB)`);
+            };
+            reader.readAsText(file);
+        }
+
+        // ─── Drag & Drop ───
+        const inputPanel = document.getElementById("input-panel");
+        inputPanel.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            inputPanel.classList.add("dragover");
+        });
+        inputPanel.addEventListener("dragleave", () => {
+            inputPanel.classList.remove("dragover");
+        });
+        inputPanel.addEventListener("drop", (e) => {
+            e.preventDefault();
+            inputPanel.classList.remove("dragover");
+            const file = e.dataTransfer.files[0];
+            if (file) {
+                const ext = file.name.split('.').pop().toLowerCase();
+                if (!["lua", "txt", "luau"].includes(ext)) {
+                    showToast("Unsupported file type. Please use .lua, .txt, or .luau");
+                    return;
+                }
+                document.getElementById("file-name-display").textContent = file.name;
+                const reader = new FileReader();
+                reader.onload = function(ev) {
+                    document.getElementById("input-code").value = ev.target.result;
+                    showToast(`Dropped ${file.name} (${(file.size / 1024).toFixed(1)} KB)`);
+                };
+                reader.readAsText(file);
+            }
+        });
+
+        // ─── Fetch from URL ───
+        async function fetchFromUrl() {
+            const url = document.getElementById("url-input").value.trim();
+            const mode = document.getElementById("mode").value;
+            const btn = document.getElementById("fetch-btn");
+
+            if (!url) {
+                showToast("Please paste a URL first!");
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = "Fetching...";
+            setStatus("processing");
+            log(`[*] Fetching and deobfuscating from URL: ${url}`);
+
+            try {
+                const response = await fetch("/api/deobf-url", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ url, mode })
+                });
+                const data = await response.json();
+
+                if (data.success) {
+                    document.getElementById("output-code").value = data.output_code;
+                    log(data.console_log);
+                    log("[+] Deobfuscation from URL complete!");
+                    setStatus("online");
+                    enableDownload(data.job_id);
+                    showToast("Deobfuscation complete!");
+                } else {
+                    log("[!] URL fetch or deobfuscation failed.");
+                    log(data.console_log);
+                    setStatus("error");
+                }
+            } catch (err) {
+                log("[!] Communication error: " + err.message);
+                setStatus("error");
+            } finally {
+                btn.disabled = false;
+                btn.textContent = "⬇ Fetch & Deobf";
+            }
+        }
+
+        // ─── Deobfuscate (paste) ───
         async function runDeobf() {
             const code = document.getElementById("input-code").value;
             const mode = document.getElementById("mode").value;
             const btn = document.getElementById("deobf-btn");
-            
-            if (!code.trim()) {
-                alert("Please paste some script first!");
+            const fileInput = document.getElementById("file-input");
+
+            if (!code.trim() && !fileInput.files.length) {
+                showToast("Please paste some script, upload a file, or use a URL!");
                 return;
             }
-            
+
             btn.disabled = true;
             btn.textContent = "Processing...";
+            setStatus("processing");
             log("[*] Sending code to Sift engine...");
 
             try {
-                const response = await fetch("/api/deobf", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ code, mode })
-                });
+                let response;
+
+                // If a file is selected and textarea is from that file, use upload endpoint
+                if (fileInput.files.length > 0) {
+                    const formData = new FormData();
+                    formData.append("file", fileInput.files[0]);
+                    formData.append("mode", mode);
+                    response = await fetch("/api/deobf-upload", {
+                        method: "POST",
+                        body: formData
+                    });
+                } else {
+                    response = await fetch("/api/deobf", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ code, mode })
+                    });
+                }
+
                 const data = await response.json();
-                
+
                 if (data.success) {
                     document.getElementById("output-code").value = data.output_code;
                     log(data.console_log);
                     log("[+] Deobfuscation complete!");
+                    setStatus("online");
+                    enableDownload(data.job_id);
+                    showToast("Deobfuscation complete!");
                 } else {
                     log("[!] Sift Engine returned an error.");
-                    log(data.console_log);
+                    log(data.console_log || "Unknown error");
+                    setStatus("error");
                 }
             } catch (err) {
                 log("[!] Communication error with Sift backend: " + err.message);
+                setStatus("error");
             } finally {
                 btn.disabled = false;
                 btn.textContent = "Deobfuscate";
+                // Clear file input so next click uses textarea
+                fileInput.value = "";
+                document.getElementById("file-name-display").textContent = "";
             }
         }
 
+        // ─── AI Rename ───
         async function runRename() {
             const code = document.getElementById("output-code").value;
             const provider = document.getElementById("ai-provider").value;
@@ -334,7 +636,7 @@
             const btn = document.getElementById("rename-btn");
 
             if (!code.trim()) {
-                alert("No output code to rename! Run deobfuscate first.");
+                showToast("No output code to rename! Run deobfuscate first.");
                 return;
             }
 
@@ -353,6 +655,7 @@
                 if (data.success) {
                     document.getElementById("output-code").value = data.renamed_code;
                     log("[+] Variables renamed successfully!");
+                    showToast("AI Rename complete!");
                 } else {
                     log("[!] Variable renaming failed.");
                     log(data.renamed_code);
@@ -361,9 +664,41 @@
                 log("[!] Communication error with Sift AI agent: " + err.message);
             } finally {
                 btn.disabled = false;
-                btn.textContent = "AI Rename";
+                btn.textContent = "✨ AI Rename";
             }
         }
+
+        // ─── Download Output ───
+        function downloadOutput() {
+            if (currentJobId) {
+                // Use the server download endpoint
+                window.open(`/api/download/${currentJobId}`, '_blank');
+                showToast("Download started!");
+            } else {
+                // Fallback: download from textarea
+                const code = document.getElementById("output-code").value;
+                if (!code.trim()) {
+                    showToast("No output to download!");
+                    return;
+                }
+                const blob = new Blob([code], { type: "text/plain" });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = "sift_output.lua";
+                a.click();
+                URL.revokeObjectURL(url);
+                showToast("Download started!");
+            }
+        }
+
+        // Allow Enter key in URL input to trigger fetch
+        document.getElementById("url-input").addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                fetchFromUrl();
+            }
+        });
     </script>
 </body>
 </html>

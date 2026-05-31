@@ -3,10 +3,11 @@ FROM python:3.11-slim
 
 # Install system dependencies (Java JDK for unluac.jar, curl for downloading lune)
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    openjdk-17-jre-headless \
+    default-jre-headless \
     curl \
     ca-certificates \
     unzip \
+    lua5.3 \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Lune binary
@@ -25,6 +26,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy all source files
 COPY . .
 
+# Create required dump directories at build time
+RUN mkdir -p dumps/temp dumps/original dumps/dumped
+
 # Expose FastAPI Web Port
 EXPOSE 8000
 
@@ -36,4 +40,4 @@ ENV JAVA_PATH=java
 ENV UNLUAC_JAR_PATH=/app/deobfuscate/unluac.jar
 
 # Run both the web backend and the Discord bot
-CMD ["python", "sift/main.py"]
+CMD ["python", "-m", "sift.main"]

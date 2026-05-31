@@ -11,6 +11,7 @@ from sift.core.deobfuscator import DeobfuscatorEngine
 from sift.core.renamer import AIRenamer
 from sift.core.decompiler import Decompiler
 from sift.core.fetcher import AdvancedFetcher
+from sift.core.lune_runner import LuneRunner
 
 # Set up intents
 intents = discord.Intents.default()

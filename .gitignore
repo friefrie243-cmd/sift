@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Local temp files
+DEBUG_FAILED_TRANSPILE.lua
+
+# IDEs and OS junk
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Large zip archives (don't commit to repo)
+*.zip
+
+# Duplicate/legacy directories (we use the root-level resources)
+sift_project/
+sift_v2/
+dumper-and-env-loggers-main/
+
+# Temp fix scripts
+fix_dumper.py

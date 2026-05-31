@@ -5,7 +5,7 @@ load_dotenv()
 
 class Config:
     # Discord Bot Configuration
-    DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", "")
+    DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", os.getenv("BOT_TOKEN", ""))
     BOT_PREFIX = os.getenv("BOT_PREFIX", "!")
     
     # LLM Settings (AI Renamer)
