@@ -611,6 +611,46 @@ local function Main(Source, NestCount, CurrentIndent, Original)
                 Append(`local {Var} = -{Path}`)
                 return Spy(Var)
             end,
+            __lt = function(a, b)
+                local val_a = typeof(a) == "table" and rawget(a, "V") or a
+                local val_b = typeof(b) == "table" and rawget(b, "V") or b
+                
+                if val_a == nil then
+                    if typeof(val_b) == "number" then val_a = val_b + 1
+                    else val_a = 0 end
+                end
+                if val_b == nil then
+                    if typeof(val_a) == "number" then val_b = val_a + 1
+                    else val_b = 0 end
+                end
+                
+                local type_a, type_b = typeof(val_a), typeof(val_b)
+                if type_a == type_b then
+                    return val_a < val_b
+                else
+                    return tostring(val_a) < tostring(val_b)
+                end
+            end,
+            __le = function(a, b)
+                local val_a = typeof(a) == "table" and rawget(a, "V") or a
+                local val_b = typeof(b) == "table" and rawget(b, "V") or b
+                
+                if val_a == nil then
+                    if typeof(val_b) == "number" then val_a = val_b + 1
+                    else val_a = 0 end
+                end
+                if val_b == nil then
+                    if typeof(val_a) == "number" then val_b = val_a + 1
+                    else val_b = 0 end
+                end
+                
+                local type_a, type_b = typeof(val_a), typeof(val_b)
+                if type_a == type_b then
+                    return val_a <= val_b
+                else
+                    return tostring(val_a) <= tostring(val_b)
+                end
+            end,
             __iter = Iter,
             __metatable = {}
         }

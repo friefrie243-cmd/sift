@@ -15,7 +15,7 @@ from sift.core.lune_runner import LuneRunner
 
 # Set up intents
 intents = discord.Intents.default()
-intents.message_content = True
+intents.message_content = Config.DISCORD_INTENTS_MESSAGE_CONTENT
 
 bot = commands.Bot(command_prefix=Config.BOT_PREFIX, intents=intents)
 

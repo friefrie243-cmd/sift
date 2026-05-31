@@ -7,6 +7,7 @@ class Config:
     # Discord Bot Configuration
     DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", os.getenv("BOT_TOKEN", ""))
     BOT_PREFIX = os.getenv("BOT_PREFIX", "!")
+    DISCORD_INTENTS_MESSAGE_CONTENT = os.getenv("DISCORD_INTENTS_MESSAGE_CONTENT", "false").lower() == "true"
     
     # LLM Settings (AI Renamer)
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
@@ -35,6 +36,7 @@ class Config:
         load_dotenv(override=True)
         cls.DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", os.getenv("BOT_TOKEN", ""))
         cls.BOT_PREFIX = os.getenv("BOT_PREFIX", "!")
+        cls.DISCORD_INTENTS_MESSAGE_CONTENT = os.getenv("DISCORD_INTENTS_MESSAGE_CONTENT", "false").lower() == "true"
         cls.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
         cls.OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
         cls.OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "codellama")

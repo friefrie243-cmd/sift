@@ -11,7 +11,7 @@ local outpath=commercial and "" or "dumps/dumped/"
 local fs = fs or require("@lune/fs")
 local process = process or require("@lune/process")
 local luau = luau or require("@lune/luau")
-local roblox={}
+local roblox = not commercial and (pcall(require, "@lune/roblox") and require("@lune/roblox") or {}) or {}
 local task=require("@lune/task")
 local targetfilename=process.args[1]
 if not targetfilename then
@@ -132,7 +132,12 @@ end
 for i,v in roblox do
     cenv[i] = v
 end
-local _game=not commercial and roblox.deserializePlace(fs.readFile("Baseplate.rbxl")) or {}
+local _game = {}
+if not commercial and type(roblox.deserializePlace) == "function" and fs.isFile("Baseplate.rbxl") then
+    pcall(function()
+        _game = roblox.deserializePlace(fs.readFile("Baseplate.rbxl"))
+    end)
+end
 local whitelistedUrls={
     -- "https://pastebin.com",
     -- "https://raw.githubusercontent",

@@ -33,24 +33,12 @@ class BotManager:
 
         async def _run():
             try:
-                # We need to make sure the loop handles bot connection
                 await bot.start(token)
             except discord.PrivilegedIntentsRequired:
-                print("[!] Warning: Privileged Message Content Intent is not enabled in the Discord Developer Portal.")
-                print("[*] Retrying connection without Message Content Intent...")
-                try:
-                    await bot.close()
-                except:
-                    pass
-                intents = discord.Intents.default()
-                intents.message_content = False
-                bot.intents = intents
-                try:
-                    await bot.start(token)
-                except Exception as ex:
-                    cls.status = "error"
-                    cls.error = str(ex)
-                    print(f"[!] Discord Bot failed to run after retry: {ex}")
+                cls.status = "error"
+                cls.error = "Privileged Message Content Intent is not enabled in the Discord Developer Portal. Please enable it in the portal or set DISCORD_INTENTS_MESSAGE_CONTENT=false in .env."
+                print("[!] Discord Bot start failed: Privileged Message Content Intent is not enabled in the Discord Developer Portal.")
+                print("[*] Advise: Please enable 'Message Content Intent' in portal or set DISCORD_INTENTS_MESSAGE_CONTENT=false in .env to connect.")
             except Exception as e:
                 cls.status = "error"
                 cls.error = str(e)
@@ -108,11 +96,16 @@ class BotManager:
             if cls.status not in ["error", "offline"]:
                 cls.status = "offline"
                 
+        import math
+        latency_val = None
+        if bot.user and bot.latency is not None and not math.isinf(bot.latency) and not math.isnan(bot.latency):
+            latency_val = round(bot.latency * 1000)
+
         return {
             "status": cls.status,
             "username": str(bot.user) if bot.user else "N/A",
             "bot_id": bot.user.id if bot.user else None,
-            "latency": round(bot.latency * 1000) if bot.user and bot.latency else None,
+            "latency": latency_val,
             "prefix": Config.BOT_PREFIX,
             "error": cls.error,
             "has_token": bool(Config.DISCORD_TOKEN)

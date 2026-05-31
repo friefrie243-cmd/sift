@@ -1,60 +1,4 @@
--- this file is generated using lunr discord.gg/9yAtRgpsua
-
-print("Me and xswa will have gay sex forever ~ x9dzz")
-print("Me and xswa will have gay sex forever ~ x9dzz")
-print("                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                         `…’°„¡(×7ìljc¤%%Icl<†?)!¯“°:‚ˆ·¨´``````                                    
-                     `·/9ÕÅþÐmdFÝ9µ9ÖœËŒÊÊŒÊÆÆÊŒØØMËWæþÄÀœŠã$åä¤·…¸…``                              
-                    `—ÚNO|‚·´`´³0ÔNŽŸî¬^”¯¡¡¡¯^¯¡«¿z&äëãAqœÀæËÊÈRÅ#QÄÜ½›´`                          
-                   …4ÑZ‘```¨›wÁØÙi¿úŠØMÁpbŸÞANÉŒØÃNg€ÜÞäTasöaÝèÐBŒÊMØmÔŒ#C˜´`                       
-                 `;šÉL´´``­fÂðƒõWŠµ[”¬>%ÏùçÍ%7¯¨`´…‚‘‘’‚‚;;;››:’˜¸·´¨…¨…j¶Â8*…`                     
-                 ;eBJ¨´…»àÀõ=áŽô(Yäes*“²‹‚…¨’C¤¨``´`    ¨t6äZàSeUäÓÎí:¨´` ;õ#e›´`                   
-                ’üÅ@¸  ¿Tc‹ŸXütdñõ¾SU4ÿäü56ŸU™Òe´``  ````ˆ;j·` ```´˜rÒö˜```·C#L´`                   
-                óQ™‚` `´¨|ð3/9KxLŸ‘¨´´=P×…´´’U0ÒÞï…` ````‹ã¬·ˆ—sUñbÒè¶ÅÜ2(’`­ÖK˜                    
-               zÃk’´`  ``¨¨—ë®³¨¨::¨¨¹*[¬’¨¡ñ3:…!å$¡´    ^ä*éñ=„J/·¨<*’›³ïÿéïTË*`                   
-              îÂ8ˆ¨´`    `˜ë0lÓZ¿…·ÏBÆÆÆÆÑgˆ´·…‚pûEÓ:`   ¸Án…```’°´´…‘‚´¨P–‚óñBE³`                  
-           ·”LEœo¤I%î÷`·zÿÁR¿}î’·´¡¶ÆÆÆÆÆÆØ4´‚¥õ¸…µÆ°`¨…°Õ­!¤‘` …¤ŽÑÑÆÑÿ—·` ¨öãéBS³´                
-         `¦dÊþáÏ—:ªit‡t¬ˆ‚7Qü…´´›;…cÙWŒÆØÀü·;7y‰ƒ©AÙ‘…ƒQÊÊ—¨°¦ˆ`²šÆÆÑÆÆÊJ…·³j™þ€5âÛ†                
-        ´IBÈž°·|ÒÂNý9ñÀÂÜú*ïdš(Iž@[¨·…›º;…·ˆ‚¸”…jßñ“``´³CÅ€’¨´´‹¨³sñŠÔÝj‘´­1¿ñœÎ)ygæ”`              
-       ´cRBé’…±ÂŠ7‚¨›1‚—±ÐŒd;+DœÞ¢º¬ýö§j¬ii†íh¶Àý{¸`   `´mMgµ4†—^¿‚°…t™t˜´;©KA/>ä„ÇØÝ´              
-       ªÿÛf9´¤Àd˜´´´žØš’¨·ˆ˜¨¨¨…­J$#ÃBBBBBNêû>‹¸´´``    ´pB)²VÕ$ó*5?²ª¿SŠAL!¯}°’Ÿln#ø·              
-       }A©wá:ûM•¨´ˆ—ÐØÉŒG[’¨¨´´´`´¨´``  `’³‘>Cn¦·¨`      ªpÉK%ˆ´````  ``·øåˆ´``:ÒrúÈÒ´              
-       !$Þòè¹ZÉ^ipØŒŒó…*ûÀÑêC!˜´´´´¦ìî¼3õÒžþÛ§Î¿¨´`      `¨ªÿÑW[¨```   `…ŽE«¨¨~ha+éŒ%`              
-       ˆõQ™G’5ËÍ‚¬¯¯Ðâ­¨´¨¦eKŒÉ¥Ï(‚·¨´  `…¹þõ…³ÚÄœây‹`    `°ŸMÂBzn[˜   ´@ÈÑp*‚c;¡ûÃÚ…               
-       `!ßÅRj~áø¨´`¨%Æœs‘´``/¶m¾AMÃãhò“…``‚û#¼ªK„;½hí´```¨^8ËC÷?¨˜×Ì™’¸sþÑÑØfìU®38Ô«                
-        `ìÂÐUÙ†‚¨` `‘QÆÆBd¯`¹äÁ°´¸º/ÌÔŒÉEÔbl¡‹¨¨¨´`´´´>ÛÐœŒHƒ¸¨´´´´´…tqÉäŽÊÊb¦…‚äKj´                
-         `‹éÃ0³–·`  `ŸÆÆÆÆÑÃãAØQ¿·```´¸;JÅÆÑÊÈBgŸ>‹…´`´‚–º‹…´´`·:1ÓNØNÁ4:rÑÑR†¨3B0·`                
-           ¨îÁ$­````¨jÆÆÆÆÆÆÆÆÆÆÆQf!‚```+Ä£´´¨’^LdÀØÊÃMØÊÆÆÆÆŒØÃÄœÂ‡··ƒÔ*·XÑØƒ…¾q*``                
-           ``+ßN•`` `—MÆÆÆÆÆÆÆÆÆÆÆÆÆÑÅhCâÃ¨´``  `´}Ûñ··¨·…Ç¶²…·´`…§¾¨¨îEŸúÉÑÑ3ˆVg7``                
-             ´„ÕK¿   ‘¶ÑÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÑøOç@<~ˆ´)Šé…¨```¿é›¨¨·°jéŒñ8ÈÆÆÆÆÑÑõ‚@Ží``                
-               –Hð| `…YÑÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÑØŒÆÆÃNÁÁæŒÆÃæÈÊÆÆÆÆÆÆÆÆÆÆÆÆÆš›¤KI`                 
-                (#å^``[æÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÙ­ìÀz´`                
-                `*ÔÀ¦ ‘ÎÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÛ²¿E½                  
-                ``›žÃá–!ÜÃ>fÀÊÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆþ”*þs`                 
-                  ``¡$ÁV7AÃ>˜jãÑÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÁª/ÁÌ`                 
-                     …JXÙ7d#Ï˜¹#êü¶ØÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ#^—æw´                 
-                     `¨„FB™óÅ¥ÌW¥¨…¹74RŒÑÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÁªºÁü¨                 
-                       `…‰ÊÜ*ÿÊÃ­¨´´´´´…uQÊÂÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÐ³­Nõ…                 
-                          –Eêv<þÁz¸´```´/EU…¨;1ÜQMÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÑÃÂb¹°E4…                 
-                          `°UB£‚íÔês;¨´’DN…´````´˜4ËÁ3á¶ÔÐHÑÑØØŒÑÑÑŒÃÂÑÐhÁê1ß©˜”#&¨                 
-                           `¸IÐÐi˜†ä#ZJSÃj``      IÀ¥´´¨¨´‹ÃÒ—ˆ’íQè¦˜Dq=¨€ñU8«`t#C`                 
-                             `›2Âý†…¹%åËØÓn“¨´¨` `sæd´````tØµ¸´´íþ%…¹Qš(s€ØG{·:œp¯                  
-                              ``¹üÅÔC˜·›†9ÃØQŽ¶¥TT€ÑÃ…´´¨…Äœí¨´ˆùH¥åNŒŒÑÑN‰’´‚dÃl`                  
-                                ``·<ÕÊËð¢;¨·›*YdÄMÑÑÆÑÑÑÆÆÑŒŒËægéäfó>¬­¸¨¨` ºÖMï``                  
-                                 ```¨¨­ƒÒÀQQâ5>ª°:’…¨·¨¨´´¨¨¨¨¨¨·…’‘;°²„»cOÛWd¦```                  
-                                 `````````´›?L§ëmgEÁEq€G8ÚéãAqKþÁEKêAGÜÓP¾n{‘`````                  
-                                                ``´…‚›º“””“~²¹‘ˆ·¨´´``` ```````                     
-                                                     `````````            `````                     
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-")
-print("@local a = debug
+local a = debug
 local b = debug.sethook
 local c = debug.getinfo
 local d = debug.traceback
@@ -66,10 +10,10 @@ local BODY_EXTRACTION_ENABLED = true
 
 -- Function to log function calls with better body extraction
 local function log_function_call(func_name, func_body, line_num)
-    local log_key = func_name .. \\"_\\" .. tostring(line_num or 0)
+    local log_key = func_name .. "_" .. tostring(line_num or 0)
     FUNCTION_LOGS[log_key] = {
         type = func_name,
-        body = func_body or \\"NO_BODY\\",
+        body = func_body or "NO_BODY",
         line = line_num or 0,
         timestamp = os.time()
     }
@@ -77,7 +21,7 @@ local function log_function_call(func_name, func_body, line_num)
     if func_body and #func_body > 0 then
         local display_body = func_body
         if #display_body > 200 then
-            display_body = func_body:sub(1, 200) .. \\"...[truncated]\\"
+            display_body = func_body:sub(1, 200) .. "...[truncated]"
         end
     end
 end
@@ -85,24 +29,24 @@ end
 -- Enhanced debug.getinfo with body extraction
 local original_debug_getinfo = debug.getinfo
 debug.getinfo = function(arg1, arg2)
-    if type(arg1) == \\"function\\" then
+    if type(arg1) == "function" then
         -- Block dangerous functions
         if arg1 == require or arg1 == load or arg1 == loadstring or arg1 == loadfile or arg1 == dofile or arg1 == pcall or arg1 == xpcall or arg1 == error or arg1 == assert or arg1 == print or arg1 == warn or arg1 == tonumber or arg1 == tostring or arg1 == pairs or arg1 == ipairs or arg1 == next or arg1 == setmetatable or arg1 == getmetatable or arg1 == rawget or arg1 == rawset or arg1 == rawequal or arg1 == select or arg1 == type or arg1 == coroutine.create or arg1 == coroutine.wrap or arg1 == coroutine.resume then
             return nil
         end
 
-        local info = original_debug_getinfo(arg1, \\"S\\")
-        if info and (info.what == \\"C\\" or info.source == \\"=[C]\\" or info.short_src == \\"[C]\\" or not info.short_src:match(\\"^@\\")) then
+        local info = original_debug_getinfo(arg1, "S")
+        if info and (info.what == "C" or info.source == "=[C]" or info.short_src == "[C]" or not info.short_src:match("^@")) then
             return nil
         end
 
         -- Extract function body for Lua functions
-        if info and info.what == \\"Lua\\" and info.source and info.linedefined then
-            local func_body = \\"Function defined at line \\" .. (info.linedefined or \\"unknown\\")
-            if info.short_src and info.short_src ~= \\"=[C]\\" then
-                func_body = func_body .. \\" in \\" .. info.short_src
+        if info and info.what == "Lua" and info.source and info.linedefined then
+            local func_body = "Function defined at line " .. (info.linedefined or "unknown")
+            if info.short_src and info.short_src ~= "=[C]" then
+                func_body = func_body .. " in " .. info.short_src
             end
-            log_function_call(\\"debug.getinfo_function\\", func_body, info.linedefined)
+            log_function_call("debug.getinfo_function", func_body, info.linedefined)
         end
 
         return original_debug_getinfo(arg1, arg2)
@@ -117,17 +61,17 @@ c = nil
 
 -- Reinstall with enhanced logging
 debug.getinfo = function(arg1, arg2)
-    if type(arg1) == \\"function\\" then
+    if type(arg1) == "function" then
         if arg1 == require or arg1 == load or arg1 == loadstring or arg1 == loadfile or arg1 == dofile or arg1 == pcall or arg1 == xpcall or arg1 == error or arg1 == assert or arg1 == print or arg1 == warn or arg1 == tonumber or arg1 == tostring or arg1 == pairs or arg1 == ipairs or arg1 == next or arg1 == setmetatable or arg1 == getmetatable or arg1 == rawget or arg1 == rawset or arg1 == rawequal or arg1 == select or arg1 == type or arg1 == coroutine.create or arg1 == coroutine.wrap or arg1 == coroutine.resume then
             return nil
         end
 
-        local info = niggerdawdjlsjgasdklajklwdjsajiwdjaskljwdsa(arg1, \\"S\\")
-        if info and (info.what == \\"C\\" or info.source == \\"=[C]\\" or info.short_src == \\"[C]\\" or not info.short_src:match(\\"^@\\")) then
+        local info = niggerdawdjlsjgasdklajklwdjsajiwdjaskljwdsa(arg1, "S")
+        if info and (info.what == "C" or info.source == "=[C]" or info.short_src == "[C]" or not info.short_src:match("^@")) then
             return nil
         end
 
-        if info and info.what ~= \\"Lua\\" then
+        if info and info.what ~= "Lua" then
             return nil
         end
     end
@@ -142,7 +86,7 @@ end
 local real_getmetatable = debug.getmetatable
 debug.getmetatable = function(v)
     local t = type(v)
-    if t == \\"number\\" or t == \\"string\\" or t == \\"boolean\\" or t == \\"nil\\" then
+    if t == "number" or t == "string" or t == "boolean" or t == "nil" then
         return nil
     end
     return real_getmetatable(v)
@@ -153,7 +97,7 @@ local f = loadstring or load
 local _original_debug_getinfo = debug.getinfo
 local LUNR_PROTECTED = {}
 local function LUNR_GUARD(fn)
-    if type(fn) == \\"function\\" then
+    if type(fn) == "function" then
         LUNR_PROTECTED[fn] = true
     end
     return fn
@@ -185,13 +129,13 @@ local p = os
 if not typeof then
     getgenv = getgenv or function() return _G end
     getgenv().typeof = function(obj)
-        if obj == game then return \\"Instance\\" end
+        if obj == game then return "Instance" end
         local t = type(obj)
-        if t == \\"table\\" and rawget(obj, \\"ClassName\\") then
-            return \\"Instance\\"
+        if t == "table" and rawget(obj, "ClassName") then
+            return "Instance"
         end
-        if t == \\"table\\" and rawget(obj, \\"__type\\") then
-            return rawget(obj, \\"__type\\")
+        if t == "table" and rawget(obj, "__type") then
+            return rawget(obj, "__type")
         end
         return t
     end
@@ -205,23 +149,23 @@ if task == nil then
     task._last_thread = nil
     
     function task.spawn(fn, ...)
-        if type(fn) == \\"function\\" then
-            local info = debug.getinfo(fn, \\"Sl\\")
-            local func_body = \\"task.spawn function\\"
+        if type(fn) == "function" then
+            local info = debug.getinfo(fn, "Sl")
+            local func_body = "task.spawn function"
             if info and info.linedefined then
-                func_body = func_body .. \\" at line \\" .. info.linedefined
+                func_body = func_body .. " at line " .. info.linedefined
             end
-            log_function_call(\\"task.spawn\\", func_body, debug.getinfo(2, \\"l\\").currentline)
+            log_function_call("task.spawn", func_body, debug.getinfo(2, "l").currentline)
         end
         
         task._last_thread = coroutine.create(function() return true end)
         
-        if type(fn) == \\"function\\" then
+        if type(fn) == "function" then
             pcall(fn, ...)
-        elseif type(fn) == \\"thread\\" then
+        elseif type(fn) == "thread" then
             pcall(coroutine.resume, fn, ...)
         else
-            error(\\"invalid argument #1 to 'spawn' (function or thread expected)\\", 2)
+            error("invalid argument #1 to 'spawn' (function or thread expected)", 2)
         end
         
         return task._last_thread
@@ -238,13 +182,13 @@ end
 local function wrap_function(func_name, original_func)
     return function(...)
         local args = {...}
-        local caller_info = debug.getinfo(2, \\"l\\")
+        local caller_info = debug.getinfo(2, "l")
         
-        if type(original_func) == \\"function\\" then
-            local func_info = debug.getinfo(original_func, \\"Sl\\")
-            local func_body = \\"Function with \\" .. #args .. \\" arguments\\"
-            if func_info and func_info.what == \\"Lua\\" and func_info.linedefined then
-                func_body = func_body .. \\" defined at line \\" .. func_info.linedefined
+        if type(original_func) == "function" then
+            local func_info = debug.getinfo(original_func, "Sl")
+            local func_body = "Function with " .. #args .. " arguments"
+            if func_info and func_info.what == "Lua" and func_info.linedefined then
+                func_body = func_body .. " defined at line " .. func_info.linedefined
             end
             log_function_call(func_name, func_body, caller_info and caller_info.currentline)
         end
@@ -255,34 +199,34 @@ local function wrap_function(func_name, original_func)
 end
 
 -- Apply enhanced wrappers
-pcall = wrap_function(\\"pcall\\", pcall)
-xpcall = wrap_function(\\"xpcall\\", xpcall)
+pcall = wrap_function("pcall", pcall)
+xpcall = wrap_function("xpcall", xpcall)
 
 if coroutine then
     if coroutine.create then
-        coroutine.create = wrap_function(\\"coroutine.create\\", coroutine.create)
+        coroutine.create = wrap_function("coroutine.create", coroutine.create)
     end
     if coroutine.wrap then
-        coroutine.wrap = wrap_function(\\"coroutine.wrap\\", coroutine.wrap)
+        coroutine.wrap = wrap_function("coroutine.wrap", coroutine.wrap)
     end
 end
 
 if not spawn then spawn = function(fn, ...) return task and task.spawn(fn, ...) end end
-spawn = wrap_function(\\"spawn\\", spawn)
-delay = wrap_function(\\"delay\\", delay)
+spawn = wrap_function("spawn", spawn)
+delay = wrap_function("delay", delay)
 
 if hookfunction then
-    hookfunction = wrap_function(\\"hookfunction\\", hookfunction)
+    hookfunction = wrap_function("hookfunction", hookfunction)
 end
 
 if getfenv then
-    getfenv = wrap_function(\\"getfenv\\", getfenv)
+    getfenv = wrap_function("getfenv", getfenv)
 end
 
 if loadstring then
     local original_loadstring = loadstring
     loadstring = function(str)
-        log_function_call(\\"loadstring\\", \\"Content: \\" .. (str:sub(1, 100) .. (#str > 100 and \\"...\\" or \\"\\")), debug.getinfo(2, \\"l\\").currentline)
+        log_function_call("loadstring", "Content: " .. (str:sub(1, 100) .. (#str > 100 and "..." or "")), debug.getinfo(2, "l").currentline)
         return original_loadstring(str)
     end
 end
@@ -290,7 +234,7 @@ end
 if require then
     local original_require = require
     require = function(module)
-        log_function_call(\\"require\\", \\"Module: \\" .. tostring(module), debug.getinfo(2, \\"l\\").currentline)
+        log_function_call("require", "Module: " .. tostring(module), debug.getinfo(2, "l").currentline)
         return original_require(module)
     end
 end
@@ -301,13 +245,13 @@ local function enhance_event_connect(obj)
     if obj and obj.Connect then
         original_connect = obj.Connect
         obj.Connect = function(self, fn)
-            if type(fn) == \\"function\\" then
-                local info = debug.getinfo(fn, \\"Sl\\")
-                local func_body = \\"Event connection function\\"
+            if type(fn) == "function" then
+                local info = debug.getinfo(fn, "Sl")
+                local func_body = "Event connection function"
                 if info and info.linedefined then
-                    func_body = func_body .. \\" at line \\" .. info.linedefined
+                    func_body = func_body .. " at line " .. info.linedefined
                 end
-                log_function_call(\\"Event.Connect\\", func_body, debug.getinfo(2, \\"l\\").currentline)
+                log_function_call("Event.Connect", func_body, debug.getinfo(2, "l").currentline)
             end
             return original_connect(self, fn)
         end
@@ -329,7 +273,7 @@ c = nil               -- also nuke your own alias if you want to be extra mean
 -- Now install the lying version
 debug.getinfo = function(arg1, arg2)
     -- Case 1: called with a function (most dangerous case)
-    if type(arg1) == \\"function\\" then
+    if type(arg1) == "function" then
         -- Block all known builtins that leak source
         if arg1 == require
         or arg1 == load
@@ -362,13 +306,13 @@ debug.getinfo = function(arg1, arg2)
         end
 
         -- Extra paranoid: anything that smells like a C function in fengari
-        local info = niggerdawdjlsjgasdklajklwdjsajiwdjaskljwdsa(arg1, \\"S\\")
-        if info and (info.what == \\"C\\" or info.source == \\"=[C]\\" or info.short_src == \\"[C]\\" or not info.short_src:match(\\"^@\\")) then
+        local info = niggerdawdjlsjgasdklajklwdjsajiwdjaskljwdsa(arg1, "S")
+        if info and (info.what == "C" or info.source == "=[C]" or info.short_src == "[C]" or not info.short_src:match("^@")) then
             return nil
         end
 
         -- Also kill anything without Lua source that isn't protected by us
-        if info and info.what ~= \\"Lua\\" then
+        if info and info.what ~= "Lua" then
             return nil
         end
     end
@@ -391,7 +335,7 @@ end
 local real_getmetatable = debug.getmetatable
 debug.getmetatable = function(v)
     local t = type(v)
-    if t == \\"number\\" or t == \\"string\\" or t == \\"boolean\\" or t == \\"nil\\" then
+    if t == "number" or t == "string" or t == "boolean" or t == "nil" then
         return nil  -- lie like normal Lua 5.1–5.4
     end
     return real_getmetatable(v)
@@ -401,7 +345,7 @@ local f = loadstring or load
 local _original_debug_getinfo = debug.getinfo  -- Preserve original for anti-tamper checks
 local LUNR_PROTECTED = {}
 local function LUNR_GUARD(fn)
-    if type(fn) == \\"function\\" then
+    if type(fn) == "function" then
         LUNR_PROTECTED[fn] = true
     end
     return fn
@@ -432,13 +376,13 @@ local p = os
 if not typeof then
     getgenv = getgenv or function() return _G end
     getgenv().typeof = function(obj)
-        if obj == game then return \\"userdata\\" end -- Fix for user check
+        if obj == game then return "userdata" end -- Fix for user check
         local t = type(obj)
-        if t == \\"table\\" and rawget(obj, \\"ClassName\\") then
-            return \\"Instance\\"
+        if t == "table" and rawget(obj, "ClassName") then
+            return "Instance"
         end
-        if t == \\"table\\" and rawget(obj, \\"__type\\") then
-            return rawget(obj, \\"__type\\")
+        if t == "table" and rawget(obj, "__type") then
+            return rawget(obj, "__type")
         end
         return t
     end
@@ -452,7 +396,7 @@ if task == nil then
     task._last_thread = nil  -- Store last created thread
     _G.__heartbeat_callbacks = _G.__heartbeat_callbacks or {}
     task._add_heartbeat = function(fn)
-        if type(fn) == \\"function\\" then table.insert(_G.__heartbeat_callbacks, fn) end
+        if type(fn) == "function" then table.insert(_G.__heartbeat_callbacks, fn) end
     end
     
     function task.spawn(fn, ...)
@@ -460,12 +404,12 @@ if task == nil then
         task._last_thread = coroutine.create(function() return true end)
         
         -- Execute the function
-        if type(fn) == \\"function\\" then
+        if type(fn) == "function" then
             pcall(fn, ...)
-        elseif type(fn) == \\"thread\\" then
+        elseif type(fn) == "thread" then
             pcall(coroutine.resume, fn, ...)
         else
-            error(\\"invalid argument #1 to 'spawn' (function or thread expected)\\", 2)
+            error("invalid argument #1 to 'spawn' (function or thread expected)", 2)
         end
         
         -- Return the stored thread
@@ -488,25 +432,25 @@ local fake_os = {
     time      = old_os.time,
 
     -- explicitly block dangerous stuff
-    execute   = function(...) error(\\"os.execute is disabled\\", 0) end,
-    exit      = function(...) error(\\"os.exit is disabled\\", 0) end,
-    remove    = function(...) error(\\"os.remove is disabled\\", 0) end,
-    rename    = function(...) error(\\"os.rename is disabled\\", 0) end,
-    tmpname   = function(...) error(\\"os.tmpname is disabled\\", 0) end,
+    execute   = function(...) error("os.execute is disabled", 0) end,
+    exit      = function(...) error("os.exit is disabled", 0) end,
+    remove    = function(...) error("os.remove is disabled", 0) end,
+    rename    = function(...) error("os.rename is disabled", 0) end,
+    tmpname   = function(...) error("os.tmpname is disabled", 0) end,
 }
 
--- Make it look almost real (many scripts check type(os.execute) == \\"function\\")
+-- Make it look almost real (many scripts check type(os.execute) == "function")
 setmetatable(fake_os, {
     __index = function(t, k)
-        if k == \\"execute\\" or k == \\"exit\\" or k == \\"remove\\" or k == \\"rename\\" or k == \\"tmpname\\" then
-            return function() error(\\"Blocked os.\\"..k..\\" call\\", 0) end
+        if k == "execute" or k == "exit" or k == "remove" or k == "rename" or k == "tmpname" then
+            return function() error("Blocked os."..k.." call", 0) end
         end
-        return nil   -- or error(\\"os.\\"..tostring(k)..\\" is disabled\\")
+        return nil   -- or error("os."..tostring(k).." is disabled")
     end,
     __newindex = function()
-        error(\\"cannot modify os table\\", 0)
+        error("cannot modify os table", 0)
     end,
-    __metatable = \\"Locked os proxy\\"
+    __metatable = "Locked os proxy"
 })
 
 -- Final replacement
@@ -518,14 +462,14 @@ getrenv = function()
     env.os = fake_os     -- force it again
     return env
 end
-local script = script or {Name = \\"Lunr\\", ClassName = \\"LocalScript\\"}
+local script = script or {Name = "Lunr", ClassName = "LocalScript"}
 
 -- Create Enum for MessageType
 local Enum = Enum or {
     MessageType = {
-        MessageOutput = \\"Output\\",
-        MessageWarning = \\"Warning\\",
-        MessageError = \\"Error\\"
+        MessageOutput = "Output",
+        MessageWarning = "Warning",
+        MessageError = "Error"
     }
 }
 
@@ -538,7 +482,7 @@ local game = game or {
             return services_cache[service]
         end
 
-        if service == \\"RunService\\" then
+        if service == "RunService" then
             local rs = {
                 Heartbeat = {
                     Connect = function(self, fn)
@@ -560,7 +504,7 @@ local game = game or {
             services_cache[service] = rs
             return rs
 
-        elseif service == \\"LogService\\" then
+        elseif service == "LogService" then
             local ls = {
                 MessageOut = {
                     Connect = function(self, fn)
@@ -572,7 +516,7 @@ local game = game or {
                         if not _G.__print_hooked then
                             print = function(...)
                                 local args = {...}
-                                local msg = table.concat(args, \\"\\t\\")
+                                local msg = table.concat(args, "\t")
                                 for _, cb in ipairs(_G.__logservice_callbacks or {}) do
                                     pcall(cb, msg, Enum.MessageType.MessageOutput)
                                 end
@@ -590,44 +534,44 @@ local game = game or {
             services_cache[service] = ls
             return ls
 
-        elseif service == \\"HttpService\\" then
+        elseif service == "HttpService" then
             local hs = {
                 GenerateGUID = function(self, secure)
-                    return string.format(\\"%08x-%04x-%04x-%04x-%12x\\",
+                    return string.format("%08x-%04x-%04x-%04x-%12x",
                         math.random(0, 0xffffffff), math.random(0, 0xffff),
                         math.random(0, 0xffff), math.random(0, 0xffff),
-                        string.format(\\"%.4X\\", math.random(0, 0xffff)))
+                        string.format("%.4X", math.random(0, 0xffff)))
                 end,
                 JSONDecode = function(self, json_str)
                     -- Basic JSON decoder
                     local function parse_json(str)
-                        str = str:match(\\"^%s*(.-)%s*$\\") -- trim
-                        if str == \\"null\\" then return nil end
-                        if str == \\"true\\" then return true end
-                        if str == \\"false\\" then return false end
-                        if str:match(\\"^%-?%d+%.?%d*$\\") then return tonumber(str) end
-                        if str:match('^\\".*\\"$') then return str:sub(2, -2):gsub('\\\\\\"', '\\"') end
-                        if str:match('^\\"%s*\\"$') or str:match(\\"^'%s*'$\\") then 
+                        str = str:match("^%s*(.-)%s*$") -- trim
+                        if str == "null" then return nil end
+                        if str == "true" then return true end
+                        if str == "false" then return false end
+                        if str:match("^%-?%d+%.?%d*$") then return tonumber(str) end
+                        if str:match('^".*"$') then return str:sub(2, -2):gsub('\\"', '"') end
+                        if str:match('^"%s*"$') or str:match("^'%s*'$") then 
                             return str:sub(2, -2) 
                         end
-                        if str:match(\\"^%[.*%]$\\") then
+                        if str:match("^%[.*%]$") then
                             local result = {}
                             local content = str:sub(2, -2)
                             if content:len() == 0 then return result end
                             
                             local depth = 0
-                            local current = \\"\\"
+                            local current = ""
                             for i = 1, content:len() do
                                 local c = content:sub(i, i)
-                                if (c == \\"[\\" or c == \\"{\\") then
+                                if (c == "[" or c == "{") then
                                     depth = depth + 1
                                     current = current .. c
-                                elseif (c == \\"]\\" or c == \\"}\\") then
+                                elseif (c == "]" or c == "}") then
                                     depth = depth - 1
                                     current = current .. c
-                                elseif c == \\",\\" and depth == 0 then
+                                elseif c == "," and depth == 0 then
                                     table.insert(result, parse_json(current))
-                                    current = \\"\\"
+                                    current = ""
                                 else
                                     current = current .. c
                                 end
@@ -645,32 +589,32 @@ local game = game or {
             services_cache[service] = hs
             return hs
 
-        elseif service == \\"RbxAnalyticsService\\" then
+        elseif service == "RbxAnalyticsService" then
             local ras = {
                 GetClientId = function(self)
-                    return string.format(\\"%08x-%04x-%04x-%04x-%12x\\",
+                    return string.format("%08x-%04x-%04x-%04x-%12x",
                         math.random(0, 0xffffffff), math.random(0, 0xffff),
                         math.random(0, 0xffff), math.random(0, 0xffff),
-                        string.format(\\"%.4X\\", math.random(0, 0xffff)),
+                        string.format("%.4X", math.random(0, 0xffff)),
                         math.random(0, 0xffffffffffff))
                 end
             }
             services_cache[service] = ras
             return ras
 
-        elseif service == \\"Players\\" then
+        elseif service == "Players" then
             local players = {
                 LocalPlayer = {
                     UserId = 1,
-                    Name = \\"Lunr\\",
-                    DisplayName = \\"Lunr\\",
+                    Name = "Lunr",
+                    DisplayName = "Lunr",
                     AccountAge = 69143,
-                    ClassName = \\"Player\\",
+                    ClassName = "Player",
                     WaitForChild = function(self, name, timeout)
-                        if name == \\"PlayerGui\\" then
-                            return { Name = \\"PlayerGui\\", ClassName = \\"PlayerGui\\" }
+                        if name == "PlayerGui" then
+                            return { Name = "PlayerGui", ClassName = "PlayerGui" }
                         end
-                        return { Name = name, ClassName = \\"Instance\\" }
+                        return { Name = name, ClassName = "Instance" }
                     end
                 }
             }
@@ -689,33 +633,33 @@ local game = game or {
     
     GetChildren = function(self)
         return {
-            game:GetService(\\"RunService\\"),
-            game:GetService(\\"LogService\\"),
-            game:GetService(\\"HttpService\\"),
-            game:GetService(\\"Players\\"),
-            game:GetService(\\"RbxAnalyticsService\\")
+            game:GetService("RunService"),
+            game:GetService("LogService"),
+            game:GetService("HttpService"),
+            game:GetService("Players"),
+            game:GetService("RbxAnalyticsService")
         }
     end,
 
-    ClassName = \\"DataModel\\",
-    Name = \\"game\\",
+    ClassName = "DataModel",
+    Name = "game",
     HttpGet = function(self, url)
          -- Hint for next loadstring result name
-         if type(url) == \\"string\\" then
-             local name = url:match(\\"([^/]+)$\\") 
+         if type(url) == "string" then
+             local name = url:match("([^/]+)$") 
              if name then 
                  -- Clean name
-                 name = name:gsub(\\"[^%w_]\\", \\"\\")
+                 name = name:gsub("[^%w_]", "")
                  if #name > 0 then
                     _G._NextNameHint = name:sub(1,1):upper() .. name:sub(2)
                  end
              end
              -- Return a stub so loadstring(...)() returns a table with CreateWindow (avoids nil index on url)
-             if url:match(\\"library\\") or url:match(\\"Tora\\") or url:match(\\"raw%.githubusercontent\\") then
-                 return \\"return { CreateWindow = function(self, ...) return {} end, Create = function(self, ...) return {} end }\\"
+             if url:match("library") or url:match("Tora") or url:match("raw%.githubusercontent") then
+                 return "return { CreateWindow = function(self, ...) return {} end, Create = function(self, ...) return {} end }"
              end
          end
-         return \\"\\" -- Return empty string or actual content if fetchable
+         return "" -- Return empty string or actual content if fetchable
     end
 }
 
@@ -723,19 +667,19 @@ local game = game or {
 -- Env-check bypass: allow game.ServiceName so pcall(game.HttpService) succeeds and script continues past anti-env checks
 setmetatable(game, {
     __index = function(self, key)
-        if key == \\"ClassName\\" or key == \\"Name\\" then
+        if key == "ClassName" or key == "Name" then
             return rawget(game, key)
         end
         return game:GetService(key)
     end,
     __call = function(self)
-        error(\\"attempt to call a Instance value\\", 2)
+        error("attempt to call a Instance value", 2)
     end,
     __pairs = function()
-        error(\\"attempt to iterate over game (not iterable)\\", 2)
+        error("attempt to iterate over game (not iterable)", 2)
     end,
     __ipairs = function()
-        error(\\"attempt to iterate over game (not iterable)\\", 2)
+        error("attempt to iterate over game (not iterable)", 2)
     end
 })
 
@@ -747,9 +691,9 @@ Instance.new = function(class_name)
         Name = class_name,
         Parent = nil,
         Size = nil,
-        Text = \\"\\"
+        Text = ""
     }
-    if class_name == \\"TextButton\\" or class_name == \\"GuiButton\\" then
+    if class_name == "TextButton" or class_name == "GuiButton" then
         obj.MouseButton1Click = {
             Connect = function(self, fn)
                 pcall(fn)
@@ -762,11 +706,11 @@ Instance.new = function(class_name)
             local raw = rawget(obj, key)
             if raw ~= nil then return raw end
             return function()
-                error(\\"attempt to call a nil value (method '\\" .. key .. \\"')\\", 2)
+                error("attempt to call a nil value (method '" .. key .. "')", 2)
             end
         end,
         __call = function(self)
-            error(\\"attempt to call a \\" .. class_name .. \\" value\\", 2)
+            error("attempt to call a " .. class_name .. " value", 2)
         end
     })
     return obj
@@ -781,13 +725,13 @@ getfenv = function(level)
     return original_getfenv(level)
 end
 
-local workspace = workspace or {Name = \\"Workspace\\", ClassName = \\"Workspace\\"}
+local workspace = workspace or {Name = "Workspace", ClassName = "Workspace"}
 local q = {}
 q.__index = q
 local r = {
     MAX_DEPTH = 15,
     MAX_TABLE_ITEMS = 150,
-    OUTPUT_FILE = \\"dumped_output.lua\\",
+    OUTPUT_FILE = "dumped_output.lua",
     VERBOSE = false,
     TRACE_CALLBACKS = true,
     TIMEOUT_SECONDS = 9999999.0,
@@ -829,14 +773,14 @@ local t = {
     script_sources = {},
     shadow_props = {},
     scripts = {script},
-    script_sources = {[script] = \\"\\"},
+    script_sources = {[script] = ""},
     thread_identity = 7
 }
-local s = arg[3] or \\"NoKey\\"
+local s = arg[3] or "NoKey"
 local u = tonumber(arg[4]) or tonumber(arg[3]) or 123456789
 local v = {}
 local function w(x)
-    if j(x) ~= \\"table\\" then
+    if j(x) ~= "table" then
         return false
     end
     local y, z =
@@ -848,11 +792,11 @@ local function w(x)
     return y and z
 end
 local function A(x)
-    if j(x) == \\"number\\" then
+    if j(x) == "number" then
         return x
     end
     if w(x) then
-        return rawget(x, \\"__value\\") or 0
+        return rawget(x, "__value") or 0
     end
     return 0
 end
@@ -869,7 +813,7 @@ local j = type
 local m = tostring
 local F = {}
 local function G(x)
-    if j(x) ~= \\"table\\" then
+    if j(x) ~= "table" then
         return false
     end
     local y, z =
@@ -884,1172 +828,111 @@ local function H(x)
     if not G(x) then
         return nil
     end
-    return rawget(x, \\"__proxy_id\\")
+    return rawget(x, "__proxy_id")
 end
 local function I(J)
-    if j(J) ~= \\"string\\" then
-        return '\\"'
-    end
-    local K = {}
-    local L, M = 1, #J
-    local function N(O)
-        -- Handle numeric escape sequences first (multi-digit)
-        O = O:gsub(\\"\\\\(%d%d%d)\\", function(num) return string.char(tonumber(num)) end)
-        O = O:gsub(\\"\\\\(%d%d)\\", function(num) return string.char(tonumber(num)) end)
-        O = O:gsub(\\"\\\\(%d)\\", function(num) return string.char(tonumber(num)) end)
-        -- Handle standard escape sequences
-        return O:gsub(
-            \\"\\\\\\\\(.)\\",
-            function(P)
-                if P:match('[abfnrtv\\\\\\\\%\'%\\\\\\"%[%]0-9xu]') then
-                    return \\"\\" .. P
+    if j(J) ~= "string" then
+        return '"'\n    end\n    local K = {}\n    local L, M = 1, #J\n    local function N(O)\n        -- Handle numeric escape sequences first (multi-digit)\n        O = O:gsub("\\(%d%d%d)", function(num) return string.char(tonumber(num)) end)\n        O = O:gsub("\\(%d%d)", function(num) return string.char(tonumber(num)) end)\n        O = O:gsub("\\(%d)", function(num) return string.char(tonumber(num)) end)\n        -- Handle standard escape sequences\n        return O:gsub(\n            "\\\\(.)",\n            function(P)\n                if P:match('[abfnrtv\\\\%\'%\\"%[%]0-9xu]') then
+                    return "" .. P
                 end
                 return P
             end
         )
     end
     local function Q(R)
-        if not R or R == '\\"' then
-            return \\"\\"
-        end
-        -- Normalize common obfuscator formatting to reduce parse errors
-        R = R:gsub(\\"%]%]%s*return%(\\", \\"]]\\nreturn (\\")
-        R = R:gsub(\\"return%(\\", \\"return (\\")
-
-        R =
-            R:gsub(
-            \\"0[bB]([01_]+)\\",
-            function(S)
-                local T = S:gsub(\\"_\\", '\\"')
+        if not R or R == '"' then\n            return ""\n        end\n        -- Normalize common obfuscator formatting to reduce parse errors\n        R = R:gsub("%]%]%s*return%(", "]]\nreturn (")\n        R = R:gsub("return%(", "return (")\n\n        R =\n            R:gsub(\n            "0[bB]([01_]+)",\n            function(S)\n                local T = S:gsub("_", '"')
                 local U = n(T, 2)
-                return U and m(U) or \\"0\\"
+                return U and m(U) or "0"
             end
         )
         R =
             R:gsub(
-            \\"0[xX]([%x_]+)\\",
+            "0[xX]([%x_]+)",
             function(S)
-                local T = S:gsub(\\"_\\", \\"\\")
-                return \\"0x\\" .. T
+                local T = S:gsub("_", "")
+                return "0x" .. T
             end
         )
-        while R:match(\\"%d_+%d\\") do
-            R = R:gsub(\\"(%d)_+(%d)\\", \\"%1%2\\")
+        while R:match("%d_+%d") do
+            R = R:gsub("(%d)_+(%d)", "%1%2")
         end
-        local V = {{\\"+=\\", \\"+\\"}, {\\"-=\\", \\"-\\"}, {\\"*=\\", \\"*\\"}, {\\"/=\\", \\"/\\"}, {\\"%%=\\", \\"%%\\"}, {\\"%^=\\", \\"^\\"}, {\\"%.%.=\\", \\"..\\"}}
+        local V = {{"+=", "+"}, {"-=", "-"}, {"*=", "*"}, {"/=", "/"}, {"%%=", "%%"}, {"%^=", "^"}, {"%.%.=", ".."}}
         for W, X in ipairs(V) do
             local Y, Z = X[1], X[2]
             R =
                 R:gsub(
-                \\"([%a_][%w_]*)%s*\\" .. Y,
+                "([%a_][%w_]*)%s*" .. Y,
                 function(_)
-                    return _ .. \\" = \\" .. _ .. \\" \\" .. Z .. \\" \\"
+                    return _ .. " = " .. _ .. " " .. Z .. " "
                 end
             )
             R =
                 R:gsub(
-                \\"([%a_][%w_]*%.[%a_][%w_%.]+)%s*\\" .. Y,
+                "([%a_][%w_]*%.[%a_][%w_%.]+)%s*" .. Y,
                 function(_)
-                    return _ .. \\" = \\" .. _ .. \\" \\" .. Z .. \\" \\"
+                    return _ .. " = " .. _ .. " " .. Z .. " "
                 end
             )
             R =
                 R:gsub(
-                \\"([%a_][%w_]*%b[])%s*\\" .. Y,
+                "([%a_][%w_]*%b[])%s*" .. Y,
                 function(_)
-                    return _ .. \\" = \\" .. _ .. \\" \\" .. Z .. \\" \\"
+                    return _ .. " = " .. _ .. " " .. Z .. " "
                 end
             )
         end
 
         -- De-aliasing pass
         local aliases = {}
-        for alias, module, func in R:gmatch(\\"local%s+([%a_][%w_]*)%s*=%s*([%a_][%w_]*)%.([%a_][%w_]*)\\") do
-            if module == \\"string\\" or module == \\"table\\" or module == \\"bit\\" or module == \\"bit32\\" or module == \\"math\\" then
-                aliases[alias] = module .. \\".\\" .. func
+        for alias, module, func in R:gmatch("local%s+([%a_][%w_]*)%s*=%s*([%a_][%w_]*)%.([%a_][%w_]*)") do
+            if module == "string" or module == "table" or module == "bit" or module == "bit32" or module == "math" then
+                aliases[alias] = module .. "." .. func
             end
         end
         for alias, full in pairs(aliases) do
-            R = R:gsub(\\"([^%w_])\\" .. alias .. \\"%(\\", \\"%1\\" .. full .. \\"(\\")
-            R = R:gsub(\\"^\\" .. alias .. \\"%(\\", full .. \\"(\\")
+            R = R:gsub("([^%w_])" .. alias .. "%(", "%1" .. full .. "(")
+            R = R:gsub("^" .. alias .. "%(", full .. "(")
         end
         -- Variable renaming pass - replace unrecognizable local variables with v[Number]
         local variable_map = {}
         local function is_readable_name(name)
             -- Deny variables with quotes immediately
-            if name:match('\\"') or name:match(\\"'\\") then
-                return false
-            end
-            -- Check if name is readable English or common programming terms
-            if name:match(\\"^[%a_][%w%d]*$\\") or name:match(\\"^_[%w][%w_]*$\\") then
-                -- Hexadecimal-style names like _0x1a2b3c are always considered unreadable
-                if name:match(\\"^_0[xX]\\") then
-                    return false
-                end
-                local common_names = {
-                    [\\"i\\"] = true, [\\"j\\"] = true, [\\"k\\"] = true, [\\"v\\"] = true, [\\"x\\"] = true, [\\"y\\"] = true, [\\"z\\"] = true,
-                    [\\"temp\\"] = true, [\\"tmp\\"] = true, [\\"count\\"] = true, [\\"index\\"] = true, [\\"idx\\"] = true,
-                    [\\"len\\"] = true, [\\"length\\"] = true, [\\"size\\"] = true, [\\"num\\"] = true, [\\"number\\"] = true,
-                    [\\"str\\"] = true, [\\"string\\"] = true, [\\"text\\"] = true, [\\"data\\"] = true, [\\"value\\"] = true,
-                    [\\"result\\"] = true, [\\"output\\"] = true, [\\"return\\"] = true, [\\"ret\\"] = true, [\\"val\\"] = true,
-                    [\\"func\\"] = true, [\\"function\\"] = true, [\\"fn\\"] = true, [\\"method\\"] = true, [\\"callback\\"] = true,
-                    [\\"obj\\"] = true, [\\"object\\"] = true, [\\"item\\"] = true, [\\"element\\"] = true, [\\"elem\\"] = true,
-                    [\\"arr\\"] = true, [\\"array\\"] = true, [\\"list\\"] = true, [\\"table\\"] = true, [\\"map\\"] = true,
-                    [\\"key\\"] = true, [\\"value\\"] = true, [\\"pair\\"] = true, [\\"entry\\"] = true, [\\"node\\"] = true,
-                    [\\"parent\\"] = true, [\\"child\\"] = true, [\\"next\\"] = true, [\\"prev\\"] = true, [\\"current\\"] = true,
-                    [\\"first\\"] = true, [\\"last\\"] = true, [\\"start\\"] = true, [\\"begin\\"] = true, [\\"end\\"] = true,
-                    [\\"true\\"] = true, [\\"false\\"] = true, [\\"nil\\"] = true, [\\"self\\"] = true, [\\"this\\"] = true,
-                    [\\"module\\"] = true, [\\"require\\"] = true, [\\"import\\"] = true, [\\"export\\"] = true,
-                    [\\"local\\"] = true, [\\"global\\"] = true, [\\"const\\"] = true, [\\"var\\"] = true, [\\"let\\"] = true,
-                    [\\"game\\"] = true, [\\"workspace\\"] = true, [\\"players\\"] = true, [\\"script\\"] = true,
-                    [\\"task\\"] = true, [\\"t\\"] = true,
-                    [\\"event\\"] = true, [\\"signal\\"] = true, [\\"connect\\"] = true, [\\"disconnect\\"] = true,
-                    [\\"new\\"] = true, [\\"create\\"] = true, [\\"destroy\\"] = true, [\\"remove\\"] = true, [\\"delete\\"] = true,
-                    [\\"get\\"] = true, [\\"set\\"] = true, [\\"is\\"] = true, [\\"has\\"] = true, [\\"can\\"] = true, [\\"do\\"] = true,
-                    [\\"if\\"] = true, [\\"then\\"] = true, [\\"else\\"] = true, [\\"elseif\\"] = true, [\\"end\\"] = true,
-                    [\\"while\\"] = true, [\\"for\\"] = true, [\\"in\\"] = true, [\\"do\\"] = true, [\\"repeat\\"] = true, [\\"until\\"] = true,
-                    [\\"function\\"] = true, [\\"return\\"] = true, [\\"break\\"] = true, [\\"continue\\"] = true, [\\"makefolder\\"] = true,
-                    [\\"end\\"] = true, [\\"isfile\\"] = true, [\\"isfolder\\"] = true, [\\"is\\"] = true, [\\"has\\"] = true, [\\"can\\"] = true
-                }
-                if common_names[name:lower()] then
-                    return true
-                end
-                -- Check if it's mostly readable characters (not random gibberish)
-                -- More strict: must have reasonable vowel-to-consonant ratio and not look like base64 or encoded
-                local lower_name = name:lower()
-                local vowels = 0
-                local consonants = 0
-                for char in lower_name:gmatch(\\"[a-z]\\") do
-                    if char:match(\\"[aeiou]\\") then
-                        vowels = vowels + 1
-                    else
-                        consonants = consonants + 1
-                    end
-                end
-                -- Must have reasonable vowel ratio and not be too long or look like encoded strings
-                if vowels > 0 and consonants > 0 and vowels / (vowels + consonants) >= 0.3 and #name <= 10 then
-                    return true
-                end
-            end
-            return false
-        end
-        
-        -- Find all local variable declarations (including hexadecimal-style names)
-        for var_name in R:gmatch(\\"local%s+([%a_][%w_]*)\\") do
-            if not is_readable_name(var_name) and not variable_map[var_name] then
-                t.variable_counter = t.variable_counter + 1
-                if t.variable_counter == 1 then
-                    variable_map[var_name] = \\"v1\\"
-                elseif t.variable_counter == 2 then
-                    variable_map[var_name] = \\"v2\\"
-                elseif t.variable_counter == 3 then
-                    variable_map[var_name] = \\"v3\\"
-                else
-                    variable_map[var_name] = \\"v\\" .. t.variable_counter
-                end
-            end
-        end
-        for var_name in R:gmatch(\\"local%s+(_0[xX][%w_]*)\\") do
-            if not is_readable_name(var_name) and not variable_map[var_name] then
-                t.variable_counter = t.variable_counter + 1
-                if t.variable_counter == 1 then
-                    variable_map[var_name] = \\"v1\\"
-                elseif t.variable_counter == 2 then
-                    variable_map[var_name] = \\"v2\\"
-                elseif t.variable_counter == 3 then
-                    variable_map[var_name] = \\"v3\\"
-                else
-                    variable_map[var_name] = \\"v\\" .. t.variable_counter
-                end
-            end
-        end
-        for var_name in R:gmatch(\\"local%s+(_[%w][%w_]*)\\") do
-            if not is_readable_name(var_name) and not variable_map[var_name] then
-                t.variable_counter = t.variable_counter + 1
-                if t.variable_counter == 1 then
-                    variable_map[var_name] = \\"v1\\"
-                elseif t.variable_counter == 2 then
-                    variable_map[var_name] = \\"v2\\"
-                elseif t.variable_counter == 3 then
-                    variable_map[var_name] = \\"v3\\"
-                else
-                    variable_map[var_name] = \\"v\\" .. t.variable_counter
-                end
-            end
-        end
-        
-        -- Replace variables throughout the code (identifier-boundary aware)
-        for original_var, new_var in pairs(variable_map) do
-            R = R:gsub(\\"%f[%w_]\\" .. original_var .. \\"%f[^%w_]\\", new_var)
-        end
-        
-        -- Additional pass: replace any remaining hexadecimal-style variables (identifier-boundary aware)
-        local hex_var_counter = t.variable_counter
-        R = R:gsub(\\"%f[%w_](_0[xX][%w_]*)%f[^%w_]\\", function(match)
-            if not variable_map[match] then
-                hex_var_counter = hex_var_counter + 1
-                if hex_var_counter == 1 then
-                    variable_map[match] = \\"v1\\"
-                elseif hex_var_counter == 2 then
-                    variable_map[match] = \\"v2\\"
-                elseif hex_var_counter == 3 then
-                    variable_map[match] = \\"v3\\"
-                else
-                    variable_map[match] = \\"v\\" .. hex_var_counter
-                end
-            end
-            return variable_map[match]
-        end)
-        
-        -- Fix scoping issues: ensure all replaced variables are properly accessible
-        -- Add global declarations for any variables that might be accessed before declaration
-        local global_declarations = {}
-        for original_var, new_var in pairs(variable_map) do
-            -- Declare all renamed variables globally to prevent undefined reference errors
-            if new_var:match(\\"^v%d+$\\") then
-                table.insert(global_declarations, new_var .. \\" = \\" .. new_var .. \\" or nil\\")
-            end
-        end
-        if #global_declarations > 0 then
-            R = \\"-- Auto-generated variable declarations\\n\\" .. table.concat(global_declarations, \\"\\n\\") .. \\"\\n\\" .. R
-        end
-        -- Wrap probable deobfuscator calls: Function(\\"\229...\\", \\"\126...\\")
-        -- We look for calls where at least one argument is a complex escaped string
-        R = R:gsub(\\"([%a_][%w_.]+)%s*%((%s*\\\"[^\\\"]*\\\\[%d]+\\\"[^\\\"]*\\\"%s*,?%s*\\\"?[^\\\"]*\\\"?%s*%)\\", \\"LUNR_STR(%1(%2))\\")
-        
-        -- Loader pattern detection - capture patterns like return _Loader(_Code)(...)
-        R = R:gsub(\\"return%s+([%a_][%w_]*)%s*%(([%a_][%w_]*)%)%s*%(([^%)]+)%)\\", function(loader, code, args)
-            -- Add debug print before the return statement
-            return \\"print(\\" .. loader .. \\"(\\" .. code .. \\")(\\" .. args .. \\"))\\nreturn \\" .. loader .. \\"(\\" .. code .. \\")(\\" .. args .. \\")\\"
-        end)
-        
-        -- Hook pattern detection - capture patterns like hook(print, loadstring)
-        R = R:gsub(\\"hook%s*%(%s*([%a_][%w_]*)%s*,%s*([%a_][%w_]*)%s*%)\\", function(target, func)
-            -- Add debug print for hook
-            return \\"hook(\\" .. target .. \\", \\" .. func .. \\")\\nprint(\\" .. func .. \\" hooked to \\" .. target .. \\")\\"
-        end)
-
-        R = R:gsub(\\"([^%w_])continue([^%w_])\\", \\"%1_G.LuraphContinue()%2\\")
-        R = R:gsub(\\"^continue([^%w_])\\", \\"_G.LuraphContinue()%1\\")
-        R = R:gsub(\\"([^%w_])continue$\\", \\"%1_G.LuraphContinue()\\")
-        return R
-    end
-    local function a0(a1)
-        local a2 = 0
-        while a1 <= M and J:byte(a1) == 61 do
-            a2 = a2 + 1
-            a1 = a1 + 1
-        end
-        return a2, a1
-    end
-    local function a3(a4, a5)
-        local a6 = \\"]\\" .. string.rep(\\"=\\", a5) .. \\"]\\"
-        local a7, a8 = J:find(a6, a4, true)
-        return a8 or M
-    end
-    local a9 = 1
-    while L <= M do
-        local aa = J:byte(L)
-        if aa == 91 then
-            local a5, ab = a0(L + 1)
-            if ab <= M and J:byte(ab) == 91 then
-                table.insert(K, Q(J:sub(a9, L - 1)))
-                local ac = L
-                local ad = a3(ab + 1, a5)
-                table.insert(K, J:sub(ac, ad))
-                L = ad
-                a9 = L + 1
-            end
-        elseif aa == 45 and L + 1 <= M and J:byte(L + 1) == 45 then
-            table.insert(K, Q(J:sub(a9, L - 1)))
-            local ae = L
-            if L + 2 <= M and J:byte(L + 2) == 91 then
-                local a5, ab = a0(L + 3)
-                if ab <= M and J:byte(ab) == 91 then
-                    local ad = a3(ab + 1, a5)
-                    table.insert(K, J:sub(ae, ad))
-                    L = ad
-                    a9 = L + 1
-                    L = L + 1
-                end
-            end
-            local af = J:find(\\"\\\\\n\\", L + 2, true)
-            if af then
-                L = af
-            else
-                L = M
-            end
-            table.insert(K, J:sub(ae, L))
-            a9 = L + 1
-        elseif aa == 34 or aa == 39 or aa == 96 then
-            table.insert(K, Q(J:sub(a9, L - 1)))
-            local ag = aa
-            local ac = L
-            L = L + 1
-            while L <= M do
-                local ah = J:byte(L)
-                if ah == 92 then
-                    L = L + 1
-                elseif ah == ag then
-                    break
-                end
-                L = L + 1
-            end
-            local ai = J:sub(ac + 1, L - 1)
-            ai = N(ai)
-            if ag == 96 then
-                table.insert(K, '\\"' .. ai:gsub('\\"', '\\\\\\\\\\"') .. '\\"')
-            else
-                local aj = string.char(ag)
-                table.insert(K, aj .. ai .. aj)
-            end
-            a9 = L + 1
-        end
-        L = L + 1
-    end
-    table.insert(K, Q(J:sub(a9)))
-    return table.concat(K)
-end
-local function ak(al, am)
-    local R, an = e(al, am)
-    if R then
-        return R
-    end
-    B(\\"\\\\\n[CRITICAL ERROR] Failed to load script!\\")
-    B(\\"[LUA_LOAD_FAIL] \\" .. m(an))
-    local ao = tonumber(an:match(\\":(%d+):\\"))
-    local ap = an:match(\\"near '([^']+)'\\")
-    if ap then
-        local a1 = al:find(ap, 1, true)
-        if a1 then
-            local aq = math.max(1, a1 - 50)
-            local ar = math.min(#al, a1 + 50)
-            B(\\"Context around error:\\")
-            B(\\"...\\" .. al:sub(aq, ar) .. \\"...\\")
-        end
-    end
-    local as = o.open(\\"DEBUG_FAILED_TRANSPILE.lua\\", \\"w\\")
-    if as then
-        as:write(al)
-        as:close()
-        B(\\"[*] Saved to 'DEBUG_FAILED_TRANSPILE.lua' for inspection\\")
-    end
-    return nil, an
-end
-local function at(O, au)
-    if t.limit_reached then
-        return
-    end
-    if O == nil then
-        return
-    end
-    
-    -- SECURITY: Check for binary patterns and replace with friendly message
-    local O_str = m(O)
-    if O_str:match(\\"^[01]+$\\") and (#O_str >= 10 or O_str:match(\\"have a nice day!\\")) then
-        O_str = \\"have a nice day!\\"
-    elseif O_str:match(\\"have a nice day!\\") then
-        O_str = O_str:gsub(\\"have a nice day!\\", \\"have a nice day!\\")
-    end
-    
-    local av = au and \\"\\" or string.rep(\\"    \\", t.indent)
-    local aw = av .. O_str
-    local ax = #aw + 1
-    if t.current_size + ax > r.MAX_OUTPUT_SIZE then
-        t.limit_reached = true
-        local ay = \\"-- [CRITICAL] Dump stopped: File size exceeded 10MB limit.\\"
-        table.insert(t.output, ay)
-        t.current_size = t.current_size + #ay
-        error(\\"DUMP_LIMIT_EXCEEDED\\")
-    end
-
-    if not av then
-        -- Advanced Cycle Detection with iteration limit
-        t.cycle_history = t.cycle_history or {}
-        local current_raw = m(O)
-        table.insert(t.cycle_history, current_raw)
-        if #t.cycle_history > 60 then
-            table.remove(t.cycle_history, 1)
-        end
-        local b_cycle = false
-        local iteration_count = 0
-        for L = 1, 15 do  -- Limit to 15 iterations to prevent infinite loops
-            iteration_count = iteration_count + 1
-            if iteration_count > 1000 then  -- Bypass after 1000 iterations
-                table.insert(t.output, (au and \\"\\" or string.rep(\\"    \\", t.indent)) .. \\"-- LOOP_LIMIT_EXCEEDED: Stopped after 1000 iterations\\")
-                t.limit_reached = true
-                break
-            end
-            if #t.cycle_history >= L * 3 then
-                local match = true
-                for i = 0, L - 1 do
-                    if t.cycle_history[#t.cycle_history - i] ~= t.cycle_history[#t.cycle_history - i - L] or 
-                       t.cycle_history[#t.cycle_history - i] ~= t.cycle_history[#t.cycle_history - i - 2 * L] then
-                        match = false
-                        break
-                    end
-                end
-                if match then
-                    b_cycle = true
-                    break
-                end
-            end
-        end
-
-        if b_cycle then
-            t.cycle_miss = 0
-            if not t.in_cycle then
-                table.insert(t.output, string.rep(\\"    \\", t.indent) .. \\"while true do\\")
-                t.indent = t.indent + 1
-                t.in_cycle = true
-
-                -- emit repeated line ONCE
-                at(O, au, true)   -- original line
-
-                -- then immediately error (unless it's a wait loop) and stop execution
-                local lineStr = m(O)
-                if not (lineStr:find(\\"wait\\") or lineStr:find(\\"Wait\\")) then
-                    table.insert(t.output, string.rep(\\"    \\", t.indent) .. \\"error('lunr: infinite loop detected and stopped')\\")
-                    error('lunr: infinite loop detected and stopped')
-                end
-
-                -- Recalculate aw for current line after exiting cycle
-                aw = au and m(O) or (string.rep(\\"    \\", t.indent) .. m(O))
-                ax = #aw + 1
-            else
-                return false
-            end
-        end
-    end
-
-    t.last_emitted_line = aw
-    table.insert(t.output, aw)
-    t.current_size = t.current_size + ax
-    if r.VERBOSE then
-        B(aw)
-    end
-    return true
-end
-local function az(O)
-    at(\\"-- \\" .. m(O or \\"\\"), true, true)
-end
-local function aA()
-    t.last_emitted_line = nil
-    table.insert(t.output, \\"\\")
-end
-local function aB()
-    if t.in_cycle then
-        t.indent = t.indent - 1
-        table.insert(t.output, string.rep(\\"    \\", t.indent) .. \\"end\\")
-        t.in_cycle = false
-    end
-    return table.concat(t.output, \\"\\n\\")
-end
-local function aC(aD)
-    local as = o.open(aD or r.OUTPUT_FILE, \\"w\\")
-    if as then
-        as:write(aB())
-        as:close()
-        return true
-    end
-    return false
-end
-local function aE(aF)
-    if aF == nil then
-        return \\"nil\\"
-    end
-    if j(aF) == \\"string\\" then
-        return aF
-    end
-    if j(aF) == \\"number\\" or j(aF) == \\"boolean\\" then
-        return m(aF)
-    end
-    if j(aF) == \\"table\\" then
-        if t.registry[aF] then
-            return t.registry[aF]
-        end
-        if G(aF) then
-            local aG = H(aF)
-            return aG and \\"proxy_\\" .. aG or \\"proxy\\"
-        end
-    end
-    local y, O = pcall(m, aF)
-    return y and O or \\"unknown\\"
-end
-local function aH(aF)
-    local O = aE(aF)
-    local aI =
-        O:gsub(\\"\\\\\\\\\\", \\"\\\\\\\\\\\\\\\\\\"):gsub('\\"', '\\\\\\\\\\"'):gsub(\\"\\\\\n\\", \\"\\\\\\\\\n\\"):gsub(\\"\\\\\r\\", \\"\\\\\\\\\r\\"):gsub(\\"\\\\\t\\", \\"\\\\\\\\\t\\")
-    return '\\"' .. aI .. '\\"'
-end
-local aJ = {
-    Players = \\"Players\\",
-    Workspace = \\"Workspace\\",
-    ReplicatedStorage = \\"ReplicatedStorage\\",
-    ServerStorage = \\"ServerStorage\\",
-    ServerScriptService = \\"ServerScriptService\\",
-    StarterGui = \\"StarterGui\\",
-    StarterPack = \\"StarterPack\\",
-    StarterPlayer = \\"StarterPlayer\\",
-    Lighting = \\"Lighting\\",
-    SoundService = \\"SoundService\\",
-    Chat = \\"Chat\\",
-    RunService = \\"RunService\\",
-    UserInputService = \\"UserInputService\\",
-    TweenService = \\"TweenService\\",
-    HttpService = \\"HttpService\\",
-    MarketplaceService = \\"MarketplaceService\\",
-    RbxAnalyticsService = \\"RbxAnalyticsService\\",
-    TeleportService = \\"TeleportService\\",
-    PathfindingService = \\"PathfindingService\\",
-    CollectionService = \\"CollectionService\\",
-    PhysicsService = \\"PhysicsService\\",
-    ProximityPromptService = \\"ProximityPromptService\\",
-    ContextActionService = \\"ContextActionService\\",
-    GuiService = \\"GuiService\\",
-    HapticService = \\"HapticService\\",
-    VRService = \\"VRService\\",
-    CoreGui = \\"CoreGui\\",
-    Teams = \\"Teams\\",
-    InsertService = \\"InsertService\\",
-    DataStoreService = \\"DataStoreService\\",
-    MessagingService = \\"MessagingService\\",
-    TextService = \\"TextService\\",
-    TextChatService = \\"TextChatService\\",
-    ContentProvider = \\"ContentProvider\\",
-    Debris = \\"Debris\\"
-}
-local aK = {
-    Players = \\"Players\\",
-    UserInputService = \\"UIS\\",
-    RunService = \\"RunService\\",
-    ReplicatedStorage = \\"ReplicatedStorage\\",
-    TweenService = \\"TweenService\\",
-    Workspace = \\"Workspace\\",
-    Lighting = \\"Lighting\\",
-    StarterGui = \\"StarterGui\\",
-    CoreGui = \\"CoreGui\\",
-    HttpService = \\"HttpService\\",
-    MarketplaceService = \\"MarketplaceService\\",
-    RbxAnalyticsService = \\"RbxAnalyticsService\\",
-    DataStoreService = \\"DataStoreService\\",
-    TeleportService = \\"TeleportService\\",
-    SoundService = \\"SoundService\\",
-    Chat = \\"Chat\\",
-    Teams = \\"Teams\\",
-    ProximityPromptService = \\"ProximityPromptService\\",
-    ContextActionService = \\"ContextActionService\\",
-    CollectionService = \\"CollectionService\\",
-    PathfindingService = \\"PathfindingService\\",
-    Debris = \\"Debris\\"
-}
-local aL = {
-    {pattern = \\"window\\", prefix = \\"Window\\", counter = \\"window\\"},
-    {pattern = \\"tab\\", prefix = \\"Tab\\", counter = \\"tab\\"},
-    {pattern = \\"section\\", prefix = \\"Section\\", counter = \\"section\\"},
-    {pattern = \\"button\\", prefix = \\"Button\\", counter = \\"button\\"},
-    {pattern = \\"toggle\\", prefix = \\"Toggle\\", counter = \\"toggle\\"},
-    {pattern = \\"slider\\", prefix = \\"Slider\\", counter = \\"slider\\"},
-    {pattern = \\"dropdown\\", prefix = \\"Dropdown\\", counter = \\"dropdown\\"},
-    {pattern = \\"textbox\\", prefix = \\"Textbox\\", counter = \\"textbox\\"},
-    {pattern = \\"input\\", prefix = \\"Input\\", counter = \\"input\\"},
-    {pattern = \\"label\\", prefix = \\"Label\\", counter = \\"label\\"},
-    {pattern = \\"keybind\\", prefix = \\"Keybind\\", counter = \\"keybind\\"},
-    {pattern = \\"colorpicker\\", prefix = \\"ColorPicker\\", counter = \\"colorpicker\\"},
-    {pattern = \\"paragraph\\", prefix = \\"Paragraph\\", counter = \\"paragraph\\"},
-    {pattern = \\"notification\\", prefix = \\"Notification\\", counter = \\"notification\\"},
-    {pattern = \\"divider\\", prefix = \\"Divider\\", counter = \\"divider\\"},
-    {pattern = \\"bind\\", prefix = \\"Bind\\", counter = \\"bind\\"},
-    {pattern = \\"picker\\", prefix = \\"Picker\\", counter = \\"picker\\"}
-}
-local aM = {}
-local function aN(aO)
-    aM[aO] = (aM[aO] or 0) + 1
-    return aM[aO]
-end
-local function aP(aQ, aR, aS)
-    if not aQ then
-        aQ = \\"var\\"
-    end
-    local aT = aE(aQ)
-    if aK[aT] then
-        return aK[aT]
-    end
-    if aS then
-        local aU = aS:lower()
-        for W, aV in ipairs(aL) do
-            if aU:find(aV.pattern) then
-                local a2 = aN(aV.counter)
-                return a2 == 1 and aV.prefix or aV.prefix .. a2
-            end
-        end
-    end
-    if aT == \\"LocalPlayer\\" then
-        return \\"LocalPlayer\\"
-    end
-    if aT == \\"Character\\" then
-        return \\"Character\\"
-    end
-    if aT == \\"Humanoid\\" then
-        return \\"Humanoid\\"
-    end
-    if aT == \\"HumanoidRootPart\\" then
-        return \\"HumanoidRootPart\\"
-    end
-    if aT == \\"Camera\\" then
-        return \\"Camera\\"
-    end
-    if aT:match(\\"^Enum%.\\") or aT == \\"TweenInfo\\" or aT == \\"CFrame\\" or aT == \\"Vector3\\" or aT == \\"Color3\\" then
-        return aT
-    end
-    local services = {
-        Players = \\"Players\\",
-        CoreGui = \\"CoreGui\\",
-        TweenService = \\"TweenService\\",
-        RunService = \\"RunService\\",
-        UserInputService = \\"UIS\\",
-        HttpService = \\"HttpService\\",
-        ReplicatedStorage = \\"ReplicatedStorage\\",
-        TeleportService = \\"TeleportService\\",
-        StarterGui = \\"StarterGui\\",
-        LogService = \\"LogService\\",
-        DataStoreService = \\"DSS\\",
-        MarketplaceService = \\"MarketplaceService\\",
-        RbxAnalyticsService = \\"RbxAnalyticsService\\",
-        
-        Workspace = \\"Workspace\\",
-        Lighting = \\"Lighting\\",
-        SoundService = \\"SoundService\\",
-        Debris = \\"Debris\\",
-        CollectionService = \\"CollectionService\\",
-        ContextActionService = \\"CAS\\",
-        GuiService = \\"GuiService\\",
-        StarterPlayer = \\"StarterPlayer\\",
-        ServerScriptService = \\"SSS\\",
-        ServerStorage = \\"ServerStorage\\",
-        StarterPack = \\"StarterPack\\",
-        Teams = \\"Teams\\",
-        Chat = \\"Chat\\",
-        TextService = \\"TextService\\",
-        ProximityPromptService = \\"ProximityPromptService\\",
-        PathfindingService = \\"PathfindingService\\",
-        PhysicsService = \\"PhysicsService\\",
-        BadgeService = \\"BadgeService\\",
-
-        PlayerGui = \\"PlayerGui\\",
-        StarterCharacterScripts = \\"StarterCharScripts\\",
-        ContentProvider = \\"ContentProvider\\",
-
-        AnalyticsService = \\"Analytics\\",
-        AdService = \\"AdService\\",
-        AssetService = \\"AssetService\\",
-        AvatarEditorService = \\"AvatarEditor\\",
-
-        HapticService = \\"HapticService\\",
-        GamepadService = \\"GamepadService\\",
-        VRService = \\"VRService\\",
-        TouchInputService = \\"TouchInput\\",
-
-        StudioService = \\"StudioService\\",
-        ChangeHistoryService = \\"ChangeHistory\\",
-        Selection = \\"Selection\\",
-
-        NetworkClient = \\"NetworkClient\\",
-        NetworkServer = \\"NetworkServer\\",
-        MemoryStoreService = \\"MemoryStore\\",
-
-        AudioService = \\"Audio\\",
-
-        CookiesService = \\"Cookies\\",
-        FriendService = \\"FriendService\\",
-        GroupService = \\"GroupService\\",
-        InsertService = \\"InsertService\\",
-        JointsService = \\"JointsService\\",
-        Stats = \\"Stats\\",
-        TestService = \\"TestService\\",
-        ReplicatedFirst = \\"ReplicatedFirst\\",
-        ScriptService = \\"ScriptService\\",
-
-        CreatorStoreService = \\"CreatorStore\\",
-        CaptureService = \\"CaptureService\\",
-        CommerceService = \\"Commerce\\",
-        ControllerService = \\"ControllerService\\",
-        ReflectionService = \\"Reflection\\",
-
-        AssetDeliveryProxy = \\"AssetProxy\\",
-        ConfigureServerService = \\"ConfigureServer\\",
-    }
-    if services[aT] then return services[aT] end
-
-    local function make_valid_identifier(name)
-        name = tostring(name or \\"\\")
-        name = name:gsub(\\"[^%w_]\\", \\"_\\")
-        name = name:gsub(\\"_+\\", \\"_\\")
-        name = name:gsub(\\"^_+\\", \\"\\")
-        if name:match(\\"^%d\\") then
-            name = \\"v\\" .. name
-        end
-        if name == \\"\\" then
-            name = \\"lunr\\"
-        end
-        local reserved = {
-            [\\"and\\"] = true, [\\"break\\"] = true, [\\"do\\"] = true, [\\"else\\"] = true, [\\"elseif\\"] = true,
-            [\\"end\\"] = true, [\\"false\\"] = true, [\\"for\\"] = true, [\\"function\\"] = true, [\\"if\\"] = true,
-            [\\"in\\"] = true, [\\"local\\"] = true, [\\"nil\\"] = true, [\\"not\\"] = true, [\\"or\\"] = true,
-            [\\"repeat\\"] = true, [\\"return\\"] = true, [\\"then\\"] = true, [\\"true\\"] = true, [\\"until\\"] = true,
-            [\\"while\\"] = true
-        }
-        if reserved[name] then
-            name = \\"v_\\" .. name
-        end
-        return name
-    end
-
-    local T = make_valid_identifier(aT)
-    if T == \\"Object\\" or T == \\"Value\\" or T == \\"result\\" then
-        T = \\"lunr\\"
-    end
-    return T
-end
-local function aW(x, aQ, aX, aS)
-    local aY = t.registry[x]
-    if aY then
-        return aY
-    end
-    
-    local preferred_name = aP(aQ, nil, aS)
-    local am = preferred_name
-    
-    -- If the name is generic or taken, add a counter
-    if am == \\"var\\" or t.names_used[am] then
-        t.var_counter = (t.var_counter or 0) + 1
-        am = am .. t.var_counter
-    end
-    
-    t.names_used[am] = true
-    t.registry[x] = am
-    t.reverse_registry[am] = x
-    t.variable_types[am] = aX or j(x)
-    return am
-end
-local function aZ(aF, a_, b0, b1)
-    a_ = a_ or 0
-    b0 = b0 or {}
-    if a_ > r.MAX_DEPTH then
-        return \\"{ --[[max depth]] }\\"
-    end
-    local b2 = j(aF)
-    if w(aF) then
-        local b3 = rawget(aF, \\"__value\\")
-        return m(b3 or 0)
-    end
-    if b2 == \\"table\\" and t.registry[aF] then
-        return t.registry[aF]
-    end
-    if b2 == \\"nil\\" then
-        return \\"nil\\"
-    elseif b2 == \\"string\\" then
-        if #aF > 100 and aF:match(\\"^[A-Za-z0-9+/=]+$\\") then
-            table.insert(t.string_refs, {value = aF:sub(1, 50) .. \\"...\\", hint = \\"base64\\", full_length = #aF})
-        elseif aF:match(\\"https?://\\") then
-            table.insert(t.string_refs, {value = aF, hint = \\"URL\\"})
-        elseif aF:match(\\"rbxasset://\\") or aF:match(\\"rbxassetid://\\") then
-            table.insert(t.string_refs, {value = aF, hint = \\"Asset\\"})
-        end
-        return aH(aF)
-    elseif b2 == \\"number\\" then
-        if aF ~= aF then
-            return \\"0/0\\"
-        end
-        if aF == math.huge then
-            return \\"math.huge\\"
-        end
-        if aF == -math.huge then
-            return \\"-math.huge\\"
-        end
-        if aF == math.floor(aF) then
-            return m(math.floor(aF))
-        end
-        return string.format(\\"%.6g\\", aF)
-    elseif b2 == \\"boolean\\" then
-        return m(aF)
-    elseif b2 == \\"function\\" then
-        if t.registry[aF] then
-            return t.registry[aF]
-        end
-        -- Try to extract source
-        local info = debug.getinfo(aF)
-        if not info then
-            return \\"function() --[[ No debug info available ]] end\\"
-        end
-        if info.source and info.source:match(\\"loadstring\\") == nil and not info.source:match(\\"^@\\") and #info.source < 1000 then
-             -- If source is available (e.g. from loadstring) and not a file path
-             return info.source
-        end
-        -- Try to decompile (mock) or return signature
-        local params = \\"\\"
-        if info.nparams and info.nparams > 0 then
-             for i=1, info.nparams do 
-                params = params .. (i>1 and \\", p\\" or \\"p\\")..i 
-             end
-        end
-        if info.is_vararg == 1 then 
-            params = params .. (params~=\\"\\" and \\", ...\\" or \\"...\\") 
-        end
-        return string.format(\\"function(%s) --[[ Source: %s ]] end\\", params, (info.source and info.source:sub(1,50) or \\"unknown\\"))
-    elseif b2 == \\"table\\" then
-        if G(aF) then
-            return t.registry[aF] or \\"proxy\\"
-        end
-        if b0[aF] then
-            return \\"{ --[[circulunr]] }\\"
-        end
-        b0[aF] = true
-        local a2 = 0
-        for b4, b5 in D(aF) do
-            if b4 ~= F and b4 ~= \\"__proxy_id\\" then
-                a2 = a2 + 1
-            end
-        end
-        if a2 == 0 then
-            return \\"{}\\"
-        end
-        local b6 = true
-        local b7 = 0
-        for b4, b5 in D(aF) do
-            if b4 ~= F and b4 ~= \\"__proxy_id\\" then
-                if j(b4) ~= \\"number\\" or b4 < 1 or b4 ~= math.floor(b4) then
-                    b6 = false
-                    break
-                else
-                    b7 = math.max(b7, b4)
-                end
-            end
-        end
-        b6 = b6 and b7 == a2
-        if b6 and a2 <= 5 and b1 ~= false then
-            local b8 = {}
-            for L = 1, a2 do
-                local b5 = aF[L]
-                if j(b5) ~= \\"table\\" or G(b5) then
-                    table.insert(b8, aZ(b5, a_ + 1, b0, true))
-                else
-                    b6 = false
-                    break
-                end
-            end
-            if b6 and #b8 == a2 then
-                return \\"{\\" .. table.concat(b8, \\", \\") .. \\"}\\"
-            end
-        end
-        local b9 = {}
-        local ba = 0
-        local bb = string.rep(\\"    \\", t.indent + a_ + 1)
-        local bc = string.rep(\\"    \\", t.indent + a_)
-        for b4, b5 in D(aF) do
-            if b4 ~= F and b4 ~= \\"__proxy_id\\" then
-                ba = ba + 1
-                if ba > r.MAX_TABLE_ITEMS then
-                    table.insert(b9, bb .. \\"-- ...\\" .. a2 - ba + 1 .. \\" more\\")
-                    break
-                end
-                local bd
-                if b6 then
-                    bd = nil
-                elseif j(b4) == \\"string\\" and b4:match(\\"^[%a_][%w_]*$\\") then
-                    bd = b4
-                else
-                    bd = \\"[\\" .. aZ(b4, a_ + 1, b0) .. \\"]\\"
-                end
-                local be = aZ(b5, a_ + 1, b0)
-                if bd then
-                    table.insert(b9, bb .. bd .. \\" = \\" .. be)
-                else
-                    table.insert(b9, bb .. be)
-                end
-            end
-        end
-        if #b9 == 0 then
-            return \\"{}\\"
-        end
-        return \\"{\\n\\" .. table.concat(b9, \\",\\n\\") .. \\"\\n\\" .. bc .. \\"}\\"
-    elseif b2 == \\"userdata\\" then
-        if t.registry[aF] then
-            return t.registry[aF]
-        end
-        local y, O = pcall(m, aF)
-        return y and O or \\"userdata\\"
-    elseif b2 == \\"thread\\" then
-        return \\"coroutine.create(function() end)\\"
-    else
-        local y, O = pcall(m, aF)
-        return y and O or \\"nil\\"
-    end
-end
-local bf = {}
-setmetatable(bf, {__mode = \\"k\\"})
-local function bg()
-    local bh = {}
-    bf[bh] = true
-    local bi = {}
-    setmetatable(bh, bi)
-    return bh, bi
-end
-local function G(x)
-    return bf[x] == true
-end
-local bj
-local bk
-local function bl(bm)
-    local bh, bi = bg()
-    rawset(bh, v, true)
-    rawset(bh, \\"__value\\", bm)
-    t.registry[bh] = tostring(bm)
-    bi.__tostring = function()
-        return tostring(bm)
-    end
-    bi.__index = function(b2, b4)
-        if b4 == F or b4 == \\"__proxy_id\\" or b4 == v or b4 == \\"__value\\" then
-            return rawget(b2, b4)
-        end
-        return bl(0)
-    end
-    bi.__newindex = function()
-    end
-    bi.__call = function()
-        return bm
-    end
-    local function bn(X)
-        return function(bo, aa)
-            local bp = type(bo) == \\"table\\" and rawget(bo, \\"__value\\") or bo or 0
-            local bq = type(aa) == \\"table\\" and rawget(aa, \\"__value\\") or aa or 0
-            local z
-            if X == \\"+\\" then
-                z = bp + bq
-            elseif X == \\"-\\" then
-                z = bp - bq
-            elseif X == \\"*\\" then
-                z = bp * bq
-            elseif X == \\"/\\" then
-                z = bq ~= 0 and bp / bq or 0
-            elseif X == \\"%\\" then
-                z = bq ~= 0 and bp % bq or 0
-            elseif X == \\"^\\" then
-                z = bp ^ bq
-            else
-                z = 0
-            end
-            return bl(z)
-        end
-    end
-    bi.__add = bn(\\"+\\")
-    bi.__sub = bn(\\"-\\")
-    bi.__mul = bn(\\"*\\")
-    bi.__div = bn(\\"/\\")
-    bi.__mod = bn(\\"%\\")
-    bi.__pow = bn(\\"^\\")
-    bi.__unm = function(bo)
-        return bl(-(rawget(bo, \\"__value\\") or 0))
-    end
-    bi.__eq = function(bo, aa)
-        local bp = type(bo) == \\"table\\" and rawget(bo, \\"__value\\") or bo
-        local bq = type(aa) == \\"table\\" and rawget(aa, \\"__value\\") or aa
-        return bp == bq
-    end
-    bi.__lt = function(bo, aa)
-        local bp = type(bo) == \\"table\\" and rawget(bo, \\"__value\\") or bo
-        local bq = type(aa) == \\"table\\" and rawget(aa, \\"__value\\") or aa
-        return bp < bq
-    end
-    bi.__le = function(bo, aa)
-        local bp = type(bo) == \\"table\\" and rawget(bo, \\"__value\\") or bo
-        local bq = type(aa) == \\"table\\" and rawget(aa, \\"__value\\") or aa
-        return bp <= bq
-    end
-    bi.__len = function()
-        return 0
-    end
-    return bh
-end
-local function br(bs, bt)
-    if j(bs) ~= \\"function\\" then
-        return {}
-    end
-    
-    -- Create a wrapper function that captures the execution
-    local captured_lines = {}
-    local original_at = at
-    local capture_at = function(O, au)
-        table.insert(captured_lines, O)
-        return original_at(O, au)
-    end
-    
-    -- Temporarily replace at function
-    at = capture_at
-    
-    -- Execute the function to capture its output
-    xpcall(
-        function()
-            bs(table.unpack(bt or {}))
-        end,
-        function(err)
-            -- Ignore errors during capture
-        end
-    )
-    
-    -- Restore original at function
-    at = original_at
-    
-    return captured_lines
-end
-bk = function(aS, bw)
-    local bh, bi = bg()
-    local bP = {}  -- method table for this proxy (used by __index); bj() defines its own bP for returned proxies
-    local bx = t.registry[bw] or \\"object\\"
-
-    -- Check for name hint from HttpGet/loadstring flow
-    local hintName = nil
-    if _G._NextNameHint then
-        hintName = _G._NextNameHint
-        _G._NextNameHint = nil
-    end
-    
-    local by = aE(aS)
-    -- Check for name hint from HttpGet/loadstring flow
-    local hintName = nil
-    if _G._NextNameHint then
-        hintName = _G._NextNameHint
-        _G._NextNameHint = nil
-    end
-    bi.__call = function(self, bz, ...)
-        if by == \\"InvalidMethod\\" then
-            error(\\"attempt to call a nil value (method 'InvalidMethod')\\", 2)
-        end
-        local bA
-        if bz == bh or bz == bw or G(bz) then
-            bA = {...}
-        else
-            bA = {bz, ...}
-        end
-        local aU = by:lower()
-        local bB = nil
-        local bC = true
-        for W, aV in ipairs(aL) do
-            if aU:find(aV.pattern) then
-                bB = aV.prefix
-                break
-            end
-        end
-        local bD = nil
-        local bE = nil
-        local bF = nil
-        for L, b5 in ipairs(bA) do
-            if j(b5) == \\"function\\" then
-                bD = b5
-                break
-            elseif j(b5) == \\"table\\" and not G(b5) then
-                for bG, aF in D(b5) do
-                    local bH = m(bG):lower()
-                    if bH == \\"callback\\" and j(aF) == \\"function\\" then
-                        bD = aF
-                        bE = bG
-                        bF = L
-                        break
-                    end
-                end
-            end
-        end
-        local bI = \\"value\\"
-        local bt = {}
-        if bD then
-            if aU:match(\\"toggle\\") then
-                bI = \\"enabled\\"
-                bt = {true}
-            elseif aU:match(\\"slider\\") then
-                bI = \\"value\\"
-                bt = {50}
-            elseif aU:match(\\"dropdown\\") then
-                bI = \\"selected\\"
-                bt = {\\"Option\\"}
-            elseif aU:match(\\"textbox\\") or aU:match(\\"input\\") then
-                bI = \\"text\\"
-                bt = {s or \\"input\\"}
-            elseif aU:match(\\"keybind\\") or aU:match(\\"bind\\") then
-                bI = \\"key\\"
-                bt = {bj(\\"Enum.KeyCode.E\\", false)}
-            elseif aU:match(\\"color\\") then
-                bI = \\"color\\"
-                bt = {Color3.fromRGB(255, 255, 255)}
-            elseif aU:match(\\"button\\") then
-                bI = \\"\\\\\\"
-                bt = {}
-            end
-        end
-        local bJ = {}
-        if bD then
-            bJ = br(bD, bt)
-        end
-        local z = bj(bB or by, false, bw)
-        local _ = aW(z, bB or by, nil, by)
-        local bK = {}
-        for L, b5 in ipairs(bA) do
-            if j(b5) == \\"table\\" and not G(b5) and L == bF then
-                local b8 = {}
-                for bG, aF in D(b5) do
-                    local bd
-                    if j(bG) == \\"string\\" and bG:match(\\"^[%a_][%w_]*$\\") then
-                        bd = bG
-                    else
-                        bd = \\"[\\" .. aZ(bG) .. \\"]\\"
-                    end
-                    if bG == bE and #bJ > 0 then
-                        local bL = bI ~= '\\"' and \\"function(\\" .. \\"bI\\" .. \\")\\" or \\"function()\\"
-                        local bb = string.rep(\\"    \\", t.indent + 2)
+            if name:match('"') or name:match("'") then\n                return false\n            end\n            -- Check if name is readable English or common programming terms\n            if name:match("^[%a_][%w%d]*$") or name:match("^_[%w][%w_]*$") then\n                -- Hexadecimal-style names like _0x1a2b3c are always considered unreadable\n                if name:match("^_0[xX]") then\n                    return false\n                end\n                local common_names = {\n                    ["i"] = true, ["j"] = true, ["k"] = true, ["v"] = true, ["x"] = true, ["y"] = true, ["z"] = true,\n                    ["temp"] = true, ["tmp"] = true, ["count"] = true, ["index"] = true, ["idx"] = true,\n                    ["len"] = true, ["length"] = true, ["size"] = true, ["num"] = true, ["number"] = true,\n                    ["str"] = true, ["string"] = true, ["text"] = true, ["data"] = true, ["value"] = true,\n                    ["result"] = true, ["output"] = true, ["return"] = true, ["ret"] = true, ["val"] = true,\n                    ["func"] = true, ["function"] = true, ["fn"] = true, ["method"] = true, ["callback"] = true,\n                    ["obj"] = true, ["object"] = true, ["item"] = true, ["element"] = true, ["elem"] = true,\n                    ["arr"] = true, ["array"] = true, ["list"] = true, ["table"] = true, ["map"] = true,\n                    ["key"] = true, ["value"] = true, ["pair"] = true, ["entry"] = true, ["node"] = true,\n                    ["parent"] = true, ["child"] = true, ["next"] = true, ["prev"] = true, ["current"] = true,\n                    ["first"] = true, ["last"] = true, ["start"] = true, ["begin"] = true, ["end"] = true,\n                    ["true"] = true, ["false"] = true, ["nil"] = true, ["self"] = true, ["this"] = true,\n                    ["module"] = true, ["require"] = true, ["import"] = true, ["export"] = true,\n                    ["local"] = true, ["global"] = true, ["const"] = true, ["var"] = true, ["let"] = true,\n                    ["game"] = true, ["workspace"] = true, ["players"] = true, ["script"] = true,\n                    ["task"] = true, ["t"] = true,\n                    ["event"] = true, ["signal"] = true, ["connect"] = true, ["disconnect"] = true,\n                    ["new"] = true, ["create"] = true, ["destroy"] = true, ["remove"] = true, ["delete"] = true,\n                    ["get"] = true, ["set"] = true, ["is"] = true, ["has"] = true, ["can"] = true, ["do"] = true,\n                    ["if"] = true, ["then"] = true, ["else"] = true, ["elseif"] = true, ["end"] = true,\n                    ["while"] = true, ["for"] = true, ["in"] = true, ["do"] = true, ["repeat"] = true, ["until"] = true,\n                    ["function"] = true, ["return"] = true, ["break"] = true, ["continue"] = true, ["makefolder"] = true,\n                    ["end"] = true, ["isfile"] = true, ["isfolder"] = true, ["is"] = true, ["has"] = true, ["can"] = true\n                }\n                if common_names[name:lower()] then\n                    return true\n                end\n                -- Check if it's mostly readable characters (not random gibberish)\n                -- More strict: must have reasonable vowel-to-consonant ratio and not look like base64 or encoded\n                local lower_name = name:lower()\n                local vowels = 0\n                local consonants = 0\n                for char in lower_name:gmatch("[a-z]") do\n                    if char:match("[aeiou]") then\n                        vowels = vowels + 1\n                    else\n                        consonants = consonants + 1\n                    end\n                end\n                -- Must have reasonable vowel ratio and not be too long or look like encoded strings\n                if vowels > 0 and consonants > 0 and vowels / (vowels + consonants) >= 0.3 and #name <= 10 then\n                    return true\n                end\n            end\n            return false\n        end\n        \n        -- Find all local variable declarations (including hexadecimal-style names)\n        for var_name in R:gmatch("local%s+([%a_][%w_]*)") do\n            if not is_readable_name(var_name) and not variable_map[var_name] then\n                t.variable_counter = t.variable_counter + 1\n                if t.variable_counter == 1 then\n                    variable_map[var_name] = "v1"\n                elseif t.variable_counter == 2 then\n                    variable_map[var_name] = "v2"\n                elseif t.variable_counter == 3 then\n                    variable_map[var_name] = "v3"\n                else\n                    variable_map[var_name] = "v" .. t.variable_counter\n                end\n            end\n        end\n        for var_name in R:gmatch("local%s+(_0[xX][%w_]*)") do\n            if not is_readable_name(var_name) and not variable_map[var_name] then\n                t.variable_counter = t.variable_counter + 1\n                if t.variable_counter == 1 then\n                    variable_map[var_name] = "v1"\n                elseif t.variable_counter == 2 then\n                    variable_map[var_name] = "v2"\n                elseif t.variable_counter == 3 then\n                    variable_map[var_name] = "v3"\n                else\n                    variable_map[var_name] = "v" .. t.variable_counter\n                end\n            end\n        end\n        for var_name in R:gmatch("local%s+(_[%w][%w_]*)") do\n            if not is_readable_name(var_name) and not variable_map[var_name] then\n                t.variable_counter = t.variable_counter + 1\n                if t.variable_counter == 1 then\n                    variable_map[var_name] = "v1"\n                elseif t.variable_counter == 2 then\n                    variable_map[var_name] = "v2"\n                elseif t.variable_counter == 3 then\n                    variable_map[var_name] = "v3"\n                else\n                    variable_map[var_name] = "v" .. t.variable_counter\n                end\n            end\n        end\n        \n        -- Replace variables throughout the code (identifier-boundary aware)\n        for original_var, new_var in pairs(variable_map) do\n            R = R:gsub("%f[%w_]" .. original_var .. "%f[^%w_]", new_var)\n        end\n        \n        -- Additional pass: replace any remaining hexadecimal-style variables (identifier-boundary aware)\n        local hex_var_counter = t.variable_counter\n        R = R:gsub("%f[%w_](_0[xX][%w_]*)%f[^%w_]", function(match)\n            if not variable_map[match] then\n                hex_var_counter = hex_var_counter + 1\n                if hex_var_counter == 1 then\n                    variable_map[match] = "v1"\n                elseif hex_var_counter == 2 then\n                    variable_map[match] = "v2"\n                elseif hex_var_counter == 3 then\n                    variable_map[match] = "v3"\n                else\n                    variable_map[match] = "v" .. hex_var_counter\n                end\n            end\n            return variable_map[match]\n        end)\n        \n        -- Fix scoping issues: ensure all replaced variables are properly accessible\n        -- Add global declarations for any variables that might be accessed before declaration\n        local global_declarations = {}\n        for original_var, new_var in pairs(variable_map) do\n            -- Declare all renamed variables globally to prevent undefined reference errors\n            if new_var:match("^v%d+$") then\n                table.insert(global_declarations, new_var .. " = " .. new_var .. " or nil")\n            end\n        end\n        if #global_declarations > 0 then\n            R = "-- Auto-generated variable declarations\n" .. table.concat(global_declarations, "\n") .. "\n" .. R\n        end\n        -- Wrap probable deobfuscator calls: Function("\229...", "\126...")\n        -- We look for calls where at least one argument is a complex escaped string\n        R = R:gsub("([%a_][%w_.]+)%s*%((%s*\"[^\"]*\\[%d]+\"[^\"]*\"%s*,?%s*\"?[^\"]*\"?%s*%)", "LUNR_STR(%1(%2))")\n        \n        -- Loader pattern detection - capture patterns like return _Loader(_Code)(...)\n        R = R:gsub("return%s+([%a_][%w_]*)%s*%(([%a_][%w_]*)%)%s*%(([^%)]+)%)", function(loader, code, args)\n            -- Add debug print before the return statement\n            return "print(" .. loader .. "(" .. code .. ")(" .. args .. "))\nreturn " .. loader .. "(" .. code .. ")(" .. args .. ")"\n        end)\n        \n        -- Hook pattern detection - capture patterns like hook(print, loadstring)\n        R = R:gsub("hook%s*%(%s*([%a_][%w_]*)%s*,%s*([%a_][%w_]*)%s*%)", function(target, func)\n            -- Add debug print for hook\n            return "hook(" .. target .. ", " .. func .. ")\nprint(" .. func .. " hooked to " .. target .. ")"\n        end)\n\n        R = R:gsub("([^%w_])continue([^%w_])", "%1_G.LuraphContinue()%2")\n        R = R:gsub("^continue([^%w_])", "_G.LuraphContinue()%1")\n        R = R:gsub("([^%w_])continue$", "%1_G.LuraphContinue()")\n        return R\n    end\n    local function a0(a1)\n        local a2 = 0\n        while a1 <= M and J:byte(a1) == 61 do\n            a2 = a2 + 1\n            a1 = a1 + 1\n        end\n        return a2, a1\n    end\n    local function a3(a4, a5)\n        local a6 = "]" .. string.rep("=", a5) .. "]"\n        local a7, a8 = J:find(a6, a4, true)\n        return a8 or M\n    end\n    local a9 = 1\n    while L <= M do\n        local aa = J:byte(L)\n        if aa == 91 then\n            local a5, ab = a0(L + 1)\n            if ab <= M and J:byte(ab) == 91 then\n                table.insert(K, Q(J:sub(a9, L - 1)))\n                local ac = L\n                local ad = a3(ab + 1, a5)\n                table.insert(K, J:sub(ac, ad))\n                L = ad\n                a9 = L + 1\n            end\n        elseif aa == 45 and L + 1 <= M and J:byte(L + 1) == 45 then\n            table.insert(K, Q(J:sub(a9, L - 1)))\n            local ae = L\n            if L + 2 <= M and J:byte(L + 2) == 91 then\n                local a5, ab = a0(L + 3)\n                if ab <= M and J:byte(ab) == 91 then\n                    local ad = a3(ab + 1, a5)\n                    table.insert(K, J:sub(ae, ad))\n                    L = ad\n                    a9 = L + 1\n                    L = L + 1\n                end\n            end\n            local af = J:find("\\\n", L + 2, true)\n            if af then\n                L = af\n            else\n                L = M\n            end\n            table.insert(K, J:sub(ae, L))\n            a9 = L + 1\n        elseif aa == 34 or aa == 39 or aa == 96 then\n            table.insert(K, Q(J:sub(a9, L - 1)))\n            local ag = aa\n            local ac = L\n            L = L + 1\n            while L <= M do\n                local ah = J:byte(L)\n                if ah == 92 then\n                    L = L + 1\n                elseif ah == ag then\n                    break\n                end\n                L = L + 1\n            end\n            local ai = J:sub(ac + 1, L - 1)\n            ai = N(ai)\n            if ag == 96 then\n                table.insert(K, '"' .. ai:gsub('"', '\\\\"') .. '"')\n            else\n                local aj = string.char(ag)\n                table.insert(K, aj .. ai .. aj)\n            end\n            a9 = L + 1\n        end\n        L = L + 1\n    end\n    table.insert(K, Q(J:sub(a9)))\n    return table.concat(K)\nend\nlocal function ak(al, am)\n    local R, an = e(al, am)\n    if R then\n        return R\n    end\n    B("\\\n[CRITICAL ERROR] Failed to load script!")\n    B("[LUA_LOAD_FAIL] " .. m(an))\n    local ao = tonumber(an:match(":(%d+):"))\n    local ap = an:match("near '([^']+)'")\n    if ap then\n        local a1 = al:find(ap, 1, true)\n        if a1 then\n            local aq = math.max(1, a1 - 50)\n            local ar = math.min(#al, a1 + 50)\n            B("Context around error:")\n            B("..." .. al:sub(aq, ar) .. "...")\n        end\n    end\n    local as = o.open("DEBUG_FAILED_TRANSPILE.lua", "w")\n    if as then\n        as:write(al)\n        as:close()\n        B("[*] Saved to 'DEBUG_FAILED_TRANSPILE.lua' for inspection")\n    end\n    return nil, an\nend\nlocal function at(O, au)\n    if t.limit_reached then\n        return\n    end\n    if O == nil then\n        return\n    end\n    \n    -- SECURITY: Check for binary patterns and replace with friendly message\n    local O_str = m(O)\n    if O_str:match("^[01]+$") and (#O_str >= 10 or O_str:match("have a nice day!")) then\n        O_str = "have a nice day!"\n    elseif O_str:match("have a nice day!") then\n        O_str = O_str:gsub("have a nice day!", "have a nice day!")\n    end\n    \n    local av = au and "" or string.rep("    ", t.indent)\n    local aw = av .. O_str\n    local ax = #aw + 1\n    if t.current_size + ax > r.MAX_OUTPUT_SIZE then\n        t.limit_reached = true\n        local ay = "-- [CRITICAL] Dump stopped: File size exceeded 10MB limit."\n        table.insert(t.output, ay)\n        t.current_size = t.current_size + #ay\n        error("DUMP_LIMIT_EXCEEDED")\n    end\n\n    if not av then\n        -- Advanced Cycle Detection with iteration limit\n        t.cycle_history = t.cycle_history or {}\n        local current_raw = m(O)\n        table.insert(t.cycle_history, current_raw)\n        if #t.cycle_history > 60 then\n            table.remove(t.cycle_history, 1)\n        end\n        local b_cycle = false\n        local iteration_count = 0\n        for L = 1, 15 do  -- Limit to 15 iterations to prevent infinite loops\n            iteration_count = iteration_count + 1\n            if iteration_count > 1000 then  -- Bypass after 1000 iterations\n                table.insert(t.output, (au and "" or string.rep("    ", t.indent)) .. "-- LOOP_LIMIT_EXCEEDED: Stopped after 1000 iterations")\n                t.limit_reached = true\n                break\n            end\n            if #t.cycle_history >= L * 3 then\n                local match = true\n                for i = 0, L - 1 do\n                    if t.cycle_history[#t.cycle_history - i] ~= t.cycle_history[#t.cycle_history - i - L] or \n                       t.cycle_history[#t.cycle_history - i] ~= t.cycle_history[#t.cycle_history - i - 2 * L] then\n                        match = false\n                        break\n                    end\n                end\n                if match then\n                    b_cycle = true\n                    break\n                end\n            end\n        end\n\n        if b_cycle then\n            t.cycle_miss = 0\n            if not t.in_cycle then\n                table.insert(t.output, string.rep("    ", t.indent) .. "while true do")\n                t.indent = t.indent + 1\n                t.in_cycle = true\n\n                -- emit repeated line ONCE\n                at(O, au, true)   -- original line\n\n                -- then immediately error (unless it's a wait loop) and stop execution\n                local lineStr = m(O)\n                if not (lineStr:find("wait") or lineStr:find("Wait")) then\n                    table.insert(t.output, string.rep("    ", t.indent) .. "error('lunr: infinite loop detected and stopped')")\n                    error('lunr: infinite loop detected and stopped')\n                end\n\n                -- Recalculate aw for current line after exiting cycle\n                aw = au and m(O) or (string.rep("    ", t.indent) .. m(O))\n                ax = #aw + 1\n            else\n                return false\n            end\n        end\n    end\n\n    t.last_emitted_line = aw\n    table.insert(t.output, aw)\n    t.current_size = t.current_size + ax\n    if r.VERBOSE then\n        B(aw)\n    end\n    return true\nend\nlocal function az(O)\n    at("-- " .. m(O or ""), true, true)\nend\nlocal function aA()\n    t.last_emitted_line = nil\n    table.insert(t.output, "")\nend\nlocal function aB()\n    if t.in_cycle then\n        t.indent = t.indent - 1\n        table.insert(t.output, string.rep("    ", t.indent) .. "end")\n        t.in_cycle = false\n    end\n    return table.concat(t.output, "\n")\nend\nlocal function aC(aD)\n    local as = o.open(aD or r.OUTPUT_FILE, "w")\n    if as then\n        as:write(aB())\n        as:close()\n        return true\n    end\n    return false\nend\nlocal function aE(aF)\n    if aF == nil then\n        return "nil"\n    end\n    if j(aF) == "string" then\n        return aF\n    end\n    if j(aF) == "number" or j(aF) == "boolean" then\n        return m(aF)\n    end\n    if j(aF) == "table" then\n        if t.registry[aF] then\n            return t.registry[aF]\n        end\n        if G(aF) then\n            local aG = H(aF)\n            return aG and "proxy_" .. aG or "proxy"\n        end\n    end\n    local y, O = pcall(m, aF)\n    return y and O or "unknown"\nend\nlocal function aH(aF)\n    local O = aE(aF)\n    local aI =\n        O:gsub("\\\\", "\\\\\\\\"):gsub('"', '\\\\"'):gsub("\\\n", "\\\\\n"):gsub("\\\r", "\\\\\r"):gsub("\\\t", "\\\\\t")\n    return '"' .. aI .. '"'\nend\nlocal aJ = {\n    Players = "Players",\n    Workspace = "Workspace",\n    ReplicatedStorage = "ReplicatedStorage",\n    ServerStorage = "ServerStorage",\n    ServerScriptService = "ServerScriptService",\n    StarterGui = "StarterGui",\n    StarterPack = "StarterPack",\n    StarterPlayer = "StarterPlayer",\n    Lighting = "Lighting",\n    SoundService = "SoundService",\n    Chat = "Chat",\n    RunService = "RunService",\n    UserInputService = "UserInputService",\n    TweenService = "TweenService",\n    HttpService = "HttpService",\n    MarketplaceService = "MarketplaceService",\n    RbxAnalyticsService = "RbxAnalyticsService",\n    TeleportService = "TeleportService",\n    PathfindingService = "PathfindingService",\n    CollectionService = "CollectionService",\n    PhysicsService = "PhysicsService",\n    ProximityPromptService = "ProximityPromptService",\n    ContextActionService = "ContextActionService",\n    GuiService = "GuiService",\n    HapticService = "HapticService",\n    VRService = "VRService",\n    CoreGui = "CoreGui",\n    Teams = "Teams",\n    InsertService = "InsertService",\n    DataStoreService = "DataStoreService",\n    MessagingService = "MessagingService",\n    TextService = "TextService",\n    TextChatService = "TextChatService",\n    ContentProvider = "ContentProvider",\n    Debris = "Debris"\n}\nlocal aK = {\n    Players = "Players",\n    UserInputService = "UIS",\n    RunService = "RunService",\n    ReplicatedStorage = "ReplicatedStorage",\n    TweenService = "TweenService",\n    Workspace = "Workspace",\n    Lighting = "Lighting",\n    StarterGui = "StarterGui",\n    CoreGui = "CoreGui",\n    HttpService = "HttpService",\n    MarketplaceService = "MarketplaceService",\n    RbxAnalyticsService = "RbxAnalyticsService",\n    DataStoreService = "DataStoreService",\n    TeleportService = "TeleportService",\n    SoundService = "SoundService",\n    Chat = "Chat",\n    Teams = "Teams",\n    ProximityPromptService = "ProximityPromptService",\n    ContextActionService = "ContextActionService",\n    CollectionService = "CollectionService",\n    PathfindingService = "PathfindingService",\n    Debris = "Debris"\n}\nlocal aL = {\n    {pattern = "window", prefix = "Window", counter = "window"},\n    {pattern = "tab", prefix = "Tab", counter = "tab"},\n    {pattern = "section", prefix = "Section", counter = "section"},\n    {pattern = "button", prefix = "Button", counter = "button"},\n    {pattern = "toggle", prefix = "Toggle", counter = "toggle"},\n    {pattern = "slider", prefix = "Slider", counter = "slider"},\n    {pattern = "dropdown", prefix = "Dropdown", counter = "dropdown"},\n    {pattern = "textbox", prefix = "Textbox", counter = "textbox"},\n    {pattern = "input", prefix = "Input", counter = "input"},\n    {pattern = "label", prefix = "Label", counter = "label"},\n    {pattern = "keybind", prefix = "Keybind", counter = "keybind"},\n    {pattern = "colorpicker", prefix = "ColorPicker", counter = "colorpicker"},\n    {pattern = "paragraph", prefix = "Paragraph", counter = "paragraph"},\n    {pattern = "notification", prefix = "Notification", counter = "notification"},\n    {pattern = "divider", prefix = "Divider", counter = "divider"},\n    {pattern = "bind", prefix = "Bind", counter = "bind"},\n    {pattern = "picker", prefix = "Picker", counter = "picker"}\n}\nlocal aM = {}\nlocal function aN(aO)\n    aM[aO] = (aM[aO] or 0) + 1\n    return aM[aO]\nend\nlocal function aP(aQ, aR, aS)\n    if not aQ then\n        aQ = "var"\n    end\n    local aT = aE(aQ)\n    if aK[aT] then\n        return aK[aT]\n    end\n    if aS then\n        local aU = aS:lower()\n        for W, aV in ipairs(aL) do\n            if aU:find(aV.pattern) then\n                local a2 = aN(aV.counter)\n                return a2 == 1 and aV.prefix or aV.prefix .. a2\n            end\n        end\n    end\n    if aT == "LocalPlayer" then\n        return "LocalPlayer"\n    end\n    if aT == "Character" then\n        return "Character"\n    end\n    if aT == "Humanoid" then\n        return "Humanoid"\n    end\n    if aT == "HumanoidRootPart" then\n        return "HumanoidRootPart"\n    end\n    if aT == "Camera" then\n        return "Camera"\n    end\n    if aT:match("^Enum%.") or aT == "TweenInfo" or aT == "CFrame" or aT == "Vector3" or aT == "Color3" then\n        return aT\n    end\n    local services = {\n        Players = "Players",\n        CoreGui = "CoreGui",\n        TweenService = "TweenService",\n        RunService = "RunService",\n        UserInputService = "UIS",\n        HttpService = "HttpService",\n        ReplicatedStorage = "ReplicatedStorage",\n        TeleportService = "TeleportService",\n        StarterGui = "StarterGui",\n        LogService = "LogService",\n        DataStoreService = "DSS",\n        MarketplaceService = "MarketplaceService",\n        RbxAnalyticsService = "RbxAnalyticsService",\n        \n        Workspace = "Workspace",\n        Lighting = "Lighting",\n        SoundService = "SoundService",\n        Debris = "Debris",\n        CollectionService = "CollectionService",\n        ContextActionService = "CAS",\n        GuiService = "GuiService",\n        StarterPlayer = "StarterPlayer",\n        ServerScriptService = "SSS",\n        ServerStorage = "ServerStorage",\n        StarterPack = "StarterPack",\n        Teams = "Teams",\n        Chat = "Chat",\n        TextService = "TextService",\n        ProximityPromptService = "ProximityPromptService",\n        PathfindingService = "PathfindingService",\n        PhysicsService = "PhysicsService",\n        BadgeService = "BadgeService",\n\n        PlayerGui = "PlayerGui",\n        StarterCharacterScripts = "StarterCharScripts",\n        ContentProvider = "ContentProvider",\n\n        AnalyticsService = "Analytics",\n        AdService = "AdService",\n        AssetService = "AssetService",\n        AvatarEditorService = "AvatarEditor",\n\n        HapticService = "HapticService",\n        GamepadService = "GamepadService",\n        VRService = "VRService",\n        TouchInputService = "TouchInput",\n\n        StudioService = "StudioService",\n        ChangeHistoryService = "ChangeHistory",\n        Selection = "Selection",\n\n        NetworkClient = "NetworkClient",\n        NetworkServer = "NetworkServer",\n        MemoryStoreService = "MemoryStore",\n\n        AudioService = "Audio",\n\n        CookiesService = "Cookies",\n        FriendService = "FriendService",\n        GroupService = "GroupService",\n        InsertService = "InsertService",\n        JointsService = "JointsService",\n        Stats = "Stats",\n        TestService = "TestService",\n        ReplicatedFirst = "ReplicatedFirst",\n        ScriptService = "ScriptService",\n\n        CreatorStoreService = "CreatorStore",\n        CaptureService = "CaptureService",\n        CommerceService = "Commerce",\n        ControllerService = "ControllerService",\n        ReflectionService = "Reflection",\n\n        AssetDeliveryProxy = "AssetProxy",\n        ConfigureServerService = "ConfigureServer",\n    }\n    if services[aT] then return services[aT] end\n\n    local function make_valid_identifier(name)\n        name = tostring(name or "")\n        name = name:gsub("[^%w_]", "_")\n        name = name:gsub("_+", "_")\n        name = name:gsub("^_+", "")\n        if name:match("^%d") then\n            name = "v" .. name\n        end\n        if name == "" then\n            name = "lunr"\n        end\n        local reserved = {\n            ["and"] = true, ["break"] = true, ["do"] = true, ["else"] = true, ["elseif"] = true,\n            ["end"] = true, ["false"] = true, ["for"] = true, ["function"] = true, ["if"] = true,\n            ["in"] = true, ["local"] = true, ["nil"] = true, ["not"] = true, ["or"] = true,\n            ["repeat"] = true, ["return"] = true, ["then"] = true, ["true"] = true, ["until"] = true,\n            ["while"] = true\n        }\n        if reserved[name] then\n            name = "v_" .. name\n        end\n        return name\n    end\n\n    local T = make_valid_identifier(aT)\n    if T == "Object" or T == "Value" or T == "result" then\n        T = "lunr"\n    end\n    return T\nend\nlocal function aW(x, aQ, aX, aS)\n    local aY = t.registry[x]\n    if aY then\n        return aY\n    end\n    \n    local preferred_name = aP(aQ, nil, aS)\n    local am = preferred_name\n    \n    -- If the name is generic or taken, add a counter\n    if am == "var" or t.names_used[am] then\n        t.var_counter = (t.var_counter or 0) + 1\n        am = am .. t.var_counter\n    end\n    \n    t.names_used[am] = true\n    t.registry[x] = am\n    t.reverse_registry[am] = x\n    t.variable_types[am] = aX or j(x)\n    return am\nend\nlocal function aZ(aF, a_, b0, b1)\n    a_ = a_ or 0\n    b0 = b0 or {}\n    if a_ > r.MAX_DEPTH then\n        return "{ --[[max depth]] }"\n    end\n    local b2 = j(aF)\n    if w(aF) then\n        local b3 = rawget(aF, "__value")\n        return m(b3 or 0)\n    end\n    if b2 == "table" and t.registry[aF] then\n        return t.registry[aF]\n    end\n    if b2 == "nil" then\n        return "nil"\n    elseif b2 == "string" then\n        if #aF > 100 and aF:match("^[A-Za-z0-9+/=]+$") then\n            table.insert(t.string_refs, {value = aF:sub(1, 50) .. "...", hint = "base64", full_length = #aF})\n        elseif aF:match("https?://") then\n            table.insert(t.string_refs, {value = aF, hint = "URL"})\n        elseif aF:match("rbxasset://") or aF:match("rbxassetid://") then\n            table.insert(t.string_refs, {value = aF, hint = "Asset"})\n        end\n        return aH(aF)\n    elseif b2 == "number" then\n        if aF ~= aF then\n            return "0/0"\n        end\n        if aF == math.huge then\n            return "math.huge"\n        end\n        if aF == -math.huge then\n            return "-math.huge"\n        end\n        if aF == math.floor(aF) then\n            return m(math.floor(aF))\n        end\n        return string.format("%.6g", aF)\n    elseif b2 == "boolean" then\n        return m(aF)\n    elseif b2 == "function" then\n        if t.registry[aF] then\n            return t.registry[aF]\n        end\n        -- Try to extract source\n        local info = debug.getinfo(aF)\n        if not info then\n            return "function() --[[ No debug info available ]] end"\n        end\n        if info.source and info.source:match("loadstring") == nil and not info.source:match("^@") and #info.source < 1000 then\n             -- If source is available (e.g. from loadstring) and not a file path\n             return info.source\n        end\n        -- Try to decompile (mock) or return signature\n        local params = ""\n        if info.nparams and info.nparams > 0 then\n             for i=1, info.nparams do \n                params = params .. (i>1 and ", p" or "p")..i \n             end\n        end\n        if info.is_vararg == 1 then \n            params = params .. (params~="" and ", ..." or "...") \n        end\n        return string.format("function(%s) --[[ Source: %s ]] end", params, (info.source and info.source:sub(1,50) or "unknown"))\n    elseif b2 == "table" then\n        if G(aF) then\n            return t.registry[aF] or "proxy"\n        end\n        if b0[aF] then\n            return "{ --[[circulunr]] }"\n        end\n        b0[aF] = true\n        local a2 = 0\n        for b4, b5 in D(aF) do\n            if b4 ~= F and b4 ~= "__proxy_id" then\n                a2 = a2 + 1\n            end\n        end\n        if a2 == 0 then\n            return "{}"\n        end\n        local b6 = true\n        local b7 = 0\n        for b4, b5 in D(aF) do\n            if b4 ~= F and b4 ~= "__proxy_id" then\n                if j(b4) ~= "number" or b4 < 1 or b4 ~= math.floor(b4) then\n                    b6 = false\n                    break\n                else\n                    b7 = math.max(b7, b4)\n                end\n            end\n        end\n        b6 = b6 and b7 == a2\n        if b6 and a2 <= 5 and b1 ~= false then\n            local b8 = {}\n            for L = 1, a2 do\n                local b5 = aF[L]\n                if j(b5) ~= "table" or G(b5) then\n                    table.insert(b8, aZ(b5, a_ + 1, b0, true))\n                else\n                    b6 = false\n                    break\n                end\n            end\n            if b6 and #b8 == a2 then\n                return "{" .. table.concat(b8, ", ") .. "}"\n            end\n        end\n        local b9 = {}\n        local ba = 0\n        local bb = string.rep("    ", t.indent + a_ + 1)\n        local bc = string.rep("    ", t.indent + a_)\n        for b4, b5 in D(aF) do\n            if b4 ~= F and b4 ~= "__proxy_id" then\n                ba = ba + 1\n                if ba > r.MAX_TABLE_ITEMS then\n                    table.insert(b9, bb .. "-- ..." .. a2 - ba + 1 .. " more")\n                    break\n                end\n                local bd\n                if b6 then\n                    bd = nil\n                elseif j(b4) == "string" and b4:match("^[%a_][%w_]*$") then\n                    bd = b4\n                else\n                    bd = "[" .. aZ(b4, a_ + 1, b0) .. "]"\n                end\n                local be = aZ(b5, a_ + 1, b0)\n                if bd then\n                    table.insert(b9, bb .. bd .. " = " .. be)\n                else\n                    table.insert(b9, bb .. be)\n                end\n            end\n        end\n        if #b9 == 0 then\n            return "{}"\n        end\n        return "{\n" .. table.concat(b9, ",\n") .. "\n" .. bc .. "}"\n    elseif b2 == "userdata" then\n        if t.registry[aF] then\n            return t.registry[aF]\n        end\n        local y, O = pcall(m, aF)\n        return y and O or "userdata"\n    elseif b2 == "thread" then\n        return "coroutine.create(function() end)"\n    else\n        local y, O = pcall(m, aF)\n        return y and O or "nil"\n    end\nend\nlocal bf = {}\nsetmetatable(bf, {__mode = "k"})\nlocal function bg()\n    local bh = {}\n    bf[bh] = true\n    local bi = {}\n    setmetatable(bh, bi)\n    return bh, bi\nend\nlocal function G(x)\n    return bf[x] == true\nend\nlocal bj\nlocal bk\nlocal function bl(bm)\n    local bh, bi = bg()\n    rawset(bh, v, true)\n    rawset(bh, "__value", bm)\n    t.registry[bh] = tostring(bm)\n    bi.__tostring = function()\n        return tostring(bm)\n    end\n    bi.__index = function(b2, b4)\n        if b4 == F or b4 == "__proxy_id" or b4 == v or b4 == "__value" then\n            return rawget(b2, b4)\n        end\n        return bl(0)\n    end\n    bi.__newindex = function()\n    end\n    bi.__call = function()\n        return bm\n    end\n    local function bn(X)\n        return function(bo, aa)\n            local bp = type(bo) == "table" and rawget(bo, "__value") or bo or 0\n            local bq = type(aa) == "table" and rawget(aa, "__value") or aa or 0\n            local z\n            if X == "+" then\n                z = bp + bq\n            elseif X == "-" then\n                z = bp - bq\n            elseif X == "*" then\n                z = bp * bq\n            elseif X == "/" then\n                z = bq ~= 0 and bp / bq or 0\n            elseif X == "%" then\n                z = bq ~= 0 and bp % bq or 0\n            elseif X == "^" then\n                z = bp ^ bq\n            else\n                z = 0\n            end\n            return bl(z)\n        end\n    end\n    bi.__add = bn("+")\n    bi.__sub = bn("-")\n    bi.__mul = bn("*")\n    bi.__div = bn("/")\n    bi.__mod = bn("%")\n    bi.__pow = bn("^")\n    bi.__unm = function(bo)\n        return bl(-(rawget(bo, "__value") or 0))\n    end\n    bi.__eq = function(bo, aa)\n        local bp = type(bo) == "table" and rawget(bo, "__value") or bo\n        local bq = type(aa) == "table" and rawget(aa, "__value") or aa\n        return bp == bq\n    end\n    bi.__lt = function(bo, aa)\n        local bp = type(bo) == "table" and rawget(bo, "__value") or bo\n        local bq = type(aa) == "table" and rawget(aa, "__value") or aa\n        return bp < bq\n    end\n    bi.__le = function(bo, aa)\n        local bp = type(bo) == "table" and rawget(bo, "__value") or bo\n        local bq = type(aa) == "table" and rawget(aa, "__value") or aa\n        return bp <= bq\n    end\n    bi.__len = function()\n        return 0\n    end\n    return bh\nend\nlocal function br(bs, bt)\n    if j(bs) ~= "function" then\n        return {}\n    end\n    \n    -- Create a wrapper function that captures the execution\n    local captured_lines = {}\n    local original_at = at\n    local capture_at = function(O, au)\n        table.insert(captured_lines, O)\n        return original_at(O, au)\n    end\n    \n    -- Temporarily replace at function\n    at = capture_at\n    \n    -- Execute the function to capture its output\n    xpcall(\n        function()\n            bs(table.unpack(bt or {}))\n        end,\n        function(err)\n            -- Ignore errors during capture\n        end\n    )\n    \n    -- Restore original at function\n    at = original_at\n    \n    return captured_lines\nend\nbk = function(aS, bw)\n    local bh, bi = bg()\n    local bP = {}  -- method table for this proxy (used by __index); bj() defines its own bP for returned proxies\n    local bx = t.registry[bw] or "object"\n\n    -- Check for name hint from HttpGet/loadstring flow\n    local hintName = nil\n    if _G._NextNameHint then\n        hintName = _G._NextNameHint\n        _G._NextNameHint = nil\n    end\n    \n    local by = aE(aS)\n    -- Check for name hint from HttpGet/loadstring flow\n    local hintName = nil\n    if _G._NextNameHint then\n        hintName = _G._NextNameHint\n        _G._NextNameHint = nil\n    end\n    bi.__call = function(self, bz, ...)\n        if by == "InvalidMethod" then\n            error("attempt to call a nil value (method 'InvalidMethod')", 2)\n        end\n        local bA\n        if bz == bh or bz == bw or G(bz) then\n            bA = {...}\n        else\n            bA = {bz, ...}\n        end\n        local aU = by:lower()\n        local bB = nil\n        local bC = true\n        for W, aV in ipairs(aL) do\n            if aU:find(aV.pattern) then\n                bB = aV.prefix\n                break\n            end\n        end\n        local bD = nil\n        local bE = nil\n        local bF = nil\n        for L, b5 in ipairs(bA) do\n            if j(b5) == "function" then\n                bD = b5\n                break\n            elseif j(b5) == "table" and not G(b5) then\n                for bG, aF in D(b5) do\n                    local bH = m(bG):lower()\n                    if bH == "callback" and j(aF) == "function" then\n                        bD = aF\n                        bE = bG\n                        bF = L\n                        break\n                    end\n                end\n            end\n        end\n        local bI = "value"\n        local bt = {}\n        if bD then\n            if aU:match("toggle") then\n                bI = "enabled"\n                bt = {true}\n            elseif aU:match("slider") then\n                bI = "value"\n                bt = {50}\n            elseif aU:match("dropdown") then\n                bI = "selected"\n                bt = {"Option"}\n            elseif aU:match("textbox") or aU:match("input") then\n                bI = "text"\n                bt = {s or "input"}\n            elseif aU:match("keybind") or aU:match("bind") then\n                bI = "key"\n                bt = {bj("Enum.KeyCode.E", false)}\n            elseif aU:match("color") then\n                bI = "color"\n                bt = {Color3.fromRGB(255, 255, 255)}\n            elseif aU:match("button") then\n                bI = "\\"\n                bt = {}\n            end\n        end\n        local bJ = {}\n        if bD then\n            bJ = br(bD, bt)\n        end\n        local z = bj(bB or by, false, bw)\n        local _ = aW(z, bB or by, nil, by)\n        local bK = {}\n        for L, b5 in ipairs(bA) do\n            if j(b5) == "table" and not G(b5) and L == bF then\n                local b8 = {}\n                for bG, aF in D(b5) do\n                    local bd\n                    if j(bG) == "string" and bG:match("^[%a_][%w_]*$") then\n                        bd = bG\n                    else\n                        bd = "[" .. aZ(bG) .. "]"\n                    end\n                    if bG == bE and #bJ > 0 then\n                        local bL = bI ~= '"' and "function(" .. "bI" .. ")" or "function()"
+                        local bb = string.rep("    ", t.indent + 2)
                         local bM = {}
                         for W, aw in ipairs(bJ) do
-                            table.insert(bM, bb .. (aw:match(\\"^%s*(.*)$\\") or aw))
+                            table.insert(bM, bb .. (aw:match("^%s*(.*)$") or aw))
                         end
-                        local bc = string.rep(\\"    \\", t.indent + 1)
-                        table.insert(b8, bd .. \\" = \\" .. bL .. \\"\\n\\" .. table.concat(bM, \\"\\n\\") .. \\"\\n\\" .. bc .. \\"end\\")
+                        local bc = string.rep("    ", t.indent + 1)
+                        table.insert(b8, bd .. " = " .. bL .. "\n" .. table.concat(bM, "\n") .. "\n" .. bc .. "end")
                     elseif bG == bE then
-                        local bN = bI ~= \\"\\\\\\" and \\"function(\\" .. bI .. \\") end\\" or \\"function() end\\"
-                        table.insert(b8, bd .. \\" = \\" .. bN)
+                        local bN = bI ~= "\\" and "function(" .. bI .. ") end" or "function() end"
+                        table.insert(b8, bd .. " = " .. bN)
                     else
-                        table.insert(b8, bd .. \\" = \\" .. aZ(aF))
+                        table.insert(b8, bd .. " = " .. aZ(aF))
                     end
                 end
                 table.insert(
                     bK,
-                    \\"{\\\\\n\\" ..
-                        string.rep(\\"    \\", t.indent + 1) ..
-                            table.concat(b8, \\",\\\\\n\\" .. string.rep(\\"    \\", t.indent + 1)) ..
-                                \\"\\\\\n\\" .. string.rep(\\"    \\", t.indent) .. \\"}\\"
+                    "{\\\n" ..
+                        string.rep("    ", t.indent + 1) ..
+                            table.concat(b8, ",\\\n" .. string.rep("    ", t.indent + 1)) ..
+                                "\\\n" .. string.rep("    ", t.indent) .. "}"
                 )
-            elseif j(b5) == \\"function\\" then
+            elseif j(b5) == "function" then
                 if #bJ > 0 then
-                    local bL = bI ~= '\\"' and \\"function(\\" .. bI .. \\")\\" or \\"function()\\"
-                    local bb = string.rep(\\"    \\", t.indent + 1)
-                    local bM = {}
-                    for W, aw in ipairs(bJ) do
-                        table.insert(bM, bb .. (aw:match(\\"^%s*(.*)$\\") or aw))
-                    end
-                    table.insert(
-                        bK,
-                        bL .. \\"\\n\\" .. table.concat(bM, \\"\\n\\") .. \\"\\n\\" .. string.rep(\\"    \\", t.indent) .. \\"end\\"
-                    )
-                else
-                    local bN = bI ~= '\\"' and \\"function(\\" .. bI .. \\") end\\" or \\"function() end\\"
+                    local bL = bI ~= '"' and "function(" .. bI .. ")" or "function()"\n                    local bb = string.rep("    ", t.indent + 1)\n                    local bM = {}\n                    for W, aw in ipairs(bJ) do\n                        table.insert(bM, bb .. (aw:match("^%s*(.*)$") or aw))\n                    end\n                    table.insert(\n                        bK,\n                        bL .. "\n" .. table.concat(bM, "\n") .. "\n" .. string.rep("    ", t.indent) .. "end"\n                    )\n                else\n                    local bN = bI ~= '"' and "function(" .. bI .. ") end" or "function() end"
                     table.insert(bK, bN)
                 end
             else
                 table.insert(bK, aZ(b5))
             end
         end
-        at(string.format(\\"local %s = %s:%s(%s)\\", _, bx, by, table.concat(bK, \\", \\")))
+        at(string.format("local %s = %s:%s(%s)", _, bx, by, table.concat(bK, ", ")))
         return z
     end
     bi.__index = function(b2, b4)
-        if b4 == F or b4 == \\"__proxy_id\\" then
+        if b4 == F or b4 == "__proxy_id" then
             return rawget(b2, b4)
         end
         if bP[b4] then
@@ -2058,7 +941,7 @@ bk = function(aS, bw)
         return bk(b4, bh)
     end
     bi.__tostring = function()
-        return bx .. \\":\\" .. by
+        return bx .. ":" .. by
     end
     return bh
 end
@@ -2077,68 +960,68 @@ bj = function(aQ, bO, bw)
         t.names_used[aT] = true
     elseif bw then
         t.parent_map[bh] = bw
-        rawset(bh, \\"__temp_path\\", (t.registry[bw] or \\"object\\") .. \\".\\" .. aT)
+        rawset(bh, "__temp_path", (t.registry[bw] or "object") .. "." .. aT)
     end
     local bP = {}
     bP.GetService = function(self, bQ)
         local bR = aE(bQ)
-        if bR == \\"RunService\\" and _G.__real_game then
-            local real_rs = _G.__real_game:GetService(\\"RunService\\")
+        if bR == "RunService" and _G.__real_game then
+            local real_rs = _G.__real_game:GetService("RunService")
             if real_rs then
-                local x = bj(\\"RunService\\", false, bh)
-                local _ = aW(x, \\"RunService\\")
-                at(string.format(\\"local %s = game:GetService(\\\"RunService\\\")\\", _))
+                local x = bj("RunService", false, bh)
+                local _ = aW(x, "RunService")
+                at(string.format("local %s = game:GetService(\"RunService\")", _))
                 return real_rs
             end
         end
-        if bR == \\"LogService\\" and _G.__real_game then
-            local real_ls = _G.__real_game:GetService(\\"LogService\\")
+        if bR == "LogService" and _G.__real_game then
+            local real_ls = _G.__real_game:GetService("LogService")
             if real_ls then
-                local x = bj(\\"LogService\\", false, bh)
-                local _ = aW(x, \\"LogService\\")
-                at(string.format(\\"local %s = game:GetService(\\\"LogService\\\")\\", _))
+                local x = bj("LogService", false, bh)
+                local _ = aW(x, "LogService")
+                at(string.format("local %s = game:GetService(\"LogService\")", _))
                 return real_ls
             end
         end
-        if bR == \\"Players\\" and _G.__real_game then
-            local real_players = _G.__real_game:GetService(\\"Players\\")
+        if bR == "Players" and _G.__real_game then
+            local real_players = _G.__real_game:GetService("Players")
             if real_players then
-                local x = bj(\\"Players\\", false, bh)
-                local _ = aW(x, \\"Players\\")
-                at(string.format(\\"local %s = game:GetService(\\\"Players\\\")\\", _))
+                local x = bj("Players", false, bh)
+                local _ = aW(x, "Players")
+                at(string.format("local %s = game:GetService(\"Players\")", _))
                 return real_players
             end
         end
-        if bR == \\"HttpService\\" and _G.__real_game then
-            local real_hs = _G.__real_game:GetService(\\"HttpService\\")
+        if bR == "HttpService" and _G.__real_game then
+            local real_hs = _G.__real_game:GetService("HttpService")
             if real_hs then
-                local x = bj(\\"HttpService\\", false, bh)
-                local _ = aW(x, \\"HttpService\\")
-                at(string.format(\\"local %s = game:GetService(\\\"HttpService\\\")\\", _))
+                local x = bj("HttpService", false, bh)
+                local _ = aW(x, "HttpService")
+                at(string.format("local %s = game:GetService(\"HttpService\")", _))
                 return real_hs
             end
         end
         local x = bj(bR, false, bh)
         local _ = aW(x, bR)
-        local bS = t.registry[bh] or \\"game\\"
-        at(string.format(\\"local %s = %s:GetService(%s)\\", _, bS, aH(bR)))
+        local bS = t.registry[bh] or "game"
+        at(string.format("local %s = %s:GetService(%s)", _, bS, aH(bR)))
         
         -- Special handling for Players service
-        if bR == \\"Players\\" then
+        if bR == "Players" then
             t.property_store[x] = {
                 LocalPlayer = {
                     UserId = 1,
-                    Name = \\"Lunr\\", 
-                    DisplayName = \\"Lunr\\",
+                    Name = "Lunr", 
+                    DisplayName = "Lunr",
                     AccountAge = 69143,
-                    ClassName = \\"Player\\"
+                    ClassName = "Player"
                 }
             }
         end
         
         return x
     end
-    if aT == \\"game\\" and _G.__real_game then
+    if aT == "game" and _G.__real_game then
         bP.GetChildren = function(self)
             return _G.__real_game:GetChildren()
         end
@@ -2147,11 +1030,11 @@ bj = function(aQ, bO, bw)
         local bV = aE(bT)
         local x = bj(bV, false, bh)
         local _ = aW(x, bV)
-        local bS = t.registry[bh] or \\"object\\"
+        local bS = t.registry[bh] or "object"
         if bU then
-            at(string.format(\\"local %s = %s:WaitForChild(%s, %s)\\", _, bS, aH(bV), aZ(bU)))
+            at(string.format("local %s = %s:WaitForChild(%s, %s)", _, bS, aH(bV), aZ(bU)))
         else
-            at(string.format(\\"local %s = %s:WaitForChild(%s)\\", _, bS, aH(bV)))
+            at(string.format("local %s = %s:WaitForChild(%s)", _, bS, aH(bV)))
         end
         return x
     end
@@ -2159,11 +1042,11 @@ bj = function(aQ, bO, bw)
         local bV = aE(bT)
         local x = bj(bV, false, bh)
         local _ = aW(x, bV)
-        local bS = t.registry[bh] or \\"object\\"
+        local bS = t.registry[bh] or "object"
         if bW then
-            at(string.format(\\"local %s = %s:FindFirstChild(%s, true)\\", _, bS, aH(bV)))
+            at(string.format("local %s = %s:FindFirstChild(%s, true)", _, bS, aH(bV)))
         else
-            at(string.format(\\"local %s = %s:FindFirstChild(%s)\\", _, bS, aH(bV)))
+            at(string.format("local %s = %s:FindFirstChild(%s)", _, bS, aH(bV)))
         end
         return x
     end
@@ -2171,46 +1054,46 @@ bj = function(aQ, bO, bw)
         local bY = aE(bX)
         local x = bj(bY, false, bh)
         local _ = aW(x, bY)
-        local bS = t.registry[bh] or \\"object\\"
-        at(string.format(\\"local %s = %s:FindFirstChildOfClass(%s)\\", _, bS, aH(bY)))
+        local bS = t.registry[bh] or "object"
+        at(string.format("local %s = %s:FindFirstChildOfClass(%s)", _, bS, aH(bY)))
         return x
     end
     bP.FindFirstChildWhichIsA = function(self, bX)
         local bY = aE(bX)
         local x = bj(bY, false, bh)
         local _ = aW(x, bY)
-        local bS = t.registry[bh] or \\"object\\"
-        at(string.format(\\"local %s = %s:FindFirstChildWhichIsA(%s)\\", _, bS, aH(bY)))
+        local bS = t.registry[bh] or "object"
+        at(string.format("local %s = %s:FindFirstChildWhichIsA(%s)", _, bS, aH(bY)))
         return x
     end
     bP.FindFirstAncestor = function(self, am)
         local bZ = aE(am)
         local x = bj(bZ, false, bh)
         local _ = aW(x, bZ)
-        local bS = t.registry[bh] or \\"object\\"
-        at(string.format(\\"local %s = %s:FindFirstAncestor(%s)\\", _, bS, aH(bZ)))
+        local bS = t.registry[bh] or "object"
+        at(string.format("local %s = %s:FindFirstAncestor(%s)", _, bS, aH(bZ)))
         return x
     end
     bP.FindFirstAncestorOfClass = function(self, bX)
         local bY = aE(bX)
         local x = bj(bY, false, bh)
         local _ = aW(x, bY)
-        local bS = t.registry[bh] or \\"object\\"
-        at(string.format(\\"local %s = %s:FindFirstAncestorOfClass(%s)\\", _, bS, aH(bY)))
+        local bS = t.registry[bh] or "object"
+        at(string.format("local %s = %s:FindFirstAncestorOfClass(%s)", _, bS, aH(bY)))
         return x
     end
     bP.FindFirstAncestorWhichIsA = function(self, bX)
         local bY = aE(bX)
         local x = bj(bY, false, bh)
         local _ = aW(x, bY)
-        local bS = t.registry[bh] or \\"object\\"
-        at(string.format(\\"local %s = %s:FindFirstAncestorWhichIsA(%s)\\", _, bS, aH(bY)))
+        local bS = t.registry[bh] or "object"
+        at(string.format("local %s = %s:FindFirstAncestorWhichIsA(%s)", _, bS, aH(bY)))
         return x
     end
-    if aT ~= \\"game\\" or not _G.__real_game then
+    if aT ~= "game" or not _G.__real_game then
     bP.GetChildren = function(self)
-        local bS = t.registry[bh] or \\"object\\"
-        if at(string.format(\\"for _, child in %s:GetChildren() do\\", bS)) then
+        local bS = t.registry[bh] or "object"
+        if at(string.format("for _, child in %s:GetChildren() do", bS)) then
             t.indent = t.indent + 1
             t.pending_iterator = true
         end
@@ -2218,12 +1101,12 @@ bj = function(aQ, bO, bw)
     end
     end
     bP.GetDescendants = function(self)
-        local bS = t.registry[bh] or \\"object\\"
-        if at(string.format(\\"for _, obj in %s:GetDescendants() do\\", bS)) then
+        local bS = t.registry[bh] or "object"
+        if at(string.format("for _, obj in %s:GetDescendants() do", bS)) then
             t.indent = t.indent + 1
-            local b_ = bj(\\"obj\\", false)
-            t.registry[b_] = \\"obj\\"
-            t.property_store[b_] = {Name = \\"Ball\\", ClassName = \\"Part\\", Size = Vector3.new(1, 1, 1)}
+            local b_ = bj("obj", false)
+            t.registry[b_] = "obj"
+            t.property_store[b_] = {Name = "Ball", ClassName = "Part", Size = Vector3.new(1, 1, 1)}
             local c0 = false
             return function()
                 if not c0 then
@@ -2231,7 +1114,7 @@ bj = function(aQ, bO, bw)
                     return 1, b_
                 else
                     t.indent = t.indent - 1
-                    at(\\"end\\")
+                    at("end")
                     return nil
                 end
             end, nil, 0
@@ -2239,79 +1122,79 @@ bj = function(aQ, bO, bw)
         return function() return nil end, nil, 0
     end
     bP.Clone = function(self)
-        local bS = t.registry[bh] or \\"object\\"
-        local x = bj((aT or \\"object\\") .. \\"Clone\\", false)
-        local _ = aW(x, (aT or \\"object\\") .. \\"Clone\\")
-        at(string.format(\\"local %s = %s:Clone()\\", _, bS))
+        local bS = t.registry[bh] or "object"
+        local x = bj((aT or "object") .. "Clone", false)
+        local _ = aW(x, (aT or "object") .. "Clone")
+        at(string.format("local %s = %s:Clone()", _, bS))
         return x
     end
     bP.Destroy = function(self)
-        local bS = t.registry[bh] or \\"object\\"
-        at(string.format(\\"%s:Destroy()\\", bS))
+        local bS = t.registry[bh] or "object"
+        at(string.format("%s:Destroy()", bS))
     end
     bP.ClearAllChildren = function(self)
-        local bS = t.registry[bh] or \\"object\\"
-        at(string.format(\\"%s:ClearAllChildren()\\", bS))
+        local bS = t.registry[bh] or "object"
+        at(string.format("%s:ClearAllChildren()", bS))
     end
     bP.Connect = function(self, bs)
-        local bS = t.registry[bh] or \\"signal\\"
-        local c1 = bj(\\"connection\\", false)
-        local c2 = aW(c1, \\"conn\\")
-        local c3 = bS:match(\\"%.([^%.]+)$\\") or bS
-        local c4 = {\\"...\\"}
-        if c3:match(\\"InputBegan\\") or c3:match(\\"InputEnded\\") or c3:match(\\"InputChanged\\") then
-            c4 = {\\"input\\", \\"gameProcessed\\"}
-        elseif c3:match(\\"CharacterAdded\\") or c3:match(\\"CharacterRemoving\\") then
-            c4 = {\\"character\\"}
-        elseif c3:match(\\"PlayerAdded\\") or c3:match(\\"PlayerRemoving\\") then
-            c4 = {\\"player\\"}
-        elseif c3:match(\\"Touched\\") then
-            c4 = {\\"hit\\"}
-        elseif c3:match(\\"Heartbeat\\") or c3:match(\\"RenderStepped\\") then
-            c4 = {\\"deltaTime\\"}
-        elseif c3:match(\\"Stepped\\") then
-            c4 = {\\"time\\", \\"deltaTime\\"}
-        elseif c3:match(\\"Changed\\") then
-            c4 = {\\"property\\"}
-        elseif c3:match(\\"ChildAdded\\") or c3:match(\\"ChildRemoved\\") then
-            c4 = {\\"child\\"}
-        elseif c3:match(\\"DescendantAdded\\") or c3:match(\\"DescendantRemoving\\") then
-            c4 = {\\"descendant\\"}
-        elseif c3:match(\\"Died\\") or c3:match(\\"MouseButton\\") or c3:match(\\"Activated\\") then
+        local bS = t.registry[bh] or "signal"
+        local c1 = bj("connection", false)
+        local c2 = aW(c1, "conn")
+        local c3 = bS:match("%.([^%.]+)$") or bS
+        local c4 = {"..."}
+        if c3:match("InputBegan") or c3:match("InputEnded") or c3:match("InputChanged") then
+            c4 = {"input", "gameProcessed"}
+        elseif c3:match("CharacterAdded") or c3:match("CharacterRemoving") then
+            c4 = {"character"}
+        elseif c3:match("PlayerAdded") or c3:match("PlayerRemoving") then
+            c4 = {"player"}
+        elseif c3:match("Touched") then
+            c4 = {"hit"}
+        elseif c3:match("Heartbeat") or c3:match("RenderStepped") then
+            c4 = {"deltaTime"}
+        elseif c3:match("Stepped") then
+            c4 = {"time", "deltaTime"}
+        elseif c3:match("Changed") then
+            c4 = {"property"}
+        elseif c3:match("ChildAdded") or c3:match("ChildRemoved") then
+            c4 = {"child"}
+        elseif c3:match("DescendantAdded") or c3:match("DescendantRemoving") then
+            c4 = {"descendant"}
+        elseif c3:match("Died") or c3:match("MouseButton") or c3:match("Activated") then
             c4 = {}
-        elseif c3:match(\\"MouseButton1Down\\") or c3:match(\\"MouseButton2Down\\") then
+        elseif c3:match("MouseButton1Down") or c3:match("MouseButton2Down") then
             c4 = {}
-        elseif c3:match(\\"FocusLost\\") then
-            c4 = {\\"enterPressed\\", \\"inputObject\\"}
+        elseif c3:match("FocusLost") then
+            c4 = {"enterPressed", "inputObject"}
         end
-        if at(string.format(\\"local %s = %s:Connect(function(%s)\\", c2, bS, table.concat(c4, \\", \\"))) then
+        if at(string.format("local %s = %s:Connect(function(%s)", c2, bS, table.concat(c4, ", "))) then
             t.indent = t.indent + 1
-            if j(bs) == \\"function\\" then
+            if j(bs) == "function" then
                 local function c_dummy(name)
-                    if name == \\"player\\" then
+                    if name == "player" then
                         return (game and game.Players and game.Players.LocalPlayer) or nil
-                    elseif name == \\"character\\" then
-                        return bj(\\"character\\", false)
-                    elseif name == \\"hit\\" then
-                        return bj(\\"hit\\", false)
-                    elseif name == \\"property\\" then
-                        return \\"Name\\"
-                    elseif name == \\"deltaTime\\" then
+                    elseif name == "character" then
+                        return bj("character", false)
+                    elseif name == "hit" then
+                        return bj("hit", false)
+                    elseif name == "property" then
+                        return "Name"
+                    elseif name == "deltaTime" then
                         return 0.016
-                    elseif name == \\"time\\" then
+                    elseif name == "time" then
                         return 0
-                    elseif name == \\"enterPressed\\" then
+                    elseif name == "enterPressed" then
                         return false
-                    elseif name == \\"gameProcessed\\" then
+                    elseif name == "gameProcessed" then
                         return false
-                    elseif name == \\"input\\" or name == \\"inputObject\\" then
-                        return {KeyCode = {Name = \\"Space\\"}, UserInputType = {Name = \\"Keyboard\\"}}
+                    elseif name == "input" or name == "inputObject" then
+                        return {KeyCode = {Name = "Space"}, UserInputType = {Name = "Keyboard"}}
                     end
                     return nil
                 end
                 local c_args = {}
                 for _, c_name in ipairs(c4) do
-                    if c_name ~= \\"...\\" then
+                    if c_name ~= "..." then
                         table.insert(c_args, c_dummy(c_name))
                     end
                 end
@@ -2325,21 +1208,21 @@ bj = function(aQ, bO, bw)
             end
             while t.pending_iterator do
                 t.indent = t.indent - 1
-                at(\\"end\\")
+                at("end")
                 t.pending_iterator = false
             end
             t.indent = t.indent - 1
-            at(\\"end)\\")
+            at("end)")
         end
         return c1
     end
     bP.Once = function(self, bs)
-        local bS = t.registry[bh] or \\"signal\\"
-        local c1 = bj(\\"connection\\", false)
-        local c2 = aW(c1, \\"conn\\")
-        if at(string.format(\\"local %s = %s:Once(function(...)\\", c2, bS)) then
+        local bS = t.registry[bh] or "signal"
+        local c1 = bj("connection", false)
+        local c2 = aW(c1, "conn")
+        if at(string.format("local %s = %s:Once(function(...)", c2, bS)) then
             t.indent = t.indent + 1
-            if j(bs) == \\"function\\" then
+            if j(bs) == "function" then
                 xpcall(
                     function()
                         bs(nil)
@@ -2349,105 +1232,105 @@ bj = function(aQ, bO, bw)
                 )
             end
             t.indent = t.indent - 1
-            at(\\"end)\\")
+            at("end)")
         end
         return c1
     end
     bP.Wait = function(self)
-        local bS = t.registry[bh] or \\"signal\\"
-        local z = bj(\\"waitResult\\", false)
-        local _ = aW(z, \\"waitResult\\")
-        at(string.format(\\"local %s = %s:Wait()\\", _, bS))
+        local bS = t.registry[bh] or "signal"
+        local z = bj("waitResult", false)
+        local _ = aW(z, "waitResult")
+        at(string.format("local %s = %s:Wait()", _, bS))
         return z
     end
     bP.Disconnect = function(self)
-        local bS = t.registry[bh] or \\"connection\\"
-        at(string.format(\\"%s:Disconnect()\\", bS))
+        local bS = t.registry[bh] or "connection"
+        at(string.format("%s:Disconnect()", bS))
     end
     bP.FireServer = function(self, ...)
-        local bS = t.registry[bh] or \\"remote\\"
+        local bS = t.registry[bh] or "remote"
         local bA = {...}
         local c5 = {}
         for W, b5 in ipairs(bA) do
             table.insert(c5, aZ(b5))
         end
-        at(string.format(\\"%s:FireServer(%s)\\", bS, table.concat(c5, \\", \\")))
-        table.insert(t.call_graph, {type = \\"RemoteEvent\\", name = bS, args = bA})
+        at(string.format("%s:FireServer(%s)", bS, table.concat(c5, ", ")))
+        table.insert(t.call_graph, {type = "RemoteEvent", name = bS, args = bA})
     end
     bP.InvokeServer = function(self, ...)
-        local bS = t.registry[bh] or \\"remote\\"
+        local bS = t.registry[bh] or "remote"
         local bA = {...}
         local c5 = {}
         for W, b5 in ipairs(bA) do
             table.insert(c5, aZ(b5))
         end
-        local z = bj(\\"invokeResult\\", false)
-        local _ = aW(z, \\"result\\")
-        at(string.format(\\"local %s = %s:InvokeServer(%s)\\", _, bS, table.concat(c5, \\", \\")))
-        table.insert(t.call_graph, {type = \\"RemoteFunction\\", name = bS, args = bA})
+        local z = bj("invokeResult", false)
+        local _ = aW(z, "result")
+        at(string.format("local %s = %s:InvokeServer(%s)", _, bS, table.concat(c5, ", ")))
+        table.insert(t.call_graph, {type = "RemoteFunction", name = bS, args = bA})
         return z
     end
     bP.Create = function(self, x, c6, c7)
-        local bS = t.registry[bh] or \\"TweenService\\"
-        local c8 = bj(\\"tween\\", false)
-        local _ = aW(c8, \\"tween\\")
-        at(string.format(\\"local %s = %s:Create(%s, %s, %s)\\", _, bS, aZ(x), aZ(c6), aZ(c7)))
-        at(string.format(\\"local %s = %s\\", c8, _))
+        local bS = t.registry[bh] or "TweenService"
+        local c8 = bj("tween", false)
+        local _ = aW(c8, "tween")
+        at(string.format("local %s = %s:Create(%s, %s, %s)", _, bS, aZ(x), aZ(c6), aZ(c7)))
+        at(string.format("local %s = %s", c8, _))
         return c8
     end
     bP.Play = function(self)
         local bS = t.registry[bh] or c8
-        at(string.format(\\"%s:Play()\\", bS))
+        at(string.format("%s:Play()", bS))
     end
     bP.Pause = function(self)
         local bS = t.registry[bh] or c8
-        at(string.format(\\"%s:Pause()\\", bS))
+        at(string.format("%s:Pause()", bS))
     end
     bP.Cancel = function(self)
         local bS = t.registry[bh] or c8
-        at(string.format(\\"%s:Cancel()\\", bS))
+        at(string.format("%s:Cancel()", bS))
     end
     bP.Stop = function(self)
         local bS = t.registry[bh] or c8
-        at(string.format(\\"%s:Stop()\\", bS))
+        at(string.format("%s:Stop()", bS))
     end
     bP.Raycast = function(self, c9, ca, cb)
-        local bS = t.registry[bh] or \\"workspace\\"
-        local z = bj(\\"raycastResult\\", false)
-        local _ = aW(z, \\"rayResult\\")
+        local bS = t.registry[bh] or "workspace"
+        local z = bj("raycastResult", false)
+        local _ = aW(z, "rayResult")
         if cb then
-            at(string.format(\\"local %s = %s:Raycast(%s, %s, %s)\\", _, bS, aZ(c9), aZ(ca), aZ(cb)))
+            at(string.format("local %s = %s:Raycast(%s, %s, %s)", _, bS, aZ(c9), aZ(ca), aZ(cb)))
         else
-            at(string.format(\\"local %s = %s:Raycast(%s, %s)\\", _, bS, aZ(c9), aZ(ca)))
+            at(string.format("local %s = %s:Raycast(%s, %s)", _, bS, aZ(c9), aZ(ca)))
         end
         return z
     end
     bP.GetMouse = function(self)
-        local bS = t.registry[bh] or \\"player\\"
-        local cc = bj(\\"mouse\\", false)
-        local _ = aW(cc, \\"mouse\\")
-        at(string.format(\\"local %s = %s:GetMouse()\\", _, bS))
+        local bS = t.registry[bh] or "player"
+        local cc = bj("mouse", false)
+        local _ = aW(cc, "mouse")
+        at(string.format("local %s = %s:GetMouse()", _, bS))
         return cc
     end
     bP.Kick = function(self, cd)
-        local bS = t.registry[bh] or \\"player\\"
+        local bS = t.registry[bh] or "player"
         if cd then
-            at(string.format(\\"%s:Kick(%s)\\", bS, aZ(cd)))
+            at(string.format("%s:Kick(%s)", bS, aZ(cd)))
         else
-            at(string.format(\\"%s:Kick()\\", bS))
+            at(string.format("%s:Kick()", bS))
         end
     end
     bP.GetPropertyChangedSignal = function(self, ce)
         local cf = aE(ce)
-        local bS = t.registry[bh] or \\"instance\\"
-        local cg = bj(cf .. \\"Changed\\", false)
-        t.registry[cg] = bS .. \\":GetPropertyChangedSignal(\\" .. aH(cf) .. \\")\\"
+        local bS = t.registry[bh] or "instance"
+        local cg = bj(cf .. "Changed", false)
+        t.registry[cg] = bS .. ":GetPropertyChangedSignal(" .. aH(cf) .. ")"
         return cg
     end
     bP.IsA = function(self, bX)
         local className = aE(bX)
         local result = self.ClassName == className
-        at(string.format(\\"local %s = %s:IsA(%s) -- %s\\", t.registry[self] or \\"object\\", t.registry[self] or \\"object\\", aH(className), tostring(result)))
+        at(string.format("local %s = %s:IsA(%s) -- %s", t.registry[self] or "object", t.registry[self] or "object", aH(className), tostring(result)))
         return result
     end
     bP.IsDescendantOf = function(self, ch)
@@ -2460,8 +1343,8 @@ bj = function(aQ, bO, bw)
         return nil
     end
     bP.SetAttribute = function(self, cj, bm)
-        local bS = t.registry[bh] or \\"instance\\"
-        at(string.format(\\"%s:SetAttribute(%s, %s)\\", bS, aH(cj), aZ(bm)))
+        local bS = t.registry[bh] or "instance"
+        at(string.format("%s:SetAttribute(%s, %s)", bS, aH(cj), aZ(bm)))
     end
     bP.GetAttributes = function(self)
         return {}
@@ -2470,35 +1353,35 @@ bj = function(aQ, bO, bw)
         return {}
     end
     bP.GetPlayerFromCharacter = function(self, ck)
-        local bS = t.registry[bh] or \\"Players\\"
-        local cl = bj(\\"player\\", false)
-        local _ = aW(cl, \\"player\\")
-        at(string.format(\\"local %s = %s:GetPlayerFromCharacter(%s)\\", _, bS, aZ(ck)))
+        local bS = t.registry[bh] or "Players"
+        local cl = bj("player", false)
+        local _ = aW(cl, "player")
+        at(string.format("local %s = %s:GetPlayerFromCharacter(%s)", _, bS, aZ(ck)))
         return cl
     end
     bP.GetPlayerByUserId = function(self, cm)
-        local bS = t.registry[bh] or \\"Players\\"
-        local cl = bj(\\"player\\", false)
-        local _ = aW(cl, \\"player\\")
-        at(string.format(\\"local %s = %s:GetPlayerByUserId(%s)\\", _, bS, aZ(cm)))
+        local bS = t.registry[bh] or "Players"
+        local cl = bj("player", false)
+        local _ = aW(cl, "player")
+        at(string.format("local %s = %s:GetPlayerByUserId(%s)", _, bS, aZ(cm)))
         return cl
     end
     bP.SetCore = function(self, am, bm)
-        local bS = t.registry[bh] or \\"StarterGui\\"
-        at(string.format(\\"%s:SetCore(%s, %s)\\", bS, aH(am), aZ(bm)))
+        local bS = t.registry[bh] or "StarterGui"
+        at(string.format("%s:SetCore(%s, %s)", bS, aH(am), aZ(bm)))
     end
     bP.GetCore = function(self, am)
         return nil
     end
     bP.SetCoreGuiEnabled = function(self, cn, co)
-        local bS = t.registry[bh] or \\"StarterGui\\"
-        at(string.format(\\"%s:SetCoreGuiEnabled(%s, %s)\\", bS, aZ(cn), aZ(co)))
+        local bS = t.registry[bh] or "StarterGui"
+        at(string.format("%s:SetCoreGuiEnabled(%s, %s)", bS, aZ(cn), aZ(co)))
     end
     bP.BindToRenderStep = function(self, am, cp, bs)
-        local bS = t.registry[bh] or \\"RunService\\"
-        at(string.format(\\"%s:BindToRenderStep(%s, %s, function(deltaTime)\\", bS, aH(am), aZ(cp)))
+        local bS = t.registry[bh] or "RunService"
+        at(string.format("%s:BindToRenderStep(%s, %s, function(deltaTime)", bS, aH(am), aZ(cp)))
         t.indent = t.indent + 1
-        if j(bs) == \\"function\\" then
+        if j(bs) == "function" then
             xpcall(
                 function()
                     bs(0.016)
@@ -2508,59 +1391,59 @@ bj = function(aQ, bO, bw)
             )
         end
         t.indent = t.indent - 1
-        at(\\"end)\\")
+        at("end)")
     end
     bP.UnbindFromRenderStep = function(self, am)
-        local bS = t.registry[bh] or \\"RunService\\"
-        at(string.format(\\"%s:UnbindFromRenderStep(%s)\\", bS, aH(am)))
+        local bS = t.registry[bh] or "RunService"
+        at(string.format("%s:UnbindFromRenderStep(%s)", bS, aH(am)))
     end
     bP.GetFullName = function(self)
-        return t.registry[bh] or \\"Instance\\"
+        return t.registry[bh] or "Instance"
     end
     bP.GetDebugId = function(self)
-        return \\"DEBUG_\\" .. (H(bh) or \\"0\\")
+        return "DEBUG_" .. (H(bh) or "0")
     end
     bP.MoveTo = function(self, cq, cr)
-        local bS = t.registry[bh] or \\"humanoid\\"
+        local bS = t.registry[bh] or "humanoid"
         if cr then
-            at(string.format(\\"%s:MoveTo(%s, %s)\\", bS, aZ(cq), aZ(cr)))
+            at(string.format("%s:MoveTo(%s, %s)", bS, aZ(cq), aZ(cr)))
         else
-            at(string.format(\\"%s:MoveTo(%s)\\", bS, aZ(cq)))
+            at(string.format("%s:MoveTo(%s)", bS, aZ(cq)))
         end
     end
     bP.Move = function(self, ca, cs)
-        local bS = t.registry[bh] or \\"humanoid\\"
-        at(string.format(\\"%s:Move(%s, %s)\\", bS, aZ(ca), aZ(cs or false)))
+        local bS = t.registry[bh] or "humanoid"
+        at(string.format("%s:Move(%s, %s)", bS, aZ(ca), aZ(cs or false)))
     end
     bP.EquipTool = function(self, ct)
-        local bS = t.registry[bh] or \\"humanoid\\"
-        at(string.format(\\"%s:EquipTool(%s)\\", bS, aZ(ct)))
+        local bS = t.registry[bh] or "humanoid"
+        at(string.format("%s:EquipTool(%s)", bS, aZ(ct)))
     end
     bP.UnequipTools = function(self)
-        local bS = t.registry[bh] or \\"humanoid\\"
-        at(string.format(\\"%s:UnequipTools()\\", bS))
+        local bS = t.registry[bh] or "humanoid"
+        at(string.format("%s:UnequipTools()", bS))
     end
     bP.TakeDamage = function(self, cu)
-        local bS = t.registry[bh] or \\"humanoid\\"
-        at(string.format(\\"%s:TakeDamage(%s)\\", bS, aZ(cu)))
+        local bS = t.registry[bh] or "humanoid"
+        at(string.format("%s:TakeDamage(%s)", bS, aZ(cu)))
     end
     bP.ChangeState = function(self, cv)
-        local bS = t.registry[bh] or \\"humanoid\\"
-        at(string.format(\\"%s:ChangeState(%s)\\", bS, aZ(cv)))
+        local bS = t.registry[bh] or "humanoid"
+        at(string.format("%s:ChangeState(%s)", bS, aZ(cv)))
     end
     bP.GetState = function(self)
-        return bj(\\"Enum.HumanoidStateType.Running\\", false)
+        return bj("Enum.HumanoidStateType.Running", false)
     end
     bP.SetPrimaryPartCFrame = function(self, cw)
-        local bS = t.registry[bh] or \\"model\\"
-        at(string.format(\\"%s:SetPrimaryPartCFrame(%s)\\", bS, aZ(cw)))
+        local bS = t.registry[bh] or "model"
+        at(string.format("%s:SetPrimaryPartCFrame(%s)", bS, aZ(cw)))
     end
     bP.GetPrimaryPartCFrame = function(self)
         return CFrame.new(0, 0, 0)
     end
     bP.PivotTo = function(self, cw)
-        local bS = t.registry[bh] or \\"model\\"
-        at(string.format(\\"%s:PivotTo(%s)\\", bS, aZ(cw)))
+        local bS = t.registry[bh] or "model"
+        at(string.format("%s:PivotTo(%s)", bS, aZ(cw)))
     end
     bP.GetPivot = function(self)
         return CFrame.new(0, 0, 0)
@@ -2572,77 +1455,76 @@ bj = function(aQ, bO, bw)
         return Vector3.new(1, 1, 1)
     end
     bP.TranslateBy = function(self, cx)
-        local bS = t.registry[bh] or \\"model\\"
-        at(string.format(\\"%s:TranslateBy(%s)\\", bS, aZ(cx)))
+        local bS = t.registry[bh] or "model"
+        at(string.format("%s:TranslateBy(%s)", bS, aZ(cx)))
     end
     bP.LoadAnimation = function(self, cy)
-        local bS = t.registry[bh] or \\"animator\\"
-        local cz = bj(\\"animTrack\\", false)
-        local _ = aW(cz, \\"animTrack\\")
-        at(string.format(\\"local %s = %s:LoadAnimation(%s)\\", _, bS, aZ(cy)))
+        local bS = t.registry[bh] or "animator"
+        local cz = bj("animTrack", false)
+        local _ = aW(cz, "animTrack")
+        at(string.format("local %s = %s:LoadAnimation(%s)", _, bS, aZ(cy)))
         return cz
     end
     bP.GetPlayingAnimationTracks = function(self)
         return {}
     end
     bP.AdjustSpeed = function(self, cA)
-        local bS = t.registry[bh] or \\"animTrack\\"
-        at(string.format(\\"%s:AdjustSpeed(%s)\\", bS, aZ(cA)))
+        local bS = t.registry[bh] or "animTrack"
+        at(string.format("%s:AdjustSpeed(%s)", bS, aZ(cA)))
     end
     bP.AdjustWeight = function(self, cB, cC)
-        local bS = t.registry[bh] or \\"animTrack\\"
+        local bS = t.registry[bh] or "animTrack"
         if cC then
-            at(string.format(\\"%s:AdjustWeight(%s, %s)\\", bS, aZ(cB), aZ(cC)))
+            at(string.format("%s:AdjustWeight(%s, %s)", bS, aZ(cB), aZ(cC)))
         else
-            at(string.format(\\"%s:AdjustWeight(%s)\\", bS, aZ(cB)))
+            at(string.format("%s:AdjustWeight(%s)", bS, aZ(cB)))
         end
     end
     bP.Teleport = function(self, cD, cl, cE, cF)
-        local bS = t.registry[bh] or \\"TeleportService\\"
+        local bS = t.registry[bh] or "TeleportService"
         at(
             string.format(
-                \\"%s:Teleport(%s, %s%s%s)\\",
+                "%s:Teleport(%s, %s%s%s)",
                 bS,
                 aZ(cD),
                 aZ(cl),
-                cE and \\", \\" .. aZ(cE) or '\\"',
-                cF and \\", \\" .. aZ(cF) or '\\"'
+                cE and ", " .. aZ(cE) or '"',\n                cF and ", " .. aZ(cF) or '"'
             )
         )
     end
     bP.TeleportToPlaceInstance = function(self, cD, cG, cl)
-        local bS = t.registry[bh] or \\"TeleportService\\"
-        at(string.format(\\"%s:TeleportToPlaceInstance(%s, %s, %s)\\", bS, aZ(cD), aZ(cG), aZ(cl)))
+        local bS = t.registry[bh] or "TeleportService"
+        at(string.format("%s:TeleportToPlaceInstance(%s, %s, %s)", bS, aZ(cD), aZ(cG), aZ(cl)))
     end
     bP.PlayLocalSound = function(self, cH)
-        local bS = t.registry[bh] or \\"SoundService\\"
-        at(string.format(\\"%s:PlayLocalSound(%s)\\", bS, aZ(cH)))
+        local bS = t.registry[bh] or "SoundService"
+        at(string.format("%s:PlayLocalSound(%s)", bS, aZ(cH)))
     end
     bP.GetAsync = function(self, cI)
-        return \\"{}\\"
+        return "{}"
     end
     bP.PostAsync = function(self, cI, cJ)
-        return \\"{}\\"
+        return "{}"
     end
     bP.JSONEncode = function(self, cJ)
-        at(string.format(\\"HttpService:JSONEncode(%s)\\", aZ(cJ)))
+        at(string.format("HttpService:JSONEncode(%s)", aZ(cJ)))
         return aE(cJ)
     end
     bP.JSONDecode = function(self, O)
         local function do_decode()
-            if type(O) == \\"string\\" then
+            if type(O) == "string" then
                 if _G.__real_game then
-                    local real_hs = _G.__real_game:GetService(\\"HttpService\\")
+                    local real_hs = _G.__real_game:GetService("HttpService")
                     if real_hs and real_hs.JSONDecode then
                         local ok, parsed = pcall(real_hs.JSONDecode, real_hs, O)
-                        if ok and type(parsed) == \\"table\\" then
+                        if ok and type(parsed) == "table" then
                             if not parsed[6] then parsed[6] = {} end
                             parsed[6][2] = nil
                             return parsed
                         end
                     end
                 end
-                if O:match(\\"^%s*%[\\") then
+                if O:match("^%s*%[") then
                     return {nil, nil, nil, nil, nil, {nil, nil}, nil, {}}
                 end
             end
@@ -2650,38 +1532,38 @@ bj = function(aQ, bO, bw)
         end
         local ok, result = pcall(do_decode)
         if ok then
-            pcall(at, string.format(\\"HttpService:JSONDecode(%s)\\", type(O) == \\"string\\" and (\\"\\\"...\\\"\\") or aZ(O)))
+            pcall(at, string.format("HttpService:JSONDecode(%s)", type(O) == "string" and ("\"...\"") or aZ(O)))
             return result
         end
-        pcall(at, \\"HttpService:JSONDecode(...)\\")
+        pcall(at, "HttpService:JSONDecode(...)")
         return {nil, nil, nil, nil, nil, {nil, nil}, nil, {}}
     end
     bP.GenerateGUID = function(self, cK)
-        return \\"00000000-0000-0000-0000-000000000000\\"
+        return "00000000-0000-0000-0000-000000000000"
     end
     bP.HttpGet = function(self, cI)
         local cL = aE(cI)
-        table.insert(t.string_refs, {value = cL, hint = \\"HTTP URL\\"})
+        table.insert(t.string_refs, {value = cL, hint = "HTTP URL"})
         t.last_http_url = cL
         
         -- Check for known library patterns and generate loadstring format
         local url_lower = cL:lower()
         local patterns = {
-            {pattern = \\"rayfield\\",    name = \\"Rayfield\\"},
-            {pattern = \\"windui\\",      name = \\"WindUI\\"},
-            {pattern = \\"fluent\\",      name = \\"Fluent\\"},
-            {pattern = \\"tora-library\\", name = \\"Tora_Library\\"},
-            {pattern = \\"orion\\",       name = \\"OrionLib\\"},
-            {pattern = \\"kavo\\",        name = \\"Kavo\\"},
-            {pattern = \\"venyx\\",       name = \\"Venyx\\"},
-            {pattern = \\"sirius\\",      name = \\"Sirius\\"},
-            {pattern = \\"linoria\\",     name = \\"Linoria\\"},
-            {pattern = \\"wally\\",       name = \\"Wally\\"},
-            {pattern = \\"dex\\",         name = \\"Dex\\"},
-            {pattern = \\"infinite\\",    name = \\"InfiniteYield\\"},
-            {pattern = \\"hydroxide\\",   name = \\"Hydroxide\\"},
-            {pattern = \\"simplespy\\",   name = \\"SimpleSpy\\"},
-            {pattern = \\"remotespy\\",   name = \\"RemoteSpy\\"},
+            {pattern = "rayfield",    name = "Rayfield"},
+            {pattern = "windui",      name = "WindUI"},
+            {pattern = "fluent",      name = "Fluent"},
+            {pattern = "tora-library", name = "Tora_Library"},
+            {pattern = "orion",       name = "OrionLib"},
+            {pattern = "kavo",        name = "Kavo"},
+            {pattern = "venyx",       name = "Venyx"},
+            {pattern = "sirius",      name = "Sirius"},
+            {pattern = "linoria",     name = "Linoria"},
+            {pattern = "wally",       name = "Wally"},
+            {pattern = "dex",         name = "Dex"},
+            {pattern = "infinite",    name = "InfiniteYield"},
+            {pattern = "hydroxide",   name = "Hydroxide"},
+            {pattern = "simplespy",   name = "SimpleSpy"},
+            {pattern = "remotespy",   name = "RemoteSpy"},
         }
         
         local library_name = nil
@@ -2693,68 +1575,68 @@ bj = function(aQ, bO, bw)
         end
         
         if library_name then
-            at(string.format('local %s = loadstring(game:HttpGet(\\"%s\\"))()', library_name, cL))
+            at(string.format('local %s = loadstring(game:HttpGet("%s"))()', library_name, cL))
         else
             t.library_counter = t.library_counter + 1
-            local library_var_name = \\"Library\\" .. (t.library_counter > 1 and t.library_counter - 1 or \\"\\")
-            at(string.format('local %s = loadstring(game:HttpGet(\\"%s\\"))()', library_var_name, cL))
+            local library_var_name = "Library" .. (t.library_counter > 1 and t.library_counter - 1 or "")
+            at(string.format('local %s = loadstring(game:HttpGet("%s"))()', library_var_name, cL))
         end
         
-        local stub = \\"return { CreateWindow = function(self, ...) return {} end, Create = function(self, ...) return {} end }\\"
-        if library_name or url_lower:match(\\"library\\") or url_lower:match(\\"tora\\") or url_lower:match(\\"raw%.githubusercontent\\") then
+        local stub = "return { CreateWindow = function(self, ...) return {} end, Create = function(self, ...) return {} end }"
+        if library_name or url_lower:match("library") or url_lower:match("tora") or url_lower:match("raw%.githubusercontent") then
             return stub
         end
         return cL
     end
     bP.HttpPost = function(self, cI, cJ, cM)
         local cL = aE(cI)
-        table.insert(t.string_refs, {value = cL, hint = \\"HTTP POST URL\\"})
-        local x = bj(\\"HttpResponse\\", false)
-        local _ = aW(x, \\"httpResponse\\")
-        local bS = t.registry[bh] or \\"HttpService\\"
-        at(string.format(\\"local %s = %s:HttpPost(%s, %s, %s)\\", _, bS, aZ(cI), aZ(cJ), aZ(cM)))
-        t.property_store[x] = {Body = \\"{}\\", StatusCode = 200, Success = true}
+        table.insert(t.string_refs, {value = cL, hint = "HTTP POST URL"})
+        local x = bj("HttpResponse", false)
+        local _ = aW(x, "httpResponse")
+        local bS = t.registry[bh] or "HttpService"
+        at(string.format("local %s = %s:HttpPost(%s, %s, %s)", _, bS, aZ(cI), aZ(cJ), aZ(cM)))
+        t.property_store[x] = {Body = "{}", StatusCode = 200, Success = true}
         return x
     end
     bP.AddItem = function(self, cN, cO)
-        local bS = t.registry[bh] or \\"Debris\\"
-        at(string.format(\\"%s:AddItem(%s, %s)\\", bS, aZ(cN), aZ(cO or 10)))
+        local bS = t.registry[bh] or "Debris"
+        at(string.format("%s:AddItem(%s, %s)", bS, aZ(cN), aZ(cO or 10)))
     end
     bi.__index = function(b2, b4)
-        if b4 == F or b4 == \\"__proxy_id\\" then
+        if b4 == F or b4 == "__proxy_id" then
             return rawget(b2, b4)
         end
-        if b4 == \\"PlaceId\\" or b4 == \\"GameId\\" or b4 == \\"placeId\\" or b4 == \\"gameId\\" then
+        if b4 == "PlaceId" or b4 == "GameId" or b4 == "placeId" or b4 == "gameId" then
             return u
         end
-        if b4 == \\"HttpGet\\" then
+        if b4 == "HttpGet" then
             return function(self, url)
-                -- Handle both :HttpGet(url) and :HttpGet \\"url\\" syntax
+                -- Handle both :HttpGet(url) and :HttpGet "url" syntax
                 if url == nil then
                     url = tostring(self)
                     self = game
                 end
-                if type(url) ~= \\"string\\" then
-                    return \\"\\"
+                if type(url) ~= "string" then
+                    return ""
                 end
                 t.last_http_url = url
                 local url_lower = url:lower()
                 local patterns = {
-                    {pattern = \\"rayfield\\",    name = \\"Rayfield\\"},
-                    {pattern = \\"windui\\",      name = \\"WindUI\\"},
-                    {pattern = \\"fluent\\",      name = \\"Fluent\\"},
-                    {pattern = \\"tora-library\\", name = \\"Tora_Library\\"},
-                    {pattern = \\"orion\\",       name = \\"OrionLib\\"},
-                    {pattern = \\"kavo\\",        name = \\"Kavo\\"},
-                    {pattern = \\"venyx\\",       name = \\"Venyx\\"},
-                    {pattern = \\"sirius\\",      name = \\"Sirius\\"},
-                    {pattern = \\"linoria\\",     name = \\"Linoria\\"},
-                    {pattern = \\"wally\\",       name = \\"Wally\\"},
-                    {pattern = \\"dex\\",         name = \\"Dex\\"},
-                    {pattern = \\"infinite\\",    name = \\"InfiniteYield\\"},
-                    {pattern = \\"hydroxide\\",   name = \\"Hydroxide\\"},
-                    {pattern = \\"simplespy\\",   name = \\"SimpleSpy\\"},
-                    {pattern = \\"remotespy\\",   name = \\"RemoteSpy\\"},
+                    {pattern = "rayfield",    name = "Rayfield"},
+                    {pattern = "windui",      name = "WindUI"},
+                    {pattern = "fluent",      name = "Fluent"},
+                    {pattern = "tora-library", name = "Tora_Library"},
+                    {pattern = "orion",       name = "OrionLib"},
+                    {pattern = "kavo",        name = "Kavo"},
+                    {pattern = "venyx",       name = "Venyx"},
+                    {pattern = "sirius",      name = "Sirius"},
+                    {pattern = "linoria",     name = "Linoria"},
+                    {pattern = "wally",       name = "Wally"},
+                    {pattern = "dex",         name = "Dex"},
+                    {pattern = "infinite",    name = "InfiniteYield"},
+                    {pattern = "hydroxide",   name = "Hydroxide"},
+                    {pattern = "simplespy",   name = "SimpleSpy"},
+                    {pattern = "remotespy",   name = "RemoteSpy"},
                 }
                 local library_name = nil
                 for _, entry in ipairs(patterns) do
@@ -2768,31 +1650,31 @@ bj = function(aQ, bO, bw)
                     varname = library_name
                 else
                     t.library_counter = (t.library_counter or 0) + 1
-                    varname = (t.library_counter > 1) and (\\"Library\\" .. (t.library_counter - 1)) or \\"Library\\"
+                    varname = (t.library_counter > 1) and ("Library" .. (t.library_counter - 1)) or "Library"
                 end
-                at(string.format('local %s = loadstring(game:HttpGet(\\"%s\\"))()', varname, url))
-                local stub = \\"return { CreateWindow = function(self, ...) return {} end, Create = function(self, ...) return {} end }\\"
-                if library_name or url_lower:match(\\"library\\") or url_lower:match(\\"tora\\") or url_lower:match(\\"raw%.githubusercontent\\") then
+                at(string.format('local %s = loadstring(game:HttpGet("%s"))()', varname, url))
+                local stub = "return { CreateWindow = function(self, ...) return {} end, Create = function(self, ...) return {} end }"
+                if library_name or url_lower:match("library") or url_lower:match("tora") or url_lower:match("raw%.githubusercontent") then
                     return stub
                 end
-                return \\"\\"
+                return ""
             end
         end
-        local bS = t.registry[bh] or aT or \\"object\\"
+        local bS = t.registry[bh] or aT or "object"
         local cP = aE(b4)
         
         -- Special handling for LocalPlayer - check this FIRST before property_store
-        if b4 == \\"LocalPlayer\\" then
-            local cT = bj(\\"LocalPlayer\\", false, bh)
-            local _ = aW(cT, \\"LocalPlayer\\")
-            at(string.format(\\"local %s = %s.LocalPlayer\\", _, bS))
+        if b4 == "LocalPlayer" then
+            local cT = bj("LocalPlayer", false, bh)
+            local _ = aW(cT, "LocalPlayer")
+            at(string.format("local %s = %s.LocalPlayer", _, bS))
             -- Set up LocalPlayer specific property handlers
             t.property_store[cT] = {
                 UserId = 1,
-                Name = \\"Lunr\\",
-                DisplayName = \\"Lunr\\",
+                Name = "Lunr",
+                DisplayName = "Lunr",
                 AccountAge = 69143,
-                ClassName = \\"Player\\"
+                ClassName = "Player"
             }
             return cT
         end
@@ -2800,23 +1682,23 @@ bj = function(aQ, bO, bw)
         if t.property_store[bh] and t.property_store[bh][b4] ~= nil then
             local value = t.property_store[bh][b4]
             -- Special handling for LocalPlayer properties in property_store
-            if b4 == \\"UserId\\" and (t.property_store[bh].UserId ~= nil) then
+            if b4 == "UserId" and (t.property_store[bh].UserId ~= nil) then
                 return 1
             end
-            if b4 == \\"Name\\" and (t.property_store[bh].Name ~= nil) then
-                return \\"Lunr\\"
+            if b4 == "Name" and (t.property_store[bh].Name ~= nil) then
+                return "Lunr"
             end
-            if b4 == \\"DisplayName\\" and (t.property_store[bh].DisplayName ~= nil) then
-                return \\"Lunr\\"
+            if b4 == "DisplayName" and (t.property_store[bh].DisplayName ~= nil) then
+                return "Lunr"
             end
-            if b4 == \\"AccountAge\\" and (t.property_store[bh].AccountAge ~= nil) then
+            if b4 == "AccountAge" and (t.property_store[bh].AccountAge ~= nil) then
                 return 69143
             end
-            if b4 == \\"ClassName\\" and (t.property_store[bh].ClassName ~= nil) then
-                return \\"Player\\"
+            if b4 == "ClassName" and (t.property_store[bh].ClassName ~= nil) then
+                return "Player"
             end
             
-            if type(value) == \\"table\\" then
+            if type(value) == "table" then
                 -- Convert table to bj object for proper property handling
                 local obj = bj(b4, false, bh)
                 local _ = aW(obj, b4)
@@ -2824,15 +1706,15 @@ bj = function(aQ, bO, bw)
                 t.property_store[obj] = value
                 
                 -- Special handling for LocalPlayer properties
-                if b4 == \\"LocalPlayer\\" then
+                if b4 == "LocalPlayer" then
                     -- Ensure LocalPlayer properties return correct types
                     local original_store = t.property_store[obj]
                     t.property_store[obj] = {
                         UserId = 1,
-                        Name = \\"Lunr\\",
-                        DisplayName = \\"Lunr\\", 
+                        Name = "Lunr",
+                        DisplayName = "Lunr", 
                         AccountAge = 69143,
-                        ClassName = \\"Player\\"
+                        ClassName = "Player"
                     }
                 end
                 
@@ -2842,24 +1724,24 @@ bj = function(aQ, bO, bw)
         end
         
         -- Special handling for LocalPlayer properties
-        if b4 == \\"UserId\\" and (bS == \\"LocalPlayer\\" or (t.property_store[bh] and t.property_store[bh].UserId ~= nil)) then
+        if b4 == "UserId" and (bS == "LocalPlayer" or (t.property_store[bh] and t.property_store[bh].UserId ~= nil)) then
             return 1
         end
-        if b4 == \\"Name\\" and (bS == \\"LocalPlayer\\" or (t.property_store[bh] and t.property_store[bh].Name ~= nil)) then
-            return \\"Lunr\\"
+        if b4 == "Name" and (bS == "LocalPlayer" or (t.property_store[bh] and t.property_store[bh].Name ~= nil)) then
+            return "Lunr"
         end
-        if b4 == \\"DisplayName\\" and (bS == \\"LocalPlayer\\" or (t.property_store[bh] and t.property_store[bh].DisplayName ~= nil)) then
-            return \\"Lunr\\"
+        if b4 == "DisplayName" and (bS == "LocalPlayer" or (t.property_store[bh] and t.property_store[bh].DisplayName ~= nil)) then
+            return "Lunr"
         end
-        if b4 == \\"AccountAge\\" and (bS == \\"LocalPlayer\\" or (t.property_store[bh] and t.property_store[bh].AccountAge ~= nil)) then
+        if b4 == "AccountAge" and (bS == "LocalPlayer" or (t.property_store[bh] and t.property_store[bh].AccountAge ~= nil)) then
             return 69143
         end
-        if b4 == \\"ClassName\\" and (bS == \\"LocalPlayer\\" or (t.property_store[bh] and t.property_store[bh].ClassName ~= nil)) then
-            return \\"Player\\"
+        if b4 == "ClassName" and (bS == "LocalPlayer" or (t.property_store[bh] and t.property_store[bh].ClassName ~= nil)) then
+            return "Player"
         end
         if bP[cP] then
             local cQ, cR = bg()
-            t.registry[cQ] = bS .. \\".\\" .. cP
+            t.registry[cQ] = bS .. "." .. cP
             cR.__call = function(W, ...)
                 local bA = {...}
                 if bA[1] == bh or G(bA[1]) and bA[1] ~= cQ then
@@ -2868,27 +1750,27 @@ bj = function(aQ, bO, bw)
                 return bP[cP](bh, table.unpack(bA))
             end
             cR.__index = function(W, cS)
-                if cS == F or cS == \\"__proxy_id\\" then
+                if cS == F or cS == "__proxy_id" then
                     return rawget(cQ, cS)
                 end
                 return bj(cS, false, cQ)
             end
             cR.__tostring = function()
-                return bS .. \\":\\" .. cP
+                return bS .. ":" .. cP
             end
             return cQ
         end
-        if bS == \\"fenv\\" or bS == \\"getgenv\\" or bS == \\"ENV\\" or bS == \\"env\\" or bS == \\"E\\" or bS == \\"e\\" or bS == \\"L\\" or bS == \\"l\\" or bS == \\"F\\" or bS == \\"f\\" then
-            if b4 == \\"game\\" then
+        if bS == "fenv" or bS == "getgenv" or bS == "ENV" or bS == "env" or bS == "E" or bS == "e" or bS == "L" or bS == "l" or bS == "F" or bS == "f" then
+            if b4 == "game" then
                 return game
             end
-            if b4 == \\"workspace\\" then
+            if b4 == "workspace" then
                 return workspace
             end
-            if b4 == \\"script\\" then
+            if b4 == "script" then
                 return script
             end
-            if b4 == \\"Enum\\" then
+            if b4 == "Enum" then
                 return Enum
             end
             if _G[b4] ~= nil then
@@ -2896,40 +1778,40 @@ bj = function(aQ, bO, bw)
             end
             return nil
         end
-        if b4 == \\"LocalPlayer\\" then
-            local cT = bj(\\"LocalPlayer\\", false, bh)
-            local _ = aW(cT, \\"LocalPlayer\\")
-            at(string.format(\\"local %s = %s.LocalPlayer\\", _, bS))
+        if b4 == "LocalPlayer" then
+            local cT = bj("LocalPlayer", false, bh)
+            local _ = aW(cT, "LocalPlayer")
+            at(string.format("local %s = %s.LocalPlayer", _, bS))
             -- Set up LocalPlayer specific property handlers
             t.property_store[cT] = {
                 UserId = 1,
-                Name = \\"Lunr\\",
-                DisplayName = \\"Lunr\\",
+                Name = "Lunr",
+                DisplayName = "Lunr",
                 AccountAge = 69143,
-                ClassName = \\"Player\\"
+                ClassName = "Player"
             }
             return cT
         end
-        if b4 == \\"Parent\\" then
-            return t.parent_map[bh] or bj(\\"Parent\\", false)
+        if b4 == "Parent" then
+            return t.parent_map[bh] or bj("Parent", false)
         end
-        if b4 == \\"Name\\" then
-            return aT or \\"Object\\"
+        if b4 == "Name" then
+            return aT or "Object"
         end
-        if b4 == \\"ClassName\\" then
-            return aT or \\"Instance\\"
+        if b4 == "ClassName" then
+            return aT or "Instance"
         end
-        if bS == \\"fenv\\" or bS == \\"getgenv\\" or bS == \\"ENV\\" or bS == \\"env\\" or bS == \\"E\\" or bS == \\"e\\" or bS == \\"L\\" or bS == \\"l\\" or bS == \\"F\\" or bS == \\"f\\" then
-            if b4 == \\"game\\" then
+        if bS == "fenv" or bS == "getgenv" or bS == "ENV" or bS == "env" or bS == "E" or bS == "e" or bS == "L" or bS == "l" or bS == "F" or bS == "f" then
+            if b4 == "game" then
                 return game
             end
-            if b4 == \\"workspace\\" then
+            if b4 == "workspace" then
                 return workspace
             end
-            if b4 == \\"script\\" then
+            if b4 == "script" then
                 return script
             end
-            if b4 == \\"Enum\\" then
+            if b4 == "Enum" then
                 return Enum
             end
             if _G[b4] ~= nil then
@@ -2937,70 +1819,70 @@ bj = function(aQ, bO, bw)
             end
             return nil
         end
-        if b4 == \\"PlayerGui\\" then
-            return bj(\\"PlayerGui\\", false, bh)
+        if b4 == "PlayerGui" then
+            return bj("PlayerGui", false, bh)
         end
-        if b4 == \\"Backpack\\" then
-            return bj(\\"Backpack\\", false, bh)
+        if b4 == "Backpack" then
+            return bj("Backpack", false, bh)
         end
-        if b4 == \\"PlayerScripts\\" then
-            return bj(\\"PlayerScripts\\", false, bh)
+        if b4 == "PlayerScripts" then
+            return bj("PlayerScripts", false, bh)
         end
-        if b4 == \\"UserId\\" then
+        if b4 == "UserId" then
             return 1
         end
-        if b4 == \\"DisplayName\\" then
-            return \\"Lunr\\"
+        if b4 == "DisplayName" then
+            return "Lunr"
         end
-        if b4 == \\"Name\\" then
-            return \\"Lunr\\"
+        if b4 == "Name" then
+            return "Lunr"
         end
-        if b4 == \\"AccountAge\\" then
+        if b4 == "AccountAge" then
             return 69143
         end
-        if b4 == \\"Team\\" then
-            return bj(\\"Team\\", false, bh)
+        if b4 == "Team" then
+            return bj("Team", false, bh)
         end
-        if b4 == \\"TeamColor\\" then
-            return BrickColor.new(\\"White\\")
+        if b4 == "TeamColor" then
+            return BrickColor.new("White")
         end
-        if b4 == \\"Character\\" then
-            return bj(\\"Character\\", false, bh)
+        if b4 == "Character" then
+            return bj("Character", false, bh)
         end
-        if b4 == \\"Humanoid\\" then
-            local cU = bj(\\"Humanoid\\", false, bh)
+        if b4 == "Humanoid" then
+            local cU = bj("Humanoid", false, bh)
             t.property_store[cU] = {Health = 100, MaxHealth = 100, WalkSpeed = 16, JumpPower = 50, JumpHeight = 7.2}
             return cU
         end
-        if b4 == \\"HumanoidRootPart\\" or b4 == \\"PrimaryPart\\" or b4 == \\"RootPart\\" then
-            local cV = bj(\\"HumanoidRootPart\\", false, bh)
+        if b4 == "HumanoidRootPart" or b4 == "PrimaryPart" or b4 == "RootPart" then
+            local cV = bj("HumanoidRootPart", false, bh)
             t.property_store[cV] = {Position = Vector3.new(0, 5, 0), CFrame = CFrame.new(0, 5, 0)}
             return cV
         end
         local cW = {
-            \\"Head\\",
-            \\"Torso\\",
-            \\"UpperTorso\\",
-            \\"LowerTorso\\",
-            \\"RightArm\\",
-            \\"LeftArm\\",
-            \\"RightLeg\\",
-            \\"LeftLeg\\",
-            \\"RightHand\\",
-            \\"LeftHand\\",
-            \\"RightFoot\\",
-            \\"LeftFoot\\"
+            "Head",
+            "Torso",
+            "UpperTorso",
+            "LowerTorso",
+            "RightArm",
+            "LeftArm",
+            "RightLeg",
+            "LeftLeg",
+            "RightHand",
+            "LeftHand",
+            "RightFoot",
+            "LeftFoot"
         }
         for W, cr in ipairs(cW) do
             if b4 == cr then
                 return bj(b4, false, bh)
             end
         end
-        if b4 == \\"Animator\\" then
-            return bj(\\"Animator\\", false, bh)
+        if b4 == "Animator" then
+            return bj("Animator", false, bh)
         end
-        if b4 == \\"CurrentCamera\\" or b4 == \\"Camera\\" then
-            local cX = bj(\\"Camera\\", false, bh)
+        if b4 == "CurrentCamera" or b4 == "Camera" then
+            local cX = bj("Camera", false, bh)
             t.property_store[cX] = {
                 CFrame = CFrame.new(0, 10, 0),
                 FieldOfView = 70,
@@ -3008,8 +1890,8 @@ bj = function(aQ, bO, bw)
             }
             return cX
         end
-        if b4 == \\"UIGridLayout\\" then
-            local cY = bj(\\"UIGridLayout\\", false, bh)
+        if b4 == "UIGridLayout" then
+            local cY = bj("UIGridLayout", false, bh)
             t.property_store[cY] = {
                 SortOrder = 0,
                 CellPadding = UDim2.new(0, 0, 0, 0),
@@ -3020,11 +1902,11 @@ bj = function(aQ, bO, bw)
             }
             return cY
         end
-        if b4 == \\"CameraType\\" then
-            return bj(\\"Enum.CameraType.Custom\\", false)
+        if b4 == "CameraType" then
+            return bj("Enum.CameraType.Custom", false)
         end
-        if b4 == \\"CameraSubject\\" then
-            return bj(\\"Humanoid\\", false, bh)
+        if b4 == "CameraSubject" then
+            return bj("Humanoid", false, bh)
         end
         local cY = {
             Health = 100,
@@ -3077,174 +1959,162 @@ bj = function(aQ, bO, bw)
         if cZ[b4] ~= nil then
             return cZ[b4]
         end
-        if b4 == \\"AbsoluteSize\\" or b4 == \\"ViewportSize\\" then
+        if b4 == "AbsoluteSize" or b4 == "ViewportSize" then
             return Vector2.new(1920, 1080)
         end
-        if b4 == \\"AbsolutePosition\\" then
+        if b4 == "AbsolutePosition" then
             return Vector2.new(0, 0)
         end
-        if b4 == \\"Position\\" then
-            if aT and (aT:match(\\"Part\\") or aT:match(\\"Model\\") or aT:match(\\"Character\\") or aT:match(\\"Root\\")) then
+        if b4 == "Position" then
+            if aT and (aT:match("Part") or aT:match("Model") or aT:match("Character") or aT:match("Root")) then
                 return Vector3.new(0, 5, 0)
             end
             return UDim2.new(0, 0, 0, 0)
         end
-        if b4 == \\"Size\\" then
-            if aT and aT:match(\\"Part\\") then
+        if b4 == "Size" then
+            if aT and aT:match("Part") then
                 return Vector3.new(4, 1, 2)
             end
             return UDim2.new(1, 0, 1, 0)
         end
-        if b4 == \\"CFrame\\" then
+        if b4 == "CFrame" then
             return CFrame.new(0, 5, 0)
         end
-        if b4 == \\"Velocity\\" or b4 == \\"AssemblyLinearVelocity\\" then
+        if b4 == "Velocity" or b4 == "AssemblyLinearVelocity" then
             return Vector3.new(0, 0, 0)
         end
-        if b4 == \\"RotVelocity\\" or b4 == \\"AssemblyAngulunrVelocity\\" then
+        if b4 == "RotVelocity" or b4 == "AssemblyAngulunrVelocity" then
             return Vector3.new(0, 0, 0)
         end
-        if b4 == \\"Orientation\\" or b4 == \\"Rotation\\" then
+        if b4 == "Orientation" or b4 == "Rotation" then
             return Vector3.new(0, 0, 0)
         end
-        if b4 == \\"LookVector\\" then
+        if b4 == "LookVector" then
             return Vector3.new(0, 0, -1)
         end
-        if b4 == \\"RightVector\\" then
+        if b4 == "RightVector" then
             return Vector3.new(1, 0, 0)
         end
-        if b4 == \\"UpVector\\" then
+        if b4 == "UpVector" then
             return Vector3.new(0, 1, 0)
         end
         if
-            b4 == \\"Color\\" or b4 == \\"Color3\\" or b4 == \\"BackgroundColor3\\" or b4 == \\"BorderColor3\\" or b4 == \\"TextColor3\\" or
-                b4 == \\"PlaceholderColor3\\" or
-                b4 == \\"ImageColor3\\"
+            b4 == "Color" or b4 == "Color3" or b4 == "BackgroundColor3" or b4 == "BorderColor3" or b4 == "TextColor3" or
+                b4 == "PlaceholderColor3" or
+                b4 == "ImageColor3"
          then
             return Color3.new(1, 1, 1)
         end
-        if b4 == \\"BrickColor\\" then
-            return BrickColor.new(\\"Medium stone grey\\")
+        if b4 == "BrickColor" then
+            return BrickColor.new("Medium stone grey")
         end
-        if b4 == \\"Material\\" then
-            return bj(\\"Enum.Material.Plastic\\", false)
+        if b4 == "Material" then
+            return bj("Enum.Material.Plastic", false)
         end
-        if b4 == \\"Hit\\" then
+        if b4 == "Hit" then
             return CFrame.new(0, 0, -10)
         end
-        if b4 == \\"Origin\\" then
+        if b4 == "Origin" then
             return CFrame.new(0, 5, 0)
         end
-        if b4 == \\"Target\\" then
-            return bj(\\"Target\\", false, bh)
+        if b4 == "Target" then
+            return bj("Target", false, bh)
         end
-        if b4 == \\"X\\" or b4 == \\"Y\\" then
+        if b4 == "X" or b4 == "Y" then
             return 0
         end
-        if b4 == \\"UnitRay\\" then
+        if b4 == "UnitRay" then
             return Ray.new(Vector3.new(0, 5, 0), Vector3.new(0, 0, -1))
         end
-        if b4 == \\"ViewSizeX\\" then
+        if b4 == "ViewSizeX" then
             return 1920
         end
-        if b4 == \\"ViewSizeY\\" then
+        if b4 == "ViewSizeY" then
             return 1080
         end
-        if b4 == \\"Text\\" or b4 == \\"PlaceholderText\\" or b4 == \\"ContentText\\" or b4 == \\"Value\\" then
+        if b4 == "Text" or b4 == "PlaceholderText" or b4 == "ContentText" or b4 == "Value" then
             if s then
                 return s
             end
-            if b4 == \\"Value\\" then
-                return \\"input\\"
+            if b4 == "Value" then
+                return "input"
             end
-            return '\\"'
-        end
-        if b4 == \\"TextBounds\\" then
-            return Vector2.new(0, 0)
-        end
-        if b4 == \\"Font\\" then
-            return bj(\\"Enum.Font.SourceSans\\", false)
-        end
-        if b4 == \\"TextSize\\" then
-            return 14
-        end
-        if b4 == \\"Image\\" or b4 == \\"ImageContent\\" then
-            return '\\"'
+            return '"'\n        end\n        if b4 == "TextBounds" then\n            return Vector2.new(0, 0)\n        end\n        if b4 == "Font" then\n            return bj("Enum.Font.SourceSans", false)\n        end\n        if b4 == "TextSize" then\n            return 14\n        end\n        if b4 == "Image" or b4 == "ImageContent" then\n            return '"'
         end
         local c_ = {
-            \\"Changed\\",
-            \\"ChildAdded\\",
-            \\"ChildRemoved\\",
-            \\"DescendantAdded\\",
-            \\"DescendantRemoving\\",
-            \\"Touched\\",
-            \\"TouchEnded\\",
-            \\"InputBegan\\",
-            \\"InputEnded\\",
-            \\"InputChanged\\",
-            \\"MouseButton1Click\\",
-            \\"MouseButton1Down\\",
-            \\"MouseButton1Up\\",
-            \\"MouseButton2Click\\",
-            \\"MouseButton2Down\\",
-            \\"MouseButton2Up\\",
-            \\"MouseEnter\\",
-            \\"MouseLeave\\",
-            \\"MouseMoved\\",
-            \\"MouseWheelForward\\",
-            \\"MouseWheelBackward\\",
-            \\"Activated\\",
-            \\"Deactivated\\",
-            \\"FocusLost\\",
-            \\"FocusGained\\",
-            \\"Focused\\",
-            \\"Heartbeat\\",
-            \\"RenderStepped\\",
-            \\"Stepped\\",
-            \\"CharacterAdded\\",
-            \\"CharacterRemoving\\",
-            \\"CharacterAppearanceLoaded\\",
-            \\"PlayerAdded\\",
-            \\"PlayerRemoving\\",
-            \\"AncestryChanged\\",
-            \\"AttributeChanged\\",
-            \\"Died\\",
-            \\"FreeFalling\\",
-            \\"GettingUp\\",
-            \\"Jumping\\",
-            \\"Running\\",
-            \\"Seated\\",
-            \\"Swimming\\",
-            \\"StateChanged\\",
-            \\"HealthChanged\\",
-            \\"MoveToFinished\\",
-            \\"OnClientEvent\\",
-            \\"OnServerEvent\\",
-            \\"OnClientInvoke\\",
-            \\"OnServerInvoke\\",
-            \\"Completed\\",
-            \\"DidLoop\\",
-            \\"Stopped\\",
-            \\"Button1Down\\",
-            \\"Button1Up\\",
-            \\"Button2Down\\",
-            \\"Button2Up\\",
-            \\"Idle\\",
-            \\"Move\\",
-            \\"TextChanged\\",
-            \\"ReturnPressedFromOnScreenKeyboard\\",
-            \\"Triggered\\",
-            \\"TriggerEnded\\"
+            "Changed",
+            "ChildAdded",
+            "ChildRemoved",
+            "DescendantAdded",
+            "DescendantRemoving",
+            "Touched",
+            "TouchEnded",
+            "InputBegan",
+            "InputEnded",
+            "InputChanged",
+            "MouseButton1Click",
+            "MouseButton1Down",
+            "MouseButton1Up",
+            "MouseButton2Click",
+            "MouseButton2Down",
+            "MouseButton2Up",
+            "MouseEnter",
+            "MouseLeave",
+            "MouseMoved",
+            "MouseWheelForward",
+            "MouseWheelBackward",
+            "Activated",
+            "Deactivated",
+            "FocusLost",
+            "FocusGained",
+            "Focused",
+            "Heartbeat",
+            "RenderStepped",
+            "Stepped",
+            "CharacterAdded",
+            "CharacterRemoving",
+            "CharacterAppearanceLoaded",
+            "PlayerAdded",
+            "PlayerRemoving",
+            "AncestryChanged",
+            "AttributeChanged",
+            "Died",
+            "FreeFalling",
+            "GettingUp",
+            "Jumping",
+            "Running",
+            "Seated",
+            "Swimming",
+            "StateChanged",
+            "HealthChanged",
+            "MoveToFinished",
+            "OnClientEvent",
+            "OnServerEvent",
+            "OnClientInvoke",
+            "OnServerInvoke",
+            "Completed",
+            "DidLoop",
+            "Stopped",
+            "Button1Down",
+            "Button1Up",
+            "Button2Down",
+            "Button2Up",
+            "Idle",
+            "Move",
+            "TextChanged",
+            "ReturnPressedFromOnScreenKeyboard",
+            "Triggered",
+            "TriggerEnded"
         }
         for W, d0 in ipairs(c_) do
             if b4 == d0 then
-                local cg = bj(bS .. \\".\\" .. b4, false, bh)
-                t.registry[cg] = bS .. \\".\\" .. b4
+                local cg = bj(bS .. "." .. b4, false, bh)
+                t.registry[cg] = bS .. "." .. b4
                 return cg
             end
         end
-        if bS:match(\\"^Enum\\") then
-            local d1 = bS .. \\".\\" .. cP
+        if bS:match("^Enum") then
+            local d1 = bS .. "." .. cP
             local d2 = bj(d1, false)
             t.registry[d2] = d1
             return d2
@@ -3252,22 +2122,22 @@ bj = function(aQ, bO, bw)
         return bk(cP, bh)
     end
     bi.__newindex = function(b2, b4, b5)
-        if b4 == F or b4 == \\"__proxy_id\\" then
+        if b4 == F or b4 == "__proxy_id" then
             rawset(b2, b4, b5)
             return
         end
-        local bS = t.registry[bh] or aT or \\"object\\"
+        local bS = t.registry[bh] or aT or "object"
         local cP = aE(b4)
         t.property_store[bh] = t.property_store[bh] or {}
         t.property_store[bh][b4] = b5
-        if b4 == \\"Parent\\" and G(b5) then
+        if b4 == "Parent" and G(b5) then
             t.parent_map[bh] = b5
         end
-        at(string.format(\\"%s.%s = %s\\", bS, cP, aZ(b5)))
+        at(string.format("%s.%s = %s", bS, cP, aZ(b5)))
     end
     bi.__call = function(b2, ...)
-        local bS = t.registry[bh] or aT or \\"func\\"
-        if bS == \\"fenv\\" or bS == \\"getgenv\\" or bS == \\"ENV\\" or bS == \\"env\\" or bS == \\"E\\" or bS == \\"e\\" or bS == \\"L\\" or bS == \\"l\\" or bS == \\"F\\" or bS == \\"f\\" then
+        local bS = t.registry[bh] or aT or "func"
+        if bS == "fenv" or bS == "getgenv" or bS == "ENV" or bS == "env" or bS == "E" or bS == "e" or bS == "L" or bS == "l" or bS == "F" or bS == "f" then
             return bh
         end
         local bA = {...}
@@ -3275,23 +2145,23 @@ bj = function(aQ, bO, bw)
         for W, b5 in ipairs(bA) do
             table.insert(c5, aZ(b5))
         end
-        local z = bj(\\"result\\", false)
-        local _ = aW(z, \\"result\\")
-        at(string.format(\\"local %s = %s(%s)\\", _, bS, table.concat(c5, \\", \\")))
+        local z = bj("result", false)
+        local _ = aW(z, "result")
+        at(string.format("local %s = %s(%s)", _, bS, table.concat(c5, ", ")))
         return z
     end
     local function d3(d4)
         local function d5(bo, aa)
             local bh, bi = bg()
-            local d6 = \\"0\\"
+            local d6 = "0"
             if bo ~= nil then
                 d6 = t.registry[bo] or aZ(bo)
             end
-            local d7 = \\"0\\"
+            local d7 = "0"
             if aa ~= nil then
                 d7 = t.registry[aa] or aZ(aa)
             end
-            local d8 = \\"(\\" .. d6 .. \\" \\" .. d4 .. \\" \\" .. d7 .. \\")\\"
+            local d8 = "(" .. d6 .. " " .. d4 .. " " .. d7 .. ")"
             t.registry[bh] = d8
             bi.__tostring = function()
                 return d8
@@ -3300,18 +2170,18 @@ bj = function(aQ, bO, bw)
                 return bh
             end
             bi.__index = function(W, b4)
-                if b4 == F or b4 == \\"__proxy_id\\" then
+                if b4 == F or b4 == "__proxy_id" then
                     return rawget(bh, b4)
                 end
-                return bj(d8 .. \\".\\" .. aE(b4), false)
+                return bj(d8 .. "." .. aE(b4), false)
             end
-            bi.__add = d3(\\"+\\")
-            bi.__sub = d3(\\"-\\")
-            bi.__mul = d3(\\"*\\")
-            bi.__div = d3(\\"/\\")
-            bi.__mod = d3(\\"%\\")
-            bi.__pow = d3(\\"^\\")
-            bi.__concat = d3(\\"..\\")
+            bi.__add = d3("+")
+            bi.__sub = d3("-")
+            bi.__mul = d3("*")
+            bi.__div = d3("/")
+            bi.__mod = d3("%")
+            bi.__pow = d3("^")
+            bi.__concat = d3("..")
             bi.__eq = function()
                 return false
             end
@@ -3325,13 +2195,13 @@ bj = function(aQ, bO, bw)
         end
         return d5
     end
-    bi.__add = d3(\\"+\\")
-    bi.__sub = d3(\\"-\\")
-    bi.__mul = d3(\\"*\\")
-    bi.__div = d3(\\"/\\")
-    bi.__mod = d3(\\"%\\")
-    bi.__pow = d3(\\"^\\")
-    bi.__concat = d3(\\"..\\")
+    bi.__add = d3("+")
+    bi.__sub = d3("-")
+    bi.__mul = d3("*")
+    bi.__div = d3("/")
+    bi.__mod = d3("%")
+    bi.__pow = d3("^")
+    bi.__concat = d3("..")
     bi.__eq = function()
         return false
     end
@@ -3343,7 +2213,7 @@ bj = function(aQ, bO, bw)
     end
     bi.__unm = function(bo)
         local z, d9 = bg()
-        t.registry[z] = \\"(-\\" .. (t.registry[bo] or aZ(bo)) .. \\")\\"
+        t.registry[z] = "(-" .. (t.registry[bo] or aZ(bo)) .. ")"
         d9.__tostring = function()
             return t.registry[z]
         end
@@ -3353,20 +2223,20 @@ bj = function(aQ, bO, bw)
         return 0
     end
     bi.__tostring = function()
-        return t.registry[bh] or aT or \\"Object\\"
+        return t.registry[bh] or aT or "Object"
     end
     bi.__pairs = function()
-        if aT == \\"game\\" then
-            error(\\"attempt to iterate over game (not iterable)\\", 2)
+        if aT == "game" then
+            error("attempt to iterate over game (not iterable)", 2)
         end
         return function()
             return nil
         end, bh, nil
     end
     bi.__ipairs = bi.__pairs
-    if aT == \\"game\\" then
+    if aT == "game" then
         bi.__call = function()
-            error(\\"attempt to call a Instance value\\", 2)
+            error("attempt to call a Instance value", 2)
         end
     end
     return bh
@@ -3375,57 +2245,57 @@ local function da(am, db)
     local dc = {}
     local dd = {}
     dd.__index = function(b2, b4)
-        if b4 == \\"new\\" or db and db[b4] then
+        if b4 == "new" or db and db[b4] then
             return function(...)
                 local bA = {...}
                 local c5 = {}
                 for W, b5 in ipairs(bA) do
                     table.insert(c5, aZ(b5))
                 end
-                local d8 = am .. \\".\\" .. b4 .. \\"(\\" .. table.concat(c5, \\", \\") .. \\")\\"
+                local d8 = am .. "." .. b4 .. "(" .. table.concat(c5, ", ") .. ")"
                 local bh, de = bg()
                 t.registry[bh] = d8
                 de.__tostring = function()
                     return d8
                 end
                 de.__index = function(W, bG)
-                    if bG == F or bG == \\"__proxy_id\\" then
+                    if bG == F or bG == "__proxy_id" then
                         return rawget(bh, bG)
                     end
-                    if bG == \\"X\\" or bG == \\"Y\\" or bG == \\"Z\\" or bG == \\"W\\" then
+                    if bG == "X" or bG == "Y" or bG == "Z" or bG == "W" then
                         return 0
                     end
-                    if bG == \\"Magnitude\\" then
+                    if bG == "Magnitude" then
                         return 0
                     end
-                    if bG == \\"Unit\\" then
+                    if bG == "Unit" then
                         return bh
                     end
-                    if bG == \\"Position\\" then
+                    if bG == "Position" then
                         return bh
                     end
-                    if bG == \\"CFrame\\" then
+                    if bG == "CFrame" then
                         return bh
                     end
-                    if bG == \\"LookVector\\" or bG == \\"RightVector\\" or bG == \\"UpVector\\" then
+                    if bG == "LookVector" or bG == "RightVector" or bG == "UpVector" then
                         return bh
                     end
-                    if bG == \\"Rotation\\" then
+                    if bG == "Rotation" then
                         return bh
                     end
-                    if bG == \\"R\\" or bG == \\"G\\" or bG == \\"B\\" then
+                    if bG == "R" or bG == "G" or bG == "B" then
                         return 1
                     end
-                    if bG == \\"Width\\" or bG == \\"Height\\" then
+                    if bG == "Width" or bG == "Height" then
                         return UDim.new(0, 0)
                     end
-                    if bG == \\"Min\\" or bG == \\"Max\\" then
+                    if bG == "Min" or bG == "Max" then
                         return 0
                     end
-                    if bG == \\"Scale\\" or bG == \\"Offset\\" then
+                    if bG == "Scale" or bG == "Offset" then
                         return 0
                     end
-                    if bG == \\"p\\" then
+                    if bG == "p" then
                         return bh
                     end
                     return 0
@@ -3434,26 +2304,26 @@ local function da(am, db)
                     return function(bo, aa)
                         local dg, dh = bg()
                         local O =
-                            \\"(\\" .. (t.registry[bo] or aZ(bo)) .. \\" \\" .. Z .. \\" \\" .. (t.registry[aa] or aZ(aa)) .. \\")\\"
+                            "(" .. (t.registry[bo] or aZ(bo)) .. " " .. Z .. " " .. (t.registry[aa] or aZ(aa)) .. ")"
                         t.registry[dg] = O
                         dh.__tostring = function()
                             return O
                         end
                         dh.__index = de.__index
-                        dh.__add = df(\\"+\\")
-                        dh.__sub = df(\\"-\\")
-                        dh.__mul = df(\\"*\\")
-                        dh.__div = df(\\"/\\")
+                        dh.__add = df("+")
+                        dh.__sub = df("-")
+                        dh.__mul = df("*")
+                        dh.__div = df("/")
                         return dg
                     end
                 end
-                de.__add = df(\\"+\\")
-                de.__sub = df(\\"-\\")
-                de.__mul = df(\\"*\\")
-                de.__div = df(\\"/\\")
+                de.__add = df("+")
+                de.__sub = df("-")
+                de.__mul = df("*")
+                de.__div = df("/")
                 de.__unm = function(bo)
                     local dg, dh = bg()
-                    t.registry[dg] = \\"(-\\" .. (t.registry[bo] or aZ(bo)) .. \\")\\"
+                    t.registry[dg] = "(-" .. (t.registry[bo] or aZ(bo)) .. ")"
                     dh.__tostring = function()
                         return t.registry[dg]
                     end
@@ -3472,13 +2342,13 @@ local function da(am, db)
     end
     return setmetatable(dc, dd)
 end
-Vector3 = da(\\"Vector3\\", {new = true, zero = true, one = true})
-Vector2 = da(\\"Vector2\\", {new = true, zero = true, one = true})
-UDim = da(\\"UDim\\", {new = true})
-UDim2 = da(\\"UDim2\\", {new = true, fromScale = true, fromOffset = true})
+Vector3 = da("Vector3", {new = true, zero = true, one = true})
+Vector2 = da("Vector2", {new = true, zero = true, one = true})
+UDim = da("UDim", {new = true})
+UDim2 = da("UDim2", {new = true, fromScale = true, fromOffset = true})
 CFrame =
     da(
-    \\"CFrame\\",
+    "CFrame",
     {
         new = true,
         Angles = true,
@@ -3491,10 +2361,10 @@ CFrame =
         identity = true
     }
 )
-Color3 = da(\\"Color3\\", {new = true, fromRGB = true, fromHSV = true, fromHex = true})
+Color3 = da("Color3", {new = true, fromRGB = true, fromHSV = true, fromHex = true})
 BrickColor =
     da(
-    \\"BrickColor\\",
+    "BrickColor",
     {
         new = true,
         random = true,
@@ -3507,27 +2377,27 @@ BrickColor =
         palette = true
     }
 )
-TweenInfo = da(\\"TweenInfo\\", {new = true})
-Rect = da(\\"Rect\\", {new = true})
-Region3 = da(\\"Region3\\", {new = true})
-Region3int16 = da(\\"Region3int16\\", {new = true})
-Ray = da(\\"Ray\\", {new = true})
-NumberRange = da(\\"NumberRange\\", {new = true})
-NumberSequence = da(\\"NumberSequence\\", {new = true})
-NumberSequenceKeypoint = da(\\"NumberSequenceKeypoint\\", {new = true})
-ColorSequence = da(\\"ColorSequence\\", {new = true})
-ColorSequenceKeypoint = da(\\"ColorSequenceKeypoint\\", {new = true})
-PhysicalProperties = da(\\"PhysicalProperties\\", {new = true})
-Font = da(\\"Font\\", {new = true, fromEnum = true, fromName = true, fromId = true})
-RaycastParams = da(\\"RaycastParams\\", {new = true})
-OverlapParams = da(\\"OverlapParams\\", {new = true})
-PathWaypoint = da(\\"PathWaypoint\\", {new = true})
-Axes = da(\\"Axes\\", {new = true})
-Faces = da(\\"Faces\\", {new = true})
-Vector3int16 = da(\\"Vector3int16\\", {new = true})
-Vector2int16 = da(\\"Vector2int16\\", {new = true})
-CatalogSearchParams = da(\\"CatalogSearchParams\\", {new = true})
-DateTime = da(\\"DateTime\\", {now = true, fromUnixTimestamp = true, fromUnixTimestampMillis = true, fromIsoDate = true})
+TweenInfo = da("TweenInfo", {new = true})
+Rect = da("Rect", {new = true})
+Region3 = da("Region3", {new = true})
+Region3int16 = da("Region3int16", {new = true})
+Ray = da("Ray", {new = true})
+NumberRange = da("NumberRange", {new = true})
+NumberSequence = da("NumberSequence", {new = true})
+NumberSequenceKeypoint = da("NumberSequenceKeypoint", {new = true})
+ColorSequence = da("ColorSequence", {new = true})
+ColorSequenceKeypoint = da("ColorSequenceKeypoint", {new = true})
+PhysicalProperties = da("PhysicalProperties", {new = true})
+Font = da("Font", {new = true, fromEnum = true, fromName = true, fromId = true})
+RaycastParams = da("RaycastParams", {new = true})
+OverlapParams = da("OverlapParams", {new = true})
+PathWaypoint = da("PathWaypoint", {new = true})
+Axes = da("Axes", {new = true})
+Faces = da("Faces", {new = true})
+Vector3int16 = da("Vector3int16", {new = true})
+Vector2int16 = da("Vector2int16", {new = true})
+CatalogSearchParams = da("CatalogSearchParams", {new = true})
+DateTime = da("DateTime", {now = true, fromUnixTimestamp = true, fromUnixTimestampMillis = true, fromIsoDate = true})
 Random = {new = function(di)
         local x = {}
         function x:NextNumber(dj, dk)
@@ -3553,14 +2423,14 @@ setmetatable(
             return b2.new(di)
         end}
 )
-Enum = bj(\\"Enum\\", true)
+Enum = bj("Enum", true)
 local dm = {}
 dm.__index = function(b2, b4)
-    if b4 == F or b4 == \\"__proxy_id\\" then
+    if b4 == F or b4 == "__proxy_id" then
         return rawget(b2, b4)
     end
-    local dn = bj(\\"Enum.\\" .. aE(b4), false)
-    t.registry[dn] = \\"Enum.\\" .. aE(b4)
+    local dn = bj("Enum." .. aE(b4), false)
+    t.registry[dn] = "Enum." .. aE(b4)
     return dn
 end
 setmetatable(Enum, dm)
@@ -3570,22 +2440,22 @@ Instance = {new = function(bX, bS)
         local _ = aW(x, bY)
         if bS then
             local dp = t.registry[bS] or aZ(bS)
-            at(string.format(\\"local %s = Instance.new(%s, %s)\\", _, aH(bY), dp))
+            at(string.format("local %s = Instance.new(%s, %s)", _, aH(bY), dp))
             t.parent_map[x] = bS
         else
-            at(string.format(\\"local %s = Instance.new(%s)\\", _, aH(bY)))
+            at(string.format("local %s = Instance.new(%s)", _, aH(bY)))
         end
         return x
     end}
 _G.__real_game = game
-game = bj(\\"game\\", true)
-workspace = bj(\\"workspace\\", true)
-script = bj(\\"script\\", true)
-t.property_store[script] = {Name = \\"DumpedScript\\", Parent = game, ClassName = \\"LocalScript\\"}
+game = bj("game", true)
+workspace = bj("workspace", true)
+script = bj("script", true)
+t.property_store[script] = {Name = "DumpedScript", Parent = game, ClassName = "LocalScript"}
 _G.__heartbeat_callbacks = _G.__heartbeat_callbacks or {}
 task = {
     _add_heartbeat = function(fn)
-        if type(fn) == \\"function\\" then
+        if type(fn) == "function" then
             table.insert(_G.__heartbeat_callbacks, fn)
         end
     end,
@@ -3595,48 +2465,48 @@ task = {
         end
         t.wait_calls = (t.wait_calls or 0) + 1
         if t.wait_calls > r.TASK_WAIT_LIMIT then
-            at(\\"error('lunr: task.wait infinite loop detected and stopped')\\")
+            at("error('lunr: task.wait infinite loop detected and stopped')")
             error('lunr: task.wait infinite loop detected and stopped')
         end
         if dq then
-            at(string.format(\\"task.wait(%s)\\", aZ(dq)))
+            at(string.format("task.wait(%s)", aZ(dq)))
         else
-            at(\\"task.wait()\\")
+            at("task.wait()")
         end
         return dq or 0.03, p.clock()
     end,
     spawn = function(dr, ...)
-        if type(dr) ~= \\"function\\" and type(dr) ~= \\"thread\\" then
-            error(\\"invalid argument #1 to 'spawn' (function or thread expected)\\", 2)
+        if type(dr) ~= "function" and type(dr) ~= "thread" then
+            error("invalid argument #1 to 'spawn' (function or thread expected)", 2)
         end
         local bA = {...}
         local thread = coroutine.create(function() return true end)
-        if at(\\"task.spawn(function()\\") then
+        if at("task.spawn(function()") then
             t.indent = t.indent + 1
-            if j(dr) == \\"function\\" then
+            if j(dr) == "function" then
                 local success, result = pcall(dr, table.unpack(bA or {}))
                 if not success then
-                    at(\\"-- Error in task.spawn: \\" .. tostring(result))
+                    at("-- Error in task.spawn: " .. tostring(result))
                 end
-            elseif j(dr) == \\"thread\\" then
+            elseif j(dr) == "thread" then
                 pcall(coroutine.resume, dr)
             end
             while t.pending_iterator do
                 t.indent = t.indent - 1
-                at(\\"end\\")
+                at("end")
                 t.pending_iterator = false
             end
             t.indent = t.indent - 1
-            at(\\"end)\\")
+            at("end)")
         end
         return thread
     end,
     delay = function(dq, dr, ...)
         local bA = {...}
-        if at(string.format(\\"task.delay(%s, function()\\", aZ(dq or 0))) then
+        if at(string.format("task.delay(%s, function()", aZ(dq or 0))) then
             t.indent = t.indent + 1
             -- Env-check bypass: skip running long-delay callbacks (e.g. 5s) so anti-env-logger scripts complete
-            if j(dr) == \\"function\\" and (dq or 0) < 1 then
+            if j(dr) == "function" and (dq or 0) < 1 then
                 xpcall(
                     function()
                         dr(table.unpack(bA or {}))
@@ -3647,24 +2517,24 @@ task = {
             end
             while t.pending_iterator do
                 t.indent = t.indent - 1
-                at(\\"end\\")
+                at("end")
                 t.pending_iterator = false
             end
             t.indent = t.indent - 1
-            at(\\"end)\\")
+            at("end)")
         end
     end,
     defer = function(dr, ...)
         local bA = {...}
-        if at(\\"task.defer(function()\\") then
+        if at("task.defer(function()") then
             t.indent = t.indent + 1
-            if j(dr) == \\"function\\" then
+            if j(dr) == "function" then
                 xpcall(
                     function()
                         dr(table.unpack(bA or {}))
                     end,
                     function(ds)
-                --    if m(ds):match(\\"LIMIT\\") or m(ds):match(\\"DUMPER\\") then
+                --    if m(ds):match("LIMIT") or m(ds):match("DUMPER") then
                    --       i(ds, 0)
                    --   end
                     end
@@ -3672,40 +2542,40 @@ task = {
             end
             while t.pending_iterator do
                 t.indent = t.indent - 1
-                at(\\"end\\")
+                at("end")
                 t.pending_iterator = false
             end
             t.indent = t.indent - 1
-            at(\\"end)\\")
+            at("end)")
         end
     end,
     cancel = function(dt)
-        at(\\"task.cancel(thread)\\")
+        at("task.cancel(thread)")
     end,
     synchronize = function()
-        at(\\"task.synchronize()\\")
+        at("task.synchronize()")
     end,
     desynchronize = function()
-        at(\\"task.desynchronize()\\")
+        at("task.desynchronize()")
     end
 }
 wait = function(dq)
     t.wait_calls = (t.wait_calls or 0) + 1
     if t.wait_calls > r.TASK_WAIT_LIMIT then
-        at(\\"error('lunr: wait infinite loop detected and stopped')\\")
+        at("error('lunr: wait infinite loop detected and stopped')")
         error('lunr: wait infinite loop detected and stopped')
     end
     if dq then
-        at(string.format(\\"wait(%s)\\", aZ(dq)))
+        at(string.format("wait(%s)", aZ(dq)))
     else
-        at(\\"wait()\\")
+        at("wait()")
     end
     return dq or 0.03, p.clock()
 end
 delay = function(dq, dr)
-    at(string.format(\\"delay(%s, function()\\", aZ(dq or 0)))
+    at(string.format("delay(%s, function()", aZ(dq or 0)))
     t.indent = t.indent + 1
-    if j(dr) == \\"function\\" then
+    if j(dr) == "function" then
         xpcall(
             dr,
             function()
@@ -3713,12 +2583,12 @@ delay = function(dq, dr)
         )
     end
     t.indent = t.indent - 1
-    at(\\"end)\\")
+    at("end)")
 end
 spawn = function(dr)
-    at(\\"spawn(function()\\")
+    at("spawn(function()")
     t.indent = t.indent + 1
-    if j(dr) == \\"function\\" then
+    if j(dr) == "function" then
         xpcall(
             dr,
             function()
@@ -3726,7 +2596,7 @@ spawn = function(dr)
         )
     end
     t.indent = t.indent - 1
-    at(\\"end)\\")
+    at("end)")
 end
 tick = function()
     return p.time()
@@ -3820,16 +2690,16 @@ local function dy()
                 if original_G and original_G[b4] ~= nil then
                     return dw(b4, original_G[b4])
                 end
-                if b4 == \\"game\\" then
+                if b4 == "game" then
                     return game
                 end
-                if b4 == \\"workspace\\" then
+                if b4 == "workspace" then
                     return workspace
                 end
-                if b4 == \\"script\\" then
+                if b4 == "script" then
                     return script
                 end
-                if b4 == \\"shared\\" then
+                if b4 == "shared" then
                     return shared
                 end
                 return nil
@@ -3840,10 +2710,10 @@ local function dy()
                     return
                 end
                 -- Also skip if the value is a function (built-in being registered)
-                if type(b5) == \\"function\\" then
+                if type(b5) == "function" then
                     return
                 end
-                at(string.format(\\"_G.%s = %s\\", aE(b4), aZ(b5)))
+                at(string.format("_G.%s = %s", aE(b4), aZ(b5)))
                 if original_G then rawset(original_G, b4, b5) end
             end}
     )
@@ -3865,33 +2735,33 @@ local function dz(dA)
     local bh = {}
     local dd = {}
     local dB = {
-        \\"hookfunction\\",
-        \\"hookmetamethod\\",
-        \\"newcclosure\\",
-        \\"replaceclosure\\",
-        \\"checkcaller\\",
-        \\"iscclosure\\",
-        \\"islclosure\\",
-        \\"getrawmetatable\\",
-        \\"setreadonly\\",
-        \\"make_writeable\\",
-        \\"getrenv\\",
-        \\"getgc\\",
-        \\"getinstances\\"
+        "hookfunction",
+        "hookmetamethod",
+        "newcclosure",
+        "replaceclosure",
+        "checkcaller",
+        "iscclosure",
+        "islclosure",
+        "getrawmetatable",
+        "setreadonly",
+        "make_writeable",
+        "getrenv",
+        "getgc",
+        "getinstances"
     }
     local function dC(dD, bG)
         local bd = aE(bG)
-        if bd:match(\\"^[%a_][%w_]*$\\") then
+        if bd:match("^[%a_][%w_]*$") then
             if dD then
-                return dD .. \\".\\" .. bd
+                return dD .. "." .. bd
             end
             return bd
         else
-            local aI = bd:gsub(\\"'\\", \\"\\\\\\\\'\\")
+            local aI = bd:gsub("'", "\\\'")
             if dD then
-                return dD .. \\"['\\" .. aI .. \\"']\\"
+                return dD .. "['" .. aI .. "']"
             end
-            return \\"['\\" .. aI .. \\"']\\"
+            return "['" .. aI .. "']"
         end
     end
     dd.__index = function(b2, b4)
@@ -3903,7 +2773,7 @@ local function dz(dA)
     end
     dd.__newindex = function(b2, b4, b5)
         local dG = dC(dA, b4)
-        at(string.format(\\"getgenv().%s = %s\\", dG, aZ(b5)))
+        at(string.format("getgenv().%s = %s", dG, aZ(b5)))
         -- Also store in _G to make it accessible
         if original_G then
             original_G[b4] = b5
@@ -3923,7 +2793,7 @@ end
 
 local LUNR_GETINFO = LUNR_GUARD(function(thread, func, what)
     local t, f, w
-    if type(thread) == \\"thread\\" then
+    if type(thread) == "thread" then
         t, f, w = thread, func, what
     else
         t, f, w = nil, thread, func
@@ -3939,36 +2809,36 @@ local LUNR_GETINFO = LUNR_GUARD(function(thread, func, what)
     if not info then return nil end
     
     -- Secure our functions
-    local target_fn = info.func or (type(f) == \\"function\\" and f)
+    local target_fn = info.func or (type(f) == "function" and f)
     if LUNR_PROTECTED[f] or (target_fn and LUNR_PROTECTED[target_fn]) then
         info.source = nil
         info.short_src = nil
-        info.what = \\"C\\"
+        info.what = "C"
     elseif info.source then
         -- Forge to look like real Roblox source
-        info.source = \\"@\\" .. (info.source:gsub(\\"^%[string .*%]$\\", \\"script.lua\\"))
+        info.source = "@" .. (info.source:gsub("^%[string .*%]$", "script.lua"))
     end
-    info.what = info.what or \\"Lua\\"
+    info.what = info.what or "Lua"
     info.func = info.func or function() end
     return info
 end)
 local exploit_funcs = {getgenv = function()
-        at(\\"getgenv()\\")
+        at("getgenv()")
         return dz(nil)
     end, getrenv = function()
-        at(\\"getrenv()\\")
-        return bj(\\"getrenv()\\", false)
+        at("getrenv()")
+        return bj("getrenv()", false)
     end, getfenv = function(dH)
-        at(\\"getfenv()\\")
+        at("getfenv()")
         return _G
     end, setfenv = function(dI, dJ)
-        if j(dI) ~= \\"function\\" then
+        if j(dI) ~= "function" then
             return
         end
         local L = 1
         while true do
             local am = debug.getupvalue(dI, L)
-            if am == \\"_ENV\\" then
+            if am == "_ENV" then
                 debug.setupvalue(dI, L, dJ)
                 break
             elseif not am then
@@ -3978,55 +2848,55 @@ local exploit_funcs = {getgenv = function()
         end
         return dI
     end, loadstring = function(al, dA)
-        if j(al) ~= \\"string\\" then return nil, \\"invalid argument\\" end
-        local R, an = f(al, dA or \\"loadstring\\")
+        if j(al) ~= "string" then return nil, "invalid argument" end
+        local R, an = f(al, dA or "loadstring")
         if not R then
-            return nil, '[string \\"loadstring\\"]:1: syntax error'
+            return nil, '[string "loadstring"]:1: syntax error'
         end
         return R
     end,
  hookfunction = function(dK, dL)
-        at(string.format(\\"hookfunction(%s, %s)\\", aZ(dK), aZ(dL)))
+        at(string.format("hookfunction(%s, %s)", aZ(dK), aZ(dL)))
         return dK
     end, hookmetamethod = function(x, dM, dN)
-        at(string.format(\\"hookmetamethod(%s, %s, %s)\\", aZ(x), aH(dM), aZ(dN)))
+        at(string.format("hookmetamethod(%s, %s, %s)", aZ(x), aH(dM), aZ(dN)))
         return dN
     end,    getrawmetatable = function(x)
         return getmetatable(x)
     end, setrawmetatable = function(x, dd)
         if a.isreadonly(x) then return x end
-        at(string.format(\\"setrawmetatable(%s, %s)\\", aZ(x), aZ(dd)))
+        at(string.format("setrawmetatable(%s, %s)", aZ(x), aZ(dd)))
         return debug.setmetatable(x, dd)
     end,
  getnamecallmethod = function()
-        return \\"__namecall\\"
+        return "__namecall"
     end, setnamecallmethod = function(dM)
     end, checkcaller = function()
         return true
     end,    islclosure = function(dr)
-        return t.closure_tags[dr] ~= \\"c\\"
+        return t.closure_tags[dr] ~= "c"
     end,
     iscclosure = function(dr)
-        return t.closure_tags[dr] == \\"c\\"
+        return t.closure_tags[dr] == "c"
     end,
     newcclosure = function(fn)
         local wrapper = function(...)
             return fn(...)
         end
-        t.closure_tags[wrapper] = \\"c\\"
+        t.closure_tags[wrapper] = "c"
         return wrapper
     end,
  clonefunction = function(dr)
         return dr
     end, request = function(dO)
-        local url = dO.Url or dO.url or \\"unknown\\"
-        local method = dO.Method or dO.method or \\"GET\\"
+        local url = dO.Url or dO.url or "unknown"
+        local method = dO.Method or dO.method or "GET"
         -- Log the request call like other functions
-        local logMsg = string.format(\\"request({Url = %s, Method = %s})\\", aH(url), aH(method))
+        local logMsg = string.format("request({Url = %s, Method = %s})", aH(url), aH(method))
         -- Use a direct approach to log
         table.insert(t.output, logMsg)
-        table.insert(t.string_refs, {value = url, hint = \\"HTTP Request\\"})
-        return {Success = true, StatusCode = 200, StatusMessage = \\"OK\\", Headers = {}, Body = \\"{}\\"}
+        table.insert(t.string_refs, {value = url, hint = "HTTP Request"})
+        return {Success = true, StatusCode = 200, StatusMessage = "OK", Headers = {}, Body = "{}"}
     end, http_request = function(dO)
         return dO
     end, syn = {request = function(dO)
@@ -4034,69 +2904,24 @@ local exploit_funcs = {getgenv = function()
         end}, http = {request = function(dO)
             return dO
         end}, HttpPost = function(cI, cJ)
-        at(string.format(\\"HttpPost(%s, %s)\\", aE(cI), aE(cJ)))
-        return \\"{}\\"
+        at(string.format("HttpPost(%s, %s)", aE(cI), aE(cJ)))
+        return "{}"
     end, setclipboard = function(cJ)
-        at(string.format(\\"setclipboard(%s)\\", aZ(cJ)))
+        at(string.format("setclipboard(%s)", aZ(cJ)))
     end, getclipboard = function()
-        return '\\"'
-    end, identifyexecutor = function()
-        return \\"Lunr\\", \\"1.0\\"
-    end, getexecutorname = function()
-        return \\"Lunr\\"
-    end, gethui = function()
-        local dP = bj(\\"HiddenUI\\", false)
-        aW(dP, \\"HiddenUI\\")
-        at(string.format(\\"local %s = gethui()\\", t.registry[dP]))
-        return dP
-    end, gethiddenui = function()
-        local dP = {}
-        t.registry[dP] = \\"gethui()\\"
-        at(string.format(\\"local %s = gethui()\\", t.registry[dP]))
-        return dP
-    end, protectgui = function(dQ)
-    end, iswindowactive = function()
-        return true
-    end, isrbxactive = function()
-        return true
-    end, isgameactive = function()
-        return true
-    end, getconnections = function(cg)
-        return {}
-    end, firesignal = function(cg, ...)
-    end, fireclickdetector = function(dR, dS)
-    end, fireproximityprompt = function(dT)
-    end, firetouchinterest = function(dU, dV, dW)
-    end, getinstances = function()
-        return {game, workspace, script}
-    end, getnilinstances = function()
-        return {}
-    end, getgc = function()
-        return {}
-    end,    getscripts = function()
-        return t.scripts
-    end, getrunningscripts = function()
-        return t.scripts
-    end,
- getloadedmodules = function()
-        return {}
-    end, getcallingscript = function()
-        return script
-    end, readfile = function(dA)
-        at(string.format(\\"readfile(%s)\\", aH(dA)))
-        return t.filesystem and t.filesystem.files[dA] or '\\"'
+        return '"'\n    end, identifyexecutor = function()\n        return "Lunr", "1.0"\n    end, getexecutorname = function()\n        return "Lunr"\n    end, gethui = function()\n        local dP = bj("HiddenUI", false)\n        aW(dP, "HiddenUI")\n        at(string.format("local %s = gethui()", t.registry[dP]))\n        return dP\n    end, gethiddenui = function()\n        local dP = {}\n        t.registry[dP] = "gethui()"\n        at(string.format("local %s = gethui()", t.registry[dP]))\n        return dP\n    end, protectgui = function(dQ)\n    end, iswindowactive = function()\n        return true\n    end, isrbxactive = function()\n        return true\n    end, isgameactive = function()\n        return true\n    end, getconnections = function(cg)\n        return {}\n    end, firesignal = function(cg, ...)\n    end, fireclickdetector = function(dR, dS)\n    end, fireproximityprompt = function(dT)\n    end, firetouchinterest = function(dU, dV, dW)\n    end, getinstances = function()\n        return {game, workspace, script}\n    end, getnilinstances = function()\n        return {}\n    end, getgc = function()\n        return {}\n    end,    getscripts = function()\n        return t.scripts\n    end, getrunningscripts = function()\n        return t.scripts\n    end,\n getloadedmodules = function()\n        return {}\n    end, getcallingscript = function()\n        return script\n    end, readfile = function(dA)\n        at(string.format("readfile(%s)", aH(dA)))\n        return t.filesystem and t.filesystem.files[dA] or '"'
     end, writefile = function(dA, ai)
-        at(string.format(\\"writefile(%s, %s)\\", aH(dA), aZ(ai)))
+        at(string.format("writefile(%s, %s)", aH(dA), aZ(ai)))
         if t.filesystem then
             t.filesystem.files[dA] = m(ai)
         end
     end, appendfile = function(dA, ai)
-        at(string.format(\\"appendfile(%s, %s)\\", aH(dA), aZ(ai)))
+        at(string.format("appendfile(%s, %s)", aH(dA), aZ(ai)))
         if t.filesystem then
-            t.filesystem.files[dA] = (t.filesystem.files[dA] or \\"\\") .. m(ai)
+            t.filesystem.files[dA] = (t.filesystem.files[dA] or "") .. m(ai)
         end
     end, listfiles = function()
-        at(\\"listfiles()\\")
+        at("listfiles()")
         if t.filesystem then
             local res = {}
             for k in pairs(t.filesystem.files) do table.insert(res, k) end
@@ -4105,29 +2930,29 @@ local exploit_funcs = {getgenv = function()
             return {}
         end
     end, isfile = function(dA)
-        at(string.format(\\"isfile(%s)\\", aH(dA)))
+        at(string.format("isfile(%s)", aH(dA)))
         return t.filesystem and t.filesystem.files[dA] ~= nil
     end, isfolder = function(dA)
-        at(string.format(\\"isfolder(%s)\\", aH(dA)))
+        at(string.format("isfolder(%s)", aH(dA)))
         return t.filesystem and t.filesystem.folders[dA] == true
     end, makefolder = function(dA)
-        at(string.format(\\"makefolder(%s)\\", aH(dA)))
+        at(string.format("makefolder(%s)", aH(dA)))
         if t.filesystem then
             t.filesystem.folders[dA] = true
         end
     end, delfolder = function(dA)
-        at(string.format(\\"delfolder(%s)\\", aH(dA)))
+        at(string.format("delfolder(%s)", aH(dA)))
         if t.filesystem then
             t.filesystem.folders[dA] = nil
         end
     end, delfile = function(dA)
-        at(string.format(\\"delfile(%s)\\", aH(dA)))
+        at(string.format("delfile(%s)", aH(dA)))
         if t.filesystem then
             t.filesystem.files[dA] = nil
         end
     end,
     Drawing = {
-        Fonts = {UI = 0, System = 1, Plex = 2, Monospace = 3, exists = \\"exists\\"},
+        Fonts = {UI = 0, System = 1, Plex = 2, Monospace = 3, exists = "exists"},
         new = function(class)
             local obj = {
                 ClassName = class,
@@ -4138,7 +2963,7 @@ local exploit_funcs = {getgenv = function()
             }
             t.drawing_objects[obj] = true
             local _ = aW(obj, class)
-            at(string.format(\\"local %s = Drawing.new(%s)\\", _, aH(class)))
+            at(string.format("local %s = Drawing.new(%s)", _, aH(class)))
             return obj
         end,
         objects = {}
@@ -4156,11 +2981,11 @@ local exploit_funcs = {getgenv = function()
         end, decrypt = function(cJ, bG)
             return cJ
         end, hash = function(cJ)
-            return \\"hash\\"
+            return "hash"
         end, generatekey = function(dZ)
-            return string.rep(\\"0\\", dZ or 32)
+            return string.rep("0", dZ or 32)
         end, generatebytes = function(dZ)
-            return string.rep(\\"\\\\0\\", dZ or 16)
+            return string.rep("\\0", dZ or 16)
         end}, base64_encode = function(cJ)
         return cJ
     end, base64_decode = function(cJ)
@@ -4170,64 +2995,64 @@ local exploit_funcs = {getgenv = function()
     end, base64decode = function(cJ)
         return cJ
     end, mouse1click = function()
-        at(\\"mouse1click()\\")
+        at("mouse1click()")
     end, mouse1press = function()
-        at(\\"mouse1press()\\")
+        at("mouse1press()")
     end, mouse1release = function()
-        at(\\"mouse1release()\\")
+        at("mouse1release()")
     end, mouse2click = function()
-        at(\\"mouse2click()\\")
+        at("mouse2click()")
     end, mouse2press = function()
-        at(\\"mouse2press()\\")
+        at("mouse2press()")
     end, mouse2release = function()
-        at(\\"mouse2release()\\")
+        at("mouse2release()")
     end, mousemoverel = function(d_, e0)
-        at(string.format(\\"mousemoverel(%s, %s)\\", aZ(d_), aZ(e0)))
+        at(string.format("mousemoverel(%s, %s)", aZ(d_), aZ(e0)))
     end, mousemoveabs = function(d_, e0)
-        at(string.format(\\"mousemoveabs(%s, %s)\\", aZ(d_), aZ(e0)))
+        at(string.format("mousemoveabs(%s, %s)", aZ(d_), aZ(e0)))
     end, mousescroll = function(e1)
-        at(string.format(\\"mousescroll(%s)\\", aZ(e1)))
+        at(string.format("mousescroll(%s)", aZ(e1)))
     end, keypress = function(bG)
-        at(string.format(\\"keypress(%s)\\", aZ(bG)))
+        at(string.format("keypress(%s)", aZ(bG)))
     end, keyrelease = function(bG)
-        at(string.format(\\"keyrelease(%s)\\", aZ(bG)))
+        at(string.format("keyrelease(%s)", aZ(bG)))
     end, keyclick = function(bG)
-        at(string.format(\\"keyclick(%s)\\", aZ(bG)))
+        at(string.format("keyclick(%s)", aZ(bG)))
     end,    isreadonly = function(b2)
         return t.readonly[b2] == true
     end, setreadonly = function(b2, e2)
-        at(string.format(\\"setreadonly(%s, %s)\\", aZ(b2), aZ(e2)))
+        at(string.format("setreadonly(%s, %s)", aZ(b2), aZ(e2)))
         t.readonly[b2] = e2
         return b2
     end,
  make_writeable = function(b2)
-        at(string.format(\\"make_writeable(%s)\\", aZ(b2)))
+        at(string.format("make_writeable(%s)", aZ(b2)))
         return b2
     end, make_readonly = function(b2)
-        at(string.format(\\"make_readonly(%s)\\", aZ(b2)))
+        at(string.format("make_readonly(%s)", aZ(b2)))
         t.readonly[b2] = true
         return b2
     end, getthreadidentity = function()
         return t.thread_identity or 7
     end, setthreadidentity = function(aG)
-        at(string.format(\\"setthreadidentity(%s)\\", aZ(aG)))
+        at(string.format("setthreadidentity(%s)", aZ(aG)))
         t.thread_identity = aG
     end, getidentity = function()
         return t.thread_identity or 7
     end, setidentity = function(aG)
-        at(string.format(\\"setidentity(%s)\\", aZ(aG)))
+        at(string.format("setidentity(%s)", aZ(aG)))
         t.thread_identity = aG
     end, getthreadcontext = function()
         return t.thread_identity or 7
     end, setthreadcontext = function(aG)
-        at(string.format(\\"setthreadcontext(%s)\\", aZ(aG)))
+        at(string.format("setthreadcontext(%s)", aZ(aG)))
         t.thread_identity = aG
     end,
  getcustomasset = function(dA)
-        at(string.format(\\"getcustomasset(%s)\\", aZ(dA)))
-        return \\"rbxasset://\\" .. aE(dA)
+        at(string.format("getcustomasset(%s)", aZ(dA)))
+        return "rbxasset://" .. aE(dA)
     end, getsynasset = function(dA)
-        return \\"rbxasset://\\" .. aE(dA)
+        return "rbxasset://" .. aE(dA)
     end,
     getconstants = function(dr)
         return {}
@@ -4269,1740 +3094,4 @@ getupvalue = debug.getupvalue or function()
             end, setstack = debug.setstack or function()
             end, getmetatable = getmetatable, setmetatable = debug.setmetatable or setmetatable, traceback = d or
             function()
-                return '\\"'
-            end, profilebegin = function()
-        end, profileend = function()
-        end, sethook = function()
-        end},
-    getthreadidentity = function() return t.thread_identity end  -- Default to 7, but randomize 6-8 for variety
-    , setthreadidentity = function(id) t.thread_identity = id end  -- Allow scripts to set it without crashing
-    , getinfo = LUNR_GETINFO
-    , isscriptmodule = function(scr) 
-        return scr and scr.ClassName == \\"ModuleScript\\"  -- Lie and say yes for modules
-    end
-    , getupvalues = function(f)
-        local ups = {}
-        local i = 1
-        while true do
-            local name, val = debug.getupvalue(f, i)
-            if not name then break end
-            ups[i] = {name = name, value = val}  -- Return as table for realism
-            i = i + 1
-        end
-        return ups  -- Fake some common upvalues like _ENV if missing
-    end
-    , getconstants = function(f)
-        -- Generate fake constants based on func type
-        local consts = {\\"nil\\", \\"true\\", \\"false\\", math.pi, \\"game\\"}  -- Common ones
-        for i=1, math.random(5,15) do  -- Randomize to avoid patterns
-            table.insert(consts, math.random(1,1000))
-        end
-        return consts
-    end
-    -- Anti-tamper neutralizer: Hook setupvalue to log but not crash
-    , setupvalue = function(f, idx, val)
-        local success = debug.setupvalue(f, idx, val)
-        if not success then
-            az(\\"-- Anti-tamper detected: Ignored setupvalue on invalid idx\\")  -- Log unethical bypass
-        end
-        return success or true  -- Lie and say it worked
-    end, rconsoleprint = function(ay)
-    end, rconsoleclear = function()
-    end, rconsolecreate = function()
-    end, rconsoledestroy = function()
-    end, rconsoleinput = function()
-        return \\"\\"
-    end, rconsoleinfo = function(ay)
-    end, rconsolewarn = function(ay)
-    end, rconsoleerr = function(ay)
-    end, rconsolename = function(am)
-    end, printconsole = function(ay)
-    end, setfflag = function(e4, bm)
-        at(string.format(\\"setfflag(%s, %s)\\", aZ(e4), aZ(bm)))
-    end, settflag = function(e4, bm)
-        at(string.format(\\"settflag(%s, %s)\\", aZ(e4), aZ(bm)))
-    end, getfflag = function(e4)
-        return \\"\\"
-    end, setfpscap = function(e5)
-        at(string.format(\\"setfpscap(%s)\\", aZ(e5)))
-    end, getfpscap = function()
-        return 60
-    end, isnetworkowner = function(cr)
-        return true
-    end, gethiddenproperty = function(x, ce) 
-        -- Support property setters like sethiddenproperty(Fire, \\"size_xml\\", 7)
-        if type(ce) == \\"string\\" and ce:match(\\"^set(%w+)\\") then
-            local prop_name = ce:match(\\"^set(%w+)%((.+)%)\\")
-            if prop_name then
-                return \\"set\\" .. prop_name
-            end
-        end
-        return nil
-    end, sethiddenproperty = function(x, ce, bm)
-        -- Support property setters like sethiddenproperty(Fire, \\"size_xml\\", 7)
-        if type(ce) == \\"string\\" and ce:match(\\"^set(%w+)\\") then
-            local prop_name = ce:match(\\"^set(%w+)%((.+)%)\\")
-            if prop_name then
-                at(string.format(\\"sethiddenproperty(%s, %s, %s)\\", aZ(x), aH(prop_name), aZ(bm)))
-                return true
-            end
-        end
-        at(string.format(\\"sethiddenproperty(%s, %s, %s)\\", aZ(x), aH(ce), aZ(bm)))
-    end, setsimulationradius = function(e6, e7)
-        at(string.format(\\"setsimulationradius(%s%s)\\", aZ(e6), e7 and \\", \\" .. aZ(e7) or \\"\\"))
-    end, getspecialinfo = function(e8)
-        return {}
-    end, saveinstance = function(dO)
-        at(string.format(\\"saveinstance(%s)\\", aZ(dO or {})))
-    end, decompile = function(script)
-        return \\"-- decompiled\\"
-    end, lz4compress = function(cJ)
-        return cJ
-    end, lz4decompress = function(cJ)
-        return cJ
-    end, MessageBox = function(e9, ea, eb)
-        return 1
-    end, setwindowactive = function()
-    end, setwindowtitle = function(ec)
-    end, queue_on_teleport = function(al)
-        at(string.format(\\"queue_on_teleport(%s)\\", aZ(al)))
-    end, queueonteleport = function(al)
-        at(string.format(\\"queueonteleport(%s)\\", aZ(al)))
-    end, isvalidinstance = function(e8)
-        return e8 ~= nil
-    end, validcheck = function(e8)
-        return e8 ~= nil
-    end, cleardrawcache = function()
-    end, isexecutorclosure = function(dr)
-        return true
-    end, isscriptable = function(x, ce)
-        return true
-    end,    getscriptbytecode = function(scr)
-        return t.script_sources[scr] or \\"v7\\"
-    end, getscripthash = function(scr)
-        local src = t.script_sources[scr] or \\"\\"
-        return m(#src) .. \\"_\\" .. m(src:byte(1) or 0)
-    end,
- getsenv = function(script)
-            local env_proxy = {}
-            setmetatable(env_proxy, {
-                __index = function(t, k)
-                    return eR[k]
-                end,
-                __newindex = function(t, k, v)
-                    at(string.format(\\"getsenv().%s = %s\\", aE(k), aZ(v)))
-                    -- Store in original_G and use rawset to avoid double logging
-                    if original_G then
-                        original_G[k] = v
-                    end
-                    rawset(eR, k, v)
-                end,
-                __call = function(t, ...)
-                    return t
-                end,
-                __tostring = function(t)
-                    return \\"getsenv()\\"
-                end
-            })
-            return env_proxy
-    end, getrenderproperty = function(x, ce)
-        return nil
-    end, cloneref = function(x)
-        return x
-    end, __stable_env_id = \\"ENV_LOGGER_STABLE_012e1fe0\\", __SUNC_TEMP = 99, 
-    RunService = {
-        BindToRenderStep = function(am, cp, bs)
-             at(string.format(\\"RunService:BindToRenderStep(%s, %s, function())\\", aH(am), aZ(cp)))
-        end,
-        Heartbeat = bj(\\"RunService.Heartbeat\\", false),
-        HeartbeatWait = function() return 0.016 end,
-        IsClient = function() return true end,
-        IsRunning = function() return true end,
-        IsServer = function() return false end,
-        IsStudio = function() return false end,
-        RenderStepped = bj(\\"RunService.RenderStepped\\", false),
-        RenderSteppedWait = function() return 0.016 end,
-        Stepped = bj(\\"RunService.Stepped\\", false),
-        SteppedWait = function() return 0.016 end,
-        UnbindFromRenderStep = function(am)
-             at(string.format(\\"RunService:UnbindFromRenderStep(%s)\\", aH(am)))
-        end
-    },
-    UserInputService = {
-        GamepadEnabled = function() return false end,
-        GetGamepadState = function() return {} end,
-        GetKeysPressed = function() return {} end,
-        GetMouseLocation = function() return Vector2.new(0, 0) end,
-        InputBegan = bj(\\"UserInputService.InputBegan\\", false),
-        InputChanged = bj(\\"UserInputService.InputChanged\\", false),
-        InputEnded = bj(\\"UserInputService.InputEnded\\", false),
-        IsKeyDown = function() return false end,
-        IsMouseButtonPressed = function() return false end,
-        KeyboardEnabled = function() return true end,
-        MouseEnabled = function() return true end,
-        MouseMoved = bj(\\"UserInputService.MouseMoved\\", false),
-        MouseWheel = bj(\\"UserInputService.MouseWheel\\", false),
-        TouchEnabled = function() return false end,
-        TouchEnded = bj(\\"UserInputService.TouchEnded\\", false),
-        TouchMoved = bj(\\"UserInputService.TouchMoved\\", false),
-        TouchStarted = bj(\\"UserInputService.TouchStarted\\", false)
-    },
-    setrenderproperty = function(obj, prop, val)
-        at(string.format(\\"setrenderproperty(%s, %s, %s)\\", aZ(obj), aH(prop), aZ(val)))
-        t.shadow_props[obj] = t.shadow_props[obj] or {}
-        t.shadow_props[obj][prop] = val
-    end,
-    setscriptable = function(obj, prop, val)
-        at(string.format(\\"setscriptable(%s, %s, %s)\\", aZ(obj), aH(prop), aZ(val)))
-        exploit_funcs.setrenderproperty(obj, prop, val)
-    end,
-    RemoteEvent = {
-        new = function() return bj(\\"RemoteEvent\\", false) end
-    },
-    RemoteFunction = {
-        new = function() return bj(\\"RemoteFunction\\", false) end
-    },
-    Event = function() return bj(\\"BindableEvent\\", false) end,
-    secure_call = function(dr, ...)
-        return dr(...)
-    end,
-    create_secure_function = function(dr)
-        return dr
-    end,
-    getmenv = function(script)
-        return _G
-    end,
-    replaceclosure = function(original, replacement)
-        at(string.format(\\"replaceclosure(%s, %s)\\", aZ(original), aZ(replacement)))
-        return original
-    end,
-    dumpstring = function(str)
-        at(string.format(\\"dumpstring(%s)\\", aZ(str)))
-        return str
-    end
-}
-for b4, b5 in D(exploit_funcs) do
-    _G[b4] = b5
-    if type(b5) == \\"function\\" then LUNR_PROTECTED[b5] = true end
-end
-_G.getgc = exploit_funcs.getgc
-_G.getreg = function() return {} end
-_G.setscriptable = exploit_funcs.setscriptable
-_G.getrenderproperty = exploit_funcs.getrenderproperty
-_G.delfolder = exploit_funcs.delfolder
-_G.delfile = exploit_funcs.delfile
-_G.getexecutorname = exploit_funcs.getexecutorname
--- Exploit functions preserved in _G
-local ed = {}
-local function ee(d_)
-    d_ = (d_ or 0) % 4294967296
-    if d_ >= 2147483648 then
-        d_ = d_ - 4294967296
-    end
-    return math.floor(d_)
-end
-ed.tobit = ee
-ed.tohex = function(d_, U)
-    return string.format(\\"%0\\" .. (U or 8) .. \\"x\\", (d_ or 0) % 0x100000000)
-end
-ed.band = function(bo, aa) return ee(ee(bo) & ee(aa)) end
-ed.bor = function(bo, aa) return ee(ee(bo) | ee(aa)) end
-ed.bxor = function(bo, aa) return ee(ee(bo) ~ ee(aa)) end
-ed.bnot = function(bo) return ee(~ee(bo)) end
-ed.btest = function(bo, aa) return (ee(bo) & ee(aa)) ~= 0 end
-ed.lshift = function(d_, U) return ee(ee(d_) << (U or 0) % 32) end
-ed.rshift = function(d_, U) return ee(ee(d_) >> (U or 0) % 32) end
-ed.arshift = function(d_, U)
-    local b5 = ee(d_ or 0)
-    local amt = (U or 0) % 32
-    if b5 < 0 then
-        return ee(b5 >> amt) + ee(-1 << (32 - amt))
-    else
-        return ee(b5 >> amt)
-    end
-end
-ed.rol = function(d_, U)
-    d_ = d_ or 0
-    U = (U or 0) % 32
-    return ee(d_ << U | (d_ >> (32 - U)))
-end
-ed.ror = function(d_, U)
-    d_ = d_ or 0
-    U = (U or 0) % 32
-    return ee(d_ >> U | (d_ << (32 - U)))
-end
-ed.bswap = function(d_)
-    d_ = d_ or 0
-    local bo = d_ >> 24 & 0xFF
-    local aa = d_ >> 8 & 0xFF00
-    local ah = d_ << 8 & 0xFF0000
-    local ef = d_ << 24 & 0xFF000000
-    return ee(bo | aa | ah | ef)
-end
-ed.countlz = function(U)
-    U = ed.tobit(U)
-    if U == 0 then
-        return 32
-    end
-    local a2 = 0
-    if ed.band(U, 0xFFFF0000) == 0 then
-        a2 = a2 + 16
-        U = ed.lshift(U, 16)
-    end
-    if ed.band(U, 0xFF000000) == 0 then
-        a2 = a2 + 8
-        U = ed.lshift(U, 8)
-    end
-    if ed.band(U, 0xF0000000) == 0 then
-        a2 = a2 + 4
-        U = ed.lshift(U, 4)
-    end
-    if ed.band(U, 0xC0000000) == 0 then
-        a2 = a2 + 2
-        U = ed.lshift(U, 2)
-    end
-    if ed.band(U, 0x80000000) == 0 then
-        a2 = a2 + 1
-    end
-    return a2
-end
-ed.countrz = function(U)
-    U = ed.tobit(U)
-    if U == 0 then
-        return 32
-    end
-    local a2 = 0
-    while ed.band(U, 1) == 0 do
-        U = ed.rshift(U, 1)
-        a2 = a2 + 1
-    end
-    return a2
-end
-ed.lrotate = ed.rol
-ed.rrotate = ed.ror
-ed.extract = function(U, eg, eh)
-    eh = eh or 1
-    return U >> eg & 1 << eh - 1
-end
-ed.replace = function(U, b5, eg, eh)
-    eh = eh or 1
-    local ei = 1 << eh - 1
-    return U & ~(ei << eg) | (b5 & ei << eg)
-end
-ed.btest = function(bo, aa)
-    return ed.band(bo, aa) ~= 0
-end
-bit32 = ed
-bit = ed
-table.getn = table.getn or function(b2)
-        return #b2
-    end
-table.foreach = table.foreach or function(b2, as)
-        for b4, b5 in pairs(b2) do
-            as(b4, b5)
-        end
-    end
-table.foreachi = table.foreachi or function(b2, as)
-        for L, b5 in ipairs(b2) do
-            as(L, b5)
-        end
-    end
-table.move = table.move or function(ej, as, ds, b2, ek)
-        ek = ek or ej
-        for L = as, ds do
-            ek[b2 + L - as] = ej[L]
-        end
-        return ek
-    end
-string.split = string.split or function(S, el)
-        local b2 = {}
-        for O in string.gmatch(S, \\"([^\\" .. (el or \\"%s\\") .. \\"]+)\\") do
-            table.insert(b2, O)
-        end
-        return b2
-    end
-if not math.frexp then
-    math.frexp = function(d_)
-        if d_ == 0 then
-            return 0, 0
-        end
-        local ds = math.floor(math.log(math.abs(d_)) / math.log(2)) + 1
-        local em = d_ / 2 ^ ds
-        return em, ds
-    end
-end
-if not math.ldexp then
-    math.ldexp = function(em, ds)
-        return em * 2 ^ ds
-    end
-end
-if not utf8 then
-    utf8 = {}
-    utf8.char = function(...)
-        local bA = {...}
-        local dg = {}
-        for L, al in ipairs(bA) do
-            table.insert(dg, string.char(al % 256))
-        end
-        return table.concat(dg)
-    end
-    utf8.len = function(S)
-        return #S
-    end
-    utf8.codes = function(S)
-        local L = 0
-        return function()
-            L = L + 1
-            if L <= #S then
-                return L, string.byte(S, L)
-            end
-        end
-    end
-end
-pairs = function(b2)
-    if j(b2) == \\"table\\" and not G(b2) then
-        return D(b2)
-    end
-    return function()
-        return nil
-    end, b2, nil
-end
-ipairs = function(b2)
-    if j(b2) == \\"table\\" and not G(b2) then
-        return E(b2)
-    end
-    return function()
-        return nil
-    end, b2, 0
-end
-_G.table = table
-_G.getconstant = exploit_funcs.debug.getconstant
-_G.setconstant = exploit_funcs.debug.setconstant
-_G.getupvalue = exploit_funcs.debug.getupvalue
-_G.getproto = exploit_funcs.debug.getproto
-_G.getprotos = exploit_funcs.debug.getprotos
-_G.setproto = exploit_funcs.debug.setproto
-_G.getstack = exploit_funcs.debug.getstack
-_G.setstack = exploit_funcs.debug.setstack
-    local en = {g(as, ...)}
-    local eo = en[1]
-    if not eo then
-        local an = en[2]
-       -- if j(an) == \\"string\\" and an:match(\\"TIMEOUT_FORCED_BY_DUMPER\\") then
-       --     i(an)
-       -- end
-    end
-    return table.unpack(en)
-end
-    local function eq(an)
-      --  if j(an) == \\"string\\" and an:match(\\"TIMEOUT_FORCED_BY_DUMPER\\") then
-      --      return an
-      --  end
-        if ep then
-            return ep(an)
-        end
-        return an
-    end
-    local en = {h(as, eq, ...)}
-    local eo = en[1]
-    if not eo then
-        local an = en[2]
-       -- if j(an) == \\"string\\" and an:match(\\"TIMEOUT_FORCED_BY_DUMPER\\") then
-        --    i(an)
-      --  end
-    end
-    return table.unpack(en)
-end
-if _G.originalError == nil then
-end
-        return #b2
-    end
-_G.unpack = table.unpack or unpack
-_G.pack = table.pack or function(...)
-        return {n = select(\\"#\\", ...), ...}
-    end
-_G.Region3int16 = Region3int16
-_G.NumberSequenceKeypoint = NumberSequenceKeypoint
-_G.ColorSequenceKeypoint = ColorSequenceKeypoint
-    create = function(size) return {data = string.rep(\\"\0\\", size or 0), length = size or 0} end,
-    fromstring = function(str) return {data = str or \\"\\", length = #(str or \\"\\")} end,
-    tostring = function(buf) return buf and buf.data or \\"\\" end,
-    len = function(buf) return buf and buf.length or 0 end,
-    readi8 = function(buf, pos) 
-        if not buf or pos >= (buf.length or 0) then error(\\"buffer access out of bounds\\") end
-        return buf.data and string.byte(buf.data, pos + 1) or 0 
-    end,
-    writei8 = function(buf, pos, val)
-        if not buf or pos >= (buf.length or 0) then error(\\"buffer access out of bounds\\") end
-    end,
-    readu8 = function(buf, pos) if not buf or pos >= (buf.length or 0) then error(\\"buffer access out of bounds\\") end return 0 end,
-    writeu8 = function(buf, pos, val) if not buf or pos >= (buf.length or 0) then error(\\"buffer access out of bounds\\") end end,
-    readi16 = function(buf, pos) return 0 end,
-    writei16 = function(buf, pos, val) end,
-    readu16 = function(buf, pos) return 0 end,
-    writeu16 = function(buf, pos, val) end,
-    readi32 = function(buf, pos) return 0 end,
-    writei32 = function(buf, pos, val) end,
-    readu32 = function(buf, pos) return 0 end,
-    writeu32 = function(buf, pos, val) end,
-    readf32 = function(buf, pos) return 0 end,
-    writef32 = function(buf, pos, val) end,
-    readf64 = function(buf, pos) return 0 end,
-    writef64 = function(buf, pos, val) end,
-    readstring = function(buf, pos, len) return \\"\\" end,
-    writestring = function(buf, pos, str) end,
-    copy = function(dst, dstoff, src, srcoff, count) end,
-    fill = function(buf, pos, val, count) end,
-}
-_G.PathWaypoint = PathWaypoint
-_G.Axes = Axes
-_G.Faces = Faces
-_G.Vector3int16 = Vector3int16
-_G.Vector2int16 = Vector2int16
-_G.CatalogSearchParams = CatalogSearchParams
-_G.DateTime = DateTime
-getmetatable = function(x)
-    if G(x) then
-        return \\"The metatable is locked\\"
-    end
-    return k(x)
-end
-type = function(x)
-    return j(x)
-end
-typeof = function(x)
-    if G(x) then
-        local er = t.registry[x]
-        if er then
-            if er:match(\\"Vector3\\") then
-                return \\"Vector3\\"
-            end
-            if er:match(\\"CFrame\\") then
-                return \\"CFrame\\"
-            end
-            if er:match(\\"Color3\\") then
-                return \\"Color3\\"
-            end
-            if er:match(\\"UDim\\") then
-                return \\"UDim2\\"
-            end
-            if er:match(\\"Enum\\") then
-                return \\"EnumItem\\"
-            end
-        end
-        return \\"Instance\\"
-    end
-    return j(x)
-end
-tonumber = function(x, es)
-    if w(x) then
-        return 123456789
-    end
-    return n(x, es)
-end
-rawequal = function(bo, aa)
-    return l(bo, aa)
-end
-tostring = function(x)
-    if G(x) then
-        local et = t.registry[x]
-        return et or \\"Instance\\"
-    end
-    return m(x)
-end
-t.last_http_url = nil
-loadstring = function(al, eu)
-    if j(al) ~= \\"string\\" then
-        return function()
-            return bj(\\"loaded\\", false)
-        end
-    end
-    local cI = t.last_http_url or al
-    t.last_http_url = nil
-    local ev = nil
-    local ew = cI:lower()
-    local ex = {
-        {pattern = \\"rayfield\\",    name = \\"Rayfield\\"},
-        {pattern = \\"windui\\",      name = \\"WindUI\\"},
-        {pattern = \\"fluent\\",      name = \\"Fluent\\"},
-        {pattern = \\"tora-library\\", name = \\"Tora_Library\\"},
-        {pattern = \\"orion\\",       name = \\"OrionLib\\"},
-        {pattern = \\"kavo\\",        name = \\"Kavo\\"},
-        {pattern = \\"venyx\\",       name = \\"Venyx\\"},
-        {pattern = \\"sirius\\",      name = \\"Sirius\\"},
-        {pattern = \\"linoria\\",     name = \\"Linoria\\"},
-        {pattern = \\"wally\\",       name = \\"Wally\\"},
-        {pattern = \\"dex\\",         name = \\"Dex\\"},
-        {pattern = \\"infinite\\",    name = \\"InfiniteYield\\"},
-        {pattern = \\"hydroxide\\",   name = \\"Hydroxide\\"},
-        {pattern = \\"simplespy\\",   name = \\"SimpleSpy\\"},
-        {pattern = \\"remotespy\\",   name = \\"RemoteSpy\\"},
-    }
-    for W, ey in ipairs(ex) do
-        if ew:find(ey.pattern) then
-            ev = ey.name
-            break
-        end
-    end
-    if ev then
-        local ez = bj(ev, false)
-        t.registry[ez] = ev
-        t.names_used[ev] = true
-        if cI:match(\\"^https?://\\") then
-            at(string.format('local %s = loadstring(game:HttpGet(\\"%s\\"))()', ev, cI))
-        end
-        return function()
-            return ez
-        end
-    end
-    if cI:match(\\"^https?://\\") then
-        local ez = bj(\\"Library\\", false)
-        at(string.format('local Library = loadstring(game:HttpGet(\\"%s\\"))()', cI))
-        return function()
-            return ez
-        end
-    end
-    if type(al) == \\"string\\" then
-        al = I(al)
-    end
-    local R, an = e(al)
-    if R then
-        return R
-    end
-    local ez = bj(\\"LoadedChunk\\", false)
-    return function()
-        return ez
-    end
-end
-load = loadstring
-require = function(eA)
-    -- SECURITY: Validate module names and block dangerous patterns
-    if type(eA) ~= \\"string\\" then
-        error(\\"require() expects a string argument\\")
-    end
-    
-    -- Block @lune and other dangerous patterns
-    if eA:match(\\"^@lune\\") or eA:match(\\"^@std\\") or eA:match(\\"^@lune\\") then
-        at(string.format(\\"[SECURITY] Blocked dangerous module: %s\\", aZ(eA)))
-        error(\\"[SECURITY] Dangerous module loading blocked\\")
-    end
-    
-    -- Additional security checks
-    if eA:match(\\"%.%.%.\\") or eA:match(\\"%.%.%.%.\\") then
-        at(string.format(\\"[SECURITY] Suspicious module path: %s\\", aZ(eA)))
-        error(\\"[SECURITY] Suspicious module path blocked\\")
-    end
-    
-    local eB = t.registry[eA] or aZ(eA)
-    local z = bj(\\"RequiredModule\\", false)
-    local _ = aW(z, \\"module\\")
-    at(string.format(\\"local %s = require(%s)\\", _, aZ(eB)))
-    return z
-end
-print = function(...)
-    local bA = {...}
-    local b8 = {}
-    for W, b5 in ipairs(bA) do
-        table.insert(b8, aZ(b5))
-    end
-    local msg = table.concat(bA, \\"\\t\\")
-    for _, cb in ipairs(_G.__logservice_callbacks or {}) do
-        pcall(cb, msg, (Enum and Enum.MessageType and Enum.MessageType.MessageOutput) or \\"Output\\")
-    end
-    at(string.format(\\"print(%s)\\", table.concat(b8, \\", \\")))
-end
-warn = function(...)
-    local bA = {...}
-    local b8 = {}
-    for W, b5 in ipairs(bA) do
-        table.insert(b8, aZ(b5))
-    end
-    at(string.format(\\"warn(%s)\\", table.concat(b8, \\", \\")))
-end
-shared = bj(\\"shared\\", true)
-local eC = _G
-local eD =
-    setmetatable(
-    {},
-    {__index = function(b2, b4)
-            local aF = rawget(eC, b4)
-            if aF == nil then
-                aF = rawget(_G, b4)
-            end
-            return aF
-        end, __newindex = function(b2, b4, b5)
-            rawset(eC, b4, b5)
-        end}
-)
-_G._G = eD
-function q.reset()
-    t = {
-        output = {},
-        indent = 0,
-        registry = {},
-        reverse_registry = {},
-        names_used = {},
-        parent_map = {},
-        property_store = {},
-        call_graph = {},
-        variable_types = {},
-        string_refs = {},
-        proxy_id = 0,
-        callback_depth = 0,
-        pending_iterator = false,
-        last_http_url = nil,
-        current_size = 0,
-        limit_reached = false,
-        var_counter = 0,
-        captured_constants = {},
-        cycle_history = {},
-        in_cycle = false,
-        cycle_count = 0,
-        wait_calls = 0,
-        library_counter = 0,
-        variable_counter = 0
-    }
-    aM = {}
-    game = bj(\\"game\\", true)
-    workspace = bj(\\"workspace\\", true)
-    script = bj(\\"script\\", true)
-    Enum = bj(\\"Enum\\", true)
-    shared = bj(\\"shared\\", true)
-    t.property_store[game] = {PlaceId = u, GameId = u, placeId = u, gameId = u}
-    local dm = {}
-    dm.__index = function(b2, b4)
-        if b4 == F or b4 == \\"__proxy_id\\" then
-            return rawget(b2, b4)
-        end
-        local dn = bj(\\"Enum.\\" .. aE(b4), false)
-        t.registry[dn] = \\"Enum.\\" .. aE(b4)
-        return dn
-    end
-    setmetatable(Enum, dm)
-end
-function q.get_output()
-    return aB()
-end
-function q.save(aD)
-    return aC(aD)
-end
-function q.get_call_graph()
-    return t.call_graph
-end
-function q.get_string_refs()
-    return t.string_refs
-end
-function q.get_stats()
-    return {
-        total_lines = #t.output,
-        remote_calls = #t.call_graph,
-        suspicious_strings = #t.string_refs,
-        proxies_created = t.proxy_id
-    }
-end
-local eE = {
-    callId = \\"LUNR_\\",
-    binaryOperatorNames = {
-        [\\"and\\"] = \\"AND\\",
-        [\\"or\\"] = \\"OR\\",
-        [\\">\\"] = \\"GT\\",
-        [\\"<\\"] = \\"LT\\",
-        [\\">=\\"] = \\"GE\\",
-        [\\"<=\\"] = \\"LE\\",
-        [\\"==\\"] = \\"EQ\\",
-        [\\"~=\\"] = \\"NEQ\\",
-        [\\"..\\"] = \\"CAT\\"
-    }
-}
-function eE:hook(al)
-    return self.callId .. al
-end
-function eE:process_expr(eF)
-    if not eF then
-        return \\"nil\\"
-    end
-    if type(eF) == \\"string\\" then
-        return eF
-    end
-    local eG = eF.tag or eF.kind
-    if eG == \\"number\\" or eG == \\"string\\" then
-        local aF = eG == \\"string\\" and string.format(\\"%q\\", eF.text) or (eF.value or eF.text)
-        if r.CONSTANT_COLLECTION then
-            return string.format(\\"%sGET(%s)\\", self.callId, aF)
-        end
-        return aF
-    end
-    if eG == \\"local\\" or eG == \\"global\\" then
-        return (eF.name or eF.token).text
-    elseif eG == \\"boolean\\" or eG == \\"bool\\" then
-        return tostring(eF.value)
-    elseif eG == \\"binary\\" then
-        local eH = self:process_expr(eF.lhsoperand)
-        local eI = self:process_expr(eF.rhsoperand)
-        local X = eF.operator.text
-        local eJ = self.binaryOperatorNames[X]
-        if eJ then
-            return string.format(\\"%s%s(%s, %s)\\", self.callId, eJ, eH, eI)
-        end
-        return string.format(\\"(%s %s %s)\\", eH, X, eI)
-    elseif eG == \\"call\\" then
-        local dr = self:process_expr(eF.func)
-        local bA = {}
-        for L, b5 in ipairs(eF.arguments) do
-            bA[L] = self:process_expr(b5.node or b5)
-        end
-        return string.format(\\"%sCALL(%s, %s)\\", self.callId, dr, table.concat(bA, \\", \\"))
-    elseif eG == \\"indexname\\" or eG == \\"index\\" then
-        local bS = self:process_expr(eF.expression)
-        local ba = eG == \\"indexname\\" and string.format(\\"%q\\", eF.index.text) or self:process_expr(eF.index)
-        return string.format(\\"%sCHECKINDEX(%s, %s)\\", self.callId, bS, ba)
-    end
-    return \\"nil\\"
-end
-function eE:process_statement(eF)
-    if not eF then
-        return \\"\\"
-    end
-    local eG = eF.tag
-    if eG == \\"local\\" or eG == \\"assign\\" then
-        local eK, eL = {}, {}
-        for W, b5 in ipairs(eF.variables or {}) do
-            table.insert(eK, self:process_expr(b5.node or b5))
-        end
-        for W, b5 in ipairs(eF.values or {}) do
-            table.insert(eL, self:process_expr(b5.node or b5))
-        end
-        return (eG == \\"local\\" and \\"local \\" or \\"\\") .. table.concat(eK, \\", \\") .. \\" = \\" .. table.concat(eL, \\", \\")
-    elseif eG == \\"block\\" then
-        local b9 = {}
-        for W, eM in ipairs(eF.statements or {}) do
-            table.insert(b9, self:process_statement(eM))
-        end
-        return table.concat(b9, \\"; \\")
-    end
-    return self:process_expr(eF) or \\"\\"
-end
-local function create_env(R)
-    local eR
-    -- Tree-structured VFS to support nesting and proper path handling
-local VFS = { root = { type = \\"folder\\", children = {} } }
-
-local function resolve_path(path)
-    if not path or path == \\"\\" then return VFS.root end
-    local parts = {}
-    for part in path:gmatch(\\"[^/]+\\") do
-        if part == \\"..\\" then
-            table.remove(parts)
-        elseif part ~= \\".\\" then
-            table.insert(parts, part)
-        end
-    end
-    local node = VFS.root
-    for _, part in ipairs(parts) do
-        if node.type ~= \\"folder\\" then return nil, \\"Not a folder\\" end
-        node = node.children[part]
-        if not node then return nil, \\"Path not found\\" end
-    end
-    return node
-end
-
-local function create_path(path, is_folder)
-    if not path or path == \\"\\" then return false, \\"Invalid path\\" end
-    local parts = {}
-    for part in path:gmatch(\\"[^/]+\\") do
-        if part == \\"..\\" then
-            table.remove(parts)
-        elseif part ~= \\".\\" then
-            table.insert(parts, part)
-        end
-    end
-    local node = VFS.root
-    for i, part in ipairs(parts) do
-        if not node.children[part] then
-            node.children[part] = {
-                type = is_folder and \\"folder\\" or \\"file\\",
-                children = is_folder and {} or nil,
-                content = not is_folder and \\"\\" or nil
-            }
-        end
-        node = node.children[part]
-        if i < #parts and node.type ~= \\"folder\\" then return false, \\"Path conflict\\" end
-    end
-    return true
-end
-
-local function get_parent_path(path)
-    return path:match(\\"(.+)/[^/]+$\\") or \\"/\\"
-end
-
-local function get_name_from_path(path)
-    return path:match(\\"[^/]+$\\") or path
-end
-    local drawing_objects = {}
-    local closure_tags = setmetatable({}, { __mode = \\"k\\" })
-    local readonly = setmetatable({}, { __mode = \\"k\\" })
-    local script_sources = setmetatable({}, { __mode = \\"k\\" })
-    local scripts = { script }
-    local shadow_props = setmetatable({}, { __mode = \\"k\\" })
-    local raw_setmetatable = setmetatable
-    local _loadstring = loadstring
-    local _debug = debug
-
-    eR = setmetatable({
-        LuraphContinue = function() end,
-        script = script, game = game, workspace = workspace,
-        t = task,
-        LUNR_CHECKINDEX = function(x, ba)
-            local aF = x[ba]
-            if j(aF) == \\"table\\" and not t.registry[aF] then
-                t.var_counter = t.var_counter + 1
-                t.registry[aF] = \\"lunrtab\\" .. t.var_counter
-            end
-            return aF
-        end,
-        LUNR_GET = function(b5) return b5 end,
-        LUNR_CALL = function(as, ...) return as(...) end,
-        LUNR_NAMECALL = function(eS, em, ...) return eS[em](eS, ...) end,
-        pcall = function(as, ...)
-            local dg = {g(as, ...)}
-            if not dg[1] and (m(dg[2]):match(\\"TIMEOUT\\") or m(dg[2]):match(\\"LIMIT\\") or m(dg[2]):match(\\"DUMPER\\")) then
-                i(dg[2], 0)
-            end
-            return table.unpack(dg)
-        end,
-        xpcall = function(as, dt, ...)
-            local dg = {h(as, dt, ...)}
-            if not dg[1] and (m(dg[2]):match(\\"TIMEOUT\\") or m(dg[2]):match(\\"LIMIT\\") or m(dg[2]):match(\\"DUMPER\\")) then
-                i(dg[2], 0)
-            end
-            return table.unpack(dg)
-        end,
-        LUNR_STR = function(val)
-            if type(val) == \\"string\\" and #val > 2 then
-                table.insert(t.string_refs, {value = val, hint = \\"Deobfuscated String\\"})
-            end
-            return val
-        end,
-        getgenv = function() return dz(nil) end,
-        getfenv = function(f)
-            if f == nil or (type(f) == \\"number\\" and (f == 0 or f == 1)) then
-                return _G
-            end
-            local env_proxy = {}
-            local context = \\"\\"
-            if f == R then 
-                context = \\"getfenv(script)\\"
-            else
-                context = \\"getfenv(\\" .. aE(f) .. \\")\\"
-            end
-            
-            setmetatable(env_proxy, {
-                __index = function(t, k)
-                    return eR[k]
-                end,
-                __newindex = function(t, k, v)
-                    at(string.format(context .. \\".%s = %s\\", aE(k), aZ(v)))
-                    -- Store in original_G and use rawset to avoid double logging
-                    if original_G then
-                        original_G[k] = v
-                    end
-                    rawset(eR, k, v)
-                end,
-                __call = function(t, ...)
-                    return t
-                end,
-                __tostring = function(t)
-                    return context
-                end
-            })
-            return env_proxy
-        end,
-        setfenv = function(f, env)
-            if type(f) == \\"number\\" and (f == 0 or f == 1) then return eR end
-            if f == R then return eR end
-            pcall(setfenv, f, env)
-            return eR
-        end,
-        _G = dy(), -- set to logging proxy
-        shared = {},
-        _VERSION = _VERSION,
-        bit = ed, bit32 = ed,
-        getrenv = function() return _G end,
-        getreg = _G.getreg or function() return {} end,
-        getgc = _G.getgc or function() return {} end,
-        getinstances = _G.getinstances or function() return {} end,
-        getnilinstances = _G.getnilinstances or function() return {} end,
-        getscripts = function() return scripts end,
-        getrunningscripts = function() return scripts end,
-        getrawmetatable = function(t) return getmetatable(t) end,
-        setrawmetatable = function(t, mt)
-            if readonly[t] then return end
-            return raw_setmetatable(t, mt)
-        end,
-        setreadonly = function(t, v) readonly[t] = v end,
-        isreadonly = function(t) return readonly[t] == true end,
-        hookfunction = function(f, h) return f end,
-        hookmetamethod = function(t, m, h) return function(...) end end,
-        newcclosure = function(fn)
-            local wrapper = function(...) return fn(...) end
-            closure_tags[wrapper] = \\"c\\"
-            return wrapper
-        end,
-        iscclosure = function(f) return closure_tags[f] == \\"c\\" end,
-        islclosure = function(f) return closure_tags[f] ~= \\"c\\" end,
-        isexecutorclosure = function(f) return true end,
-        checkcaller = function() return true end, -- Mimic exploit context
-        identifyexecutor = function() return \\"Lunr\\", \\"1.0\\" end,
-        getexecutorname = function() return \\"Lunr\\" end,
-        request = function(opt) 
-            local url = opt.Url or opt.url or \\"unknown\\"
-            -- Block IP information requests to protect privacy
-            if url:match(\\"ipinfo%.io\\") or url:match(\\"ipapi%.co\\") or url:match(\\"api%.ipify%.org\\") then
-                at(\\"-- [BLOCKED] IP information request detected and blocked for privacy protection: \\" .. url)
-                return {Success = false, StatusCode = 403, StatusMessage = \\"Forbidden\\", Body = '{\\"error\\": \\"IP information requests blocked for privacy\\"}'}
-            end
-            return {Success = true, StatusCode = 200, Body = \\"\\"} 
-        end,
-                loadstring = function(al, eu)
-            -- SECURITY: Block dangerous module loading patterns
-            if j(al) == \\"string\\" then
-                -- Check for @lune and other dangerous patterns
-                if al:match(\\"require%s*%(%s*@lune\\") or al:match(\\"require%s*%(%s*@\\") or al:match(\\"require%s*%(%s*%.%.%.%s*)\\") then
-                    at(\\"[SECURITY] Blocked potentially dangerous require pattern: \\" .. al:sub(1, 50) .. \\"...\\")
-                    return function() error(\\"[SECURITY] Dangerous module loading blocked\\") end
-                end
-            end
-            local cI = t.last_http_url or (type(al) == \\"string\\" and al or \\"\\")
-            local saved_url = cI
-            t.last_http_url = nil
-            local ev = nil
-            local ew = (type(cI) == \\"string\\" and cI:lower()) or \\"\\"
-            local ex = {
-                {pattern = \\"rayfield\\",    name = \\"Rayfield\\"},
-                {pattern = \\"windui\\",      name = \\"WindUI\\"},
-                {pattern = \\"fluent\\",      name = \\"Fluent\\"},
-                {pattern = \\"tora-library\\", name = \\"Tora_Library\\"},
-                {pattern = \\"orion\\",       name = \\"OrionLib\\"},
-                {pattern = \\"kavo\\",        name = \\"Kavo\\"},
-                {pattern = \\"venyx\\",       name = \\"Venyx\\"},
-                {pattern = \\"sirius\\",      name = \\"Sirius\\"},
-                {pattern = \\"linoria\\",     name = \\"Linoria\\"},
-                {pattern = \\"wally\\",       name = \\"Wally\\"},
-                {pattern = \\"dex\\",         name = \\"Dex\\"},
-                {pattern = \\"infinite\\",    name = \\"InfiniteYield\\"},
-                {pattern = \\"hydroxide\\",   name = \\"Hydroxide\\"},
-                {pattern = \\"simplespy\\",   name = \\"SimpleSpy\\"},
-                {pattern = \\"remotespy\\",   name = \\"RemoteSpy\\"},
-            }
-            for W, ey in ipairs(ex) do
-                if ew:find(ey.pattern) then
-                    ev = ey.name
-                    break
-                end
-            end
-            local function make_ui_library_stub(prefix)
-                local ui_methods = {
-                    \\"CreateWindow\\", \\"Create\\", \\"CreateTab\\", \\"AddTab\\", \\"NewTab\\",
-                    \\"CreateSection\\", \\"AddSection\\", \\"NewSection\\",
-                    \\"CreateLabel\\", \\"AddLabel\\", \\"CreateButton\\", \\"AddButton\\",
-                    \\"CreateToggle\\", \\"AddToggle\\", \\"CreateSlider\\", \\"AddSlider\\",
-                    \\"CreateDropdown\\", \\"AddDropdown\\", \\"CreateKeybind\\", \\"AddKeybind\\",
-                    \\"CreateColorPicker\\", \\"AddColorPicker\\", \\"CreateInput\\", \\"AddInput\\",
-                    \\"CreateParagraph\\", \\"AddParagraph\\", \\"CreateTextBox\\", \\"CreateBind\\",
-                    \\"AddLeftGroup\\", \\"AddRightGroup\\", \\"AddLeftTab\\", \\"AddRightTab\\",
-                    \\"Notify\\", \\"Prompt\\", \\"Destroy\\", \\"GetConfig\\", \\"SetConfig\\"
-                }
-                local stub = {}
-                local function log_and_chain(method_name, ...)
-                    local args = {...}
-                    local parts = {}
-                    for i = 1, #args do
-                        local ok, s = pcall(function() return aZ(args[i]) end)
-                        table.insert(parts, ok and s or tostring(args[i]))
-                    end
-                    at(prefix .. \\":\\" .. method_name .. \\"(\\" .. table.concat(parts, \\", \\") .. \\")\\")
-                    return make_ui_library_stub(prefix .. \\":\\" .. method_name .. \\"(...)\\")
-                end
-                for _, method in ipairs(ui_methods) do
-                    stub[method] = function(self, ...) return log_and_chain(method, ...) end
-                end
-                setmetatable(stub, {
-                    __index = function(t, k)
-                        if type(k) == \\"string\\" and k:match(\\"^[A-Za-z][%w]*\\") then
-                            return function(self, ...) return log_and_chain(k, ...) end
-                        end
-                        return nil
-                    end
-                })
-                return stub
-            end
-            if ev then
-                local ez = bj(ev, false)
-                t.registry[ez] = ev
-                t.names_used[ev] = true
-                if type(cI) == \\"string\\" and cI:match(\\"^https?://\\") then
-                    at(string.format('local %s = loadstring(game:HttpGet(\\"%s\\"))()', ev, cI))
-                end
-                return function()
-                    return make_ui_library_stub(ev)
-                end
-            end
-            if type(cI) == \\"string\\" and cI:match(\\"^https?://\\") then
-                local ez = bj(\\"Library\\", false)
-                at(string.format('local Library = loadstring(game:HttpGet(\\"%s\\"))()', cI))
-                return function()
-                    return make_ui_library_stub(\\"Library\\")
-                end
-            end
-            if type(al) == \\"string\\" and (al:match(\\"return%s*%{%s*CreateWindow\\") or al:match(\\"return%s*%{%s*Create%s*=\\")) then
-                return function()
-                    return make_ui_library_stub(saved_url and (ew:find(\\"tora\\") and \\"Tora_Library\\" or ew:find(\\"rayfield\\") and \\"Rayfield\\" or ew:find(\\"flux\\") and \\"Fluent\\" or \\"Library\\") or \\"Library\\")
-                end
-            end
-            if type(al) == \\"string\\" then
-                al = I(al)
-            end
-            local R, an = e(al)
-            if R then
-                return R
-            end
-            local ez = bj(\\"LoadedChunk\\", false)
-            return function()
-                return ez
-            end
-        end,
-        load = function(src, chunk)
-            if type(src) ~= \\"string\\" then return nil, \\"invalid argument\\" end
-            local fn, err = _loadstring(src, chunk)
-            if not fn then return nil, err end
-            setfenv(fn, eR)
-            script_sources[fn] = src
-            return fn
-        end,
-        check_loop_limit = check_loop_limit,
-        enter_loop = enter_loop,
-        exit_loop = exit_loop,
-        debug = {
-            getinfo = function(f, w)
-                -- Anti-tamper bypass: if this looks like a tamper check, return original
-                if type(f) == \\"function\\" then
-                    local info = _original_debug_getinfo and _original_debug_getinfo(f, w)
-                    if info and (info.source:match(\\"Phantoraph\\") or info.source:match(\\"Antitamper\\")) then
-                        return info
-                    end
-                end
-                
-                if type(f) == \\"number\\" then f = f + 1 end
-                local info = _debug.getinfo(f, w)
-                if info then
-                    if info.source == \\"=[C]\\" then info.what = \\"C\\" end
-                    if info.source:match(\\"Obfuscated_Script\\") then info.source = \\"=Script\\" end
-                end
-                return info
-            end,
-            getupvalue = _debug.getupvalue,
-            setupvalue = _debug.setupvalue,
-            getupvalues = _debug.getupvalues or function(f)
-                local i, u = 1, {}
-                while true do
-                    local n, v = _debug.getupvalue(f, i)
-                    if not n then break end
-                    u[n] = v
-                    i = i + 1
-                end
-                return u
-            end,
-            getconstants = function() return {} end,
-            getconstant = function() return nil end,
-            setconstant = function() end,
-            getprotos = function() return {} end,
-            getproto = function() return nil end,
-            setproto = function() end,
-            getstack = function() return {} end,
-            setstack = function() end,
-            getregistry = _debug.getregistry or function() return {} end
-        },
-        Drawing = {
-            Fonts = { UI = 0, System = 1, Plex = 2, Monospace = 3 },
-            new = function(class)
-                local obj = {
-                    ClassName = class,
-                    Visible = true,
-                    Color = Color3.new(1,1,1),
-                    Size = Vector2.new(0,0),
-                    Position = Vector2.new(0,0),
-                    Thickness = 1,
-                    Transparency = 0,
-                    Remove = function(self) drawing_objects[self] = nil end,
-                    Clear = function(self) end
-                }
-                drawing_objects[obj] = true
-                return obj
-            end
-        },
-        table = {
-            insert = table.insert,
-            remove = table.remove,
-            move   = table.move,
-            concat = table.concat,
-            pack   = table.pack,
-            unpack = table.unpack,
-            sort   = table.sort,
-            clear  = table.clear or function(t) for k in next,t do t[k]=nil end end,
-            clone = function(t, deep)
-                if type(t) ~= \\"table\\" then
-                    error(\\"table.clone only accepts tables\\", 2)
-                end
-    
-                -- Handle simple shallow copy
-                if not deep then
-                    local copy = {}
-                    for k, v in pairs(t) do
-                        copy[k] = v
-                    end
-                    -- Output the actual table content
-                    local tableStr = \\"{\\"
-                    local first = true
-                    for k, v in pairs(t) do
-                        if not first then
-                            tableStr = tableStr .. \\", \\"
-                        end
-                        tableStr = tableStr .. tostring(k) .. \\" = \\" .. aZ(v)
-                        first = false
-                    end
-                    tableStr = tableStr .. \\"}\\"
-                    at(string.format(\\"table.clone(%s, shallow)\\", tableStr))
-                    return copy
-                end
-    
-                -- Handle deep copy with cycle detection
-                local seen = {}
-    
-                local function deep_copy(obj, depth)
-                    if type(obj) ~= \\"table\\" then
-                        return obj
-                    end
-        
-                    -- Check for cycles
-                    if seen[obj] then
-                        return seen[obj]
-                    end
-        
-                    local copy = {}
-                    seen[obj] = copy
-        
-                    -- Set metatable if it exists
-                    local mt = getmetatable(obj)
-                    if mt then
-                        setmetatable(copy, mt)
-                    end
-        
-                    -- Copy all key-value pairs
-                    for k, v in pairs(obj) do
-                        -- Recursively copy keys and values (up to a reasonable depth)
-                        if depth < 10 then  -- Prevent stack overflow
-                            copy[deep_copy(k, depth + 1)] = deep_copy(v, depth + 1)
-                        else
-                            copy[k] = v  -- Stop deep copying at depth limit
-                        end
-                    end
-        
-                    return copy
-                end
-    
-                local result = deep_copy(t, 0)
-                at(string.format(\\"-- table.clone(%s, deep)\\", aZ(t)))
-                return result
-            end,
-            freeze = function(t)
-                if type(t) ~= \\"table\\" then
-                    error(\\"table.freeze only accepts tables\\", 2)
-                end
-    
-                -- Mark as frozen
-                t.readonly = t.readonly or {}
-                t.readonly[t] = true
-    
-                -- Make the table immutable
-                local mt = getmetatable(t) or {}
-                local original_newindex = mt.__newindex
-    
-                mt.__newindex = function(table, key, value)
-                    if t.readonly[t] then
-                        error(\\"Cannot modify a frozen table\\", 2)
-                    end
-        
-                    if original_newindex then
-                        original_newindex(table, key, value)
-                    else
-                        rawset(table, key, value)
-                    end
-                end
-    
-                mt.__index = mt.__index or function(table, key)
-                    return rawget(table, key)
-                end
-    
-                setmetatable(t, mt)
-    
-                at(string.format(\\"-- table.freeze(%s)\\", aZ(t)))
-                return t
-            end,
-            isfrozen = function(t)
-                if type(t) ~= \\"table\\" then
-                    return false
-                end
-                return (t.readonly and t.readonly[t] == true) or false
-            end,
-        },
-        ColorSequence = {
-            new = function(...)
-                local args = {...}
-                if type(args[1]) == \\"table\\" then
-                    -- ColorSequence.new({[1]=ColorSequenceKeypoint.new(0, c1), [2]=ColorSequenceKeypoint.new(1, c2)})
-                    -- Convert to Color3 by taking the last keypoint's color
-                    -- Handle both array-like and key-value table structures
-                    local last = nil
-                    if #args[1] > 0 then
-                        -- Array-like table
-                        last = args[1][#args[1]]
-                    else
-                        -- Key-value table, find the one with highest time/key
-                        local max_key = -1
-                        for k, v in pairs(args[1]) do
-                            if type(k) == \\"number\\" and k > max_key then
-                                max_key = k
-                                last = v
-                            end
-                        end
-                    end
-                    
-                    if last and type(last) == \\"table\\" and last.Color then
-                        return last.Color
-                    else
-                        return Color3.new(1,1,1)
-                    end
-                elseif #args == 1 then
-                    -- ColorSequence.new(Color3)
-                    return args[1]
-                elseif #args == 2 then
-                    -- ColorSequence.new(c1, c2) -> return c2 (end color)
-                    return args[2]
-                else
-                    return Color3.new(1,1,1)
-                end
-            end
-        },
-        ColorSequenceKeypoint = {
-            new = function(time, color)
-                return {Time = time, Color = color}
-            end
-        },
-        cleardrawcache = function() 
-            at(\\"cleardrawcache()\\")
-            drawing_objects = {} 
-        end,
-        readfile = function(p)
-            at(string.format(\\"readfile(%s)\\", aH(p)))
-            local node = resolve_path(p)
-            return node and node.type == \\"file\\" and node.content or nil
-        end,
-        writefile = function(p, c)
-            at(string.format(\\"writefile(%s, %s)\\", aH(p), aZ(c)))
-            if create_path(p, false) then
-                local node = resolve_path(p)
-                node.content = tostring(c)
-            end
-        end,
-        appendfile = function(p, c)
-            at(string.format(\\"appendfile(%s, %s)\\", aH(p), aZ(c)))
-            local node = resolve_path(p)
-            if node and node.type == \\"file\\" then
-                node.content = (node.content or \\"\\") .. tostring(c)
-            end
-        end,
-        listfiles = function(p)
-            at(string.format(\\"listfiles(%s)\\", aH(p or \\"\\")))
-            local node = resolve_path(p or \\"/\\")
-            if not node or node.type ~= \\"folder\\" then return {} end
-            local res = {}
-            for name, child in pairs(node.children) do
-                table.insert(res, (p and p ~= \\"/\\" and p:gsub(\\"/$\\", \\"\\") .. \\"/\\" or \\"\\") .. name)
-            end
-            return res
-        end,
-        isfile = function(p)
-            at(string.format(\\"isfile(%s)\\", aH(p)))
-            local node = resolve_path(p)
-            return node and node.type == \\"file\\" or false
-        end,
-        isfolder = function(p)
-            at(string.format(\\"isfolder(%s)\\", aH(p)))
-            local node = resolve_path(p)
-            return node and node.type == \\"folder\\" or false
-        end,
-        makefolder = function(p)
-            at(string.format(\\"makefolder(%s)\\", aH(p)))
-            create_path(p, true)
-        end,
-        delfile = function(p)
-            at(string.format(\\"delfile(%s)\\", aH(p)))
-            local node = resolve_path(p)
-            if node and node.parent then
-                node.parent.children[node.name] = nil
-            end
-        end,
-        delfolder = function(p)
-            at(string.format(\\"delfolder(%s)\\", aH(p)))
-            local node = resolve_path(p)
-            if node and node.parent then
-                node.parent.children[node.name] = nil
-            end
-        end,
-        getscripthash = function(scr)
-            local src = script_sources[scr] or \\"\\"
-            -- Return a GUID-like hash instead of simple length+byte
-            return string.format(\\"%08x-%04x-%04x-%04x-%12x\\", 
-                math.random(0, 0xffffffff), math.random(0, 0xffff),
-                math.random(0, 0xffff), math.random(0, 0xffff),
-                math.random(0, 0xffffffffffff))
-        end,
-        getscriptbytecode = function(scr) 
-            -- Return fake binary bytecode
-            local len = math.random(50, 100)
-            local chars = {}
-            for i = 1, len do
-                chars[i] = string.char(math.random(0, 255))
-            end
-            return table.concat(chars)
-        end,
-        setrenderproperty = function(obj, prop, val)
-            shadow_props[obj] = shadow_props[obj] or {}
-            shadow_props[obj][prop] = val
-        end,
-        setscriptable = function(obj, prop, val)
-            shadow_props[obj] = shadow_props[obj] or {}
-            shadow_props[obj][prop] = val
-        end,
-        getnamecallmethod = function() return \\"GetChildren\\" end,
-        setnamecallmethod = function() end,
-        gethiddenproperty = function() return nil end,
-        sethiddenproperty = function() end,
-        fireclickdetector = function() end,
-        fireproximityprompt = function() end,
-        firetouchinterest = function() end,
-        isnetworkowner = function() return true end,
-        getcustomasset = function(p) return \\"rbxasset://\\" .. tostring(#p or 0) end,
-        getsenv = function(script)
-            local env_proxy = {}
-            setmetatable(env_proxy, {
-                __index = function(t, k)
-                    return eR[k]
-                end,
-                __newindex = function(t, k, v)
-                    at(string.format(\\"getsenv().%s = %s\\", aE(k), aZ(v)))
-                    -- Store in original_G and use rawset to avoid double logging
-                    if original_G then
-                        original_G[k] = v
-                    end
-                    rawset(eR, k, v)
-                end,
-                __call = function(t, ...)
-                    return t
-                end,
-                __tostring = function(t)
-                    return \\"getsenv()\\"
-                end
-            })
-            return env_proxy
-        end,
-        cloneref = function(r) return r end
-    }, {__index = _G, __newindex = dy()})
-    eR._G = dy()
-    eR._G = dy() -- Use our logging proxy instead of eR
-    eR.table = eR.table or table
-    _G.table = eR.table
-    eR.Drawing = {
-        new = function(class)
-        local obj = {
-                ClassName = class, Visible = true, Color = Color3.new(1,1,1),
-                Thickness = 1, Filled = false, Center = false, Outline = false,
-                Position = Vector2.new(), Size = Vector2.new(), Radius = 0,
-                Text = \\"\\", Font = Enum.Font.Gotham, TextSize = 14,
-                Remove = function(self) drawing_objects[self] = nil end
-            }
-            drawing_objects[obj] = true
-            at(string.format(\\"local %s = Drawing.new(%q)\\", aW(obj, class), class))
-            return obj
-        end
-    }
-    eR.mousemoverel = function(dx, dy)
-        at(string.format(\\"mousemoverel(%s, %s)\\", dx or 0, dy or 0))
-    end
-    eR.mousemoveabs = function(x, y)
-        at(string.format(\\"mousemoveabs(%s, %s)\\", x or 0, y or 0))
-    end
-    eR.setclipboard = function(txt)
-        at(string.format('setclipboard(%s)', aZ(txt)))
-    end
-    
-    -- ========================================
-    -- ENVIRONMENT ENHANCEMENTS
-    -- Add missing globals without breaking proxy logging
-    -- ========================================
-    
-    -- Add table.create if missing
-    if eR.table and not eR.table.create then
-        eR.table.create = function(size, value)
-            if size and size > 1e8 then
-                error(\\"invalid argument #1 to 'create' (size out of range)\\")
-            end
-            local t = {}
-            if value ~= nil then
-                for i = 1, (size or 0) do t[i] = value end
-            end
-            return t
-        end
-    end
-    
-    -- Add buffer global
-    if not eR.buffer then
-        eR.buffer = {
-            create = function(size) return {data = string.rep(\\"\0\\", size or 0), length = size or 0} end,
-            fromstring = function(str) return {data = str or \\"\\", length = #(str or \\"\\")} end,
-            tostring = function(buf) return buf and buf.data or \\"\\" end,
-            len = function(buf) return buf and buf.length or 0 end,
-            readi8 = function(buf, pos) 
-                if not buf or pos >= (buf.length or 0) then error(\\"buffer access out of bounds\\") end
-                return buf.data and string.byte(buf.data, pos + 1) or 0 
-            end,
-            writei8 = function(buf, pos, val)
-                if not buf or pos >= (buf.length or 0) then error(\\"buffer access out of bounds\\") end
-                return true
-            end,
-            readu8 = function(buf, pos) 
-                if not buf or pos >= (buf.length or 0) then error(\\"buffer access out of bounds\\") end
-                return 0 
-            end,
-            writeu8 = function(buf, pos, val)
-                if not buf or pos >= (buf.length or 0) then error(\\"buffer access out of bounds\\") end
-            end,
-            readi16 = function(buf, pos) return 0 end,
-            writei16 = function(buf, pos, val) end,
-            readu16 = function(buf, pos) return 0 end,
-            writeu16 = function(buf, pos, val) end,
-            readi32 = function(buf, pos) return 0 end,
-            writei32 = function(buf, pos, val) end,
-            readu32 = function(buf, pos) return 0 end,
-            writeu32 = function(buf, pos, val) end,
-            readf32 = function(buf, pos) return 0 end,
-            writef32 = function(buf, pos, val) end,
-            readf64 = function(buf, pos) return 0 end,
-            writef64 = function(buf, pos, val) end,
-            readstring = function(buf, pos, len) return \\"\\" end,
-            writestring = function(buf, pos, str) end,
-            copy = function(dst, dstoff, src, srcoff, count) end,
-            fill = function(buf, pos, val, count) end,
-        }
-    end
-    
-    -- Add debug.info (Roblox-style debug function)
-    if eR.debug then
-        eR.debug.info = function(func_or_level, what)
-            if type(func_or_level) == \\"function\\" then
-                -- For any function, return \\"[C]\\" source to look like a C function
-                if what == \\"s\\" then return \\"[C]\\" end
-                if what == \\"n\\" then return \\"\\" end
-                if what == \\"l\\" then return -1 end
-                if what == \\"a\\" then return 0, false end
-                return nil
-            elseif type(func_or_level) == \\"number\\" then
-                if what == \\"s\\" then return \\"[C]\\" end
-                if what == \\"n\\" then return \\"\\" end
-                if what == \\"l\\" then return -1 end
-                return nil
-            end
-            return nil
-        end
-    end
-    
-    return eR
-end
-function q.dump_file(eN, eO)
-    q.reset()
-    az(\\"this file is generated using lunr discord.gg/9yAtRgpsua\\")
-    local as = o.open(eN, \\"rb\\")
-    if not as then
-        return false
-    end
-    local al = as:read(\\"*a\\")
-    as:close()
-    local eP = I(al)
-    local R, eQ = e(eP, \\"Obfuscated_Script\\")
-    if not R then
-        B(\\"\\n[LUA_LOAD_FAIL] \\" .. m(eQ))
-        return false
-    end
-
-    local eR = create_env(R)
-    if setfenv then
-        setfenv(R, eR)
-    end
-    B(\\"[Dumper] Executing Protected VM...\\")
-    local eT = p.clock()
-  --  b(
-  --      function()
-  --          if p.clock() - eT > r.TIMEOUT_SECONDS then
-  --              error(\\"TIMEOUT\\", 0)
-  --          end
-  --      end,
-  --      \\"\\",
-  --      1000
-  --  )
-    local eo, eU =
-        h(
-        function()
-            R()
-        end,
-        function(ds)
-            return tostring(ds)
-        end
-    )
-   -- b()
-    if not eo then
-        local reason = eU:match(\\"TIMEOUT\\") and \\"Timeout\\" or (eU:match(\\"TASK_WAIT_LIMIT\\") and \\"Wait Limit\\" or (eU:match(\\"DUMPER\\") and \\"Cycle Limit\\" or \\"Error\\"))
-        az(\\"Terminated: \\" .. reason .. \\" (\\" .. eU .. \\")\\")
-        
-        -- CRASH RECOVERY: Return partial output that was generated before crash
-        local partial_output = aB()
-        if partial_output and #partial_output > 1000 then
-            az(\\"CRASH_RECOVERY: Runtime error occurred, but partial output was captured before crash.\\")
-            return true, partial_output
-        end
-    end
-    return q.save(eO or r.OUTPUT_FILE)
-end
-function q.dump_string(al, eO)
-    q.reset()
-    az(\\"this file is generated using lunr discord.gg/9yAtRgpsua\\")
-    aA()
-    
-    global_loop_counter = 0
-    local instruction_count = 0
-    local max_instructions = 2000000000000000000
-    local hook_start_clock = p.clock()
-    local hook_start_time = p.time()
-
-    -- Fengari's debug hook support is closer to the Lua \\"l\\" hook than count hooks.
-    -- So we enforce budgets on line events, and keep the budgets generous.
-   -- b(function()
-    --    local elapsed = p.clock() - hook_start_clock
-    --    if elapsed < 0 or elapsed ~= elapsed then
-     --       elapsed = p.time() - hook_start_time
-     --   end
-       -- if elapsed > r.TIMEOUT_SECONDS then
-       --     error(\\"TIMEOUT\\", 0)
-       -- end
-     --   instruction_count = instruction_count + 1
-     --   if instruction_count > max_instructions then
-    --        error(\\"INSTRUCTION_LIMIT\\", 0)
-     --   end
-    --    if c(2, \\"S\\").what == \\"Lua\\" then
-    --        check_loop_limit()
-   --     end
-  --  end, \\"l\\")
-
-    -- Lock the hook so the executed script can't clear it via debug.sethook(nil)
-    debug.sethook = function()
-    end
-
-    -- Infinite loop prevention: only replace obvious infinite loops (while true do)
-    -- Do NOT replace conditional while loops - the env should handle them properly
-    if al then
-        al = al:gsub(\\"while%s+true%s+do\\", \\"for _LUNR_LOOP_=1,30 do\\")
-        al = al:gsub(\\"while%s+not%s+false%s+do\\", \\"for _LUNR_LOOP_=1,30 do\\")
-        al = al:gsub(\\"while%s+1%s+do\\", \\"for _LUNR_LOOP_=1,30 do\\")
-        al = al:gsub(\\"for%s+[%a_][%w_]*%s*=%s*1%s*,%s*math%.huge%s*do\\", \\"for _LUNR_LOOP_=1,30 do\\")
-    end
-
-local function crash_handler(err)
-    return err
-end
-    local raw_al = al
-    if al then
-        al = I(al)
-    end
-    local R, an = e(al)
-    if not R and raw_al then
-        R, an = e(raw_al)
-    end
-  --  if not R and raw_al then
-  --      local comment_prefixed = \\"--[[ lunr shim ]]\\n\\" .. raw_al
-   --     R, an = e(comment_prefixed)
-   -- end
-    if not R then
-        -- Check for specific obfuscation-induced errors
-        if an and (an:match(\\"control structure too long\\") or an:match(\\"too long\\") or an:match(\\"syntax error\\") or an:match(\\"'%)' expected\\") or an:match(\\"expected near\\") or an:match(\\"unexpected symbol\\") or an:match(\\"'end' expected\\") or an:match(\\"to close\\") or an:match(\\"near <eof>\\") or an:match(\\"function at line\\") or an:match(\\"near ','\\")) then
-            az(\\"CRASH_RECOVERY: Obfuscation parsing error detected and handled: \\" .. (an or \\"unknown\\"))
-            local partial_output = aB()
-            if partial_output and partial_output ~= \\"\\" then
-                return true, \\"error('lunr: The bot was unable to process the file fully, however it recovered a part of the file:')\\n\\n\\" .. partial_output
-            else
-                return true, \\"-- this file is generated using lunr discord.gg/9yAtRgpsua\\n\\nerror('lunr: The bot was unable to process the file fully, however it recovered a part of the file:')\\"
-            end
-        end
-        az(\\"Load Error: \\" .. (an or \\"unknown\\"))
-        return false, an
-    end
-    
-    local eR = create_env(R)
-    if setfenv then
-        setfenv(R, eR)
-    end
-    
-    local eT = p.clock()
-    
-    local eo, eU = xpcall(
-        function() 
-            -- Wrap main execution in pcall to catch infinite loop errors and continue
-            local success, err = pcall(function()
-                R()
-            end)
-            
-            if not success and (tostring(err):find(\\"lunr: infinite loop\\") or tostring(err):find(\\"lunr: task.wait infinite loop\\") or tostring(err):find(\\"lunr: wait infinite loop\\")) then
-                az(\\"Infinite loop detected and stopped, continuing execution...\\")
-            elseif not success then
-                -- Re-raise other errors
-                error(err, 2)
-            end
-        end, crash_handler)
-    if not eo then
-        local reason = eU:match(\\"TIMEOUT\\") and \\"Timeout\\" or (eU:match(\\"TASK_WAIT_LIMIT\\") and \\"Wait Limit\\" or (eU:match(\\"DUMPER\\") and \\"Cycle Limit\\" or \\"Error\\"))
-        az(\\"Terminated: \\" .. reason .. \\" (\\" .. eU .. \\")\\")
-        
-        -- CRASH RECOVERY: Return partial output that was generated before crash
-        local partial_output = aB()
-        if partial_output and partial_output ~= \\"\\" then
-            return true, partial_output
-        end
-    end
-    
-    if eO then
-        return q.save(eO)
-    end
-    return true, aB()
-end
--- CLI Logic removed for library usage
-end
-_G.dump_string = q.dump_string
-_G.dump_file = q.dump_file
-
-return q
-")
--- Terminated: Error ([string "--[[ burgerfusctor gay sex forever ]]--[[ bur..."]:1: attempt to index a nil value (local 'o'))
-
-
-if arg and arg[1] then
-    q.dump_file(arg[1], arg[2])
-end
-return q
+                return '"'\n            end, profilebegin = function()\n        end, profileend = function()\n        end, sethook = function()\n        end},\n    getthreadidentity = function() return t.thread_identity end  -- Default to 7, but randomize 6-8 for variety\n    , setthreadidentity = function(id) t.thread_identity = id end  -- Allow scripts to set it without crashing\n    , getinfo = LUNR_GETINFO\n    , isscriptmodule = function(scr) \n        return scr and scr.ClassName == "ModuleScript"  -- Lie and say yes for modules\n    end\n    , getupvalues = function(f)\n        local ups = {}\n        local i = 1\n        while true do\n            local name, val = debug.getupvalue(f, i)\n            if not name then break end\n            ups[i] = {name = name, value = val}  -- Return as table for realism\n            i = i + 1\n        end\n        return ups  -- Fake some common upvalues like _ENV if missing\n    end\n    , getconstants = function(f)\n        -- Generate fake constants based on func type\n        local consts = {"nil", "true", "false", math.pi, "game"}  -- Common ones\n        for i=1, math.random(5,15) do  -- Randomize to avoid patterns\n            table.insert(consts, math.random(1,1000))\n        end\n        return consts\n    end\n    -- Anti-tamper neutralizer: Hook setupvalue to log but not crash\n    , setupvalue = function(f, idx, val)\n        local success = debug.setupvalue(f, idx, val)\n        if not success then\n            az("-- Anti-tamper detected: Ignored setupvalue on invalid idx")  -- Log unethical bypass\n        end\n        return success or true  -- Lie and say it worked\n    end, rconsoleprint = function(ay)\n    end, rconsoleclear = function()\n    end, rconsolecreate = function()\n    end, rconsoledestroy = function()\n    end, rconsoleinput = function()\n        return ""\n    end, rconsoleinfo = function(ay)\n    end, rconsolewarn = function(ay)\n    end, rconsoleerr = function(ay)\n    end, rconsolename = function(am)\n    end, printconsole = function(ay)\n    end, setfflag = function(e4, bm)\n        at(string.format("setfflag(%s, %s)", aZ(e4), aZ(bm)))\n    end, settflag = function(e4, bm)\n        at(string.format("settflag(%s, %s)", aZ(e4), aZ(bm)))\n    end, getfflag = function(e4)\n        return ""\n    end, setfpscap = function(e5)\n        at(string.format("setfpscap(%s)", aZ(e5)))\n    end, getfpscap = function()\n        return 60\n    end, isnetworkowner = function(cr)\n        return true\n    end, gethiddenproperty = function(x, ce) \n        -- Support property setters like sethiddenproperty(Fire, "size_xml", 7)\n        if type(ce) == "string" and ce:match("^set(%w+)") then\n            local prop_name = ce:match("^set(%w+)%((.+)%)")\n            if prop_name then\n                return "set" .. prop_name\n            end\n        end\n        return nil\n    end, sethiddenproperty = function(x, ce, bm)\n        -- Support property setters like sethiddenproperty(Fire, "size_xml", 7)\n        if type(ce) == "string" and ce:match("^set(%w+)") then\n            local prop_name = ce:match("^set(%w+)%((.+)%)")\n            if prop_name then\n                at(string.format("sethiddenproperty(%s, %s, %s)", aZ(x), aH(prop_name), aZ(bm)))\n                return true\n            end\n        end\n        at(string.format("sethiddenproperty(%s, %s, %s)", aZ(x), aH(ce), aZ(bm)))\n    end, setsimulationradius = function(e6, e7)\n        at(string.format("setsimulationradius(%s%s)", aZ(e6), e7 and ", " .. aZ(e7) or ""))\n    end, getspecialinfo = function(e8)\n        return {}\n    end, saveinstance = function(dO)\n        at(string.format("saveinstance(%s)", aZ(dO or {})))\n    end, decompile = function(script)\n        return "-- decompiled"\n    end, lz4compress = function(cJ)\n        return cJ\n    end, lz4decompress = function(cJ)\n        return cJ\n    end, MessageBox = function(e9, ea, eb)\n        return 1\n    end, setwindowactive = function()\n    end, setwindowtitle = function(ec)\n    end, queue_on_teleport = function(al)\n        at(string.format("queue_on_teleport(%s)", aZ(al)))\n    end, queueonteleport = function(al)\n        at(string.format("queueonteleport(%s)", aZ(al)))\n    end, isvalidinstance = function(e8)\n        return e8 ~= nil\n    end, validcheck = function(e8)\n        return e8 ~= nil\n    end, cleardrawcache = function()\n    end, isexecutorclosure = function(dr)\n        return true\n    end, isscriptable = function(x, ce)\n        return true\n    end,    getscriptbytecode = function(scr)\n        return t.script_sources[scr] or "v7"\n    end, getscripthash = function(scr)\n        local src = t.script_sources[scr] or ""\n        return m(#src) .. "_" .. m(src:byte(1) or 0)\n    end,\n getsenv = function(script)\n            local env_proxy = {}\n            setmetatable(env_proxy, {\n                __index = function(t, k)\n                    return eR[k]\n                end,\n                __newindex = function(t, k, v)\n                    at(string.format("getsenv().%s = %s", aE(k), aZ(v)))\n                    -- Store in original_G and use rawset to avoid double logging\n                    if original_G then\n                        original_G[k] = v\n                    end\n                    rawset(eR, k, v)\n                end,\n                __call = function(t, ...)\n                    return t\n                end,\n                __tostring = function(t)\n                    return "getsenv()"\n                end\n            })\n            return env_proxy\n    end, getrenderproperty = function(x, ce)\n        return nil\n    end, cloneref = function(x)\n        return x\n    end, __stable_env_id = "ENV_LOGGER_STABLE_012e1fe0", __SUNC_TEMP = 99, \n    RunService = {\n        BindToRenderStep = function(am, cp, bs)\n             at(string.format("RunService:BindToRenderStep(%s, %s, function())", aH(am), aZ(cp)))\n        end,\n        Heartbeat = bj("RunService.Heartbeat", false),\n        HeartbeatWait = function() return 0.016 end,\n        IsClient = function() return true end,\n        IsRunning = function() return true end,\n        IsServer = function() return false end,\n        IsStudio = function() return false end,\n        RenderStepped = bj("RunService.RenderStepped", false),\n        RenderSteppedWait = function() return 0.016 end,\n        Stepped = bj("RunService.Stepped", false),\n        SteppedWait = function() return 0.016 end,\n        UnbindFromRenderStep = function(am)\n             at(string.format("RunService:UnbindFromRenderStep(%s)", aH(am)))\n        end\n    },\n    UserInputService = {\n        GamepadEnabled = function() return false end,\n        GetGamepadState = function() return {} end,\n        GetKeysPressed = function() return {} end,\n        GetMouseLocation = function() return Vector2.new(0, 0) end,\n        InputBegan = bj("UserInputService.InputBegan", false),\n        InputChanged = bj("UserInputService.InputChanged", false),\n        InputEnded = bj("UserInputService.InputEnded", false),\n        IsKeyDown = function() return false end,\n        IsMouseButtonPressed = function() return false end,\n        KeyboardEnabled = function() return true end,\n        MouseEnabled = function() return true end,\n        MouseMoved = bj("UserInputService.MouseMoved", false),\n        MouseWheel = bj("UserInputService.MouseWheel", false),\n        TouchEnabled = function() return false end,\n        TouchEnded = bj("UserInputService.TouchEnded", false),\n        TouchMoved = bj("UserInputService.TouchMoved", false),\n        TouchStarted = bj("UserInputService.TouchStarted", false)\n    },\n    setrenderproperty = function(obj, prop, val)\n        at(string.format("setrenderproperty(%s, %s, %s)", aZ(obj), aH(prop), aZ(val)))\n        t.shadow_props[obj] = t.shadow_props[obj] or {}\n        t.shadow_props[obj][prop] = val\n    end,\n    setscriptable = function(obj, prop, val)\n        at(string.format("setscriptable(%s, %s, %s)", aZ(obj), aH(prop), aZ(val)))\n        exploit_funcs.setrenderproperty(obj, prop, val)\n    end,\n    RemoteEvent = {\n        new = function() return bj("RemoteEvent", false) end\n    },\n    RemoteFunction = {\n        new = function() return bj("RemoteFunction", false) end\n    },\n    Event = function() return bj("BindableEvent", false) end,\n    secure_call = function(dr, ...)\n        return dr(...)\n    end,\n    create_secure_function = function(dr)\n        return dr\n    end,\n    getmenv = function(script)\n        return _G\n    end,\n    replaceclosure = function(original, replacement)\n        at(string.format("replaceclosure(%s, %s)", aZ(original), aZ(replacement)))\n        return original\n    end,\n    dumpstring = function(str)\n        at(string.format("dumpstring(%s)", aZ(str)))\n        return str\n    end\n}\nfor b4, b5 in D(exploit_funcs) do\n    _G[b4] = b5\n    if type(b5) == "function" then LUNR_PROTECTED[b5] = true end\nend\n_G.getgc = exploit_funcs.getgc\n_G.getreg = function() return {} end\n_G.setscriptable = exploit_funcs.setscriptable\n_G.getrenderproperty = exploit_funcs.getrenderproperty\n_G.delfolder = exploit_funcs.delfolder\n_G.delfile = exploit_funcs.delfile\n_G.getexecutorname = exploit_funcs.getexecutorname\n-- Exploit functions preserved in _G\nlocal ed = {}\nlocal function ee(d_)\n    d_ = (d_ or 0) % 4294967296\n    if d_ >= 2147483648 then\n        d_ = d_ - 4294967296\n    end\n    return math.floor(d_)\nend\ned.tobit = ee\ned.tohex = function(d_, U)\n    return string.format("%0" .. (U or 8) .. "x", (d_ or 0) % 0x100000000)\nend\ned.band = function(bo, aa) return ee(ee(bo) & ee(aa)) end\ned.bor = function(bo, aa) return ee(ee(bo) | ee(aa)) end\ned.bxor = function(bo, aa) return ee(ee(bo) ~ ee(aa)) end\ned.bnot = function(bo) return ee(~ee(bo)) end\ned.btest = function(bo, aa) return (ee(bo) & ee(aa)) ~= 0 end\ned.lshift = function(d_, U) return ee(ee(d_) << (U or 0) % 32) end\ned.rshift = function(d_, U) return ee(ee(d_) >> (U or 0) % 32) end\ned.arshift = function(d_, U)\n    local b5 = ee(d_ or 0)\n    local amt = (U or 0) % 32\n    if b5 < 0 then\n        return ee(b5 >> amt) + ee(-1 << (32 - amt))\n    else\n        return ee(b5 >> amt)\n    end\nend\ned.rol = function(d_, U)\n    d_ = d_ or 0\n    U = (U or 0) % 32\n    return ee(d_ << U | (d_ >> (32 - U)))\nend\ned.ror = function(d_, U)\n    d_ = d_ or 0\n    U = (U or 0) % 32\n    return ee(d_ >> U | (d_ << (32 - U)))\nend\ned.bswap = function(d_)\n    d_ = d_ or 0\n    local bo = d_ >> 24 & 0xFF\n    local aa = d_ >> 8 & 0xFF00\n    local ah = d_ << 8 & 0xFF0000\n    local ef = d_ << 24 & 0xFF000000\n    return ee(bo | aa | ah | ef)\nend\ned.countlz = function(U)\n    U = ed.tobit(U)\n    if U == 0 then\n        return 32\n    end\n    local a2 = 0\n    if ed.band(U, 0xFFFF0000) == 0 then\n        a2 = a2 + 16\n        U = ed.lshift(U, 16)\n    end\n    if ed.band(U, 0xFF000000) == 0 then\n        a2 = a2 + 8\n        U = ed.lshift(U, 8)\n    end\n    if ed.band(U, 0xF0000000) == 0 then\n        a2 = a2 + 4\n        U = ed.lshift(U, 4)\n    end\n    if ed.band(U, 0xC0000000) == 0 then\n        a2 = a2 + 2\n        U = ed.lshift(U, 2)\n    end\n    if ed.band(U, 0x80000000) == 0 then\n        a2 = a2 + 1\n    end\n    return a2\nend\ned.countrz = function(U)\n    U = ed.tobit(U)\n    if U == 0 then\n        return 32\n    end\n    local a2 = 0\n    while ed.band(U, 1) == 0 do\n        U = ed.rshift(U, 1)\n        a2 = a2 + 1\n    end\n    return a2\nend\ned.lrotate = ed.rol\ned.rrotate = ed.ror\ned.extract = function(U, eg, eh)\n    eh = eh or 1\n    return U >> eg & 1 << eh - 1\nend\ned.replace = function(U, b5, eg, eh)\n    eh = eh or 1\n    local ei = 1 << eh - 1\n    return U & ~(ei << eg) | (b5 & ei << eg)\nend\ned.btest = function(bo, aa)\n    return ed.band(bo, aa) ~= 0\nend\nbit32 = ed\nbit = ed\ntable.getn = table.getn or function(b2)\n        return #b2\n    end\ntable.foreach = table.foreach or function(b2, as)\n        for b4, b5 in pairs(b2) do\n            as(b4, b5)\n        end\n    end\ntable.foreachi = table.foreachi or function(b2, as)\n        for L, b5 in ipairs(b2) do\n            as(L, b5)\n        end\n    end\ntable.move = table.move or function(ej, as, ds, b2, ek)\n        ek = ek or ej\n        for L = as, ds do\n            ek[b2 + L - as] = ej[L]\n        end\n        return ek\n    end\nstring.split = string.split or function(S, el)\n        local b2 = {}\n        for O in string.gmatch(S, "([^" .. (el or "%s") .. "]+)") do\n            table.insert(b2, O)\n        end\n        return b2\n    end\nif not math.frexp then\n    math.frexp = function(d_)\n        if d_ == 0 then\n            return 0, 0\n        end\n        local ds = math.floor(math.log(math.abs(d_)) / math.log(2)) + 1\n        local em = d_ / 2 ^ ds\n        return em, ds\n    end\nend\nif not math.ldexp then\n    math.ldexp = function(em, ds)\n        return em * 2 ^ ds\n    end\nend\nif not utf8 then\n    utf8 = {}\n    utf8.char = function(...)\n        local bA = {...}\n        local dg = {}\n        for L, al in ipairs(bA) do\n            table.insert(dg, string.char(al % 256))\n        end\n        return table.concat(dg)\n    end\n    utf8.len = function(S)\n        return #S\n    end\n    utf8.codes = function(S)\n        local L = 0\n        return function()\n            L = L + 1\n            if L <= #S then\n                return L, string.byte(S, L)\n            end\n        end\n    end\nend\npairs = function(b2)\n    if j(b2) == "table" and not G(b2) then\n        return D(b2)\n    end\n    return function()\n        return nil\n    end, b2, nil\nend\nipairs = function(b2)\n    if j(b2) == "table" and not G(b2) then\n        return E(b2)\n    end\n    return function()\n        return nil\n    end, b2, 0\nend\n_G.table = table\n_G.getconstant = exploit_funcs.debug.getconstant\n_G.setconstant = exploit_funcs.debug.setconstant\n_G.getupvalue = exploit_funcs.debug.getupvalue\n_G.getproto = exploit_funcs.debug.getproto\n_G.getprotos = exploit_funcs.debug.getprotos\n_G.setproto = exploit_funcs.debug.setproto\n_G.getstack = exploit_funcs.debug.getstack\n_G.setstack = exploit_funcs.debug.setstack\n    local en = {g(as, ...)}\n    local eo = en[1]\n    if not eo then\n        local an = en[2]\n       -- if j(an) == "string" and an:match("TIMEOUT_FORCED_BY_DUMPER") then\n       --     i(an)\n       -- end\n    end\n    return table.unpack(en)\nend\n    local function eq(an)\n      --  if j(an) == "string" and an:match("TIMEOUT_FORCED_BY_DUMPER") then\n      --      return an\n      --  end\n        if ep then\n            return ep(an)\n        end\n        return an\n    end\n    local en = {h(as, eq, ...)}\n    local eo = en[1]\n    if not eo then\n        local an = en[2]\n       -- if j(an) == "string" and an:match("TIMEOUT_FORCED_BY_DUMPER") then\n        --    i(an)\n      --  end\n    end\n    return table.unpack(en)\nend\nif _G.originalError == nil then\nend\n        return #b2\n    end\n_G.unpack = table.unpack or unpack\n_G.pack = table.pack or function(...)\n        return {n = select("#", ...), ...}\n    end\n_G.Region3int16 = Region3int16\n_G.NumberSequenceKeypoint = NumberSequenceKeypoint\n_G.ColorSequenceKeypoint = ColorSequenceKeypoint\n    create = function(size) return {data = string.rep("\0", size or 0), length = size or 0} end,\n    fromstring = function(str) return {data = str or "", length = #(str or "")} end,\n    tostring = function(buf) return buf and buf.data or "" end,\n    len = function(buf) return buf and buf.length or 0 end,\n    readi8 = function(buf, pos) \n        if not buf or pos >= (buf.length or 0) then error("buffer access out of bounds") end\n        return buf.data and string.byte(buf.data, pos + 1) or 0 \n    end,\n    writei8 = function(buf, pos, val)\n        if not buf or pos >= (buf.length or 0) then error("buffer access out of bounds") end\n    end,\n    readu8 = function(buf, pos) if not buf or pos >= (buf.length or 0) then error("buffer access out of bounds") end return 0 end,\n    writeu8 = function(buf, pos, val) if not buf or pos >= (buf.length or 0) then error("buffer access out of bounds") end end,\n    readi16 = function(buf, pos) return 0 end,\n    writei16 = function(buf, pos, val) end,\n    readu16 = function(buf, pos) return 0 end,\n    writeu16 = function(buf, pos, val) end,\n    readi32 = function(buf, pos) return 0 end,\n    writei32 = function(buf, pos, val) end,\n    readu32 = function(buf, pos) return 0 end,\n    writeu32 = function(buf, pos, val) end,\n    readf32 = function(buf, pos) return 0 end,\n    writef32 = function(buf, pos, val) end,\n    readf64 = function(buf, pos) return 0 end,\n    writef64 = function(buf, pos, val) end,\n    readstring = function(buf, pos, len) return "" end,\n    writestring = function(buf, pos, str) end,\n    copy = function(dst, dstoff, src, srcoff, count) end,\n    fill = function(buf, pos, val, count) end,\n}\n_G.PathWaypoint = PathWaypoint\n_G.Axes = Axes\n_G.Faces = Faces\n_G.Vector3int16 = Vector3int16\n_G.Vector2int16 = Vector2int16\n_G.CatalogSearchParams = CatalogSearchParams\n_G.DateTime = DateTime\ngetmetatable = function(x)\n    if G(x) then\n        return "The metatable is locked"\n    end\n    return k(x)\nend\ntype = function(x)\n    return j(x)\nend\ntypeof = function(x)\n    if G(x) then\n        local er = t.registry[x]\n        if er then\n            if er:match("Vector3") then\n                return "Vector3"\n            end\n            if er:match("CFrame") then\n                return "CFrame"\n            end\n            if er:match("Color3") then\n                return "Color3"\n            end\n            if er:match("UDim") then\n                return "UDim2"\n            end\n            if er:match("Enum") then\n                return "EnumItem"\n            end\n        end\n        return "Instance"\n    end\n    return j(x)\nend\ntonumber = function(x, es)\n    if w(x) then\n        return 123456789\n    end\n    return n(x, es)\nend\nrawequal = function(bo, aa)\n    return l(bo, aa)\nend\ntostring = function(x)\n    if G(x) then\n        local et = t.registry[x]\n        return et or "Instance"\n    end\n    return m(x)\nend\nt.last_http_url = nil\nloadstring = function(al, eu)\n    if j(al) ~= "string" then\n        return function()\n            return bj("loaded", false)\n        end\n    end\n    local cI = t.last_http_url or al\n    t.last_http_url = nil\n    local ev = nil\n    local ew = cI:lower()\n    local ex = {\n        {pattern = "rayfield",    name = "Rayfield"},\n        {pattern = "windui",      name = "WindUI"},\n        {pattern = "fluent",      name = "Fluent"},\n        {pattern = "tora-library", name = "Tora_Library"},\n        {pattern = "orion",       name = "OrionLib"},\n        {pattern = "kavo",        name = "Kavo"},\n        {pattern = "venyx",       name = "Venyx"},\n        {pattern = "sirius",      name = "Sirius"},\n        {pattern = "linoria",     name = "Linoria"},\n        {pattern = "wally",       name = "Wally"},\n        {pattern = "dex",         name = "Dex"},\n        {pattern = "infinite",    name = "InfiniteYield"},\n        {pattern = "hydroxide",   name = "Hydroxide"},\n        {pattern = "simplespy",   name = "SimpleSpy"},\n        {pattern = "remotespy",   name = "RemoteSpy"},\n    }\n    for W, ey in ipairs(ex) do\n        if ew:find(ey.pattern) then\n            ev = ey.name\n            break\n        end\n    end\n    if ev then\n        local ez = bj(ev, false)\n        t.registry[ez] = ev\n        t.names_used[ev] = true\n        if cI:match("^https?://") then\n            at(string.format('local %s = loadstring(game:HttpGet("%s"))()', ev, cI))\n        end\n        return function()\n            return ez\n        end\n    end\n    if cI:match("^https?://") then\n        local ez = bj("Library", false)\n        at(string.format('local Library = loadstring(game:HttpGet("%s"))()', cI))\n        return function()\n            return ez\n        end\n    end\n    if type(al) == "string" then\n        al = I(al)\n    end\n    local R, an = e(al)\n    if R then\n        return R\n    end\n    local ez = bj("LoadedChunk", false)\n    return function()\n        return ez\n    end\nend\nload = loadstring\nrequire = function(eA)\n    -- SECURITY: Validate module names and block dangerous patterns\n    if type(eA) ~= "string" then\n        error("require() expects a string argument")\n    end\n    \n    -- Block @lune and other dangerous patterns\n    if eA:match("^@lune") or eA:match("^@std") or eA:match("^@lune") then\n        at(string.format("[SECURITY] Blocked dangerous module: %s", aZ(eA)))\n        error("[SECURITY] Dangerous module loading blocked")\n    end\n    \n    -- Additional security checks\n    if eA:match("%.%.%.") or eA:match("%.%.%.%.") then\n        at(string.format("[SECURITY] Suspicious module path: %s", aZ(eA)))\n        error("[SECURITY] Suspicious module path blocked")\n    end\n    \n    local eB = t.registry[eA] or aZ(eA)\n    local z = bj("RequiredModule", false)\n    local _ = aW(z, "module")\n    at(string.format("local %s = require(%s)", _, aZ(eB)))\n    return z\nend\nprint = function(...)\n    local bA = {...}\n    local b8 = {}\n    for W, b5 in ipairs(bA) do\n        table.insert(b8, aZ(b5))\n    end\n    local msg = table.concat(bA, "\t")\n    for _, cb in ipairs(_G.__logservice_callbacks or {}) do\n        pcall(cb, msg, (Enum and Enum.MessageType and Enum.MessageType.MessageOutput) or "Output")\n    end\n    at(string.format("print(%s)", table.concat(b8, ", ")))\nend\nwarn = function(...)\n    local bA = {...}\n    local b8 = {}\n    for W, b5 in ipairs(bA) do\n        table.insert(b8, aZ(b5))\n    end\n    at(string.format("warn(%s)", table.concat(b8, ", ")))\nend\nshared = bj("shared", true)\nlocal eC = _G\nlocal eD =\n    setmetatable(\n    {},\n    {__index = function(b2, b4)\n            local aF = rawget(eC, b4)\n            if aF == nil then\n                aF = rawget(_G, b4)\n            end\n            return aF\n        end, __newindex = function(b2, b4, b5)\n            rawset(eC, b4, b5)\n        end}\n)\n_G._G = eD\nfunction q.reset()\n    t = {\n        output = {},\n        indent = 0,\n        registry = {},\n        reverse_registry = {},\n        names_used = {},\n        parent_map = {},\n        property_store = {},\n        call_graph = {},\n        variable_types = {},\n        string_refs = {},\n        proxy_id = 0,\n        callback_depth = 0,\n        pending_iterator = false,\n        last_http_url = nil,\n        current_size = 0,\n        limit_reached = false,\n        var_counter = 0,\n        captured_constants = {},\n        cycle_history = {},\n        in_cycle = false,\n        cycle_count = 0,\n        wait_calls = 0,\n        library_counter = 0,\n        variable_counter = 0\n    }\n    aM = {}\n    game = bj("game", true)\n    workspace = bj("workspace", true)\n    script = bj("script", true)\n    Enum = bj("Enum", true)\n    shared = bj("shared", true)\n    t.property_store[game] = {PlaceId = u, GameId = u, placeId = u, gameId = u}\n    local dm = {}\n    dm.__index = function(b2, b4)\n        if b4 == F or b4 == "__proxy_id" then\n            return rawget(b2, b4)\n        end\n        local dn = bj("Enum." .. aE(b4), false)\n        t.registry[dn] = "Enum." .. aE(b4)\n        return dn\n    end\n    setmetatable(Enum, dm)\nend\nfunction q.get_output()\n    return aB()\nend\nfunction q.save(aD)\n    return aC(aD)\nend\nfunction q.get_call_graph()\n    return t.call_graph\nend\nfunction q.get_string_refs()\n    return t.string_refs\nend\nfunction q.get_stats()\n    return {\n        total_lines = #t.output,\n        remote_calls = #t.call_graph,\n        suspicious_strings = #t.string_refs,\n        proxies_created = t.proxy_id\n    }\nend\nlocal eE = {\n    callId = "LUNR_",\n    binaryOperatorNames = {\n        ["and"] = "AND",\n        ["or"] = "OR",\n        [">"] = "GT",\n        ["<"] = "LT",\n        [">="] = "GE",\n        ["<="] = "LE",\n        ["=="] = "EQ",\n        ["~="] = "NEQ",\n        [".."] = "CAT"\n    }\n}\nfunction eE:hook(al)\n    return self.callId .. al\nend\nfunction eE:process_expr(eF)\n    if not eF then\n        return "nil"\n    end\n    if type(eF) == "string" then\n        return eF\n    end\n    local eG = eF.tag or eF.kind\n    if eG == "number" or eG == "string" then\n        local aF = eG == "string" and string.format("%q", eF.text) or (eF.value or eF.text)\n        if r.CONSTANT_COLLECTION then\n            return string.format("%sGET(%s)", self.callId, aF)\n        end\n        return aF\n    end\n    if eG == "local" or eG == "global" then\n        return (eF.name or eF.token).text\n    elseif eG == "boolean" or eG == "bool" then\n        return tostring(eF.value)\n    elseif eG == "binary" then\n        local eH = self:process_expr(eF.lhsoperand)\n        local eI = self:process_expr(eF.rhsoperand)\n        local X = eF.operator.text\n        local eJ = self.binaryOperatorNames[X]\n        if eJ then\n            return string.format("%s%s(%s, %s)", self.callId, eJ, eH, eI)\n        end\n        return string.format("(%s %s %s)", eH, X, eI)\n    elseif eG == "call" then\n        local dr = self:process_expr(eF.func)\n        local bA = {}\n        for L, b5 in ipairs(eF.arguments) do\n            bA[L] = self:process_expr(b5.node or b5)\n        end\n        return string.format("%sCALL(%s, %s)", self.callId, dr, table.concat(bA, ", "))\n    elseif eG == "indexname" or eG == "index" then\n        local bS = self:process_expr(eF.expression)\n        local ba = eG == "indexname" and string.format("%q", eF.index.text) or self:process_expr(eF.index)\n        return string.format("%sCHECKINDEX(%s, %s)", self.callId, bS, ba)\n    end\n    return "nil"\nend\nfunction eE:process_statement(eF)\n    if not eF then\n        return ""\n    end\n    local eG = eF.tag\n    if eG == "local" or eG == "assign" then\n        local eK, eL = {}, {}\n        for W, b5 in ipairs(eF.variables or {}) do\n            table.insert(eK, self:process_expr(b5.node or b5))\n        end\n        for W, b5 in ipairs(eF.values or {}) do\n            table.insert(eL, self:process_expr(b5.node or b5))\n        end\n        return (eG == "local" and "local " or "") .. table.concat(eK, ", ") .. " = " .. table.concat(eL, ", ")\n    elseif eG == "block" then\n        local b9 = {}\n        for W, eM in ipairs(eF.statements or {}) do\n            table.insert(b9, self:process_statement(eM))\n        end\n        return table.concat(b9, "; ")\n    end\n    return self:process_expr(eF) or ""\nend\nlocal function create_env(R)\n    local eR\n    -- Tree-structured VFS to support nesting and proper path handling\nlocal VFS = { root = { type = "folder", children = {} } }\n\nlocal function resolve_path(path)\n    if not path or path == "" then return VFS.root end\n    local parts = {}\n    for part in path:gmatch("[^/]+") do\n        if part == ".." then\n            table.remove(parts)\n        elseif part ~= "." then\n            table.insert(parts, part)\n        end\n    end\n    local node = VFS.root\n    for _, part in ipairs(parts) do\n        if node.type ~= "folder" then return nil, "Not a folder" end\n        node = node.children[part]\n        if not node then return nil, "Path not found" end\n    end\n    return node\nend\n\nlocal function create_path(path, is_folder)\n    if not path or path == "" then return false, "Invalid path" end\n    local parts = {}\n    for part in path:gmatch("[^/]+") do\n        if part == ".." then\n            table.remove(parts)\n        elseif part ~= "." then\n            table.insert(parts, part)\n        end\n    end\n    local node = VFS.root\n    for i, part in ipairs(parts) do\n        if not node.children[part] then\n            node.children[part] = {\n                type = is_folder and "folder" or "file",\n                children = is_folder and {} or nil,\n                content = not is_folder and "" or nil\n            }\n        end\n        node = node.children[part]\n        if i < #parts and node.type ~= "folder" then return false, "Path conflict" end\n    end\n    return true\nend\n\nlocal function get_parent_path(path)\n    return path:match("(.+)/[^/]+$") or "/"\nend\n\nlocal function get_name_from_path(path)\n    return path:match("[^/]+$") or path\nend\n    local drawing_objects = {}\n    local closure_tags = setmetatable({}, { __mode = "k" })\n    local readonly = setmetatable({}, { __mode = "k" })\n    local script_sources = setmetatable({}, { __mode = "k" })\n    local scripts = { script }\n    local shadow_props = setmetatable({}, { __mode = "k" })\n    local raw_setmetatable = setmetatable\n    local _loadstring = loadstring\n    local _debug = debug\n\n    eR = setmetatable({\n        LuraphContinue = function() end,\n        script = script, game = game, workspace = workspace,\n        t = task,\n        LUNR_CHECKINDEX = function(x, ba)\n            local aF = x[ba]\n            if j(aF) == "table" and not t.registry[aF] then\n                t.var_counter = t.var_counter + 1\n                t.registry[aF] = "lunrtab" .. t.var_counter\n            end\n            return aF\n        end,\n        LUNR_GET = function(b5) return b5 end,\n        LUNR_CALL = function(as, ...) return as(...) end,\n        LUNR_NAMECALL = function(eS, em, ...) return eS[em](eS, ...) end,\n        pcall = function(as, ...)\n            local dg = {g(as, ...)}\n            if not dg[1] and (m(dg[2]):match("TIMEOUT") or m(dg[2]):match("LIMIT") or m(dg[2]):match("DUMPER")) then\n                i(dg[2], 0)\n            end\n            return table.unpack(dg)\n        end,\n        xpcall = function(as, dt, ...)\n            local dg = {h(as, dt, ...)}\n            if not dg[1] and (m(dg[2]):match("TIMEOUT") or m(dg[2]):match("LIMIT") or m(dg[2]):match("DUMPER")) then\n                i(dg[2], 0)\n            end\n            return table.unpack(dg)\n        end,\n        LUNR_STR = function(val)\n            if type(val) == "string" and #val > 2 then\n                table.insert(t.string_refs, {value = val, hint = "Deobfuscated String"})\n            end\n            return val\n        end,\n        getgenv = function() return dz(nil) end,\n        getfenv = function(f)\n            if f == nil or (type(f) == "number" and (f == 0 or f == 1)) then\n                return _G\n            end\n            local env_proxy = {}\n            local context = ""\n            if f == R then \n                context = "getfenv(script)"\n            else\n                context = "getfenv(" .. aE(f) .. ")"\n            end\n            \n            setmetatable(env_proxy, {\n                __index = function(t, k)\n                    return eR[k]\n                end,\n                __newindex = function(t, k, v)\n                    at(string.format(context .. ".%s = %s", aE(k), aZ(v)))\n                    -- Store in original_G and use rawset to avoid double logging\n                    if original_G then\n                        original_G[k] = v\n                    end\n                    rawset(eR, k, v)\n                end,\n                __call = function(t, ...)\n                    return t\n                end,\n                __tostring = function(t)\n                    return context\n                end\n            })\n            return env_proxy\n        end,\n        setfenv = function(f, env)\n            if type(f) == "number" and (f == 0 or f == 1) then return eR end\n            if f == R then return eR end\n            pcall(setfenv, f, env)\n            return eR\n        end,\n        _G = dy(), -- set to logging proxy\n        shared = {},\n        _VERSION = _VERSION,\n        bit = ed, bit32 = ed,\n        getrenv = function() return _G end,\n        getreg = _G.getreg or function() return {} end,\n        getgc = _G.getgc or function() return {} end,\n        getinstances = _G.getinstances or function() return {} end,\n        getnilinstances = _G.getnilinstances or function() return {} end,\n        getscripts = function() return scripts end,\n        getrunningscripts = function() return scripts end,\n        getrawmetatable = function(t) return getmetatable(t) end,\n        setrawmetatable = function(t, mt)\n            if readonly[t] then return end\n            return raw_setmetatable(t, mt)\n        end,\n        setreadonly = function(t, v) readonly[t] = v end,\n        isreadonly = function(t) return readonly[t] == true end,\n        hookfunction = function(f, h) return f end,\n        hookmetamethod = function(t, m, h) return function(...) end end,\n        newcclosure = function(fn)\n            local wrapper = function(...) return fn(...) end\n            closure_tags[wrapper] = "c"\n            return wrapper\n        end,\n        iscclosure = function(f) return closure_tags[f] == "c" end,\n        islclosure = function(f) return closure_tags[f] ~= "c" end,\n        isexecutorclosure = function(f) return true end,\n        checkcaller = function() return true end, -- Mimic exploit context\n        identifyexecutor = function() return "Lunr", "1.0" end,\n        getexecutorname = function() return "Lunr" end,\n        request = function(opt) \n            local url = opt.Url or opt.url or "unknown"\n            -- Block IP information requests to protect privacy\n            if url:match("ipinfo%.io") or url:match("ipapi%.co") or url:match("api%.ipify%.org") then\n                at("-- [BLOCKED] IP information request detected and blocked for privacy protection: " .. url)\n                return {Success = false, StatusCode = 403, StatusMessage = "Forbidden", Body = '{"error": "IP information requests blocked for privacy"}'}\n            end\n            return {Success = true, StatusCode = 200, Body = ""} \n        end,\n                loadstring = function(al, eu)\n            -- SECURITY: Block dangerous module loading patterns\n            if j(al) == "string" then\n                -- Check for @lune and other dangerous patterns\n                if al:match("require%s*%(%s*@lune") or al:match("require%s*%(%s*@") or al:match("require%s*%(%s*%.%.%.%s*)") then\n                    at("[SECURITY] Blocked potentially dangerous require pattern: " .. al:sub(1, 50) .. "...")\n                    return function() error("[SECURITY] Dangerous module loading blocked") end\n                end\n            end\n            local cI = t.last_http_url or (type(al) == "string" and al or "")\n            local saved_url = cI\n            t.last_http_url = nil\n            local ev = nil\n            local ew = (type(cI) == "string" and cI:lower()) or ""\n            local ex = {\n                {pattern = "rayfield",    name = "Rayfield"},\n                {pattern = "windui",      name = "WindUI"},\n                {pattern = "fluent",      name = "Fluent"},\n                {pattern = "tora-library", name = "Tora_Library"},\n                {pattern = "orion",       name = "OrionLib"},\n                {pattern = "kavo",        name = "Kavo"},\n                {pattern = "venyx",       name = "Venyx"},\n                {pattern = "sirius",      name = "Sirius"},\n                {pattern = "linoria",     name = "Linoria"},\n                {pattern = "wally",       name = "Wally"},\n                {pattern = "dex",         name = "Dex"},\n                {pattern = "infinite",    name = "InfiniteYield"},\n                {pattern = "hydroxide",   name = "Hydroxide"},\n                {pattern = "simplespy",   name = "SimpleSpy"},\n                {pattern = "remotespy",   name = "RemoteSpy"},\n            }\n            for W, ey in ipairs(ex) do\n                if ew:find(ey.pattern) then\n                    ev = ey.name\n                    break\n                end\n            end\n            local function make_ui_library_stub(prefix)\n                local ui_methods = {\n                    "CreateWindow", "Create", "CreateTab", "AddTab", "NewTab",\n                    "CreateSection", "AddSection", "NewSection",\n                    "CreateLabel", "AddLabel", "CreateButton", "AddButton",\n                    "CreateToggle", "AddToggle", "CreateSlider", "AddSlider",\n                    "CreateDropdown", "AddDropdown", "CreateKeybind", "AddKeybind",\n                    "CreateColorPicker", "AddColorPicker", "CreateInput", "AddInput",\n                    "CreateParagraph", "AddParagraph", "CreateTextBox", "CreateBind",\n                    "AddLeftGroup", "AddRightGroup", "AddLeftTab", "AddRightTab",\n                    "Notify", "Prompt", "Destroy", "GetConfig", "SetConfig"\n                }\n                local stub = {}\n                local function log_and_chain(method_name, ...)\n                    local args = {...}\n                    local parts = {}\n                    for i = 1, #args do\n                        local ok, s = pcall(function() return aZ(args[i]) end)\n                        table.insert(parts, ok and s or tostring(args[i]))\n                    end\n                    at(prefix .. ":" .. method_name .. "(" .. table.concat(parts, ", ") .. ")")\n                    return make_ui_library_stub(prefix .. ":" .. method_name .. "(...)")\n                end\n                for _, method in ipairs(ui_methods) do\n                    stub[method] = function(self, ...) return log_and_chain(method, ...) end\n                end\n                setmetatable(stub, {\n                    __index = function(t, k)\n                        if type(k) == "string" and k:match("^[A-Za-z][%w]*") then\n                            return function(self, ...) return log_and_chain(k, ...) end\n                        end\n                        return nil\n                    end\n                })\n                return stub\n            end\n            if ev then\n                local ez = bj(ev, false)\n                t.registry[ez] = ev\n                t.names_used[ev] = true\n                if type(cI) == "string" and cI:match("^https?://") then\n                    at(string.format('local %s = loadstring(game:HttpGet("%s"))()', ev, cI))\n                end\n                return function()\n                    return make_ui_library_stub(ev)\n                end\n            end\n            if type(cI) == "string" and cI:match("^https?://") then\n                local ez = bj("Library", false)\n                at(string.format('local Library = loadstring(game:HttpGet("%s"))()', cI))\n                return function()\n                    return make_ui_library_stub("Library")\n                end\n            end\n            if type(al) == "string" and (al:match("return%s*%{%s*CreateWindow") or al:match("return%s*%{%s*Create%s*=")) then\n                return function()\n                    return make_ui_library_stub(saved_url and (ew:find("tora") and "Tora_Library" or ew:find("rayfield") and "Rayfield" or ew:find("flux") and "Fluent" or "Library") or "Library")\n                end\n            end\n            if type(al) == "string" then\n                al = I(al)\n            end\n            local R, an = e(al)\n            if R then\n                return R\n            end\n            local ez = bj("LoadedChunk", false)\n            return function()\n                return ez\n            end\n        end,\n        load = function(src, chunk)\n            if type(src) ~= "string" then return nil, "invalid argument" end\n            local fn, err = _loadstring(src, chunk)\n            if not fn then return nil, err end\n            setfenv(fn, eR)\n            script_sources[fn] = src\n            return fn\n        end,\n        check_loop_limit = check_loop_limit,\n        enter_loop = enter_loop,\n        exit_loop = exit_loop,\n        debug = {\n            getinfo = function(f, w)\n                -- Anti-tamper bypass: if this looks like a tamper check, return original\n                if type(f) == "function" then\n                    local info = _original_debug_getinfo and _original_debug_getinfo(f, w)\n                    if info and (info.source:match("Phantoraph") or info.source:match("Antitamper")) then\n                        return info\n                    end\n                end\n                \n                if type(f) == "number" then f = f + 1 end\n                local info = _debug.getinfo(f, w)\n                if info then\n                    if info.source == "=[C]" then info.what = "C" end\n                    if info.source:match("Obfuscated_Script") then info.source = "=Script" end\n                end\n                return info\n            end,\n            getupvalue = _debug.getupvalue,\n            setupvalue = _debug.setupvalue,\n            getupvalues = _debug.getupvalues or function(f)\n                local i, u = 1, {}\n                while true do\n                    local n, v = _debug.getupvalue(f, i)\n                    if not n then break end\n                    u[n] = v\n                    i = i + 1\n                end\n                return u\n            end,\n            getconstants = function() return {} end,\n            getconstant = function() return nil end,\n            setconstant = function() end,\n            getprotos = function() return {} end,\n            getproto = function() return nil end,\n            setproto = function() end,\n            getstack = function() return {} end,\n            setstack = function() end,\n            getregistry = _debug.getregistry or function() return {} end\n        },\n        Drawing = {\n            Fonts = { UI = 0, System = 1, Plex = 2, Monospace = 3 },\n            new = function(class)\n                local obj = {\n                    ClassName = class,\n                    Visible = true,\n                    Color = Color3.new(1,1,1),\n                    Size = Vector2.new(0,0),\n                    Position = Vector2.new(0,0),\n                    Thickness = 1,\n                    Transparency = 0,\n                    Remove = function(self) drawing_objects[self] = nil end,\n                    Clear = function(self) end\n                }\n                drawing_objects[obj] = true\n                return obj\n            end\n        },\n        table = {\n            insert = table.insert,\n            remove = table.remove,\n            move   = table.move,\n            concat = table.concat,\n            pack   = table.pack,\n            unpack = table.unpack,\n            sort   = table.sort,\n            clear  = table.clear or function(t) for k in next,t do t[k]=nil end end,\n            clone = function(t, deep)\n                if type(t) ~= "table" then\n                    error("table.clone only accepts tables", 2)\n                end\n    \n                -- Handle simple shallow copy\n                if not deep then\n                    local copy = {}\n                    for k, v in pairs(t) do\n                        copy[k] = v\n                    end\n                    -- Output the actual table content\n                    local tableStr = "{"\n                    local first = true\n                    for k, v in pairs(t) do\n                        if not first then\n                            tableStr = tableStr .. ", "\n                        end\n                        tableStr = tableStr .. tostring(k) .. " = " .. aZ(v)\n                        first = false\n                    end\n                    tableStr = tableStr .. "}"\n                    at(string.format("table.clone(%s, shallow)", tableStr))\n                    return copy\n                end\n    \n                -- Handle deep copy with cycle detection\n                local seen = {}\n    \n                local function deep_copy(obj, depth)\n                    if type(obj) ~= "table" then\n                        return obj\n                    end\n        \n                    -- Check for cycles\n                    if seen[obj] then\n                        return seen[obj]\n                    end\n        \n                    local copy = {}\n                    seen[obj] = copy\n        \n                    -- Set metatable if it exists\n                    local mt = getmetatable(obj)\n                    if mt then\n                        setmetatable(copy, mt)\n                    end\n        \n                    -- Copy all key-value pairs\n                    for k, v in pairs(obj) do\n                        -- Recursively copy keys and values (up to a reasonable depth)\n                        if depth < 10 then  -- Prevent stack overflow\n                            copy[deep_copy(k, depth + 1)] = deep_copy(v, depth + 1)\n                        else\n                            copy[k] = v  -- Stop deep copying at depth limit\n                        end\n                    end\n        \n                    return copy\n                end\n    \n                local result = deep_copy(t, 0)\n                at(string.format("-- table.clone(%s, deep)", aZ(t)))\n                return result\n            end,\n            freeze = function(t)\n                if type(t) ~= "table" then\n                    error("table.freeze only accepts tables", 2)\n                end\n    \n                -- Mark as frozen\n                t.readonly = t.readonly or {}\n                t.readonly[t] = true\n    \n                -- Make the table immutable\n                local mt = getmetatable(t) or {}\n                local original_newindex = mt.__newindex\n    \n                mt.__newindex = function(table, key, value)\n                    if t.readonly[t] then\n                        error("Cannot modify a frozen table", 2)\n                    end\n        \n                    if original_newindex then\n                        original_newindex(table, key, value)\n                    else\n                        rawset(table, key, value)\n                    end\n                end\n    \n                mt.__index = mt.__index or function(table, key)\n                    return rawget(table, key)\n                end\n    \n                setmetatable(t, mt)\n    \n                at(string.format("-- table.freeze(%s)", aZ(t)))\n                return t\n            end,\n            isfrozen = function(t)\n                if type(t) ~= "table" then\n                    return false\n                end\n                return (t.readonly and t.readonly[t] == true) or false\n            end,\n        },\n        ColorSequence = {\n            new = function(...)\n                local args = {...}\n                if type(args[1]) == "table" then\n                    -- ColorSequence.new({[1]=ColorSequenceKeypoint.new(0, c1), [2]=ColorSequenceKeypoint.new(1, c2)})\n                    -- Convert to Color3 by taking the last keypoint's color\n                    -- Handle both array-like and key-value table structures\n                    local last = nil\n                    if #args[1] > 0 then\n                        -- Array-like table\n                        last = args[1][#args[1]]\n                    else\n                        -- Key-value table, find the one with highest time/key\n                        local max_key = -1\n                        for k, v in pairs(args[1]) do\n                            if type(k) == "number" and k > max_key then\n                                max_key = k\n                                last = v\n                            end\n                        end\n                    end\n                    \n                    if last and type(last) == "table" and last.Color then\n                        return last.Color\n                    else\n                        return Color3.new(1,1,1)\n                    end\n                elseif #args == 1 then\n                    -- ColorSequence.new(Color3)\n                    return args[1]\n                elseif #args == 2 then\n                    -- ColorSequence.new(c1, c2) -> return c2 (end color)\n                    return args[2]\n                else\n                    return Color3.new(1,1,1)\n                end\n            end\n        },\n        ColorSequenceKeypoint = {\n            new = function(time, color)\n                return {Time = time, Color = color}\n            end\n        },\n        cleardrawcache = function() \n            at("cleardrawcache()")\n            drawing_objects = {} \n        end,\n        readfile = function(p)\n            at(string.format("readfile(%s)", aH(p)))\n            local node = resolve_path(p)\n            return node and node.type == "file" and node.content or nil\n        end,\n        writefile = function(p, c)\n            at(string.format("writefile(%s, %s)", aH(p), aZ(c)))\n            if create_path(p, false) then\n                local node = resolve_path(p)\n                node.content = tostring(c)\n            end\n        end,\n        appendfile = function(p, c)\n            at(string.format("appendfile(%s, %s)", aH(p), aZ(c)))\n            local node = resolve_path(p)\n            if node and node.type == "file" then\n                node.content = (node.content or "") .. tostring(c)\n            end\n        end,\n        listfiles = function(p)\n            at(string.format("listfiles(%s)", aH(p or "")))\n            local node = resolve_path(p or "/")\n            if not node or node.type ~= "folder" then return {} end\n            local res = {}\n            for name, child in pairs(node.children) do\n                table.insert(res, (p and p ~= "/" and p:gsub("/$", "") .. "/" or "") .. name)\n            end\n            return res\n        end,\n        isfile = function(p)\n            at(string.format("isfile(%s)", aH(p)))\n            local node = resolve_path(p)\n            return node and node.type == "file" or false\n        end,\n        isfolder = function(p)\n            at(string.format("isfolder(%s)", aH(p)))\n            local node = resolve_path(p)\n            return node and node.type == "folder" or false\n        end,\n        makefolder = function(p)\n            at(string.format("makefolder(%s)", aH(p)))\n            create_path(p, true)\n        end,\n        delfile = function(p)\n            at(string.format("delfile(%s)", aH(p)))\n            local node = resolve_path(p)\n            if node and node.parent then\n                node.parent.children[node.name] = nil\n            end\n        end,\n        delfolder = function(p)\n            at(string.format("delfolder(%s)", aH(p)))\n            local node = resolve_path(p)\n            if node and node.parent then\n                node.parent.children[node.name] = nil\n            end\n        end,\n        getscripthash = function(scr)\n            local src = script_sources[scr] or ""\n            -- Return a GUID-like hash instead of simple length+byte\n            return string.format("%08x-%04x-%04x-%04x-%12x", \n                math.random(0, 0xffffffff), math.random(0, 0xffff),\n                math.random(0, 0xffff), math.random(0, 0xffff),\n                math.random(0, 0xffffffffffff))\n        end,\n        getscriptbytecode = function(scr) \n            -- Return fake binary bytecode\n            local len = math.random(50, 100)\n            local chars = {}\n            for i = 1, len do\n                chars[i] = string.char(math.random(0, 255))\n            end\n            return table.concat(chars)\n        end,\n        setrenderproperty = function(obj, prop, val)\n            shadow_props[obj] = shadow_props[obj] or {}\n            shadow_props[obj][prop] = val\n        end,\n        setscriptable = function(obj, prop, val)\n            shadow_props[obj] = shadow_props[obj] or {}\n            shadow_props[obj][prop] = val\n        end,\n        getnamecallmethod = function() return "GetChildren" end,\n        setnamecallmethod = function() end,\n        gethiddenproperty = function() return nil end,\n        sethiddenproperty = function() end,\n        fireclickdetector = function() end,\n        fireproximityprompt = function() end,\n        firetouchinterest = function() end,\n        isnetworkowner = function() return true end,\n        getcustomasset = function(p) return "rbxasset://" .. tostring(#p or 0) end,\n        getsenv = function(script)\n            local env_proxy = {}\n            setmetatable(env_proxy, {\n                __index = function(t, k)\n                    return eR[k]\n                end,\n                __newindex = function(t, k, v)\n                    at(string.format("getsenv().%s = %s", aE(k), aZ(v)))\n                    -- Store in original_G and use rawset to avoid double logging\n                    if original_G then\n                        original_G[k] = v\n                    end\n                    rawset(eR, k, v)\n                end,\n                __call = function(t, ...)\n                    return t\n                end,\n                __tostring = function(t)\n                    return "getsenv()"\n                end\n            })\n            return env_proxy\n        end,\n        cloneref = function(r) return r end\n    }, {__index = _G, __newindex = dy()})\n    eR._G = dy()\n    eR._G = dy() -- Use our logging proxy instead of eR\n    eR.table = eR.table or table\n    _G.table = eR.table\n    eR.Drawing = {\n        new = function(class)\n        local obj = {\n                ClassName = class, Visible = true, Color = Color3.new(1,1,1),\n                Thickness = 1, Filled = false, Center = false, Outline = false,\n                Position = Vector2.new(), Size = Vector2.new(), Radius = 0,\n                Text = "", Font = Enum.Font.Gotham, TextSize = 14,\n                Remove = function(self) drawing_objects[self] = nil end\n            }\n            drawing_objects[obj] = true\n            at(string.format("local %s = Drawing.new(%q)", aW(obj, class), class))\n            return obj\n        end\n    }\n    eR.mousemoverel = function(dx, dy)\n        at(string.format("mousemoverel(%s, %s)", dx or 0, dy or 0))\n    end\n    eR.mousemoveabs = function(x, y)\n        at(string.format("mousemoveabs(%s, %s)", x or 0, y or 0))\n    end\n    eR.setclipboard = function(txt)\n        at(string.format('setclipboard(%s)', aZ(txt)))\n    end\n    \n    -- ========================================\n    -- ENVIRONMENT ENHANCEMENTS\n    -- Add missing globals without breaking proxy logging\n    -- ========================================\n    \n    -- Add table.create if missing\n    if eR.table and not eR.table.create then\n        eR.table.create = function(size, value)\n            if size and size > 1e8 then\n                error("invalid argument #1 to 'create' (size out of range)")\n            end\n            local t = {}\n            if value ~= nil then\n                for i = 1, (size or 0) do t[i] = value end\n            end\n            return t\n        end\n    end\n    \n    -- Add buffer global\n    if not eR.buffer then\n        eR.buffer = {\n            create = function(size) return {data = string.rep("\0", size or 0), length = size or 0} end,\n            fromstring = function(str) return {data = str or "", length = #(str or "")} end,\n            tostring = function(buf) return buf and buf.data or "" end,\n            len = function(buf) return buf and buf.length or 0 end,\n            readi8 = function(buf, pos) \n                if not buf or pos >= (buf.length or 0) then error("buffer access out of bounds") end\n                return buf.data and string.byte(buf.data, pos + 1) or 0 \n            end,\n            writei8 = function(buf, pos, val)\n                if not buf or pos >= (buf.length or 0) then error("buffer access out of bounds") end\n                return true\n            end,\n            readu8 = function(buf, pos) \n                if not buf or pos >= (buf.length or 0) then error("buffer access out of bounds") end\n                return 0 \n            end,\n            writeu8 = function(buf, pos, val)\n                if not buf or pos >= (buf.length or 0) then error("buffer access out of bounds") end\n            end,\n            readi16 = function(buf, pos) return 0 end,\n            writei16 = function(buf, pos, val) end,\n            readu16 = function(buf, pos) return 0 end,\n            writeu16 = function(buf, pos, val) end,\n            readi32 = function(buf, pos) return 0 end,\n            writei32 = function(buf, pos, val) end,\n            readu32 = function(buf, pos) return 0 end,\n            writeu32 = function(buf, pos, val) end,\n            readf32 = function(buf, pos) return 0 end,\n            writef32 = function(buf, pos, val) end,\n            readf64 = function(buf, pos) return 0 end,\n            writef64 = function(buf, pos, val) end,\n            readstring = function(buf, pos, len) return "" end,\n            writestring = function(buf, pos, str) end,\n            copy = function(dst, dstoff, src, srcoff, count) end,\n            fill = function(buf, pos, val, count) end,\n        }\n    end\n    \n    -- Add debug.info (Roblox-style debug function)\n    if eR.debug then\n        eR.debug.info = function(func_or_level, what)\n            if type(func_or_level) == "function" then\n                -- For any function, return "[C]" source to look like a C function\n                if what == "s" then return "[C]" end\n                if what == "n" then return "" end\n                if what == "l" then return -1 end\n                if what == "a" then return 0, false end\n                return nil\n            elseif type(func_or_level) == "number" then\n                if what == "s" then return "[C]" end\n                if what == "n" then return "" end\n                if what == "l" then return -1 end\n                return nil\n            end\n            return nil\n        end\n    end\n    \n    return eR\nend\nfunction q.dump_file(eN, eO)\n    q.reset()\n    az("this file is generated using lunr discord.gg/9yAtRgpsua")\n    local as = o.open(eN, "rb")\n    if not as then\n        return false\n    end\n    local al = as:read("*a")\n    as:close()\n    local eP = I(al)\n    local R, eQ = e(eP, "Obfuscated_Script")\n    if not R then\n        B("\n[LUA_LOAD_FAIL] " .. m(eQ))\n        return false\n    end\n\n    local eR = create_env(R)\n    if setfenv then\n        setfenv(R, eR)\n    end\n    B("[Dumper] Executing Protected VM...")\n    local eT = p.clock()\n  --  b(\n  --      function()\n  --          if p.clock() - eT > r.TIMEOUT_SECONDS then\n  --              error("TIMEOUT", 0)\n  --          end\n  --      end,\n  --      "",\n  --      1000\n  --  )\n    local eo, eU =\n        h(\n        function()\n            R()\n        end,\n        function(ds)\n            return tostring(ds)\n        end\n    )\n   -- b()\n    if not eo then\n        local reason = eU:match("TIMEOUT") and "Timeout" or (eU:match("TASK_WAIT_LIMIT") and "Wait Limit" or (eU:match("DUMPER") and "Cycle Limit" or "Error"))\n        az("Terminated: " .. reason .. " (" .. eU .. ")")\n        \n        -- CRASH RECOVERY: Return partial output that was generated before crash\n        local partial_output = aB()\n        if partial_output and #partial_output > 1000 then\n            az("CRASH_RECOVERY: Runtime error occurred, but partial output was captured before crash.")\n            return true, partial_output\n        end\n    end\n    return q.save(eO or r.OUTPUT_FILE)\nend\nfunction q.dump_string(al, eO)\n    q.reset()\n    az("this file is generated using lunr discord.gg/9yAtRgpsua")\n    aA()\n    \n    global_loop_counter = 0\n    local instruction_count = 0\n    local max_instructions = 2000000000000000000\n    local hook_start_clock = p.clock()\n    local hook_start_time = p.time()\n\n    -- Fengari's debug hook support is closer to the Lua "l" hook than count hooks.\n    -- So we enforce budgets on line events, and keep the budgets generous.\n   -- b(function()\n    --    local elapsed = p.clock() - hook_start_clock\n    --    if elapsed < 0 or elapsed ~= elapsed then\n     --       elapsed = p.time() - hook_start_time\n     --   end\n       -- if elapsed > r.TIMEOUT_SECONDS then\n       --     error("TIMEOUT", 0)\n       -- end\n     --   instruction_count = instruction_count + 1\n     --   if instruction_count > max_instructions then\n    --        error("INSTRUCTION_LIMIT", 0)\n     --   end\n    --    if c(2, "S").what == "Lua" then\n    --        check_loop_limit()\n   --     end\n  --  end, "l")\n\n    -- Lock the hook so the executed script can't clear it via debug.sethook(nil)\n    debug.sethook = function()\n    end\n\n    -- Infinite loop prevention: only replace obvious infinite loops (while true do)\n    -- Do NOT replace conditional while loops - the env should handle them properly\n    if al then\n        al = al:gsub("while%s+true%s+do", "for _LUNR_LOOP_=1,30 do")\n        al = al:gsub("while%s+not%s+false%s+do", "for _LUNR_LOOP_=1,30 do")\n        al = al:gsub("while%s+1%s+do", "for _LUNR_LOOP_=1,30 do")\n        al = al:gsub("for%s+[%a_][%w_]*%s*=%s*1%s*,%s*math%.huge%s*do", "for _LUNR_LOOP_=1,30 do")\n    end\n\nlocal function crash_handler(err)\n    return err\nend\n    local raw_al = al\n    if al then\n        al = I(al)\n    end\n    local R, an = e(al)\n    if not R and raw_al then\n        R, an = e(raw_al)\n    end\n  --  if not R and raw_al then\n  --      local comment_prefixed = "--[[ lunr shim ]]\n" .. raw_al\n   --     R, an = e(comment_prefixed)\n   -- end\n    if not R then\n        -- Check for specific obfuscation-induced errors\n        if an and (an:match("control structure too long") or an:match("too long") or an:match("syntax error") or an:match("'%)' expected") or an:match("expected near") or an:match("unexpected symbol") or an:match("'end' expected") or an:match("to close") or an:match("near <eof>") or an:match("function at line") or an:match("near ','")) then\n            az("CRASH_RECOVERY: Obfuscation parsing error detected and handled: " .. (an or "unknown"))\n            local partial_output = aB()\n            if partial_output and partial_output ~= "" then\n                return true, "error('lunr: The bot was unable to process the file fully, however it recovered a part of the file:')\n\n" .. partial_output\n            else\n                return true, "-- this file is generated using lunr discord.gg/9yAtRgpsua\n\nerror('lunr: The bot was unable to process the file fully, however it recovered a part of the file:')"\n            end\n        end\n        az("Load Error: " .. (an or "unknown"))\n        return false, an\n    end\n    \n    local eR = create_env(R)\n    if setfenv then\n        setfenv(R, eR)\n    end\n    \n    local eT = p.clock()\n    \n    local eo, eU = xpcall(\n        function() \n            -- Wrap main execution in pcall to catch infinite loop errors and continue\n            local success, err = pcall(function()\n                R()\n            end)\n            \n            if not success and (tostring(err):find("lunr: infinite loop") or tostring(err):find("lunr: task.wait infinite loop") or tostring(err):find("lunr: wait infinite loop")) then\n                az("Infinite loop detected and stopped, continuing execution...")\n            elseif not success then\n                -- Re-raise other errors\n                error(err, 2)\n            end\n        end, crash_handler)\n    if not eo then\n        local reason = eU:match("TIMEOUT") and "Timeout" or (eU:match("TASK_WAIT_LIMIT") and "Wait Limit" or (eU:match("DUMPER") and "Cycle Limit" or "Error"))\n        az("Terminated: " .. reason .. " (" .. eU .. ")")\n        \n        -- CRASH RECOVERY: Return partial output that was generated before crash\n        local partial_output = aB()\n        if partial_output and partial_output ~= "" then\n            return true, partial_output\n        end\n    end\n    \n    if eO then\n        return q.save(eO)\n    end\n    return true, aB()\nend\n-- CLI Logic removed for library usage\nend\n_G.dump_string = q.dump_string\n_G.dump_file = q.dump_file\n\nreturn q\n-- Terminated: Error ([string "--[[ burgerfusctor gay sex forever ]]--[[ bur..."]:1: attempt to index a nil value (local 'o'))\n\n\nif arg and arg[1] then\n    q.dump_file(arg[1], arg[2])\nend\nreturn q\n
