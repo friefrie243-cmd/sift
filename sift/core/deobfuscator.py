@@ -56,27 +56,110 @@ class DeobfuscatorEngine:
             return False, "", console_log
 
     @classmethod
-    async def deobfuscate(cls, code: str, mode: str = "auto") -> tuple[bool, str, str, str]:
+    async def run_all_deobfuscators_concurrently(cls, code: str) -> tuple[bool, str, str, list]:
+        """
+        Runs all available deobfuscators concurrently via asyncio.gather and returns
+        (success, best_output, console_log, all_outputs_list).
+        """
+        methods = [
+            ("IronBrew (Static)", lambda c: asyncio.to_thread(IronBrewDeobfuscator.deobfuscate, c)),
+            ("Lune httplog2", lambda c: LuneRunner.run_lune_script("httplog2.lua", c)),
+            ("Luraph Dumper", lambda c: LuneRunner.run_lune_script("luraphdump.lua", c)),
+            ("UnveilR", lambda c: LuneRunner.run_unveilr(c)),
+            ("Mimic", lambda c: LuneRunner.run_mimic(c)),
+            ("Mimic2", lambda c: LuneRunner.run_mimic2(c)),
+            ("Lua 5.3 Fallback", lambda c: LuneRunner.run_lua_dumper(c))
+        ]
+
+        async def run_method(name, func):
+            try:
+                res = await func(code)
+                ok = res[0]
+                out = res[1]
+                log = res[2] if len(res) > 2 else ""
+                
+                # Check if it succeeded and returned actual decompiled/deobfuscated Lua code
+                is_valid = bool(ok and out.strip() and not out.startswith("-- Sift Ultimate Fallback"))
+                return {
+                    "name": name,
+                    "success": is_valid,
+                    "output_code": out if is_valid else "",
+                    "console_log": log
+                }
+            except Exception as e:
+                return {
+                    "name": name,
+                    "success": False,
+                    "output_code": "",
+                    "console_log": f"Error: {str(e)}"
+                }
+
+        results = await asyncio.gather(*[run_method(name, func) for name, func in methods])
+        
+        # Compile successful outputs
+        successful = [r for r in results if r["success"]]
+        all_outputs_list = [
+            {
+                "name": r["name"],
+                "output_code": r["output_code"],
+                "console_log": r["console_log"]
+            }
+            for r in results if r["success"]
+        ]
+        
+        console_log = "[*] Running all deobfuscators concurrently...\n"
+        for r in results:
+            lines = r["console_log"].splitlines() if r["console_log"] else []
+            if len(lines) > 20:
+                concise_log = "\n".join(lines[:10]) + f"\n... [Truncated {len(lines)-20} lines of console output] ...\n" + "\n".join(lines[-10:])
+            else:
+                concise_log = r["console_log"] or ""
+            console_log += f"--- {r['name']} Log ---\n{concise_log}\n"
+            if r["success"]:
+                console_log += f"[+] {r['name']} succeeded ({len(r['output_code'].splitlines())} lines).\n\n"
+            else:
+                console_log += f"[-] {r['name']} failed or returned empty.\n\n"
+
+        if successful:
+            successful.sort(key=lambda x: len(x["output_code"]), reverse=True)
+            best = successful[0]
+            console_log += f"[+] Selected best output from {best['name']}.\n"
+            return True, best["output_code"], console_log, all_outputs_list
+        else:
+            console_log += "[!] All deobfuscators failed. Extracting strings/upvalues statically...\n"
+            output_code = cls.extract_strings_statically(code)
+            all_outputs_list = [{
+                "name": "Static String Extraction (Fallback)",
+                "output_code": output_code,
+                "console_log": "All engines failed. Performed static analysis."
+            }]
+            return True, output_code, console_log, all_outputs_list
+
+    @classmethod
+    async def deobfuscate(cls, code: str, mode: str = "auto", all_outputs: bool = False) -> tuple[bool, str, str, str, list]:
         """
         Main entry point for deobfuscation.
-        Returns (success, output_code, console_log, detected_type)
+        Returns (success, output_code, console_log, detected_type, all_outputs_list)
         """
         if mode == "auto" or not mode:
             detected_type = ObfuscatorDetector.detect(code)
         else:
             detected_type = mode
 
+        # If user explicitly requested multi-engine deobfuscation
+        if all_outputs:
+            success, output_code, console_log, all_outputs_list = await cls.run_all_deobfuscators_concurrently(code)
+            return success, output_code, console_log, detected_type, all_outputs_list
+
         console_log = f"[*] Detected Obfuscator: {detected_type}\n"
         output_code = ""
         success = False
+        all_outputs_list = []
 
         if detected_type == "IronBrew":
-            # Attempt static IronBrew v2 deobfuscation first
             success, output_code, ib_log = IronBrewDeobfuscator.deobfuscate(code)
             console_log += ib_log
-            
             if not success:
-                # Fallback to dynamic logging
                 console_log += "[*] Static deobfuscation failed. Falling back to dynamic Lune environment logger...\n"
                 success, output_code, runner_log = await LuneRunner.run_lune_script("httplog2.lua", code)
                 console_log += runner_log
@@ -91,7 +174,6 @@ class DeobfuscatorEngine:
             success, output_code, console_log = await cls.run_all_dynamic_loggers(code, console_log)
             
         elif detected_type == "Bytecode":
-            # Bytecode decompile
             console_log += "[*] Bytecode detected. Launching decompiler...\n"
             import uuid
             job_id = str(uuid.uuid4())
@@ -99,7 +181,6 @@ class DeobfuscatorEngine:
             temp_out = os.path.join(Config.TEMP_DIR, f"decompiled_{job_id}.lua")
             
             try:
-                # Write binary
                 with open(temp_in, "wb") as f:
                     try:
                         f.write(bytes.fromhex(code.strip()))
@@ -119,24 +200,29 @@ class DeobfuscatorEngine:
                 if os.path.exists(temp_out): os.remove(temp_out)
                 
         else:
-            # Unknown, attempt general dynamic logger chain
             console_log += "[*] Obfuscator unknown. Launching dynamic deobfuscation chain...\n"
             success, output_code, console_log = await cls.run_all_dynamic_loggers(code, console_log)
 
-        # Ultimate fallback: If everything failed, extract all string literals statically
         if not success or not output_code.strip():
             console_log += "[!] All deobfuscators failed. Extracting strings/upvalues statically...\n"
             output_code = cls.extract_strings_statically(code)
-            success = True # Return true since we extracted strings successfully
+            success = True
 
-        return success, output_code, console_log, detected_type
+        # For single output mode, all_outputs_list just contains the selected best output
+        if success and output_code.strip():
+            all_outputs_list = [{
+                "name": detected_type if detected_type != "Unknown/None" else "Sift Output",
+                "output_code": output_code,
+                "console_log": console_log
+            }]
+
+        return success, output_code, console_log, detected_type, all_outputs_list
 
     @staticmethod
     def extract_strings_statically(code: str) -> str:
         """
         Static string extraction fallback.
         """
-        # Find all strings inside quotes
         strings = re.findall(r'"([A-Za-z0-9+/=\s\\._\-\[\]\(\)\{\}\:\;\,\!\?\@\#\$\%\^\&\*\+\-\/]*)"', code)
         strings += re.findall(r"'([A-Za-z0-9+/=\s\\._\-\[\]\(\)\{\}\:\;\,\!\?\@\#\$\%\^\&\*\+\-\/]*)'", code)
         
@@ -144,7 +230,7 @@ class DeobfuscatorEngine:
         
         output = "-- Sift Ultimate Fallback (Static String Dump)\n\n"
         output += "local strings = {\n"
-        for i, s in enumerate(unique_strings[:1000]):  # Cap at 1000 strings
+        for i, s in enumerate(unique_strings[:1000]):
             if len(s.strip()) > 3:
                 clean_s = s.replace('"', '\\"').replace('\n', '\\n')
                 output += f"    [{i}] = \"{clean_s}\",\n"

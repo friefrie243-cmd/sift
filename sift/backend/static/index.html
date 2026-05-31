@@ -140,6 +140,23 @@
             align-items: center;
         }
 
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            user-select: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .toggle-container input {
+            cursor: pointer;
+            accent-color: var(--primary);
+            width: 16px;
+            height: 16px;
+        }
+
         select, button, input[type="text"], input[type="password"] {
             background: rgba(36, 28, 59, 0.6);
             border: 1px solid var(--border-color);
@@ -198,32 +215,17 @@
             flex-wrap: wrap;
         }
 
-        .url-input-row {
-            display: flex;
-            gap: 8px;
-            width: 100%;
-        }
-
-        .url-input-row input[type="text"] {
-            flex-grow: 1;
-            min-width: 0;
-        }
-
         .file-upload-label {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
             cursor: pointer;
-            background: rgba(36, 28, 59, 0.6);
+            background: rgba(36, 28, 59, 0.8);
             border: 1px solid var(--border-color);
-            color: var(--text-color);
             padding: 10px 16px;
             border-radius: 8px;
-            font-family: inherit;
             font-size: 14px;
-            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             transition: all 0.3s;
-            white-space: nowrap;
         }
 
         .file-upload-label:hover {
@@ -231,12 +233,12 @@
             background: rgba(50, 38, 80, 0.8);
         }
 
-        .file-upload-label input[type="file"] {
+        .file-upload-label input {
             display: none;
         }
 
         .file-name-display {
-            font-size: 12px;
+            font-size: 14px;
             color: var(--text-muted);
             max-width: 200px;
             overflow: hidden;
@@ -244,54 +246,156 @@
             white-space: nowrap;
         }
 
+        .url-input-row {
+            display: flex;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .url-input-row input {
+            flex-grow: 1;
+        }
+
         .editor-container {
             flex-grow: 1;
-            min-height: 420px;
-            display: flex;
-            flex-direction: column;
+            min-height: 350px;
             position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
         }
 
         textarea {
             width: 100%;
-            flex-grow: 1;
-            background: rgba(15, 12, 26, 0.8);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            color: #d8cde9;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #090610;
+            color: #d1c8e2;
+            border: none;
             padding: 16px;
             font-family: 'JetBrains Mono', monospace;
             font-size: 14px;
             line-height: 1.6;
             resize: none;
             outline: none;
-            transition: border-color 0.3s;
-            word-break: break-all;
-        }
-
-        textarea:focus {
-            border-color: var(--primary);
         }
 
         .console-panel {
-            background: #060409;
+            background: #05040a;
             border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 16px;
+            border-radius: 8px;
+            padding: 12px;
             font-family: 'JetBrains Mono', monospace;
             font-size: 12px;
-            color: #a594bd;
-            height: 150px;
+            color: #38b000;
+            max-height: 180px;
             overflow-y: auto;
             white-space: pre-wrap;
-            word-break: break-all;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.8);
+            line-height: 1.5;
         }
 
-        .output-actions {
+        /* ─── Accordion Output Styles ─── */
+        .accordion-container {
             display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .accordion-item {
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(22, 17, 38, 0.4);
+            transition: all 0.3s;
+        }
+
+        .accordion-item.active {
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(157, 78, 221, 0.15);
+        }
+
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
             align-items: center;
+            padding: 14px 18px;
+            background: rgba(30, 23, 51, 0.7);
+            cursor: pointer;
+            user-select: none;
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-color);
+            transition: background 0.3s;
+        }
+
+        .accordion-header:hover {
+            background: rgba(43, 33, 74, 0.7);
+        }
+
+        .accordion-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .accordion-icon {
+            font-size: 12px;
+            transition: transform 0.3s ease;
+            color: var(--secondary);
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(90deg);
+        }
+
+        .accordion-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .accordion-actions button {
+            padding: 6px 12px;
+            font-size: 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            background: rgba(36, 28, 59, 0.8);
+        }
+
+        .accordion-actions button:hover {
+            border-color: var(--primary);
+            background: rgba(50, 38, 80, 0.8);
+            transform: none;
+            box-shadow: none;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease-out;
+            background: #090610;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 600px;
+        }
+
+        .accordion-textarea {
+            width: 100%;
+            height: 380px;
+            background: transparent;
+            color: #d1c8e2;
+            border: none;
+            padding: 14px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13.5px;
+            line-height: 1.5;
+            resize: none;
+            outline: none;
+            overflow-y: auto;
         }
 
         footer {
@@ -383,6 +487,10 @@
             <div class="panel-header">
                 <div class="panel-title">Input Script</div>
                 <div class="controls">
+                    <label class="toggle-container">
+                        <input type="checkbox" id="all-outputs-toggle">
+                        Multi-Engine Mode
+                    </label>
                     <select id="mode">
                         <option value="auto">Auto Detect</option>
                         <option value="IronBrew">IronBrew</option>
@@ -420,7 +528,7 @@
             <div class="panel-header">
                 <div class="panel-title"><span class="status-dot online" id="status-dot"></span>Output Code</div>
                 <div class="output-actions">
-                    <button class="success-btn" id="download-btn" onclick="downloadOutput()" disabled>⬇ Download .lua</button>
+                    <button class="success-btn" id="download-btn" onclick="downloadOutput()" disabled>⬇ Download Best .lua</button>
                 </div>
             </div>
 
@@ -435,9 +543,16 @@
                 <button id="rename-btn" onclick="runRename()">✨ AI Rename</button>
             </div>
 
-            <div class="editor-container">
+            <!-- Accordion container for multi-engine outputs -->
+            <div class="accordion-container" id="accordion-container" style="display: none;">
+                <!-- Dynamically populated accordions will appear here -->
+            </div>
+
+            <!-- Single output editor container -->
+            <div class="editor-container" id="single-output-container">
                 <textarea id="output-code" readonly placeholder="Resulting code will appear here..."></textarea>
             </div>
+
             <div class="panel-title">Execution Logs</div>
             <div class="console-panel" id="console-logs">System initialized. Ready for operations.</div>
         </div>
@@ -451,6 +566,7 @@
 
     <script>
         let currentJobId = null;
+        let multiEngineOutputs = [];
 
         function log(message) {
             const consoleBox = document.getElementById("console-logs");
@@ -474,6 +590,112 @@
             currentJobId = jobId;
             const btn = document.getElementById("download-btn");
             btn.disabled = !jobId;
+        }
+
+        // ─── Accordion Rendering & Management ───
+        function renderAccordions(outputs) {
+            const container = document.getElementById("accordion-container");
+            const singleContainer = document.getElementById("single-output-container");
+            
+            container.innerHTML = "";
+            multiEngineOutputs = outputs || [];
+
+            if (multiEngineOutputs.length === 0) {
+                container.style.display = "none";
+                singleContainer.style.display = "block";
+                return;
+            }
+
+            // Hide standard single textbox, show accordion container
+            container.style.display = "flex";
+            singleContainer.style.display = "none";
+
+            multiEngineOutputs.forEach((out, idx) => {
+                const item = document.createElement("div");
+                item.className = "accordion-item" + (idx === 0 ? " active" : "");
+                item.id = `accordion-item-${idx}`;
+
+                const header = document.createElement("div");
+                header.className = "accordion-header";
+                header.onclick = () => toggleAccordion(idx);
+
+                const title = document.createElement("div");
+                title.className = "accordion-title";
+                title.innerHTML = `<span class="accordion-icon">▶</span> <span>${out.name} Output</span>`;
+
+                const actions = document.createElement("div");
+                actions.className = "accordion-actions";
+                
+                const copyBtn = document.createElement("button");
+                copyBtn.textContent = "Copy";
+                copyBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    copyText(out.output_code);
+                };
+
+                const saveBtn = document.createElement("button");
+                saveBtn.textContent = "Download";
+                saveBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    saveTextAsFile(out.output_code, `sift_${out.name.replace(/\s+/g, "_").toLowerCase()}.lua`);
+                };
+
+                actions.appendChild(copyBtn);
+                actions.appendChild(saveBtn);
+                header.appendChild(title);
+                header.appendChild(actions);
+
+                const content = document.createElement("div");
+                content.className = "accordion-content";
+
+                const txt = document.createElement("textarea");
+                txt.className = "accordion-textarea";
+                txt.readOnly = true;
+                txt.value = out.output_code;
+
+                content.appendChild(txt);
+                item.appendChild(header);
+                item.appendChild(content);
+                container.appendChild(item);
+            });
+
+            // Set the main output textbox value to the best (longest) one so AI Rename still works
+            if (multiEngineOutputs.length > 0) {
+                document.getElementById("output-code").value = multiEngineOutputs[0].output_code;
+            }
+        }
+
+        function toggleAccordion(index) {
+            const item = document.getElementById(`accordion-item-${index}`);
+            const isActive = item.classList.contains("active");
+            
+            // Deactivate all others
+            document.querySelectorAll(".accordion-item").forEach(el => el.classList.remove("active"));
+            
+            if (!isActive) {
+                item.classList.add("active");
+                // Synchronize active code block for AI renaming
+                document.getElementById("output-code").value = multiEngineOutputs[index].output_code;
+            }
+        }
+
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast("Copied to clipboard!");
+            }).catch(() => {
+                showToast("Failed to copy code.");
+            });
+        }
+
+        function saveTextAsFile(text, filename) {
+            const blob = new Blob([text], { type: "text/plain" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(url);
+            showToast("Download started!");
         }
 
         // ─── File Upload ───
@@ -524,6 +746,7 @@
         async function fetchFromUrl() {
             const url = document.getElementById("url-input").value.trim();
             const mode = document.getElementById("mode").value;
+            const allOutputs = document.getElementById("all-outputs-toggle").checked;
             const btn = document.getElementById("fetch-btn");
 
             if (!url) {
@@ -540,7 +763,7 @@
                 const response = await fetch("/api/deobf-url", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ url, mode })
+                    body: JSON.stringify({ url, mode, all_outputs: allOutputs })
                 });
                 const data = await response.json();
 
@@ -550,6 +773,13 @@
                     log("[+] Deobfuscation from URL complete!");
                     setStatus("online");
                     enableDownload(data.job_id);
+                    
+                    if (allOutputs && data.all_outputs && data.all_outputs.length > 0) {
+                        renderAccordions(data.all_outputs);
+                    } else {
+                        renderAccordions([]);
+                    }
+                    
                     showToast("Deobfuscation complete!");
                 } else {
                     log("[!] URL fetch or deobfuscation failed.");
@@ -569,6 +799,7 @@
         async function runDeobf() {
             const code = document.getElementById("input-code").value;
             const mode = document.getElementById("mode").value;
+            const allOutputs = document.getElementById("all-outputs-toggle").checked;
             const btn = document.getElementById("deobf-btn");
             const fileInput = document.getElementById("file-input");
 
@@ -590,6 +821,7 @@
                     const formData = new FormData();
                     formData.append("file", fileInput.files[0]);
                     formData.append("mode", mode);
+                    formData.append("all_outputs", allOutputs);
                     response = await fetch("/api/deobf-upload", {
                         method: "POST",
                         body: formData
@@ -598,7 +830,7 @@
                     response = await fetch("/api/deobf", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({ code, mode })
+                        body: JSON.stringify({ code, mode, all_outputs: allOutputs })
                     });
                 }
 
@@ -610,6 +842,13 @@
                     log("[+] Deobfuscation complete!");
                     setStatus("online");
                     enableDownload(data.job_id);
+                    
+                    if (allOutputs && data.all_outputs && data.all_outputs.length > 0) {
+                        renderAccordions(data.all_outputs);
+                    } else {
+                        renderAccordions([]);
+                    }
+                    
                     showToast("Deobfuscation complete!");
                 } else {
                     log("[!] Sift Engine returned an error.");
@@ -654,6 +893,17 @@
 
                 if (data.success) {
                     document.getElementById("output-code").value = data.renamed_code;
+                    
+                    // If accordions are active, update the currently selected accordion's textbox too
+                    const activeItem = document.querySelector(".accordion-item.active");
+                    if (activeItem) {
+                        const idx = parseInt(activeItem.id.split("-").pop());
+                        activeItem.querySelector(".accordion-textarea").value = data.renamed_code;
+                        if (multiEngineOutputs[idx]) {
+                            multiEngineOutputs[idx].output_code = data.renamed_code;
+                        }
+                    }
+                    
                     log("[+] Variables renamed successfully!");
                     showToast("AI Rename complete!");
                 } else {
@@ -681,14 +931,7 @@
                     showToast("No output to download!");
                     return;
                 }
-                const blob = new Blob([code], { type: "text/plain" });
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement("a");
-                a.href = url;
-                a.download = "sift_output.lua";
-                a.click();
-                URL.revokeObjectURL(url);
-                showToast("Download started!");
+                saveTextAsFile(code, "sift_output.lua");
             }
         }
 

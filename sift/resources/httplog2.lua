@@ -1428,9 +1428,12 @@ analyzefunction = function(chunk,r,lowestlayer,...)
         end
         return tostring(...)
     end
-    for i,v in getmetatable(env).__index do
-        if type(v)=="function" and cenv[i] then
-            cclosures[cenv[i]]=true
+    local mt = getmetatable(env)
+    if mt and type(mt.__index) == "table" then
+        for i,v in mt.__index do
+            if type(v)=="function" and cenv[i] then
+                cclosures[cenv[i]]=true
+            end
         end
     end
     for item_type,items in exec_env do

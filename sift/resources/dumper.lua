@@ -3644,8 +3644,8 @@ function q.dump_env(filePath, flags)
                             end)
                             if not success or not name then break end
                             table.insert(upvalues, string.format("%s.%s = %s", 
-                                keyStr:gsub(""", "\\\""), 
-                                tostring(name):gsub(""", "\\\""), 
+                                keyStr:gsub("\"", "\\\""), 
+                                tostring(name):gsub("\"", "\\\""), 
                                 aZ(val)))
                             i = i + 1
                         end

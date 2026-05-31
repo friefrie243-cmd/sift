@@ -154,6 +154,7 @@ class LuneRunner:
             Config.LUNE_PATH,
             "run",
             script_path,
+            "--",
             os.path.abspath(input_path),
             "--raw",
             f"--outfile={os.path.abspath(output_path)}"

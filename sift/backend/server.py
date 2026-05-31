@@ -1,6 +1,7 @@
 import os
 import uuid
 import time
+import asyncio
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form, Query
 from fastapi.responses import HTMLResponse, FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
@@ -52,6 +53,7 @@ def _store_dump(output_code: str, filename: str = "sift_output.lua") -> str:
 class DeobfRequest(BaseModel):
     code: str
     mode: str = "auto"  # auto, IronBrew, Luraph, Moonsec, Prometheus, Bytecode, etc.
+    all_outputs: bool = False
 
 class RenameRequest(BaseModel):
     code: str
@@ -70,18 +72,20 @@ class DecompileRequest(BaseModel):
 class DeobfUrlRequest(BaseModel):
     url: str
     mode: str = "auto"
+    all_outputs: bool = False
 
 @app.post("/api/deobf")
 async def api_deobf(req: DeobfRequest):
     if not req.code.strip():
         raise HTTPException(status_code=400, detail="Code parameter cannot be empty.")
-    success, output_code, console_log, detected_type = await DeobfuscatorEngine.deobfuscate(req.code, req.mode)
+    success, output_code, console_log, detected_type, all_outputs = await DeobfuscatorEngine.deobfuscate(req.code, req.mode, req.all_outputs)
     job_id = _store_dump(output_code, f"sift_deobf.lua") if output_code else None
     return {
         "success": success,
         "output_code": output_code,
         "console_log": console_log,
         "detected_type": detected_type,
+        "all_outputs": all_outputs,
         "job_id": job_id
     }
 
@@ -100,9 +104,9 @@ async def api_deobf_url(req: DeobfUrlRequest):
 
     success_fetch, content = await AdvancedFetcher.fetch(url)
     if not success_fetch:
-        return {"success": False, "output_code": "", "console_log": f"[!] Failed to fetch URL: {content}", "detected_type": "N/A", "job_id": None}
+        return {"success": False, "output_code": "", "console_log": f"[!] Failed to fetch URL: {content}", "detected_type": "N/A", "all_outputs": [], "job_id": None}
 
-    success, output_code, console_log, detected_type = await DeobfuscatorEngine.deobfuscate(content, req.mode)
+    success, output_code, console_log, detected_type, all_outputs = await DeobfuscatorEngine.deobfuscate(content, req.mode, req.all_outputs)
     console_log = f"[*] Fetched {len(content)} bytes from {url}\n" + console_log
     job_id = _store_dump(output_code, f"sift_deobf.lua") if output_code else None
     return {
@@ -110,13 +114,15 @@ async def api_deobf_url(req: DeobfUrlRequest):
         "output_code": output_code,
         "console_log": console_log,
         "detected_type": detected_type,
+        "all_outputs": all_outputs,
         "job_id": job_id
     }
 
 @app.post("/api/deobf-upload")
 async def api_deobf_upload(
     file: UploadFile = File(...),
-    mode: str = Form("auto")
+    mode: str = Form("auto"),
+    all_outputs: bool = Form(False)
 ):
     """Accept a .lua or .txt file upload and deobfuscate it."""
     if not file.filename:
@@ -133,7 +139,7 @@ async def api_deobf_upload(
     if not code.strip():
         raise HTTPException(status_code=400, detail="Uploaded file is empty.")
 
-    success, output_code, console_log, detected_type = await DeobfuscatorEngine.deobfuscate(code, mode)
+    success, output_code, console_log, detected_type, all_outputs = await DeobfuscatorEngine.deobfuscate(code, mode, all_outputs)
     console_log = f"[*] Uploaded file: {file.filename} ({len(content)} bytes)\n" + console_log
     job_id = _store_dump(output_code, f"sift_deobf_{file.filename}") if output_code else None
     return {
@@ -141,6 +147,7 @@ async def api_deobf_upload(
         "output_code": output_code,
         "console_log": console_log,
         "detected_type": detected_type,
+        "all_outputs": all_outputs,
         "job_id": job_id
     }
 
@@ -247,3 +254,23 @@ try:
     app.mount("/static", StaticFiles(directory="sift/backend/static"), name="static")
 except:
     pass
+
+# Self-ping loop to keep the Render free tier container active 24/7
+async def _self_ping_loop():
+    # Wait 30 seconds after container boot before beginning self-pings
+    await asyncio.sleep(30)
+    url = os.getenv("RENDER_EXTERNAL_URL", "https://sift-vs4y.onrender.com").rstrip("/") + "/health"
+    print(f"[*] Self-ping auto-wake loop started. Target: {url}")
+    while True:
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.get(url, timeout=15) as resp:
+                    print(f"[*] Self-ping success: HTTP {resp.status}")
+        except Exception as e:
+            print(f"[!] Self-ping failed: {e}")
+        # Sleep for 10 minutes (600 seconds) to prevent idling
+        await asyncio.sleep(600)
+
+@app.on_event("startup")
+async def startup_event():
+    asyncio.create_task(_self_ping_loop())

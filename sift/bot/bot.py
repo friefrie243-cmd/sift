@@ -127,7 +127,7 @@ async def cmd_deobf(ctx, *, arg: str = None):
             await ctx.reply(embed=get_premium_embed("Error", "Please upload a Lua file, paste a link, or write code block.", 0xd90429))
             return
             
-        success, out_code, log_details, detected_type = await DeobfuscatorEngine.deobfuscate(code)
+        success, out_code, log_details, detected_type, _ = await DeobfuscatorEngine.deobfuscate(code)
         
         # Render clean purple embed
         embed = get_premium_embed(

@@ -75,7 +75,22 @@ function Spoofs.apply(env: {[string]: any}, state: any, createProxy: any)
 		return getmetatable(v)
 	end
 
-	env.string = string
+	local realFormat = string.format
+	local safeString = {}
+	for k, v in string do
+		safeString[k] = v
+	end
+	safeString.format = function(fmt, ...)
+		local args = {...}
+		for i = 1, #args do
+			local t = realType(args[i])
+			if t == "userdata" or t == "table" or t == "boolean" or t == "function" or t == "thread" then
+				args[i] = tostring(args[i])
+			end
+		end
+		return realFormat(tostring(fmt), table.unpack(args))
+	end
+	env.string = safeString
 	env.math = math
 	env.table = table
 	env.coroutine = coroutine
