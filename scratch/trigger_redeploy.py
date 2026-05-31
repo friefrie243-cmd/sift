@@ -2,7 +2,7 @@ import urllib.request
 import json
 import time
 
-RENDER_API_KEY = "rnd_LMRVLdOeuFVsfDmOZTjYq4noML7A"
+RENDER_API_KEY = "rnd_l0B8nRW7DIIGsiO1110QLrT0yJRg"
 SERVICE_ID = "srv-d8d6s0km0tmc73dk7lkg"
 
 def trigger_redeploy():

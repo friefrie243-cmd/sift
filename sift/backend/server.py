@@ -293,7 +293,7 @@ def update_env_file(token: str, prefix: str):
         import aiohttp
         render_url = f"https://api.render.com/v1/services/srv-d8d6s0km0tmc73dk7lkg/env-vars"
         headers = {
-            "Authorization": "Bearer rnd_LMRVLdOeuFVsfDmOZTjYq4noML7A",
+            "Authorization": "Bearer rnd_l0B8nRW7DIIGsiO1110QLrT0yJRg",
             "Content-Type": "application/json"
         }
         # Render accepts a list of env vars to put/patch. We update BOT_TOKEN.
