@@ -257,10 +257,36 @@ def update_env_file(token: str, prefix: str):
     if not updated_prefix:
         new_lines.append(f"BOT_PREFIX={prefix}\n")
         
+    # Write to local .env
     with open(env_path, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
         
     Config.reload()
+
+    # Async trigger to update Render Environment Variables
+    async def update_render():
+        import aiohttp
+        render_url = f"https://api.render.com/v1/services/srv-d8d6s0km0tmc73dk7lkg/env-vars"
+        headers = {
+            "Authorization": "Bearer rnd_LMRVLdOeuFVsfDmOZTjYq4noML7A",
+            "Content-Type": "application/json"
+        }
+        # Render accepts a list of env vars to put/patch. We update BOT_TOKEN.
+        payload = [
+            {"key": "BOT_TOKEN", "value": token}
+        ]
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.put(render_url, json=payload, headers=headers) as resp:
+                    if resp.status in [200, 201]:
+                        print("[*] Successfully synchronized bot token with Render env vars.")
+                    else:
+                        body = await resp.text()
+                        print(f"[!] Render env sync failed with status {resp.status}: {body}")
+        except Exception as e:
+            print(f"[!] Render env sync exception: {e}")
+            
+    asyncio.create_task(update_render())
 
 from sift.bot.state import BotManager
 
