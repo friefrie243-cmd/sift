@@ -9,6 +9,10 @@ from sift.bot.bot import bot
 from sift.bot.state import BotManager
 
 class DualWriter:
+    """
+    A stream wrapper that writes to both the original stdout/stderr AND a log file.
+    Implements all standard stream interface methods that libraries like uvicorn expect.
+    """
     def __init__(self, original_stream, log_file_path):
         self.original_stream = original_stream
         self.log_file_path = log_file_path
@@ -24,6 +28,42 @@ class DualWriter:
 
     def flush(self):
         self.original_stream.flush()
+
+    def isatty(self):
+        """Required by uvicorn's DefaultFormatter to decide color usage."""
+        return False
+
+    def fileno(self):
+        """Some logging handlers need a real file descriptor."""
+        try:
+            return self.original_stream.fileno()
+        except Exception:
+            raise OSError("DualWriter does not have a real file descriptor")
+
+    @property
+    def encoding(self):
+        return getattr(self.original_stream, 'encoding', 'utf-8')
+
+    @property
+    def errors(self):
+        return getattr(self.original_stream, 'errors', 'strict')
+
+    @property
+    def name(self):
+        return getattr(self.original_stream, 'name', '<DualWriter>')
+
+    def writable(self):
+        return True
+
+    def readable(self):
+        return False
+
+    def seekable(self):
+        return False
+
+    def __getattr__(self, attr):
+        """Proxy any other attribute access to the original stream as a fallback."""
+        return getattr(self.original_stream, attr)
 
 # Setup DualWriter redirect on start
 os.makedirs("dumps", exist_ok=True)

@@ -7,6 +7,77 @@ from sift.core.lune_runner import LuneRunner
 from sift.core.decompiler import Decompiler
 from sift.config import Config
 
+def score_output(code: str) -> int:
+    """
+    Score the output code based on the number of meaningful Lua code lines.
+    Excludes comments, blank lines, and debug/spy prefix lines.
+    """
+    if not code:
+        return 0
+    score = 0
+    debug_prefixes = (
+        "[ Spy ",
+        "[mimic-debug]",
+        "[VOID]",
+        "[*] ",
+        "[-] ",
+        "[+] ",
+        "[!] "
+    )
+    in_multiline_comment = False
+    
+    for line in code.splitlines():
+        line_strip = line.strip()
+        if not line_strip:
+            continue
+            
+        # Check multiline comment start/end
+        if in_multiline_comment:
+            if "]]" in line_strip:
+                in_multiline_comment = False
+            continue
+        else:
+            if line_strip.startswith("--[["):
+                in_multiline_comment = True
+                continue
+            if line_strip.startswith("--"):
+                continue
+                
+        # Exclude debug/spy/verbose logging lines
+        is_debug = False
+        for prefix in debug_prefixes:
+            if line_strip.startswith(prefix):
+                is_debug = True
+                break
+        if is_debug:
+            continue
+            
+        score += 1
+    return score
+
+def clean_output(code: str) -> str:
+    """
+    Clean the output code by removing debug/spy prefix lines.
+    """
+    if not code:
+        return ""
+    cleaned_lines = []
+    debug_prefixes = (
+        "[ Spy ",
+        "[mimic-debug]",
+        "[VOID]"
+    )
+    for line in code.splitlines():
+        line_strip = line.strip()
+        is_debug = False
+        for prefix in debug_prefixes:
+            if line_strip.startswith(prefix):
+                is_debug = True
+                break
+        if not is_debug:
+            cleaned_lines.append(line)
+    return "\n".join(cleaned_lines)
+
 def is_valid_lua_output(code: str) -> bool:
     if not code or not code.strip():
         return False
@@ -18,10 +89,10 @@ def is_valid_lua_output(code: str) -> bool:
     if code.startswith("-- Sift Ultimate Fallback"):
         return False
     # Check if there is actual code lines
-    non_empty_lines = [l for l in code.splitlines() if l.strip() and not l.strip().startswith("--")]
-    if len(non_empty_lines) < 2:
+    if score_output(code) < 2:
         return False
     return True
+
 
 class DeobfuscatorEngine:
     @classmethod
@@ -34,6 +105,8 @@ class DeobfuscatorEngine:
             ("Mimic", lambda c: LuneRunner.run_mimic(c)),
             ("Mimic2", lambda c: LuneRunner.run_mimic2(c)),
             ("UnveilR", lambda c: LuneRunner.run_unveilr(c)),
+            ("Revea.lol", lambda c: LuneRunner.run_revea(c)),
+            ("Old-45ms", lambda c: LuneRunner.run_45ms(c)),
             ("FlameCoderV3", lambda c: LuneRunner.run_flame(c)),
             ("Polyester", lambda c: LuneRunner.run_polyester(c)),
             ("PenguEnv", lambda c: LuneRunner.run_pengu(c)),
@@ -77,13 +150,15 @@ class DeobfuscatorEngine:
             dumpers = [x for x in success_outputs if x[0] not in trace_logger_names]
             loggers = [x for x in success_outputs if x[0] in trace_logger_names]
             if dumpers:
-                dumpers.sort(key=lambda x: len(x[1]), reverse=True)
+                dumpers.sort(key=lambda x: score_output(x[1]), reverse=True)
                 best_name, best_out = dumpers[0]
             else:
-                loggers.sort(key=lambda x: len(x[1]), reverse=True)
+                loggers.sort(key=lambda x: score_output(x[1]), reverse=True)
                 best_name, best_out = loggers[0]
+            
+            best_out_clean = clean_output(best_out)
             console_log += f"[+] Selected best output from {best_name}.\n"
-            return True, best_out, console_log
+            return True, best_out_clean, console_log
         else:
             console_log += "[!] All dynamic environment loggers/dumpers failed.\n"
             return False, "", console_log
@@ -100,6 +175,8 @@ class DeobfuscatorEngine:
             ("Mimic", lambda c: LuneRunner.run_mimic(c)),
             ("Mimic2", lambda c: LuneRunner.run_mimic2(c)),
             ("UnveilR", lambda c: LuneRunner.run_unveilr(c)),
+            ("Revea.lol", lambda c: LuneRunner.run_revea(c)),
+            ("Old-45ms", lambda c: LuneRunner.run_45ms(c)),
             ("FlameCoderV3", lambda c: LuneRunner.run_flame(c)),
             ("Polyester", lambda c: LuneRunner.run_polyester(c)),
             ("PenguEnv", lambda c: LuneRunner.run_pengu(c)),
@@ -144,17 +221,17 @@ class DeobfuscatorEngine:
         # Compile successful outputs
         successful = [r for r in results if r["success"]]
         
-        # Sort successful outputs: prioritize dumpers over trace loggers, then sort by length descending
+        # Sort successful outputs: prioritize dumpers over trace loggers, then sort by score descending
         def sort_key(item):
             is_dumper = item["name"] not in trace_logger_names
-            return (1 if is_dumper else 0, len(item["output_code"]))
+            return (1 if is_dumper else 0, score_output(item["output_code"]))
         
         successful.sort(key=sort_key, reverse=True)
         
         all_outputs_list = [
             {
                 "name": r["name"],
-                "output_code": r["output_code"],
+                "output_code": clean_output(r["output_code"]),
                 "console_log": r["console_log"]
             }
             for r in successful
@@ -175,8 +252,9 @@ class DeobfuscatorEngine:
 
         if successful:
             best = successful[0]
+            best_clean = clean_output(best["output_code"])
             console_log += f"[+] Selected best output from {best['name']}.\n"
-            return True, best["output_code"], console_log, all_outputs_list
+            return True, best_clean, console_log, all_outputs_list
         else:
             console_log += "[!] All deobfuscators failed. Extracting strings/upvalues statically...\n"
             output_code = cls.extract_strings_statically(code)

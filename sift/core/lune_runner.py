@@ -464,3 +464,12 @@ class LuneRunner:
     async def run_loadstringlog_25ms(input_code: str) -> tuple[bool, str, str]:
         return await LuneRunner.run_lune_script("loadstringlog_25ms.lua", input_code)
 
+    @staticmethod
+    async def run_45ms(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lune_dumper_generic("45ms_dumper.lua", input_code)
+
+    @staticmethod
+    async def run_revea(input_code: str) -> tuple[bool, str, str]:
+        return await LuneRunner.run_lua_dumper_generic("revea_dumper.lua", input_code)
+
+

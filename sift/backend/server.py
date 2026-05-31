@@ -93,13 +93,38 @@ async def api_deobf(req: DeobfRequest):
         "job_id": job_id
     }
 
+def _extract_url_from_loadstring(text: str) -> str:
+    """
+    Extracts the actual URL from loadstring / HttpGet wrappers in Lua, if present.
+    Example: loadstring(game:HttpGet("https://raw.githubusercontent.com/..."))()
+    returns https://raw.githubusercontent.com/...
+    """
+    import re
+    if not text:
+        return ""
+    text_strip = text.strip()
+    patterns = [
+        r'game\s*[:\.]\s*HttpGet\s*\(\s*["\'](https?://[^"\']+)["\']\s*\)',
+        r'loadstring\s*\(\s*game\s*[:\.]\s*HttpGet\s*\(\s*["\'](https?://[^"\']+)["\']\s*\)\s*\)',
+        r'loadstring\s*\(\s*["\'](https?://[^"\']+)["\']\s*\)',
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text_strip, re.IGNORECASE)
+        if match:
+            return match.group(1)
+            
+    if text_strip.startswith("http://") or text_strip.startswith("https://"):
+        return text_strip
+        
+    return text_strip
+
 @app.post("/api/deobf-url")
 async def api_deobf_url(req: DeobfUrlRequest):
     """Fetch code from a URL (loadstring link, raw GitHub, pastebin, etc.) and deobfuscate it."""
     if not req.url.strip():
         raise HTTPException(status_code=400, detail="URL cannot be empty.")
 
-    url = req.url.strip()
+    url = _extract_url_from_loadstring(req.url)
     # Auto-convert common link formats to raw
     if "pastebin.com/" in url and "/raw/" not in url:
         url = url.replace("pastebin.com/", "pastebin.com/raw/")
