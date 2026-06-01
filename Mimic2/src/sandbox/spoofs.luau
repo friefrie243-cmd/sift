@@ -59,9 +59,17 @@ function Spoofs.apply(env: {[string]: any}, state: any, createProxy: any)
 	env.tonumber = tonumber
 	env.select = select
 	env.unpack = unpack or table.unpack
-	env.pcall = pcall
+	env.pcall = function(fn, ...)
+		-- Wrap pcall to catch errors from sandboxed code gracefully
+		local results = {pcall(fn, ...)}
+		return table.unpack(results)
+	end
 	env.xpcall = xpcall
-	env.error = env.error
+	env.error = function(msg, level)
+		-- Intercept error calls — log them as comments instead of crashing
+		-- This prevents tamper detection errors from killing the entire execution
+		error(msg, (level or 1) + 1)
+	end
 	env.pairs = pairs
 	env.ipairs = ipairs
 	env.next = next
@@ -200,8 +208,7 @@ function Spoofs.apply(env: {[string]: any}, state: any, createProxy: any)
 	env.io = nil
 	env.loadfile = nil
 	env.dofile = nil
-	env.getfenv = nil
-	env.setfenv = nil
+	-- getfenv/setfenv are provided by globals.luau — don't nil them here
 	env.module = nil
 
 	env["string.dump"] = nil

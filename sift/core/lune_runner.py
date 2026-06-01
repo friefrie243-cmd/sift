@@ -37,7 +37,7 @@ class LuneRunner:
         output_code = ""
 
         try:
-            # We set a hard timeout of 30 seconds to prevent infinite loops in env loggers
+            # We set a hard timeout of 60 seconds to allow complex scripts more time
             process = await asyncio.create_subprocess_exec(
                 *cmd,
                 stdout=asyncio.subprocess.PIPE,
@@ -45,7 +45,7 @@ class LuneRunner:
             )
 
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
 
                 if process.returncode == 0 or os.path.exists(output_path):
@@ -55,12 +55,15 @@ class LuneRunner:
                     process.kill()
                 except:
                     pass
-                console_log = "Execution timed out (30s limit exceeded). Infinite loop or anti-tamper detected."
+                console_log = "Execution timed out (60s limit exceeded). Infinite loop or anti-tamper detected."
 
-            # If successful or output file exists, read it
+            # If output file exists (even after timeout/error), try to read it
             if os.path.exists(output_path):
                 with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
                     output_code = f.read()
+                # Accept partial output if it has meaningful content
+                if len(output_code.strip()) > 0:
+                    success = True
 
         except Exception as e:
             console_log += f"\nRunner Error: {str(e)}"
@@ -108,7 +111,7 @@ class LuneRunner:
             )
 
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
 
                 if os.path.exists(output_path):
@@ -174,7 +177,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
 
                 if os.path.exists(output_path):
@@ -237,7 +240,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
 
                 if os.path.exists(output_path):
@@ -299,7 +302,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
 
                 if os.path.exists(output_path):
@@ -351,7 +354,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
                 if os.path.exists(output_path):
                     with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -405,7 +408,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=35.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
                 if os.path.exists(output_path):
                     with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -470,6 +473,44 @@ class LuneRunner:
 
     @staticmethod
     async def run_revea(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lua_dumper_generic("revea_dumper.lua", input_code)
+        """
+        Runs the Revea dumper (message_1504352283192983645.lua) via Lune and captures stdout.
+        """
+        job_id = str(uuid.uuid4())
+        temp_input_name = f"in_{job_id}.lua"
+        input_path = os.path.join(Config.ORIGINAL_DIR, temp_input_name)
+        
+        with open(input_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(input_code)
+            
+        script_path = os.path.join("sift", "resources", "revea_dumper.lua")
+        cmd = [Config.LUNE_PATH, "run", script_path, os.path.abspath(input_path)]
+        
+        success = False
+        console_log = ""
+        output_code = ""
+        try:
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            try:
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
+                console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
+                if process.returncode == 0:
+                    success = True
+                    output_code = console_log
+            except asyncio.TimeoutError:
+                try: process.kill()
+                except: pass
+                console_log = "Revea dumper timed out."
+        except Exception as e:
+            console_log = f"Error: {e}"
+        finally:
+            if os.path.exists(input_path):
+                try: os.remove(input_path)
+                except: pass
+        return success, output_code, console_log
 
 

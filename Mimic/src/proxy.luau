@@ -98,7 +98,7 @@ function Proxy.new(state: any, codegen: any, serialize: any, dispatch: any)
 		end
 
 		meta.__len = function(self)
-			return 0
+			return 1
 		end
 
 		meta.__unm = function(self)
@@ -130,16 +130,37 @@ function Proxy.new(state: any, codegen: any, serialize: any, dispatch: any)
 			return createProxy("(" .. tostring(a) .. " % " .. tostring(b) .. ")")
 		end
 
+		meta.__idiv = function(a, b)
+			return createProxy("(" .. tostring(a) .. " // " .. tostring(b) .. ")")
+		end
+
 		meta.__eq = function(a, b)
+			local pathA = state:lookup(a)
+			local pathB = state:lookup(b)
+			if pathA and pathB then
+				return pathA == pathB
+			end
 			return false
 		end
 
 		meta.__lt = function(a, b)
-			return false
+			local pathA = tostring(a)
+			local pathB = tostring(b)
+			if type(b) == "number" then return 0 < b end
+			if type(a) == "number" then return a < 0 end
+			return pathA < pathB
 		end
 
 		meta.__le = function(a, b)
-			return false
+			local pathA = tostring(a)
+			local pathB = tostring(b)
+			if type(b) == "number" then return 0 <= b end
+			if type(a) == "number" then return a <= 0 end
+			return pathA <= pathB
+		end
+
+		meta.__iter = function(self)
+			return function() return nil end
 		end
 
 		return proxy

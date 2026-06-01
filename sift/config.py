@@ -8,11 +8,16 @@ class Config:
     DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", os.getenv("BOT_TOKEN", ""))
     BOT_PREFIX = os.getenv("BOT_PREFIX", "!")
     DISCORD_INTENTS_MESSAGE_CONTENT = os.getenv("DISCORD_INTENTS_MESSAGE_CONTENT", "false").lower() == "true"
+    BOT_OWNER_ID = int(os.getenv("BOT_OWNER_ID", "1011417432080003152"))
     
     # LLM Settings (AI Renamer)
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
     OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
     OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "codellama")
+    OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY", "")
+    
+    # Vercel API Key
+    VERCEL_API_KEY = os.getenv("VERCEL_API_KEY", "")
     
     # FastAPI Backend Configuration
     HOST = os.getenv("HOST", "0.0.0.0")
@@ -37,9 +42,12 @@ class Config:
         cls.DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", os.getenv("BOT_TOKEN", ""))
         cls.BOT_PREFIX = os.getenv("BOT_PREFIX", "!")
         cls.DISCORD_INTENTS_MESSAGE_CONTENT = os.getenv("DISCORD_INTENTS_MESSAGE_CONTENT", "false").lower() == "true"
+        cls.BOT_OWNER_ID = int(os.getenv("BOT_OWNER_ID", "1011417432080003152"))
         cls.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
         cls.OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
         cls.OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "codellama")
+        cls.OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY", "")
+        cls.VERCEL_API_KEY = os.getenv("VERCEL_API_KEY", "")
         cls.API_KEY = os.getenv("SIFT_API_KEY", "sift_secret_key_1337")
 
 

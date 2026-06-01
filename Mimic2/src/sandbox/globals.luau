@@ -105,7 +105,7 @@ function Globals.apply(env: {[string]: any}, state: any, codegen: any, serialize
 		return 0, 0
 	end
 
-	env.typeof = nil
+	-- typeof is applied by spoofs.luau — do NOT set to nil here
 
 	env.rawget = function(t, k)
 		if type(t) == "userdata" then
@@ -125,6 +125,16 @@ function Globals.apply(env: {[string]: any}, state: any, codegen: any, serialize
 	env.rawequal = rawequal
 
 	env.newproxy = newproxy
+
+	-- Provide getfenv/setfenv so scripts that check for sandbox don't trigger tamper detection
+	env.getfenv = function(level)
+		return env
+	end
+
+	env.setfenv = function(fn, newenv)
+		-- Silently ignore setfenv calls — don't let the script escape the sandbox
+		return fn
+	end
 end
 
 return Globals

@@ -28,7 +28,13 @@ function Sandbox.build()
 
 	env.pcall = pcall
 	env.xpcall = xpcall
-	env.error = error
+	env.error = function(msg, level)
+		-- Safe interceptor: emit the error as a code comment instead of crashing
+		codegen:emitLine(codegen:comment("error: " .. tostring(msg)))
+		-- Still propagate so pcall callers see it, but it won't crash unprotected code
+		-- because the runner wraps execution in pcall
+		error(msg, (level or 1) + 1)
+	end
 	env.type = type
 	env.typeof = type
 	env.tostring = tostring

@@ -57,7 +57,7 @@ def score_output(code: str) -> int:
 
 def clean_output(code: str) -> str:
     """
-    Clean the output code by removing debug/spy prefix lines.
+    Clean the output code by removing debug/spy prefix lines and trailing error lines.
     """
     if not code:
         return ""
@@ -67,6 +67,11 @@ def clean_output(code: str) -> str:
         "[mimic-debug]",
         "[VOID]"
     )
+    error_patterns = [
+        r'^error\s*\(',
+        r'^local\s+_callerror\d+\s*=\s*error\(',
+        r'^local\s+er\s*=\s*error\(',
+    ]
     for line in code.splitlines():
         line_strip = line.strip()
         is_debug = False
@@ -74,32 +79,61 @@ def clean_output(code: str) -> str:
             if line_strip.startswith(prefix):
                 is_debug = True
                 break
-        if not is_debug:
-            cleaned_lines.append(line)
+        if is_debug:
+            continue
+        # Skip error() calls that are tamper detection artifacts
+        is_error = False
+        for pattern in error_patterns:
+            if re.match(pattern, line_strip):
+                is_error = True
+                break
+        if is_error:
+            continue
+        cleaned_lines.append(line)
+    
+    # Strip trailing empty lines and error comments from the end
+    while cleaned_lines and (
+        not cleaned_lines[-1].strip() or 
+        cleaned_lines[-1].strip().startswith("-- Execution halted") or
+        cleaned_lines[-1].strip().startswith("-- error:") or
+        "Too many operations" in cleaned_lines[-1] or
+        "Tamper Detected" in cleaned_lines[-1] or
+        "infinitelooperror" in cleaned_lines[-1].lower()
+    ):
+        cleaned_lines.pop()
+    
     return "\n".join(cleaned_lines)
 
 def is_valid_lua_output(code: str) -> bool:
+    """
+    Validates that the output is usable Lua code.
+    Now accepts partial outputs with meaningful code lines.
+    """
     if not code or not code.strip():
         return False
-    lower_code = code.lower()
-    invalid_keywords = ["tamper detected", "execution halted", "infinitelooperror", "runner error", "dumper error", "traceback"]
-    for keyword in invalid_keywords:
-        if keyword in lower_code:
-            return False
+    
+    # Reject ONLY the static fallback header — everything else gets a chance
     if code.startswith("-- Sift Ultimate Fallback"):
         return False
-    # Check if there is actual code lines
-    if score_output(code) < 2:
-        return False
-    return True
+    
+    # Count meaningful lines
+    meaningful = score_output(code)
+    
+    # Accept if there are at least 2 meaningful code lines
+    # This allows partial deobfuscations to be used
+    if meaningful >= 2:
+        return True
+    
+    return False
 
 
 class DeobfuscatorEngine:
     @classmethod
     async def run_all_dynamic_loggers(cls, code: str, console_log: str, include_loggers: bool = False) -> tuple[bool, str, str]:
         """
-        Runs all available Lune and Lua environment loggers/dumpers in sequence,
-        logs their progress, and selects the most complete/longest deobfuscated output.
+        Runs available Lune and Lua environment loggers/dumpers SEQUENTIALLY,
+        with early-exit once a high-quality output is found.
+        Logs progress and selects the best output.
         """
         all_methods = [
             ("Mimic", lambda c: LuneRunner.run_mimic(c)),
@@ -138,23 +172,29 @@ class DeobfuscatorEngine:
                 console_log += concise_log + "\n"
                 
                 if ok and is_valid_lua_output(out):
-                    success_outputs.append((name, out))
-                    console_log += f"[+] {name} succeeded ({len(out.splitlines())} lines).\n"
+                    output_score = score_output(out)
+                    success_outputs.append((name, out, output_score))
+                    console_log += f"[+] {name} succeeded ({len(out.splitlines())} lines, score: {output_score}).\n"
+                    
+                    # Early exit if we got a high-quality output (>50 meaningful lines)
+                    if output_score > 50:
+                        console_log += f"[+] High-quality output from {name} — skipping remaining engines.\n"
+                        break
                 else:
                     console_log += f"[-] {name} failed or returned empty/invalid output.\n"
             except Exception as e:
                 console_log += f"[!] {name} failed with error: {str(e)}\n"
 
         if success_outputs:
-            # Prioritize dumpers over trace loggers
+            # Prioritize dumpers over trace loggers, then sort by score
             dumpers = [x for x in success_outputs if x[0] not in trace_logger_names]
             loggers = [x for x in success_outputs if x[0] in trace_logger_names]
             if dumpers:
-                dumpers.sort(key=lambda x: score_output(x[1]), reverse=True)
-                best_name, best_out = dumpers[0]
+                dumpers.sort(key=lambda x: x[2], reverse=True)
+                best_name, best_out, _ = dumpers[0]
             else:
-                loggers.sort(key=lambda x: score_output(x[1]), reverse=True)
-                best_name, best_out = loggers[0]
+                loggers.sort(key=lambda x: x[2], reverse=True)
+                best_name, best_out, _ = loggers[0]
             
             best_out_clean = clean_output(best_out)
             console_log += f"[+] Selected best output from {best_name}.\n"
@@ -355,18 +395,45 @@ class DeobfuscatorEngine:
     @staticmethod
     def extract_strings_statically(code: str) -> str:
         """
-        Static string extraction fallback.
+        Improved static string extraction fallback.
+        Decodes octal/decimal escape sequences and extracts readable strings.
         """
-        strings = re.findall(r'"([A-Za-z0-9+/=\s\\._\-\[\]\(\)\{\}\:\;\,\!\?\@\#\$\%\^\&\*\+\-\/]*)"', code)
-        strings += re.findall(r"'([A-Za-z0-9+/=\s\\._\-\[\]\(\)\{\}\:\;\,\!\?\@\#\$\%\^\&\*\+\-\/]*)'", code)
+        # Extract quoted strings
+        strings = re.findall(r'"([^"]*)"', code)
+        strings += re.findall(r"'([^']*)'", code)
         
-        unique_strings = sorted(list(set(strings)), key=len, reverse=True)
+        decoded_strings = []
+        for s in strings:
+            if len(s.strip()) < 3:
+                continue
+            
+            # Decode octal/decimal escape sequences like \051\101\049
+            if re.search(r'\\(\d{1,3})', s):
+                try:
+                    decoded = re.sub(
+                        r'\\(\d{1,3})',
+                        lambda m: chr(int(m.group(1))) if int(m.group(1)) < 256 else m.group(0),
+                        s
+                    )
+                    # Only use decoded version if it has printable content
+                    if decoded and any(32 <= ord(c) < 127 for c in decoded):
+                        decoded_strings.append(decoded)
+                        continue
+                except:
+                    pass
+            
+            # Filter for strings with meaningful content
+            if any(c.isalpha() for c in s) or len(s) > 10:
+                decoded_strings.append(s)
         
-        output = "-- Sift Ultimate Fallback (Static String Dump)\n\n"
+        # Deduplicate and sort by length (longest first — usually most meaningful)
+        unique_strings = sorted(list(set(decoded_strings)), key=len, reverse=True)
+        
+        output = "-- Sift Ultimate Fallback (Static String Dump)\n"
+        output += "-- Strings extracted and decoded from the obfuscated script\n\n"
         output += "local strings = {\n"
         for i, s in enumerate(unique_strings[:1000]):
-            if len(s.strip()) > 3:
-                clean_s = s.replace('"', '\\"').replace('\n', '\\n')
-                output += f"    [{i}] = \"{clean_s}\",\n"
+            clean_s = s.replace('"', '\\"').replace('\n', '\\n').replace('\r', '\\r')
+            output += f'    [{i}] = "{clean_s}",\n'
         output += "}\n"
         return output

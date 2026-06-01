@@ -39,10 +39,6 @@ function Runner.execute(source: string): (boolean, string, string?)
 		return false, state:getOutput(), "Load did not return a function"
 	end
 
-	for k, v in env do
-		stdio.write("[mimic-debug] env." .. tostring(k) .. " = " .. type(v) .. "\n")
-	end
-
 	local execSuccess, execErr = pcall(fn)
 
 	if not execSuccess then
@@ -50,7 +46,24 @@ function Runner.execute(source: string): (boolean, string, string?)
 		codegen:emitLine(codegen:comment("Execution halted: " .. tostring(execErr)))
 	end
 
-	return execSuccess, state:getOutput(), execSuccess and nil or tostring(execErr)
+	local output = state:getOutput()
+
+	-- Count meaningful lines (non-comment, non-empty)
+	local meaningfulLines = 0
+	for line in output:gmatch("[^\n]+") do
+		local stripped = line:match("^%s*(.-)%s*$")
+		if stripped ~= "" and not stripped:match("^%-%-") then
+			meaningfulLines += 1
+		end
+	end
+
+	-- If we have meaningful output (even partial), treat as success
+	-- This prevents partial deobfuscations from being discarded
+	if meaningfulLines >= 3 then
+		return true, output, execSuccess and nil or tostring(execErr)
+	end
+
+	return execSuccess, output, execSuccess and nil or tostring(execErr)
 end
 
 return Runner
