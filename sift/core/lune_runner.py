@@ -4,6 +4,7 @@ import asyncio
 import shutil
 import uuid
 from sift.config import Config
+from sift.core.decompiler import Decompiler
 
 class LuneRunner:
     @staticmethod
@@ -512,5 +513,140 @@ class LuneRunner:
                 try: os.remove(input_path)
                 except: pass
         return success, output_code, console_log
+
+    @staticmethod
+    async def run_moonsec(input_code: str) -> tuple[bool, str, str]:
+        """
+        Runs the Moonsec deobfuscator (C# net8.0/net9.0) on the input code,
+        and decompiles the resulting bytecode using Decompiler.decompile_lua.
+        """
+        job_id = str(uuid.uuid4())
+        os.makedirs(Config.TEMP_DIR, exist_ok=True)
+        
+        temp_input_name = f"in_moonsec_{job_id}.lua"
+        temp_output_name = f"out_moonsec_{job_id}.luac"
+        temp_decompiled_name = f"decomp_moonsec_{job_id}.lua"
+        
+        input_path = os.path.join(Config.TEMP_DIR, temp_input_name)
+        output_path = os.path.join(Config.TEMP_DIR, temp_output_name)
+        decomp_path = os.path.join(Config.TEMP_DIR, temp_decompiled_name)
+        
+        with open(input_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(input_code)
+            
+        # Select executable or dotnet dll based on platform
+        is_windows = os.name == "nt"
+        bin_dir = os.path.abspath(os.path.join("bot", "MoonsecDeobfuscator", "bin", "Release", "net9.0"))
+        if not os.path.exists(bin_dir):
+            bin_dir = os.path.abspath(os.path.join("bot", "MoonsecDeobfuscator", "bin", "Release", "net8.0"))
+            
+        success = False
+        console_log = "[*] Running Moonsec Deobfuscator...\n"
+        output_code = ""
+        
+        try:
+            if is_windows:
+                exe_path = os.path.join(bin_dir, "MoonsecDeobfuscator.exe")
+                cmd = [exe_path, "-dev", "-i", input_path, "-o", output_path]
+            else:
+                dll_path = os.path.join(bin_dir, "MoonsecDeobfuscator.dll")
+                cmd = ["dotnet", dll_path, "-dev", "-i", input_path, "-o", output_path]
+                
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            try:
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=120.0)
+                console_log += stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
+            except asyncio.TimeoutError:
+                try: process.kill()
+                except: pass
+                console_log += "Moonsec deobfuscator execution timed out.\n"
+                
+            if os.path.exists(output_path):
+                console_log += "[+] Moonsec successfully devirtualized code. Decompiling bytecode...\n"
+                ok, decomp_details = await Decompiler.decompile(output_path, decomp_path, is_luau=False)
+                console_log += f"Decompiler details: {decomp_details}\n"
+                if ok and os.path.exists(decomp_path):
+                    with open(decomp_path, "r", encoding="utf-8", errors="ignore") as f:
+                        output_code = f.read()
+                    if len(output_code.strip()) > 0:
+                        success = True
+                else:
+                    console_log += "[-] Failed to decompile devirtualized bytecode.\n"
+            else:
+                console_log += "[-] Moonsec deobfuscator failed to generate bytecode output.\n"
+                
+        except Exception as e:
+            console_log += f"\nMoonsec Runner Error: {str(e)}"
+        finally:
+            # Cleanup temp files
+            for p in [input_path, output_path, decomp_path]:
+                if os.path.exists(p):
+                    try: os.remove(p)
+                    except: pass
+                    
+        return success, output_code, console_log
+
+    @staticmethod
+    async def run_prometheus(input_code: str) -> tuple[bool, str, str]:
+        """
+        Runs the Prometheus deobfuscator wrapper (bot/PrometheusDumper/deobfuscator.py) on the input code.
+        """
+        import sys
+        job_id = str(uuid.uuid4())
+        
+        # We need a temp folder inside Config.TEMP_DIR for this job
+        job_dir = os.path.join(Config.TEMP_DIR, f"prometheus_{job_id}")
+        os.makedirs(job_dir, exist_ok=True)
+        
+        input_path = os.path.join(job_dir, "script.lua")
+        output_path = os.path.join(job_dir, "script.deobf.lua")
+        
+        with open(input_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(input_code)
+            
+        deob_script = os.path.abspath(os.path.join("bot", "PrometheusDumper", "deobfuscator.py"))
+        
+        success = False
+        console_log = "[*] Running Prometheus/WeAreDevs Deobfuscator...\n"
+        output_code = ""
+        
+        cmd = [sys.executable, deob_script, input_path]
+        
+        try:
+            # Run in the Prometheus dumper folder as working directory
+            process = await asyncio.create_subprocess_exec(
+                *cmd,
+                cwd=os.path.dirname(deob_script),
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            try:
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=90.0)
+                console_log += stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
+            except asyncio.TimeoutError:
+                try: process.kill()
+                except: pass
+                console_log += "Prometheus execution timed out.\n"
+                
+            if os.path.exists(output_path):
+                with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
+                    output_code = f.read()
+                if len(output_code.strip()) > 0:
+                    success = True
+            else:
+                console_log += "[-] Prometheus deobfuscator did not produce deobf output.\n"
+                
+        except Exception as e:
+            console_log += f"\nPrometheus Runner Error: {str(e)}"
+        finally:
+            # Cleanup temp directory
+            shutil.rmtree(job_dir, ignore_errors=True)
+            
+        return success, output_code, console_log
+
 
 

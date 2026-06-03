@@ -76,6 +76,9 @@ class DeobfUrlRequest(BaseModel):
     all_outputs: bool = False
     include_loggers: bool = False
 
+class BuildSiftUIRequest(BaseModel):
+    code: str
+
 @app.post("/api/deobf")
 async def api_deobf(req: DeobfRequest):
     if not req.code.strip():
@@ -210,10 +213,37 @@ async def api_download(job_id: str):
 async def api_rename(req: RenameRequest):
     if not req.code.strip():
         raise HTTPException(status_code=400, detail="Code parameter cannot be empty.")
-    renamed_code = await AIRenamer.rename(req.code, req.provider, req.api_key)
+    from sift.core.ai_service import AIService
+    import os
+    
+    # Temporarily override OpenAI key if a custom one is supplied
+    old_key = os.environ.get("OPENAI_API_KEY")
+    if req.api_key:
+        os.environ["OPENAI_API_KEY"] = req.api_key
+        
+    try:
+        renamed_code = await AIService.rename(req.code)
+    finally:
+        if req.api_key:
+            if old_key is not None:
+                os.environ["OPENAI_API_KEY"] = old_key
+            else:
+                os.environ.pop("OPENAI_API_KEY", None)
+                
     return {
-        "success": not renamed_code.startswith("-- [AI Renamer Error]"),
+        "success": not renamed_code.startswith("-- [AI Error]") and not renamed_code.startswith("-- [AI Renamer Error]"),
         "renamed_code": renamed_code
+    }
+
+@app.post("/api/build-sift-ui")
+async def api_build_sift_ui(req: BuildSiftUIRequest):
+    if not req.code.strip():
+        raise HTTPException(status_code=400, detail="Code parameter cannot be empty.")
+    from sift.core.ai_service import AIService
+    compiled_code = await AIService.build_with_sift_ui(req.code)
+    return {
+        "success": not compiled_code.startswith("-- [AI Error]"),
+        "output_code": compiled_code
     }
 
 @app.post("/api/fetch")

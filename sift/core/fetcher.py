@@ -36,6 +36,64 @@ ROBLOX_HEADERS = {
     "Referer": "https://www.roblox.com/",
 }
 
+# Executor profiling and headers to pose as executors (bypasses protection blocks)
+EXECUTOR_PROFILES = [
+    {
+        "User-Agent": "Solara",
+        "Headers": {
+            "Solara-Fingerprint": "solara-fingerprint-1337-abc",
+            "X-Executor": "Solara"
+        }
+    },
+    {
+        "User-Agent": "Wave",
+        "Headers": {
+            "Wave-Fingerprint": "wave-fingerprint-9988-xyz",
+            "X-Executor": "Wave",
+            "Syn-Fingerprint": "wave-syn-fingerprint"
+        }
+    },
+    {
+        "User-Agent": "SynapseX",
+        "Headers": {
+            "Syn-Fingerprint": "synapsex-fingerprint-3759-sift",
+            "Syn-User-Agent": "Synapse",
+            "X-Executor": "SynapseX"
+        }
+    },
+    {
+        "User-Agent": "MacSploit",
+        "Headers": {
+            "X-Executor": "MacSploit"
+        }
+    },
+    {
+        "User-Agent": "ArceusX",
+        "Headers": {
+            "X-Executor": "ArceusX",
+            "X-Roblox-User-Agent": "Roblox/Android"
+        }
+    },
+    {
+        "User-Agent": "Delta",
+        "Headers": {
+            "X-Executor": "Delta"
+        }
+    },
+    {
+        "User-Agent": "Codex",
+        "Headers": {
+            "X-Executor": "Codex"
+        }
+    },
+    {
+        "User-Agent": "Hydrogen",
+        "Headers": {
+            "X-Executor": "Hydrogen"
+        }
+    }
+]
+
 class AdvancedFetcher:
     @staticmethod
     async def fetch(url: str, retries: int = 3, proxy: str = None, binary: bool = False) -> tuple[bool, str]:
@@ -51,8 +109,16 @@ class AdvancedFetcher:
         ])
         
         for attempt in range(retries):
-            # Build headers
-            ua = random.choice(USER_AGENTS)
+            # 80% chance to pose as a Roblox executor when fetching scripts
+            # This tricks script developers / protect APIs into serving code
+            if random.random() < 0.80:
+                profile = random.choice(EXECUTOR_PROFILES)
+                ua = profile["User-Agent"]
+                exec_headers = profile["Headers"]
+            else:
+                ua = random.choice(USER_AGENTS)
+                exec_headers = {}
+
             headers = {
                 "User-Agent": ua,
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -68,6 +134,7 @@ class AdvancedFetcher:
                 "sec-ch-ua-mobile": "?0",
                 "sec-ch-ua-platform": '"Windows"',
             }
+            headers.update(exec_headers)
             
             # Add Roblox-specific headers if applicable
             if is_roblox:

@@ -1,14 +1,24 @@
 # Use lightweight Python base
 FROM python:3.11-slim
 
-# Install system dependencies (Java JDK for unluac.jar, curl for downloading lune)
+# Install system dependencies (Java JDK for unluac.jar, curl, zip tools, lua interpreters, .NET dependencies)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     default-jre-headless \
     curl \
     ca-certificates \
     unzip \
+    lua5.1 \
     lua5.3 \
+    libicu-dev \
     && rm -rf /var/lib/apt/lists/*
+
+# Install .NET runtimes (v8.0 and v9.0) using official Microsoft installer script
+RUN curl -fsSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh \
+    && chmod +x dotnet-install.sh \
+    && ./dotnet-install.sh --channel 8.0 --install-dir /usr/share/dotnet \
+    && ./dotnet-install.sh --channel 9.0 --install-dir /usr/share/dotnet \
+    && ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet \
+    && rm dotnet-install.sh
 
 # Install Lune binary
 RUN curl -fsSL https://github.com/lune-org/lune/releases/download/v0.8.4/lune-0.8.4-linux-x86_64.zip -o lune.zip \

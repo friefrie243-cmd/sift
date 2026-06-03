@@ -23,32 +23,115 @@ intents.message_content = Config.DISCORD_INTENTS_MESSAGE_CONTENT
 
 bot = commands.Bot(command_prefix=Config.BOT_PREFIX, intents=intents)
 
-class SiftRenameView(discord.ui.View):
-    def __init__(self, output_code: str, requester_id: int):
-        super().__init__(timeout=60)
-        self.output_code = output_code
+class SiftLogPaginationView(discord.ui.View):
+    def __init__(self, logs: str):
+        super().__init__(timeout=120)
+        self.logs = logs
+        # Chunk logs into pages of 1500 chars to avoid Discord message size limits
+        self.pages = [logs[i:i+1500] for i in range(0, len(logs), 1500)]
+        if not self.pages:
+            self.pages = ["No execution logs captured."]
+        self.current_page = 0
+
+    def get_embed(self) -> discord.Embed:
+        page_content = self.pages[self.current_page]
+        embed = discord.Embed(
+            title="📋 Sift Execution Logs",
+            description=f"```ansi\n{page_content}\n```",
+            color=0x9d4edd
+        )
+        embed.set_footer(text=f"Page {self.current_page + 1} of {len(self.pages)}")
+        return embed
+
+    def update_buttons(self):
+        # Disable/enable buttons based on page boundaries
+        self.prev_button.disabled = (self.current_page == 0)
+        self.next_button.disabled = (self.current_page == len(self.pages) - 1)
+
+    async def send_initial_message(self, interaction: discord.Interaction):
+        self.update_buttons()
+        await interaction.response.send_message(embed=self.get_embed(), view=self, ephemeral=True)
+
+    @discord.ui.button(label="◀ Previous Page", style=discord.ButtonStyle.secondary)
+    async def prev_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        if self.current_page > 0:
+            self.current_page -= 1
+            self.update_buttons()
+            await interaction.response.edit_message(embed=self.get_embed(), view=self)
+
+    @discord.ui.button(label="Next Page ▶", style=discord.ButtonStyle.secondary)
+    async def next_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        if self.current_page < len(self.pages) - 1:
+            self.current_page += 1
+            self.update_buttons()
+            await interaction.response.edit_message(embed=self.get_embed(), view=self)
+
+class SiftEngineSelect(discord.ui.Select):
+    def __init__(self, outputs: list):
+        options = [
+            discord.SelectOption(
+                label=f"{out['name']} Output",
+                description=f"Deobfuscation result from {out['name']}",
+                value=str(idx),
+                default=(idx == 0)
+            )
+            for idx, out in enumerate(outputs)
+        ]
+        super().__init__(placeholder="Select Deobfuscation Engine...", min_values=1, max_values=1, options=options, row=0)
+
+    async def callback(self, interaction: discord.Interaction):
+        view: SiftResultView = self.view
+        idx = int(self.values[0])
+        view.current_idx = idx
+        
+        # Update default state
+        for opt in self.options:
+            opt.default = (opt.value == self.values[0])
+            
+        selected_out = view.all_outputs_list[idx]
+        engine_name = selected_out["name"]
+        out_code = selected_out["output_code"]
+        
+        embed = discord.Embed(
+            title="🔮 Sift Deobfuscation Result",
+            description=f"**File Name**: `{view.filename}`\n**Selected Engine**: `{engine_name}`\n\n**Engine Output Details**:\n```ansi\n\u001b[0;35m{view.log_details[:400]}...\u001b[0m\n```",
+            color=0x9d4edd
+        )
+        embed.set_footer(text="Sift Reverse Engineering • Premium Edition")
+        
+        fp = io.BytesIO(out_code.encode("utf-8"))
+        fp.seek(0)
+        file_attachment = discord.File(fp=fp, filename=f"sift_deobf_{view.filename}")
+        
+        await interaction.response.edit_message(embed=embed, attachments=[file_attachment], view=view)
+
+class SiftResultView(discord.ui.View):
+    def __init__(self, all_outputs_list: list, log_details: str, requester_id: int, filename: str):
+        super().__init__(timeout=300)
+        self.all_outputs_list = all_outputs_list
+        self.log_details = log_details
         self.requester_id = requester_id
-        self.is_renamed = False
+        self.filename = filename
+        self.current_idx = 0
+        
+        # Display selection dropdown only if multiple outputs are present
+        if len(self.all_outputs_list) > 1:
+            self.add_item(SiftEngineSelect(self.all_outputs_list))
 
     async def interaction_check(self, interaction: discord.Interaction) -> bool:
         if interaction.user.id != self.requester_id:
-            await interaction.response.send_message("Only the original requester can trigger AI renaming.", ephemeral=True)
+            await interaction.response.send_message("Only the original requester can interact with Sift buttons.", ephemeral=True)
             return False
         return True
 
-    @discord.ui.button(label="AI Rename Variables", style=discord.ButtonStyle.primary, emoji="✨")
+    @discord.ui.button(label="AI Rename Variables", style=discord.ButtonStyle.primary, emoji="✨", row=1)
     async def rename_button(self, interaction: discord.Interaction, button: discord.ui.Button):
-        if self.is_renamed:
-            await interaction.response.send_message("Already renamed.", ephemeral=True)
-            return
-            
         await interaction.response.defer(ephemeral=True)
-        self.is_renamed = True
+        current_code = self.all_outputs_list[self.current_idx]["output_code"]
         
-        # Run AI Renamer
-        renamed_code = await AIRenamer.rename(self.output_code)
+        from sift.core.ai_service import AIService
+        renamed_code = await AIService.rename(current_code)
         
-        # Write to memory buffer and send
         fp = io.BytesIO(renamed_code.encode("utf-8"))
         fp.seek(0)
         file = discord.File(fp=fp, filename="sift_renamed.lua")
@@ -58,7 +141,29 @@ class SiftRenameView(discord.ui.View):
             file=file,
             ephemeral=False
         )
-        self.stop()
+
+    @discord.ui.button(label="Build with Sift UI", style=discord.ButtonStyle.success, emoji="🛠", row=1)
+    async def siftui_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await interaction.response.defer(ephemeral=True)
+        current_code = self.all_outputs_list[self.current_idx]["output_code"]
+        
+        from sift.core.ai_service import AIService
+        compiled_code = await AIService.build_with_sift_ui(current_code)
+        
+        fp = io.BytesIO(compiled_code.encode("utf-8"))
+        fp.seek(0)
+        file = discord.File(fp=fp, filename="sift_ui_compiled.lua")
+        
+        await interaction.followup.send(
+            content="🛠 Compiled script with custom Sift UI library layout:",
+            file=file,
+            ephemeral=False
+        )
+
+    @discord.ui.button(label="View Execution Logs", style=discord.ButtonStyle.secondary, emoji="📋", row=1)
+    async def logs_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        log_view = SiftLogPaginationView(self.log_details)
+        await log_view.send_initial_message(interaction)
 
 def get_premium_embed(title: str, description: str, color: int = 0x9d4edd) -> discord.Embed:
     """
@@ -165,21 +270,30 @@ async def cmd_deobf(ctx, arg: str = None, file: discord.Attachment = None):
         await ctx.send(embed=get_premium_embed("Error", "Please upload a Lua file, paste a link, or write code block.", 0xd90429))
         return
         
-    success, out_code, log_details, detected_type, _ = await DeobfuscatorEngine.deobfuscate(code)
+    success, out_code, log_details, detected_type, all_outputs_list = await DeobfuscatorEngine.deobfuscate(code, all_outputs=True)
     
+    if not all_outputs_list:
+        all_outputs_list = [{
+            "name": detected_type if detected_type != "Unknown/None" else "Sift Output",
+            "output_code": out_code,
+            "console_log": log_details
+        }]
+        
     # Render clean purple embed
     embed = get_premium_embed(
         "🔮 Sift Deobfuscation Result",
         f"**File Name**: `{filename}`\n**Detected Engine**: `{detected_type}`\n\n**Engine Output Details**:\n```ansi\n\u001b[0;35m{log_details[:400]}...\u001b[0m\n```"
     )
     
-    # Prepare output attachment
-    fp = io.BytesIO(out_code.encode("utf-8"))
+    # Prepare output attachment for the default (best) engine
+    best_out = all_outputs_list[0]["output_code"]
+    fp = io.BytesIO(best_out.encode("utf-8"))
     fp.seek(0)
     file_attachment = discord.File(fp=fp, filename=f"sift_deobf_{filename}")
     
-    # Attach the interactive Sift AI renaming button
-    view = SiftRenameView(out_code, ctx.author.id)
+    # Attach the interactive Sift result view (with engine selector dropdown, rename, Sift UI build, and logs button)
+    requester_id = ctx.author.id if hasattr(ctx, 'author') else ctx.user.id
+    view = SiftResultView(all_outputs_list, log_details, requester_id, filename)
     await ctx.send(embed=embed, file=file_attachment, view=view)
 
 @bot.hybrid_command(name="dump", description="Dynamic falling back constants/strings dumper.")

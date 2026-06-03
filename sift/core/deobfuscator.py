@@ -136,6 +136,8 @@ class DeobfuscatorEngine:
         Logs progress and selects the best output.
         """
         all_methods = [
+            ("Moonsec Deobfuscator", lambda c: LuneRunner.run_moonsec(c)),
+            ("Prometheus Dumper", lambda c: LuneRunner.run_prometheus(c)),
             ("Mimic", lambda c: LuneRunner.run_mimic(c)),
             ("Mimic2", lambda c: LuneRunner.run_mimic2(c)),
             ("UnveilR", lambda c: LuneRunner.run_unveilr(c)),
@@ -212,6 +214,8 @@ class DeobfuscatorEngine:
         all_methods = [
             ("IronBrew (Static)", lambda c: asyncio.to_thread(IronBrewDeobfuscator.deobfuscate, c)),
             ("Luraph Dumper", lambda c: LuneRunner.run_lune_script("luraphdump.lua", c)),
+            ("Moonsec Deobfuscator", lambda c: LuneRunner.run_moonsec(c)),
+            ("Prometheus Dumper", lambda c: LuneRunner.run_prometheus(c)),
             ("Mimic", lambda c: LuneRunner.run_mimic(c)),
             ("Mimic2", lambda c: LuneRunner.run_mimic2(c)),
             ("UnveilR", lambda c: LuneRunner.run_unveilr(c)),
@@ -343,7 +347,23 @@ class DeobfuscatorEngine:
             success, output_code, runner_log = await LuneRunner.run_lune_script("luraphdump.lua", code)
             console_log += runner_log
             
-        elif detected_type in ["Moonsec", "Prometheus", "Moonveil", "Soteria", "WynnSfuscate"]:
+        elif detected_type == "Moonsec":
+            console_log += "[*] Launching specialized Moonsec deobfuscator...\n"
+            success, output_code, runner_log = await LuneRunner.run_moonsec(code)
+            console_log += runner_log
+            if not success:
+                console_log += "[*] Moonsec specialized deobfuscator failed. Falling back to dynamic deobfuscation chain...\n"
+                success, output_code, console_log = await cls.run_all_dynamic_loggers(code, console_log, include_loggers)
+                
+        elif detected_type in ["Prometheus", "WeAreDevs"]:
+            console_log += f"[*] Launching specialized Prometheus deobfuscator for {detected_type}...\n"
+            success, output_code, runner_log = await LuneRunner.run_prometheus(code)
+            console_log += runner_log
+            if not success:
+                console_log += "[*] Prometheus specialized deobfuscator failed. Falling back to dynamic deobfuscation chain...\n"
+                success, output_code, console_log = await cls.run_all_dynamic_loggers(code, console_log, include_loggers)
+                
+        elif detected_type in ["Moonveil", "Soteria", "WynnSfuscate"]:
             console_log += f"[*] Launching dynamic deobfuscation chain for {detected_type}...\n"
             success, output_code, console_log = await cls.run_all_dynamic_loggers(code, console_log, include_loggers)
             

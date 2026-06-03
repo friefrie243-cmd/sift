@@ -545,6 +545,7 @@
                 </select>
                 <input type="password" id="api-key" placeholder="AI API Key (Optional)">
                 <button id="rename-btn" onclick="runRename()">✨ AI Rename</button>
+                <button class="secondary-btn" id="siftui-btn" onclick="runBuildSiftUI()">🛠 Build with Sift UI</button>
             </div>
 
             <!-- Accordion container for multi-engine outputs -->
@@ -919,6 +920,54 @@
             } finally {
                 btn.disabled = false;
                 btn.textContent = "✨ AI Rename";
+            }
+        }
+
+        async function runBuildSiftUI() {
+            const code = document.getElementById("output-code").value;
+            const btn = document.getElementById("siftui-btn");
+
+            if (!code.trim()) {
+                showToast("No output code to compile! Run deobfuscate first.");
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = "Compiling Sift UI...";
+            log("[*] Querying AI to build Sift UI layout for the script...");
+
+            try {
+                const response = await fetch("/api/build-sift-ui", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ code })
+                });
+                const data = await response.json();
+
+                if (data.success) {
+                    document.getElementById("output-code").value = data.output_code;
+                    
+                    // Update active accordion if one is selected
+                    const activeItem = document.querySelector(".accordion-item.active");
+                    if (activeItem) {
+                        const idx = parseInt(activeItem.id.split("-").pop());
+                        activeItem.querySelector(".accordion-textarea").value = data.output_code;
+                        if (multiEngineOutputs[idx]) {
+                            multiEngineOutputs[idx].output_code = data.output_code;
+                        }
+                    }
+                    
+                    log("[+] UI successfully compiled and transferred to Sift UI library!");
+                    showToast("Sift UI Build complete!");
+                } else {
+                    log("[!] UI compilation failed.");
+                    log(data.output_code || "Unknown error");
+                }
+            } catch (err) {
+                log("[!] Communication error with Sift AI agent: " + err.message);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = "🛠 Build with Sift UI";
             }
         }
 

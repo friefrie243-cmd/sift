@@ -112,14 +112,29 @@ end
 
 local function I(J)
     if j(J) ~= "string" then
-        return '"'\n    end\n    local K = {}\n    local L, M = 1, #J\n    local function N(O)\n        return O:gsub("\\\\(.)", function(P)\n            if P:match('[abfnrtv\\\\%\'%\\"%[%]0-9xu]') then
+        return '"'
+    end
+    local K = {}
+    local L, M = 1, #J
+    local function N(O)
+        return O:gsub("\\\\(.)", function(P)
+            if P:match('[abfnrtv\\\\%\'%\\"%[%]0-9xu]') then
                 return "" .. P
             end
             return P
         end)
     end
     local function Q(R)
-        if not R or R == '"' then\n            return ""\n        end\n        R = R:gsub("0[bB]([01_]+)", function(S)\n            local T = S:gsub("_", "")\n            local U = n(T, 2)\n            return U and m(U) or "0"\n        end)\n        R = R:gsub("0[xX]([%x_]+)", function(S)\n            local T = S:gsub('_', '"')
+        if not R or R == '"' then
+            return ""
+        end
+        R = R:gsub("0[bB]([01_]+)", function(S)
+            local T = S:gsub("_", "")
+            local U = n(T, 2)
+            return U and m(U) or "0"
+        end)
+        R = R:gsub("0[xX]([%x_]+)", function(S)
+            local T = S:gsub('_', '"')
             return "0x" .. T
         end)
         while R:match("%d_+%d") do
@@ -575,7 +590,370 @@ local function aP(aQ, aR, aS)
         return aT
     end
     local T = aT:gsub("[^%w_]", '"'):gsub("^%d+", '"')
-    if T == '"' or T == "Object" or T == "Value" or T == "result" then\n        T = "var"\n    end\n    return T\nend\n\nlocal function aW(x, aQ, aX, aS)\n    local aY = t.registry[x]\n    if aY and not aY:match("^v%d+$") and not aY:match("^conn$") then\n        return aY\n    end\n    local am = aP(aQ, nil, aS)\n    if am == "var" or am == "object" or am == "result" or am == "proxy" or am == "conn" or am == "connection" or t.names_used[am] then\n        t.lar_counter = (t.lar_counter or 0) + 1\n        am = "v" .. t.lar_counter\n    end\n    t.names_used[am] = true\n    t.registry[x] = am\n    t.reverse_registry[am] = x\n    t.variable_types[am] = aX or j(x)\n    return am\nend\n\nlocal function aZ(aF, a_, b0, b1)\n    a_ = a_ or 0\n    b0 = b0 or {}\n    if a_ > r.MAX_DEPTH then\n        return "{ --[[max depth]] }"\n    end\n    if G(aF) and t.registry[aF] then\n        return t.registry[aF]\n    end\n    local b2 = j(aF)\n    if w(aF) then\n        local b3 = rawget(aF, "__value")\n        return m(b3 or 0)\n    end\n    if b2 == "table" and t.registry[aF] then\n        return t.registry[aF]\n    end\n    if b2 == "nil" then\n        return "nil"\n    elseif b2 == "string" then\n        if #aF > 100 and aF:match("^[A-Za-z0-9+/=]+$") then\n            table.insert(t.string_refs, {value = aF:sub(1, 50) .. "...", hint = "base64", full_length = #aF})\n        elseif aF:match("https?://") then\n            table.insert(t.string_refs, {value = aF, hint = "URL"})\n        elseif aF:match("rbxasset://") or aF:match("rbxassetid://") then\n            table.insert(t.string_refs, {value = aF, hint = "Asset"})\n        end\n        return aH(aF)\n    elseif b2 == "number" then\n        if aF ~= aF then\n            return "0/0"\n        end\n        if aF == math.huge then\n            return "math.huge"\n        end\n        if aF == -math.huge then\n            return "-math.huge"\n        end\n        if aF == math.floor(aF) then\n            return m(math.floor(aF))\n        end\n        return string.format("%.6g", aF)\n    elseif b2 == "boolean" then\n        return m(aF)\n    elseif b2 == "function" then\n        if t.registry[aF] then\n            return t.registry[aF]\n        end\n        return "function() end"\n    elseif b2 == "table" then\n        if G(aF) then\n            return t.registry[aF] or "proxy"\n        end\n        if b0[aF] then\n            return "{ --[[circular]] }"\n        end\n        b0[aF] = true\n        local a2 = 0\n        for b4, b5 in D(aF) do\n            if b4 ~= F and b4 ~= "__proxy_id" then\n                a2 = a2 + 1\n            end\n        end\n        if a2 == 0 then\n            return "{}"\n        end\n        local b6 = true\n        local b7 = 0\n        for b4, b5 in D(aF) do\n            if b4 ~= F and b4 ~= "__proxy_id" then\n                if j(b4) ~= "number" or b4 < 1 or b4 ~= math.floor(b4) then\n                    b6 = false\n                    break\n                else\n                    b7 = math.max(b7, b4)\n                end\n            end\n        end\n        b6 = b6 and b7 == a2\n        if b6 and a2 <= 5 and b1 ~= false then\n            local b8 = {}\n            for L = 1, a2 do\n                local b5 = aF[L]\n                if j(b5) ~= "table" or G(b5) then\n                    table.insert(b8, aZ(b5, a_ + 1, b0, true))\n                else\n                    b6 = false\n                    break\n                end\n            end\n            if b6 and #b8 == a2 then\n                return "{" .. table.concat(b8, ", ") .. "}"\n            end\n        end\n        local b9 = {}\n        local ba = 0\n        local bb = string.rep("    ", t.indent + a_ + 1)\n        local bc = string.rep("    ", t.indent + a_)\n        for b4, b5 in D(aF) do\n            if b4 ~= F and b4 ~= "__proxy_id" then\n                ba = ba + 1\n                if ba > r.MAX_TABLE_ITEMS then\n                    table.insert(b9, bb .. "-- ..." .. a2 - ba + 1 .. " more")\n                    break\n                end\n                local bd\n                if b6 then\n                    bd = nil\n                elseif j(b4) == "string" and b4:match("^[%a_][%w_]*$") then\n                    bd = b4\n                else\n                    bd = "[" .. aZ(b4, a_ + 1, b0) .. "]"\n                end\n                local be = aZ(b5, a_ + 1, b0)\n                if bd then\n                    table.insert(b9, bb .. bd .. " = " .. be)\n                else\n                    table.insert(b9, bb .. be)\n                end\n            end\n        end\n        if #b9 == 0 then\n            return "{}"\n        end\n        return "{\n" .. table.concat(b9, ",\n") .. "\n" .. bc .. "}"\n    elseif b2 == "userdata" then\n        if t.registry[aF] then\n            return t.registry[aF]\n        end\n        local y, O = pcall(m, aF)\n        return y and O or "userdata"\n    elseif b2 == "thread" then\n        return "coroutine.create(function() end)"\n    else\n        local y, O = pcall(m, aF)\n        return y and O or "nil"\n    end\nend\n\nlocal bf = {}\nsetmetatable(bf, {__mode = "k"})\n\nlocal function bg()\n    local bh = {}\n    bf[bh] = true\n    local bi = {}\n    setmetatable(bh, bi)\n    return bh, bi\nend\n\nlocal function G(x)\n    return bf[x] == true\nend\n\nlocal bj\nlocal bk\n\nlocal function bl(bm)\n    local bh, bi = bg()\n    rawset(bh, v, true)\n    rawset(bh, "__value", bm)\n    t.registry[bh] = tostring(bm)\n    bi.__tostring = function()\n        return tostring(bm)\n    end\n    bi.__index = function(b2, b4)\n        if b4 == F or b4 == "__proxy_id" or b4 == v or b4 == "__value" then\n            return rawget(b2, b4)\n        end\n        return bl(0)\n    end\n    bi.__newindex = function()\n    end\n    bi.__call = function()\n        return bm\n    end\n    local function bn(X)\n        return function(bo, aa)\n            local bp = type(bo) == "table" and rawget(bo, "__value") or bo or 0\n            local bq = type(aa) == "table" and rawget(aa, "__value") or aa or 0\n            local z\n            if X == "+" then\n                z = bp + bq\n            elseif X == "-" then\n                z = bp - bq\n            elseif X == "*" then\n                z = bp * bq\n            elseif X == "/" then\n                z = bq ~= 0 and bp / bq or 0\n            elseif X == "%" then\n                z = bq ~= 0 and bp % bq or 0\n            elseif X == "^" then\n                z = bp ^ bq\n            else\n                z = 0\n            end\n            return bl(z)\n        end\n    end\n    bi.__add = bn("+")\n    bi.__sub = bn("-")\n    bi.__mul = bn("*")\n    bi.__div = bn("/")\n    bi.__mod = bn("%")\n    bi.__pow = bn("^")\n    bi.__unm = function(bo)\n        return bl(-(rawget(bo, "__value") or 0))\n    end\n    bi.__eq = function(bo, aa)\n        local bp = type(bo) == "table" and rawget(bo, "__value") or bo\n        local bq = type(aa) == "table" and rawget(aa, "__value") or aa\n        return bp == bq\n    end\n    bi.__lt = function(bo, aa)\n        local bp = type(bo) == "table" and rawget(bo, "__value") or bo\n        local bq = type(aa) == "table" and rawget(aa, "__value") or aa\n        return bp < bq\n    end\n    bi.__le = function(bo, aa)\n        local bp = type(bo) == "table" and rawget(bo, "__value") or bo\n        local bq = type(aa) == "table" and rawget(aa, "__value") or aa\n        return bp <= bq\n    end\n    bi.__len = function()\n        return 0\n    end\n    return bh\nend\n\nlocal function br(bs, bt)\n    if j(bs) ~= "function" then\n        return {}\n    end\n    local a4 = #t.output\n    local bu = t.pending_iterator\n    t.pending_iterator = false\n    xpcall(function()\n        bs(table.unpack(bt or {}))\n    end, function()\n    end)\n    while t.pending_iterator do\n        t.indent = t.indent - 1\n        at("end")\n        t.pending_iterator = false\n    end\n    t.pending_iterator = bu\n    local bv = {}\n    for L = a4 + 1, #t.output do\n        table.insert(bv, t.output[L])\n    end\n    for L = #t.output, a4 + 1, -1 do\n        table.remove(t.output, L)\n    end\n    return bv\nend\n\nbk = function(aS, bw)\n    local bh, bi = bg()\n    local bx = t.registry[bw] or "object"\n    local by = aE(aS)\n    t.registry[bh] = bx .. "." .. by\n    bi.__call = function(self, bz, ...)\n        local bA\n        if bz == bh or bz == bw or G(bz) then\n            bA = {...}\n        else\n            bA = {bz, ...}\n        end\n        local aU = by:lower()\n        local bB = nil\n        local bC = true\n        for W, aV in ipairs(aL) do\n            if aU:find(aV.pattern) then\n                bB = aV.prefix\n                break\n            end\n        end\n        local bD = nil\n        local bE = nil\n        local bF = nil\n        for L, b5 in ipairs(bA) do\n            if j(b5) == "function" then\n                bD = b5\n                break\n            elseif j(b5) == "table" and not G(b5) then\n                for bG, aF in D(b5) do\n                    local bH = m(bG):lower()\n                    if bH == "callback" and j(aF) == "function" then\n                        bD = aF\n                        bE = bG\n                        bF = L\n                        break\n                    end\n                end\n            end\n        end\n        local bI = "value"\n        local bt = {}\n        if bD then\n            if aU:match("toggle") then\n                bI = "enabled"\n                bt = {true}\n            elseif aU:match("slider") then\n                bI = "value"\n                bt = {50}\n            elseif aU:match("dropdown") then\n                bI = "selected"\n                bt = {"Option"}\n            elseif aU:match("textbox") or aU:match("input") then\n                bI = "text"\n                bt = {s or "input"}\n            elseif aU:match("keybind") or aU:match("bind") then\n                bI = "key"\n                bt = {bj("Enum.KeyCode.E", false)}\n            elseif aU:match("color") then\n                bI = "color"\n                bt = {Color3.fromRGB(255, 255, 255)}\n            elseif aU:match("button") then\n                bI = "\\"\n                bt = {}\n            end\n        end\n        local bJ = {}\n        if bD then\n            bJ = br(bD, bt)\n        end\n        local z = bj(bB or by, false, bw)\n        local _ = aW(z, bB or by, nil, by)\n        local bK = {}\n        for L, b5 in ipairs(bA) do\n            if j(b5) == "table" and not G(b5) and L == bF then\n                local b8 = {}\n                for bG, aF in D(b5) do\n                    local bd\n                    if j(bG) == "string" and bG:match("^[%a_][%w_]*$") then\n                        bd = bG\n                    else\n                        bd = "[" .. aZ(bG) .. "]"\n                    end\n                    if bG == bE and #bJ > 0 then\n                        local bL = bI ~= '"' and "function(" .. "bI" .. ")" or "function()"
+    if T == '"' or T == "Object" or T == "Value" or T == "result" then
+        T = "var"
+    end
+    return T
+end
+
+local function aW(x, aQ, aX, aS)
+    local aY = t.registry[x]
+    if aY and not aY:match("^v%d+$") and not aY:match("^conn$") then
+        return aY
+    end
+    local am = aP(aQ, nil, aS)
+    if am == "var" or am == "object" or am == "result" or am == "proxy" or am == "conn" or am == "connection" or t.names_used[am] then
+        t.lar_counter = (t.lar_counter or 0) + 1
+        am = "v" .. t.lar_counter
+    end
+    t.names_used[am] = true
+    t.registry[x] = am
+    t.reverse_registry[am] = x
+    t.variable_types[am] = aX or j(x)
+    return am
+end
+
+local function aZ(aF, a_, b0, b1)
+    a_ = a_ or 0
+    b0 = b0 or {}
+    if a_ > r.MAX_DEPTH then
+        return "{ --[[max depth]] }"
+    end
+    if G(aF) and t.registry[aF] then
+        return t.registry[aF]
+    end
+    local b2 = j(aF)
+    if w(aF) then
+        local b3 = rawget(aF, "__value")
+        return m(b3 or 0)
+    end
+    if b2 == "table" and t.registry[aF] then
+        return t.registry[aF]
+    end
+    if b2 == "nil" then
+        return "nil"
+    elseif b2 == "string" then
+        if #aF > 100 and aF:match("^[A-Za-z0-9+/=]+$") then
+            table.insert(t.string_refs, {value = aF:sub(1, 50) .. "...", hint = "base64", full_length = #aF})
+        elseif aF:match("https?://") then
+            table.insert(t.string_refs, {value = aF, hint = "URL"})
+        elseif aF:match("rbxasset://") or aF:match("rbxassetid://") then
+            table.insert(t.string_refs, {value = aF, hint = "Asset"})
+        end
+        return aH(aF)
+    elseif b2 == "number" then
+        if aF ~= aF then
+            return "0/0"
+        end
+        if aF == math.huge then
+            return "math.huge"
+        end
+        if aF == -math.huge then
+            return "-math.huge"
+        end
+        if aF == math.floor(aF) then
+            return m(math.floor(aF))
+        end
+        return string.format("%.6g", aF)
+    elseif b2 == "boolean" then
+        return m(aF)
+    elseif b2 == "function" then
+        if t.registry[aF] then
+            return t.registry[aF]
+        end
+        return "function() end"
+    elseif b2 == "table" then
+        if G(aF) then
+            return t.registry[aF] or "proxy"
+        end
+        if b0[aF] then
+            return "{ --[[circular]] }"
+        end
+        b0[aF] = true
+        local a2 = 0
+        for b4, b5 in D(aF) do
+            if b4 ~= F and b4 ~= "__proxy_id" then
+                a2 = a2 + 1
+            end
+        end
+        if a2 == 0 then
+            return "{}"
+        end
+        local b6 = true
+        local b7 = 0
+        for b4, b5 in D(aF) do
+            if b4 ~= F and b4 ~= "__proxy_id" then
+                if j(b4) ~= "number" or b4 < 1 or b4 ~= math.floor(b4) then
+                    b6 = false
+                    break
+                else
+                    b7 = math.max(b7, b4)
+                end
+            end
+        end
+        b6 = b6 and b7 == a2
+        if b6 and a2 <= 5 and b1 ~= false then
+            local b8 = {}
+            for L = 1, a2 do
+                local b5 = aF[L]
+                if j(b5) ~= "table" or G(b5) then
+                    table.insert(b8, aZ(b5, a_ + 1, b0, true))
+                else
+                    b6 = false
+                    break
+                end
+            end
+            if b6 and #b8 == a2 then
+                return "{" .. table.concat(b8, ", ") .. "}"
+            end
+        end
+        local b9 = {}
+        local ba = 0
+        local bb = string.rep("    ", t.indent + a_ + 1)
+        local bc = string.rep("    ", t.indent + a_)
+        for b4, b5 in D(aF) do
+            if b4 ~= F and b4 ~= "__proxy_id" then
+                ba = ba + 1
+                if ba > r.MAX_TABLE_ITEMS then
+                    table.insert(b9, bb .. "-- ..." .. a2 - ba + 1 .. " more")
+                    break
+                end
+                local bd
+                if b6 then
+                    bd = nil
+                elseif j(b4) == "string" and b4:match("^[%a_][%w_]*$") then
+                    bd = b4
+                else
+                    bd = "[" .. aZ(b4, a_ + 1, b0) .. "]"
+                end
+                local be = aZ(b5, a_ + 1, b0)
+                if bd then
+                    table.insert(b9, bb .. bd .. " = " .. be)
+                else
+                    table.insert(b9, bb .. be)
+                end
+            end
+        end
+        if #b9 == 0 then
+            return "{}"
+        end
+        return "{\n" .. table.concat(b9, ",\n") .. "\n" .. bc .. "}"
+    elseif b2 == "userdata" then
+        if t.registry[aF] then
+            return t.registry[aF]
+        end
+        local y, O = pcall(m, aF)
+        return y and O or "userdata"
+    elseif b2 == "thread" then
+        return "coroutine.create(function() end)"
+    else
+        local y, O = pcall(m, aF)
+        return y and O or "nil"
+    end
+end
+
+local bf = {}
+setmetatable(bf, {__mode = "k"})
+
+local function bg()
+    local bh = {}
+    bf[bh] = true
+    local bi = {}
+    setmetatable(bh, bi)
+    return bh, bi
+end
+
+local function G(x)
+    return bf[x] == true
+end
+
+local bj
+local bk
+
+local function bl(bm)
+    local bh, bi = bg()
+    rawset(bh, v, true)
+    rawset(bh, "__value", bm)
+    t.registry[bh] = tostring(bm)
+    bi.__tostring = function()
+        return tostring(bm)
+    end
+    bi.__index = function(b2, b4)
+        if b4 == F or b4 == "__proxy_id" or b4 == v or b4 == "__value" then
+            return rawget(b2, b4)
+        end
+        return bl(0)
+    end
+    bi.__newindex = function()
+    end
+    bi.__call = function()
+        return bm
+    end
+    local function bn(X)
+        return function(bo, aa)
+            local bp = type(bo) == "table" and rawget(bo, "__value") or bo or 0
+            local bq = type(aa) == "table" and rawget(aa, "__value") or aa or 0
+            local z
+            if X == "+" then
+                z = bp + bq
+            elseif X == "-" then
+                z = bp - bq
+            elseif X == "*" then
+                z = bp * bq
+            elseif X == "/" then
+                z = bq ~= 0 and bp / bq or 0
+            elseif X == "%" then
+                z = bq ~= 0 and bp % bq or 0
+            elseif X == "^" then
+                z = bp ^ bq
+            else
+                z = 0
+            end
+            return bl(z)
+        end
+    end
+    bi.__add = bn("+")
+    bi.__sub = bn("-")
+    bi.__mul = bn("*")
+    bi.__div = bn("/")
+    bi.__mod = bn("%")
+    bi.__pow = bn("^")
+    bi.__unm = function(bo)
+        return bl(-(rawget(bo, "__value") or 0))
+    end
+    bi.__eq = function(bo, aa)
+        local bp = type(bo) == "table" and rawget(bo, "__value") or bo
+        local bq = type(aa) == "table" and rawget(aa, "__value") or aa
+        return bp == bq
+    end
+    bi.__lt = function(bo, aa)
+        local bp = type(bo) == "table" and rawget(bo, "__value") or bo
+        local bq = type(aa) == "table" and rawget(aa, "__value") or aa
+        return bp < bq
+    end
+    bi.__le = function(bo, aa)
+        local bp = type(bo) == "table" and rawget(bo, "__value") or bo
+        local bq = type(aa) == "table" and rawget(aa, "__value") or aa
+        return bp <= bq
+    end
+    bi.__len = function()
+        return 0
+    end
+    return bh
+end
+
+local function br(bs, bt)
+    if j(bs) ~= "function" then
+        return {}
+    end
+    local a4 = #t.output
+    local bu = t.pending_iterator
+    t.pending_iterator = false
+    xpcall(function()
+        bs(table.unpack(bt or {}))
+    end, function()
+    end)
+    while t.pending_iterator do
+        t.indent = t.indent - 1
+        at("end")
+        t.pending_iterator = false
+    end
+    t.pending_iterator = bu
+    local bv = {}
+    for L = a4 + 1, #t.output do
+        table.insert(bv, t.output[L])
+    end
+    for L = #t.output, a4 + 1, -1 do
+        table.remove(t.output, L)
+    end
+    return bv
+end
+
+bk = function(aS, bw)
+    local bh, bi = bg()
+    local bx = t.registry[bw] or "object"
+    local by = aE(aS)
+    t.registry[bh] = bx .. "." .. by
+    bi.__call = function(self, bz, ...)
+        local bA
+        if bz == bh or bz == bw or G(bz) then
+            bA = {...}
+        else
+            bA = {bz, ...}
+        end
+        local aU = by:lower()
+        local bB = nil
+        local bC = true
+        for W, aV in ipairs(aL) do
+            if aU:find(aV.pattern) then
+                bB = aV.prefix
+                break
+            end
+        end
+        local bD = nil
+        local bE = nil
+        local bF = nil
+        for L, b5 in ipairs(bA) do
+            if j(b5) == "function" then
+                bD = b5
+                break
+            elseif j(b5) == "table" and not G(b5) then
+                for bG, aF in D(b5) do
+                    local bH = m(bG):lower()
+                    if bH == "callback" and j(aF) == "function" then
+                        bD = aF
+                        bE = bG
+                        bF = L
+                        break
+                    end
+                end
+            end
+        end
+        local bI = "value"
+        local bt = {}
+        if bD then
+            if aU:match("toggle") then
+                bI = "enabled"
+                bt = {true}
+            elseif aU:match("slider") then
+                bI = "value"
+                bt = {50}
+            elseif aU:match("dropdown") then
+                bI = "selected"
+                bt = {"Option"}
+            elseif aU:match("textbox") or aU:match("input") then
+                bI = "text"
+                bt = {s or "input"}
+            elseif aU:match("keybind") or aU:match("bind") then
+                bI = "key"
+                bt = {bj("Enum.KeyCode.E", false)}
+            elseif aU:match("color") then
+                bI = "color"
+                bt = {Color3.fromRGB(255, 255, 255)}
+            elseif aU:match("button") then
+                bI = "\\"
+                bt = {}
+            end
+        end
+        local bJ = {}
+        if bD then
+            bJ = br(bD, bt)
+        end
+        local z = bj(bB or by, false, bw)
+        local _ = aW(z, bB or by, nil, by)
+        local bK = {}
+        for L, b5 in ipairs(bA) do
+            if j(b5) == "table" and not G(b5) and L == bF then
+                local b8 = {}
+                for bG, aF in D(b5) do
+                    local bd
+                    if j(bG) == "string" and bG:match("^[%a_][%w_]*$") then
+                        bd = bG
+                    else
+                        bd = "[" .. aZ(bG) .. "]"
+                    end
+                    if bG == bE and #bJ > 0 then
+                        local bL = bI ~= '"' and "function(" .. "bI" .. ")" or "function()"
                         local bb = string.rep("    ", t.indent + 2)
                         local bM = {}
                         for W, aw in ipairs(bJ) do
@@ -593,7 +971,15 @@ local function aP(aQ, aR, aS)
                 table.insert(bK, "{\n" .. string.rep("    ", t.indent + 1) .. table.concat(b8, ",\n" .. string.rep("    ", t.indent + 1)) .. "\n" .. string.rep("    ", t.indent) .. "}")
             elseif j(b5) == "function" then
                 if #bJ > 0 then
-                    local bL = bI ~= '"' and "function(" .. bI .. ")" or "function()"\n                    local bb = string.rep("    ", t.indent + 1)\n                    local bM = {}\n                    for W, aw in ipairs(bJ) do\n                        table.insert(bM, bb .. (aw:match("^%s*(.*)$") or aw))\n                    end\n                    table.insert(bK, bL .. "\n" .. table.concat(bM, "\n") .. "\n" .. string.rep("    ", t.indent) .. "end")\n                else\n                    local bN = bI ~= '"' and "function(" .. bI .. ") end" or "function() end"
+                    local bL = bI ~= '"' and "function(" .. bI .. ")" or "function()"
+                    local bb = string.rep("    ", t.indent + 1)
+                    local bM = {}
+                    for W, aw in ipairs(bJ) do
+                        table.insert(bM, bb .. (aw:match("^%s*(.*)$") or aw))
+                    end
+                    table.insert(bK, bL .. "\n" .. table.concat(bM, "\n") .. "\n" .. string.rep("    ", t.indent) .. "end")
+                else
+                    local bN = bI ~= '"' and "function(" .. bI .. ") end" or "function() end"
                     table.insert(bK, bN)
                 end
             else
@@ -1242,7 +1628,282 @@ bj = function(aQ, bO, bw)
 
     bP.Teleport = function(self, cD, cl, cE, cF)
         local bS = t.registry[bh] or "TeleportService"
-        at(string.format("%s:Teleport(%s, %s%s%s)", bS, aZ(cD), aZ(cl), cE and ", " .. aZ(cE) or '"', cF and ", " .. aZ(cF) or ""))\n    end\n\n    bP.TeleportToPlaceInstance = function(self, cD, cG, cl)\n        local bS = t.registry[bh] or "TeleportService"\n        at(string.format("%s:TeleportToPlaceInstance(%s, %s, %s)", bS, aZ(cD), aZ(cG), aZ(cl)))\n    end\n\n    bP.PlayLocalSound = function(self, cH)\n        local bS = t.registry[bh] or "SoundService"\n        at(string.format("%s:PlayLocalSound(%s)", bS, aZ(cH)))\n    end\n\n    bP.GetAsync = function(self, cI)\n        return "{}"\n    end\n\n    bP.PostAsync = function(self, cI, cJ)\n        return "{}"\n    end\n\n    bP.JSONEncode = function(self, cJ)\n        return "{}"\n    end\n\n    bP.JSONDecode = function(self, O)\n        return {}\n    end\n\n    bP.GenerateGUID = function(self, cK)\n        return "00000000-0000-0000-0000-000000000000"\n    end\n\n    bP.HttpGet = function(self, cI)\n        local cL = aE(cI)\n        table.insert(t.string_refs, {value = cL, hint = "HTTP URL"})\n        t.last_http_url = cL\n        return cL\n    end\n\n    bP.HttpPost = function(self, cI, cJ, cM)\n        local cL = aE(cI)\n        table.insert(t.string_refs, {value = cL, hint = "HTTP POST URL"})\n        local x = bj("HttpResponse", false)\n        local _ = aW(x, "httpResponse")\n        local bS = t.registry[bh] or "HttpService"\n        at(string.format("local %s = %s:HttpPost(%s, %s, %s)", _, bS, aZ(cI), aZ(cJ), aZ(cM)))\n        t.property_store[x] = {Body = "{}", StatusCode = 200, Success = true}\n        return x\n    end\n\n    bP.AddItem = function(self, cN, cO)\n        local bS = t.registry[bh] or "Debris"\n        at(string.format("%s:AddItem(%s, %s)", bS, aZ(cN), aZ(cO or 10)))\n    end\n\n    bi.__index = function(b2, b4)\n        if b4 == F or b4 == "__proxy_id" then\n            return rawget(b2, b4)\n        end\n        if b4 == "PlaceId" or b4 == "GameId" or b4 == "placeId" or b4 == "gameId" then\n            return u\n        end\n        local bS = t.registry[bh] or aT or "object"\n        local cP = aE(b4)\n        \n        -- Return Heartbeat proxy directly\n        if b4 == "Heartbeat" and bS:match("RunService") then\n            return bP.Heartbeat\n        end\n        \n        if t.property_store[bh] and t.property_store[bh][b4] ~= nil then\n            return t.property_store[bh][b4]\n        end\n        if bP[cP] then\n            local cQ, cR = bg()\n            t.registry[cQ] = bS .. "." .. cP\n            cR.__call = function(W, ...)\n                local bA = {...}\n                if bA[1] == bh or G(bA[1]) and bA[1] ~= cQ then\n                    table.remove(bA, 1)\n                end\n                return bP[cP](bh, table.unpack(bA))\n            end\n            cR.__index = function(W, cS)\n                if cS == F or cS == "__proxy_id" then\n                    return rawget(cQ, cS)\n                end\n                return bj(cS, false, cQ)\n            end\n            cR.__tostring = function()\n                return bS .. ":" .. cP\n            end\n            return cQ\n        end\n        if bS == "fenv" or bS == "getgenv" or bS == "_G" then\n            if b4 == "game" then\n                return game\n            end\n            if b4 == "workspace" then\n                return workspace\n            end\n            if b4 == "script" then\n                return script\n            end\n            if b4 == "Enum" then\n                return Enum\n            end\n            if _G[b4] ~= nil then\n                return _G[b4]\n            end\n            return nil\n        end\n        if b4 == "Parent" then\n            return t.parent_map[bh] or bj("Parent", false)\n        end\n        if b4 == "Name" then\n            return aT or "Object"\n        end\n        if b4 == "ClassName" then\n            return aT or "Instance"\n        end\n        if b4 == "LocalPlayer" then\n            local cT = bj("LocalPlayer", false, bh)\n            local _ = aW(cT, "LocalPlayer")\n            at(string.format("local %s = %s.LocalPlayer", _, bS))\n            return cT\n        end\n        if b4 == "PlayerGui" then\n            return bj("PlayerGui", false, bh)\n        end\n        if b4 == "Backpack" then\n            return bj("Backpack", false, bh)\n        end\n        if b4 == "PlayerScripts" then\n            return bj("PlayerScripts", false, bh)\n        end\n        if b4 == "UserId" then\n            return 1\n        end\n        if b4 == "DisplayName" then\n            return "Player"\n        end\n        if b4 == "AccountAge" then\n            return 1000\n        end\n        if b4 == "Team" then\n            return bj("Team", false, bh)\n        end\n        if b4 == "TeamColor" then\n            return BrickColor.new("White")\n        end\n        if b4 == "Character" then\n            local cT = bj("Character", false, bh)\n            if not t.registry[cT] then\n                local _ = aW(cT, "Character")\n                local bS = t.registry[bh] or "LocalPlayer"\n                at(string.format("local %s = %s.Character", _, bS))\n            end\n            return cT\n        end\n        if b4 == "Humanoid" then\n            local cU = bj("Humanoid", false, bh)\n            t.property_store[cU] = {Health = 100, MaxHealth = 100, WalkSpeed = 16, JumpPower = 50, JumpHeight = 7.2}\n            return cU\n        end\n        if b4 == "HumanoidRootPart" or b4 == "PrimaryPart" or b4 == "RootPart" then\n            local cV = bj("HumanoidRootPart", false, bh)\n            t.property_store[cV] = {Position = Vector3.new(0, 5, 0), CFrame = CFrame.new(0, 5, 0)}\n            return cV\n        end\n        local cW = {"Head", "Torso", "UpperTorso", "LowerTorso", "RightArm", "LeftArm", "RightLeg", "LeftLeg", "RightHand", "LeftHand", "RightFoot", "LeftFoot"}\n        for W, cr in ipairs(cW) do\n            if b4 == cr then\n                return bj(b4, false, bh)\n            end\n        end\n        if b4 == "Animator" then\n            return bj("Animator", false, bh)\n        end\n        if b4 == "CurrentCamera" or b4 == "Camera" then\n            local cX = bj("Camera", false, bh)\n            t.property_store[cX] = {CFrame = CFrame.new(0, 10, 0), FieldOfView = 70, ViewportSize = Vector2.new(1920, 1080)}\n            return cX\n        end\n        if b4 == "CameraType" then\n            return bj("Enum.CameraType.Custom", false)\n        end\n        if b4 == "CameraSubject" then\n            return bj("Humanoid", false, bh)\n        end\n        local cY = {Health = 100, MaxHealth = 100, WalkSpeed = 16, JumpPower = 50, JumpHeight = 7.2, HipHeight = 2, Transparency = 0, Mass = 1, Value = 0, TimePosition = 0, TimeLength = 1, Volume = 0.5, PlaybackSpeed = 1, Brightness = 1, Range = 60, Angle = 90, FieldOfView = 70, Size = 1, Thickness = 1, ZIndex = 1, LayoutOrder = 0}\n        if cY[b4] then\n            return bl(cY[b4])\n        end\n        local cZ = {Visible = true, Enabled = true, Anchored = false, CanCollide = true, Locked = false, Active = true, Draggable = false, Modal = false, Playing = false, Looped = false, IsPlaying = false, AutoPlay = false, Archivable = true, ClipsDescendants = false, RichText = false, TextWrapped = false, TextScaled = false, PlatformStand = false, AutoRotate = true, Sit = false}\n        if cZ[b4] ~= nil then\n            return cZ[b4]\n        end\n        if b4 == "AbsoluteSize" or b4 == "ViewportSize" then\n            return Vector2.new(1920, 1080)\n        end\n        if b4 == "AbsolutePosition" then\n            return Vector2.new(0, 0)\n        end\n        if b4 == "Position" then\n            if aT and (aT:match("Part") or aT:match("Model") or aT:match("Character") or aT:match("Root")) then\n                return Vector3.new(0, 5, 0)\n            end\n            return UDim2.new(0, 0, 0, 0)\n        end\n        if b4 == "Size" then\n            if aT and aT:match("Part") then\n                return Vector3.new(4, 1, 2)\n            end\n            return UDim2.new(1, 0, 1, 0)\n        end\n        if b4 == "CFrame" then\n            return CFrame.new(0, 5, 0)\n        end\n        if b4 == "Velocity" or b4 == "AssemblyLinearVelocity" then\n            return Vector3.new(0, 0, 0)\n        end\n        if b4 == "RotVelocity" or b4 == "AssemblyAngularVelocity" then\n            return Vector3.new(0, 0, 0)\n        end\n        if b4 == "Orientation" or b4 == "Rotation" then\n            return Vector3.new(0, 0, 0)\n        end\n        if b4 == "LookVector" then\n            return Vector3.new(0, 0, -1)\n        end\n        if b4 == "RightVector" then\n            return Vector3.new(1, 0, 0)\n        end\n        if b4 == "UpVector" then\n            return Vector3.new(0, 1, 0)\n        end\n        if b4 == "Color" or b4 == "Color3" or b4 == "BackgroundColor3" or b4 == "BorderColor3" or b4 == "TextColor3" or b4 == "PlaceholderColor3" or b4 == "ImageColor3" then\n            return Color3.new(1, 1, 1)\n        end\n        if b4 == "BrickColor" then\n            return BrickColor.new("Medium stone grey")\n        end\n        if b4 == "Material" then\n            return bj("Enum.Material.Plastic", false)\n        end\n        if b4 == "Hit" then\n            return CFrame.new(0, 0, -10)\n        end\n        if b4 == "Origin" then\n            return CFrame.new(0, 5, 0)\n        end\n        if b4 == "Target" then\n            return bj("Target", false, bh)\n        end\n        if b4 == "X" or b4 == "Y" then\n            return 0\n        end\n        if b4 == "UnitRay" then\n            return Ray.new(Vector3.new(0, 5, 0), Vector3.new(0, 0, -1))\n        end\n        if b4 == "ViewSizeX" then\n            return 1920\n        end\n        if b4 == "ViewSizeY" then\n            return 1080\n        end\n        if b4 == "Text" or b4 == "PlaceholderText" or b4 == "ContentText" or b4 == "Value" then\n            if s then\n                return s\n            end\n            if b4 == "Value" then\n                return "input"\n            end\n            return '"'
+        at(string.format("%s:Teleport(%s, %s%s%s)", bS, aZ(cD), aZ(cl), cE and ", " .. aZ(cE) or '"', cF and ", " .. aZ(cF) or ""))
+    end
+
+    bP.TeleportToPlaceInstance = function(self, cD, cG, cl)
+        local bS = t.registry[bh] or "TeleportService"
+        at(string.format("%s:TeleportToPlaceInstance(%s, %s, %s)", bS, aZ(cD), aZ(cG), aZ(cl)))
+    end
+
+    bP.PlayLocalSound = function(self, cH)
+        local bS = t.registry[bh] or "SoundService"
+        at(string.format("%s:PlayLocalSound(%s)", bS, aZ(cH)))
+    end
+
+    bP.GetAsync = function(self, cI)
+        return "{}"
+    end
+
+    bP.PostAsync = function(self, cI, cJ)
+        return "{}"
+    end
+
+    bP.JSONEncode = function(self, cJ)
+        return "{}"
+    end
+
+    bP.JSONDecode = function(self, O)
+        return {}
+    end
+
+    bP.GenerateGUID = function(self, cK)
+        return "00000000-0000-0000-0000-000000000000"
+    end
+
+    bP.HttpGet = function(self, cI)
+        local cL = aE(cI)
+        table.insert(t.string_refs, {value = cL, hint = "HTTP URL"})
+        t.last_http_url = cL
+        return cL
+    end
+
+    bP.HttpPost = function(self, cI, cJ, cM)
+        local cL = aE(cI)
+        table.insert(t.string_refs, {value = cL, hint = "HTTP POST URL"})
+        local x = bj("HttpResponse", false)
+        local _ = aW(x, "httpResponse")
+        local bS = t.registry[bh] or "HttpService"
+        at(string.format("local %s = %s:HttpPost(%s, %s, %s)", _, bS, aZ(cI), aZ(cJ), aZ(cM)))
+        t.property_store[x] = {Body = "{}", StatusCode = 200, Success = true}
+        return x
+    end
+
+    bP.AddItem = function(self, cN, cO)
+        local bS = t.registry[bh] or "Debris"
+        at(string.format("%s:AddItem(%s, %s)", bS, aZ(cN), aZ(cO or 10)))
+    end
+
+    bi.__index = function(b2, b4)
+        if b4 == F or b4 == "__proxy_id" then
+            return rawget(b2, b4)
+        end
+        if b4 == "PlaceId" or b4 == "GameId" or b4 == "placeId" or b4 == "gameId" then
+            return u
+        end
+        local bS = t.registry[bh] or aT or "object"
+        local cP = aE(b4)
+        
+        -- Return Heartbeat proxy directly
+        if b4 == "Heartbeat" and bS:match("RunService") then
+            return bP.Heartbeat
+        end
+        
+        if t.property_store[bh] and t.property_store[bh][b4] ~= nil then
+            return t.property_store[bh][b4]
+        end
+        if bP[cP] then
+            local cQ, cR = bg()
+            t.registry[cQ] = bS .. "." .. cP
+            cR.__call = function(W, ...)
+                local bA = {...}
+                if bA[1] == bh or G(bA[1]) and bA[1] ~= cQ then
+                    table.remove(bA, 1)
+                end
+                return bP[cP](bh, table.unpack(bA))
+            end
+            cR.__index = function(W, cS)
+                if cS == F or cS == "__proxy_id" then
+                    return rawget(cQ, cS)
+                end
+                return bj(cS, false, cQ)
+            end
+            cR.__tostring = function()
+                return bS .. ":" .. cP
+            end
+            return cQ
+        end
+        if bS == "fenv" or bS == "getgenv" or bS == "_G" then
+            if b4 == "game" then
+                return game
+            end
+            if b4 == "workspace" then
+                return workspace
+            end
+            if b4 == "script" then
+                return script
+            end
+            if b4 == "Enum" then
+                return Enum
+            end
+            if _G[b4] ~= nil then
+                return _G[b4]
+            end
+            return nil
+        end
+        if b4 == "Parent" then
+            return t.parent_map[bh] or bj("Parent", false)
+        end
+        if b4 == "Name" then
+            return aT or "Object"
+        end
+        if b4 == "ClassName" then
+            return aT or "Instance"
+        end
+        if b4 == "LocalPlayer" then
+            local cT = bj("LocalPlayer", false, bh)
+            local _ = aW(cT, "LocalPlayer")
+            at(string.format("local %s = %s.LocalPlayer", _, bS))
+            return cT
+        end
+        if b4 == "PlayerGui" then
+            return bj("PlayerGui", false, bh)
+        end
+        if b4 == "Backpack" then
+            return bj("Backpack", false, bh)
+        end
+        if b4 == "PlayerScripts" then
+            return bj("PlayerScripts", false, bh)
+        end
+        if b4 == "UserId" then
+            return 1
+        end
+        if b4 == "DisplayName" then
+            return "Player"
+        end
+        if b4 == "AccountAge" then
+            return 1000
+        end
+        if b4 == "Team" then
+            return bj("Team", false, bh)
+        end
+        if b4 == "TeamColor" then
+            return BrickColor.new("White")
+        end
+        if b4 == "Character" then
+            local cT = bj("Character", false, bh)
+            if not t.registry[cT] then
+                local _ = aW(cT, "Character")
+                local bS = t.registry[bh] or "LocalPlayer"
+                at(string.format("local %s = %s.Character", _, bS))
+            end
+            return cT
+        end
+        if b4 == "Humanoid" then
+            local cU = bj("Humanoid", false, bh)
+            t.property_store[cU] = {Health = 100, MaxHealth = 100, WalkSpeed = 16, JumpPower = 50, JumpHeight = 7.2}
+            return cU
+        end
+        if b4 == "HumanoidRootPart" or b4 == "PrimaryPart" or b4 == "RootPart" then
+            local cV = bj("HumanoidRootPart", false, bh)
+            t.property_store[cV] = {Position = Vector3.new(0, 5, 0), CFrame = CFrame.new(0, 5, 0)}
+            return cV
+        end
+        local cW = {"Head", "Torso", "UpperTorso", "LowerTorso", "RightArm", "LeftArm", "RightLeg", "LeftLeg", "RightHand", "LeftHand", "RightFoot", "LeftFoot"}
+        for W, cr in ipairs(cW) do
+            if b4 == cr then
+                return bj(b4, false, bh)
+            end
+        end
+        if b4 == "Animator" then
+            return bj("Animator", false, bh)
+        end
+        if b4 == "CurrentCamera" or b4 == "Camera" then
+            local cX = bj("Camera", false, bh)
+            t.property_store[cX] = {CFrame = CFrame.new(0, 10, 0), FieldOfView = 70, ViewportSize = Vector2.new(1920, 1080)}
+            return cX
+        end
+        if b4 == "CameraType" then
+            return bj("Enum.CameraType.Custom", false)
+        end
+        if b4 == "CameraSubject" then
+            return bj("Humanoid", false, bh)
+        end
+        local cY = {Health = 100, MaxHealth = 100, WalkSpeed = 16, JumpPower = 50, JumpHeight = 7.2, HipHeight = 2, Transparency = 0, Mass = 1, Value = 0, TimePosition = 0, TimeLength = 1, Volume = 0.5, PlaybackSpeed = 1, Brightness = 1, Range = 60, Angle = 90, FieldOfView = 70, Size = 1, Thickness = 1, ZIndex = 1, LayoutOrder = 0}
+        if cY[b4] then
+            return bl(cY[b4])
+        end
+        local cZ = {Visible = true, Enabled = true, Anchored = false, CanCollide = true, Locked = false, Active = true, Draggable = false, Modal = false, Playing = false, Looped = false, IsPlaying = false, AutoPlay = false, Archivable = true, ClipsDescendants = false, RichText = false, TextWrapped = false, TextScaled = false, PlatformStand = false, AutoRotate = true, Sit = false}
+        if cZ[b4] ~= nil then
+            return cZ[b4]
+        end
+        if b4 == "AbsoluteSize" or b4 == "ViewportSize" then
+            return Vector2.new(1920, 1080)
+        end
+        if b4 == "AbsolutePosition" then
+            return Vector2.new(0, 0)
+        end
+        if b4 == "Position" then
+            if aT and (aT:match("Part") or aT:match("Model") or aT:match("Character") or aT:match("Root")) then
+                return Vector3.new(0, 5, 0)
+            end
+            return UDim2.new(0, 0, 0, 0)
+        end
+        if b4 == "Size" then
+            if aT and aT:match("Part") then
+                return Vector3.new(4, 1, 2)
+            end
+            return UDim2.new(1, 0, 1, 0)
+        end
+        if b4 == "CFrame" then
+            return CFrame.new(0, 5, 0)
+        end
+        if b4 == "Velocity" or b4 == "AssemblyLinearVelocity" then
+            return Vector3.new(0, 0, 0)
+        end
+        if b4 == "RotVelocity" or b4 == "AssemblyAngularVelocity" then
+            return Vector3.new(0, 0, 0)
+        end
+        if b4 == "Orientation" or b4 == "Rotation" then
+            return Vector3.new(0, 0, 0)
+        end
+        if b4 == "LookVector" then
+            return Vector3.new(0, 0, -1)
+        end
+        if b4 == "RightVector" then
+            return Vector3.new(1, 0, 0)
+        end
+        if b4 == "UpVector" then
+            return Vector3.new(0, 1, 0)
+        end
+        if b4 == "Color" or b4 == "Color3" or b4 == "BackgroundColor3" or b4 == "BorderColor3" or b4 == "TextColor3" or b4 == "PlaceholderColor3" or b4 == "ImageColor3" then
+            return Color3.new(1, 1, 1)
+        end
+        if b4 == "BrickColor" then
+            return BrickColor.new("Medium stone grey")
+        end
+        if b4 == "Material" then
+            return bj("Enum.Material.Plastic", false)
+        end
+        if b4 == "Hit" then
+            return CFrame.new(0, 0, -10)
+        end
+        if b4 == "Origin" then
+            return CFrame.new(0, 5, 0)
+        end
+        if b4 == "Target" then
+            return bj("Target", false, bh)
+        end
+        if b4 == "X" or b4 == "Y" then
+            return 0
+        end
+        if b4 == "UnitRay" then
+            return Ray.new(Vector3.new(0, 5, 0), Vector3.new(0, 0, -1))
+        end
+        if b4 == "ViewSizeX" then
+            return 1920
+        end
+        if b4 == "ViewSizeY" then
+            return 1080
+        end
+        if b4 == "Text" or b4 == "PlaceholderText" or b4 == "ContentText" or b4 == "Value" then
+            if s then
+                return s
+            end
+            if b4 == "Value" then
+                return "input"
+            end
+            return '"'
         end
         if b4 == "TextBounds" then
             return Vector2.new(0, 0)
@@ -1254,7 +1915,687 @@ bj = function(aQ, bO, bw)
             return 14
         end
         if b4 == "Image" or b4 == "ImageContent" then
-            return '"'\n        end\n        local c_ = {"Changed", "ChildAdded", "ChildRemoved", "DescendantAdded", "DescendantRemoving", "Touched", "TouchEnded", "InputBegan", "InputEnded", "InputChanged", "MouseButton1Click", "MouseButton1Down", "MouseButton1Up", "MouseButton2Click", "MouseButton2Down", "MouseButton2Up", "MouseEnter", "MouseLeave", "MouseMoved", "MouseWheelForward", "MouseWheelBackward", "Activated", "Deactivated", "FocusLost", "FocusGained", "Focused", "Heartbeat", "RenderStepped", "Stepped", "CharacterAdded", "CharacterRemoving", "CharacterAppearanceLoaded", "PlayerAdded", "PlayerRemoving", "AncestryChanged", "AttributeChanged", "Died", "FreeFalling", "GettingUp", "Jumping", "Running", "Seated", "Swimming", "StateChanged", "HealthChanged", "MoveToFinished", "OnClientEvent", "OnServerEvent", "OnClientInvoke", "OnServerInvoke", "Completed", "DidLoop", "Stopped", "Button1Down", "Button1Up", "Button2Down", "Button2Up", "Idle", "Move", "TextChanged", "ReturnPressedFromOnScreenKeyboard", "Triggered", "TriggerEnded"}\n        for W, d0 in ipairs(c_) do\n            if b4 == d0 then\n                local cg = bj(bS .. "." .. b4, false, bh)\n                t.registry[cg] = bS .. "." .. b4\n                return cg\n            end\n        end\n        if bS:match("^Enum") then\n            local d1 = bS .. "." .. cP\n            local d2 = bj(d1, false)\n            t.registry[d2] = d1\n            return d2\n        end\n        return bk(cP, bh)\n    end\n\n    bi.__newindex = function(b2, b4, b5)\n        if b4 == F or b4 == "__proxy_id" then\n            rawset(b2, b4, b5)\n            return\n        end\n        local bS = t.registry[bh] or aT or "object"\n        local cP = aE(b4)\n        t.property_store[bh] = t.property_store[bh] or {}\n        t.property_store[bh][b4] = b5\n        if b4 == "Parent" and G(b5) then\n            t.parent_map[bh] = b5\n        end\n        at(string.format("%s.%s = %s", bS, cP, aZ(b5)))\n    end\n\n    bi.__call = function(b2, ...)\n        local bS = t.registry[bh] or aT or "func"\n        if bS == "fenv" or bS == "getgenv" or bS:match("env") then\n            return bh\n        end\n        local bA = {...}\n        local c5 = {}\n        for W, b5 in ipairs(bA) do\n            table.insert(c5, aZ(b5))\n        end\n        local z = bj("result", false)\n        local _ = aW(z, "result")\n        at(string.format("local %s = %s(%s)", _, bS, table.concat(c5, ", ")))\n        return z\n    end\n\n    local function d3(d4)\n        local function d5(bo, aa)\n            local bh, bi = bg()\n            local d6 = "0"\n            if bo ~= nil then\n                d6 = t.registry[bo] or aZ(bo)\n            end\n            local d7 = "0"\n            if aa ~= nil then\n                d7 = t.registry[aa] or aZ(aa)\n            end\n            local d8 = "(" .. d6 .. " " .. d4 .. " " .. d7 .. ")"\n            t.registry[bh] = d8\n            bi.__tostring = function()\n                return d8\n            end\n            bi.__call = function()\n                return bh\n            end\n            bi.__index = function(W, b4)\n                if b4 == F or b4 == "__proxy_id" then\n                    return rawget(bh, b4)\n                end\n                return bj(d8 .. "." .. aE(b4), false)\n            end\n            bi.__add = d3("+")\n            bi.__sub = d3("-")\n            bi.__mul = d3("*")\n            bi.__div = d3("/")\n            bi.__mod = d3("%")\n            bi.__pow = d3("^")\n            bi.__concat = d3("..")\n            bi.__eq = function()\n                return false\n            end\n            bi.__lt = function()\n                return false\n            end\n            bi.__le = function()\n                return false\n            end\n            return bh\n        end\n        return d5\n    end\n\n    bi.__add = d3("+")\n    bi.__sub = d3("-")\n    bi.__mul = d3("*")\n    bi.__div = d3("/")\n    bi.__mod = d3("%")\n    bi.__pow = d3("^")\n    bi.__concat = d3("..")\n    bi.__eq = function()\n        return false\n    end\n    bi.__lt = function()\n        return false\n    end\n    bi.__le = function()\n        return false\n    end\n    bi.__unm = function(bo)\n        local z, d9 = bg()\n        t.registry[z] = "(-" .. (t.registry[bo] or aZ(bo)) .. ")"\n        d9.__tostring = function()\n            return t.registry[z]\n        end\n        return z\n    end\n    bi.__len = function()\n        return 0\n    end\n    bi.__tostring = function()\n        return t.registry[bh] or aT or "Object"\n    end\n    bi.__pairs = function()\n        return function()\n            return nil\n        end, bh, nil\n    end\n    bi.__ipairs = bi.__pairs\n\n    return bh\nend\n\nlocal function da(am, db)\n    local dc = {}\n    local dd = {}\n    dd.__index = function(b2, b4)\n        if b4 == "new" or db and db[b4] then\n            return function(...)\n                local bA = {...}\n                local c5 = {}\n                for W, b5 in ipairs(bA) do\n                    table.insert(c5, aZ(b5))\n                end\n                local d8 = am .. "." .. b4 .. "(" .. table.concat(c5, ", ") .. ")"\n                local bh, de = bg()\n                t.registry[bh] = d8\n                de.__tostring = function()\n                    return d8\n                end\n                de.__index = function(W, bG)\n                    if bG == F or bG == "__proxy_id" then\n                        return rawget(bh, bG)\n                    end\n                    if bG == "X" or bG == "Y" or bG == "Z" or bG == "W" then\n                        return 0\n                    end\n                    if bG == "Magnitude" then\n                        return 0\n                    end\n                    if bG == "Unit" then\n                        return bh\n                    end\n                    if bG == "Position" then\n                        return bh\n                    end\n                    if bG == "CFrame" then\n                        return bh\n                    end\n                    if bG == "LookVector" or bG == "RightVector" or bG == "UpVector" then\n                        return bh\n                    end\n                    if bG == "Rotation" then\n                        return bh\n                    end\n                    if bG == "R" or bG == "G" or bG == "B" then\n                        return 1\n                    end\n                    if bG == "Width" or bG == "Height" then\n                        return UDim.new(0, 0)\n                    end\n                    if bG == "Min" or bG == "Max" then\n                        return 0\n                    end\n                    if bG == "Scale" or bG == "Offset" then\n                        return 0\n                    end\n                    if bG == "p" then\n                        return bh\n                    end\n                    return 0\n                end\n                local function df(Z)\n                    return function(bo, aa)\n                        local dg, dh = bg()\n                        local O = "(" .. (t.registry[bo] or aZ(bo)) .. " " .. Z .. " " .. (t.registry[aa] or aZ(aa)) .. ")"\n                        t.registry[dg] = O\n                        dh.__tostring = function()\n                            return O\n                        end\n                        dh.__index = de.__index\n                        dh.__add = df("+")\n                        dh.__sub = df("-")\n                        dh.__mul = df("*")\n                        dh.__div = df("/")\n                        return dg\n                    end\n                end\n                de.__add = df("+")\n                de.__sub = df("-")\n                de.__mul = df("*")\n                de.__div = df("/")\n                de.__unm = function(bo)\n                    local dg, dh = bg()\n                    t.registry[dg] = "(-" .. (t.registry[bo] or aZ(bo)) .. ")"\n                    dh.__tostring = function()\n                        return t.registry[dg]\n                    end\n                    return dg\n                end\n                de.__eq = function()\n                    return false\n                end\n                return bh\n            end\n        end\n        return nil\n    end\n    dd.__call = function(b2, ...)\n        return b2.new(...)\n    end\n    return setmetatable(dc, dd)\nend\n\nVector3 = da("Vector3", {new = true, zero = true, one = true})\nVector2 = da("Vector2", {new = true, zero = true, one = true})\nUDim = da("UDim", {new = true})\nUDim2 = da("UDim2", {new = true, fromScale = true, fromOffset = true})\nCFrame = da("CFrame", {new = true, Angles = true, lookAt = true, fromEulerAnglesXYZ = true, fromEulerAnglesYXZ = true, fromAxisAngle = true, fromMatrix = true, fromOrientation = true, identity = true})\nColor3 = da("Color3", {new = true, fromRGB = true, fromHSV = true, fromHex = true})\nBrickColor = da("BrickColor", {new = true, random = true, White = true, Black = true, Red = true, Blue = true, Green = true, Yellow = true, palette = true})\nTweenInfo = da("TweenInfo", {new = true})\nRect = da("Rect", {new = true})\nRegion3 = da("Region3", {new = true})\nRegion3int16 = da("Region3int16", {new = true})\nRay = da("Ray", {new = true})\nNumberRange = da("NumberRange", {new = true})\nNumberSequence = da("NumberSequence", {new = true})\nNumberSequenceKeypoint = da("NumberSequenceKeypoint", {new = true})\nColorSequence = da("ColorSequence", {new = true})\nColorSequenceKeypoint = da("ColorSequenceKeypoint", {new = true})\nPhysicalProperties = da("PhysicalProperties", {new = true})\nFont = da("Font", {new = true, fromEnum = true, fromName = true, fromId = true})\nRaycastParams = da("RaycastParams", {new = true})\nOverlapParams = da("OverlapParams", {new = true})\nPathWaypoint = da("PathWaypoint", {new = true})\nAxes = da("Axes", {new = true})\nFaces = da("Faces", {new = true})\nVector3int16 = da("Vector3int16", {new = true})\nVector2int16 = da("Vector2int16", {new = true})\nCatalogSearchParams = da("CatalogSearchParams", {new = true})\nDateTime = da("DateTime", {now = true, fromUnixTimestamp = true, fromUnixTimestampMillis = true, fromIsoDate = true})\n\nRandom = {new = function(di)\n    local x = {}\n    function x:NextNumber(dj, dk)\n        return (dj or 0) + 0.5 * ((dk or 1) - (dj or 0))\n    end\n    function x:NextInteger(dj, dk)\n        return math.floor((dj or 1) + 0.5 * ((dk or 100) - (dj or 1)))\n    end\n    function x:NextUnitVector()\n        return Vector3.new(0.577, 0.577, 0.577)\n    end\n    function x:Shuffle(dl)\n        return dl\n    end\n    function x:Clone()\n        return Random.new()\n    end\n    return x\nend}\n\nsetmetatable(Random, {__call = function(b2, di)\n    return b2.new(di)\nend})\n\nEnum = bj("Enum", true)\nlocal dm = a.getmetatable(Enum)\ndm.__index = function(b2, b4)\n    if b4 == F or b4 == "__proxy_id" then\n        return rawget(b2, b4)\n    end\n    local dn = bj("Enum." .. aE(b4), false)\n    t.registry[dn] = "Enum." .. aE(b4)\n    return dn\nend\n\nInstance = {new = function(bX, bS)\n    local bY = aE(bX)\n    local x = bj(bY, false)\n    local _ = aW(x, bY)\n    if bS then\n        local dp = t.registry[bS] or aZ(bS)\n        at(string.format("local %s = Instance.new(%s, %s)", _, aH(bY), dp))\n        t.parent_map[x] = bS\n    else\n        at(string.format("local %s = Instance.new(%s)", _, aH(bY)))\n    end\n    return x\nend}\n\ngame = bj("game", true)\nworkspace = bj("workspace", true)\nscript = bj("script", true)\nt.property_store[script] = {Name = "DumpedScript", Parent = game, ClassName = "LocalScript"}\n\n-- ENHANCED: Task library with timing bypass\ntask = {\n    wait = function(dq)\n        if dq then\n            at(string.format("task.wait(%s)", aZ(dq)))\n        else\n            at("task.wait()")\n        end\n        t.fake_time = t.fake_time + (dq or 0.03)\n        return dq or 0.03, p.clock()\n    end,\n    spawn = function(dr, ...)\n        local bA = {...}\n        at("task.spawn(function()")\n        t.indent = t.indent + 1\n        if j(dr) == "function" then\n            xpcall(function()\n                dr(table.unpack(bA))\n            end, function(ds)\n                at("-- [Error in spawn] " .. tostring(ds))\n            end)\n        end\n        while t.pending_iterator do\n            t.indent = t.indent - 1\n            at("end")\n            t.pending_iterator = false\n        end\n        t.indent = t.indent - 1\n        at("end)")\n    end,\n    delay = function(dq, dr, ...)\n        local bA = {...}\n        at(string.format("task.delay(%s, function()", aZ(dq or 0)))\n        t.indent = t.indent + 1\n        if j(dr) == "function" then\n            xpcall(function()\n                dr(table.unpack(bA))\n            end, function() end)\n        end\n        while t.pending_iterator do\n            t.indent = t.indent - 1\n            at("end")\n            t.pending_iterator = false\n        end\n        t.indent = t.indent - 1\n        at("end)")\n    end,\n    defer = function(dr, ...)\n        local bA = {...}\n        at("task.defer(function()")\n        t.indent = t.indent + 1\n        if j(dr) == "function" then\n            xpcall(function()\n                dr(table.unpack(bA))\n            end, function() end)\n        end\n        t.indent = t.indent - 1\n        at("end)")\n    end,\n    cancel = function(dt)\n        at("task.cancel(thread)")\n    end,\n    synchronize = function()\n        at("task.synchronize()")\n    end,\n    desynchronize = function()\n        at("task.desynchronize()")\n    end\n}\n\n-- ENHANCED: Custom _G.os table for handling large files\n_G.os = {\n    clock = function() \n        t.fake_time = t.fake_time + 0.001\n        return t.fake_time \n    end,\n    time = function(t) return p.time(t) end,\n    date = function(format, time) return p.date(format, time) end,\n    difftime = function(t2, t1) return p.difftime(t2, t1) end,\n    execute = function(cmd)\n        at(string.format("os.execute(%s)", aZ(cmd)))\n        at("-- < os.execute > was blocked")\n        local result = bj("executeResult", false)\n        t.registry[result] = "0"\n        return 0, "exit", 0\n    end,\n    remove = function(filename)\n        at(string.format("os.remove(%s)", aH(filename)))\n        return true\n    end,\n    rename = function(oldname, newname)\n        at(string.format("os.rename(%s, %s)", aH(oldname), aH(newname)))\n        return true\n    end,\n    exit = function(code, close)\n        at(string.format("os.exit(%s%s)", code or "nil", close and ", true" or ""))\n    end,\n    tmpname = function()\n        local tmpname = "/tmp/temp_" .. tostring(math.random(100000, 999999))\n        at(string.format("os.tmpname() -- returned %s", aH(tmpname)))\n        return tmpname\n    end,\n    getenv = function(varname)\n        at(string.format("os.getenv(%s)", aH(varname)))\n        local fakeEnv = {\n            PATH = "/usr/bin:/bin",\n            HOME = "/home/user",\n            USER = "user",\n            TEMP = "/tmp",\n            TMP = "/tmp"\n        }\n        return fakeEnv[varname] or nil\n    end,\n    setlocale = function(locale, category)\n        if category then\n            at(string.format("os.setlocale(%s, %s)", aZ(locale), aH(category)))\n        else\n            at(string.format("os.setlocale(%s)", aZ(locale)))\n        end\n        return "C"\n    end\n}\n\n-- ENHANCED: wait function with timing bypass\nwait = function(dq)\n    if dq then\n        at(string.format("wait(%s)", aZ(dq)))\n    else\n        at("wait()")\n    end\n    t.fake_time = t.fake_time + (dq or 0.03)\n    return dq or 0.03, p.clock()\nend\n\ndelay = function(dq, dr)\n    at(string.format("delay(%s, function()", aZ(dq or 0)))\n    t.indent = t.indent + 1\n    if j(dr) == "function" then\n        xpcall(dr, function() end)\n    end\n    t.indent = t.indent - 1\n    at("end)")\nend\n\nspawn = function(dr)\n    at("spawn(function())")\n    t.indent = t.indent + 1\n    if j(dr) == "function" then\n        xpcall(dr, function() end)\n    end\n    t.indent = t.indent - 1\n    at("end)")\nend\n\n-- ENHANCED: tick and time with fake time\ntick = function()\n    t.fake_time = t.fake_time + 0.001\n    return t.fake_time\nend\n\ntime = function()\n    return p.clock()\nend\n\nelapsedTime = function()\n    return p.clock()\nend\n\nlocal du = {}\nlocal dv = 999999999\n\nlocal function dw(bG, dx)\n    return dx\nend\n\nlocal function dy()\n    local b2 = {}\n    setmetatable(b2, {\n        __call = function(self, ...)\n            return self\n        end,\n        __index = function(self, b4)\n            if _G[b4] ~= nil then\n                return dw(b4, _G[b4])\n            end\n            if b4 == "game" then\n                return game\n            end\n            if b4 == "workspace" then\n                return workspace\n            end\n            if b4 == "script" then\n                return script\n            end\n            if b4 == "Enum" then\n                return Enum\n            end\n            return nil\n        end,\n        __newindex = function(self, b4, b5)\n            _G[b4] = b5\n            du[b4] = 0\n            at(string.format("_G.%s = %s", aE(b4), aZ(b5)))\n        end\n    })\n    return b2\nend\n\n_G.G = dy()\n_G.g = dy()\n_G.ENV = dy()\n_G.env = dy()\n_G.E = dy()\n_G.e = dy()\n_G.L = dy()\n_G.l = dy()\n_G.F = dy()\n_G.f = dy()\n\nlocal function dz(dA)\n    local bh = {}\n    local dd = {}\n    local dB = {\n        "hookfunction",\n        "hookmetamethod",\n        "newcclosure",\n        "replaceclosure",\n        "checkcaller",\n        "iscclosure",\n        "islclosure",\n        "getrawmetatable",\n        "setreadonly",\n        "make_writeable",\n        "getrenv",\n        "getgc",\n        "getinstances"\n    }\n    local function dC(dD, bG)\n        local bd = aE(bG)\n        if bd:match("^[%a_][%w_]*$") then\n            if dD then\n                return dD .. "." .. bd\n            end\n            return bd\n        else\n            local aI = bd:gsub("'", "\\\'")\n            if dD then\n                return dD .. "['" .. aI .. "']"\n            end\n            return "['" .. aI .. "']"\n        end\n    end\n    dd.__index = function(b2, b4)\n        for W, dE in ipairs(dB) do\n            if b4 == dE then\n                return nil\n            end\n        end\n        local dF = dC(dA, b4)\n        return dz(dF)\n    end\n    dd.__newindex = function(b2, b4, b5)\n        local dG = dC(dA, b4)\n        at(string.format("getgenv().%s = %s", dG, aZ(b5)))\n    end\n    dd.__call = function(b2, ...)\n        return b2\n    end\n    dd.__pairs = function()\n        return function()\n            return nil\n        end, nil, nil\n    end\n    return setmetatable(bh, dd)\nend\n\nlocal exploit_funcs = {\n    getgenv = function()\n        return dz(nil)\n    end,\n    getrenv = function()\n        return bj("getrenv()", false)\n    end,\n    getfenv = function(dH)\n        return _G\n    end,\n    setfenv = function(dI, dJ)\n        if j(dI) ~= "function" then\n            return\n        end\n        local L = 1\n        while true do\n            local am = debug.getupvalue(dI, L)\n            if am == "_ENV" then\n                debug.setupvalue(dI, L, dJ)\n                break\n            elseif not am then\n                break\n            end\n            L = L + 1\n        end\n        return dI\n    end,\n    hookfunction = function(dK, dL)\n        return dK\n    end,\n    hookmetamethod = function(x, dM, dN)\n        return function() end\n    end,\n    getrawmetatable = function(x)\n        if G(x) then\n            return a.getmetatable(x)\n        end\n        return {}\n    end,\n    setrawmetatable = function(x, dd)\n        return x\n    end,\n    getnamecallmethod = function()\n        return "__namecall"\n    end,\n    setnamecallmethod = function(dM)\n    end,\n    checkcaller = function()\n        return true\n    end,\n    islclosure = function(dr)\n        return j(dr) == "function"\n    end,\n    iscclosure = function(dr)\n        return false\n    end,\n    newcclosure = function(dr)\n        return dr\n    end,\n    clonefunction = function(dr)\n        return dr\n    end,\n    request = function(dO)\n        at(string.format("request(%s)", aZ(dO)))\n        table.insert(t.string_refs, {value = dO.Url or dO.url or "unknown", hint = "HTTP Request"})\n        return {Success = true, StatusCode = 200, StatusMessage = "OK", Headers = {}, Body = "{}"}\n    end,\n    http_request = function(dO)\n        return exploit_funcs.request(dO)\n    end,\n    syn = {request = function(dO)\n        return exploit_funcs.request(dO)\n    end},\n    http = {request = function(dO)\n        return exploit_funcs.request(dO)\n    end},\n    HttpPost = function(cI, cJ)\n        at(string.format("HttpPost(%s, %s)", aE(cI), aE(cJ)))\n        return "{}"\n    end,\n    setclipboard = function(cJ)\n        at(string.format("setclipboard(%s)", aZ(cJ)))\n    end,\n    getclipboard = function()\n        return '"'
+            return '"'
+        end
+        local c_ = {"Changed", "ChildAdded", "ChildRemoved", "DescendantAdded", "DescendantRemoving", "Touched", "TouchEnded", "InputBegan", "InputEnded", "InputChanged", "MouseButton1Click", "MouseButton1Down", "MouseButton1Up", "MouseButton2Click", "MouseButton2Down", "MouseButton2Up", "MouseEnter", "MouseLeave", "MouseMoved", "MouseWheelForward", "MouseWheelBackward", "Activated", "Deactivated", "FocusLost", "FocusGained", "Focused", "Heartbeat", "RenderStepped", "Stepped", "CharacterAdded", "CharacterRemoving", "CharacterAppearanceLoaded", "PlayerAdded", "PlayerRemoving", "AncestryChanged", "AttributeChanged", "Died", "FreeFalling", "GettingUp", "Jumping", "Running", "Seated", "Swimming", "StateChanged", "HealthChanged", "MoveToFinished", "OnClientEvent", "OnServerEvent", "OnClientInvoke", "OnServerInvoke", "Completed", "DidLoop", "Stopped", "Button1Down", "Button1Up", "Button2Down", "Button2Up", "Idle", "Move", "TextChanged", "ReturnPressedFromOnScreenKeyboard", "Triggered", "TriggerEnded"}
+        for W, d0 in ipairs(c_) do
+            if b4 == d0 then
+                local cg = bj(bS .. "." .. b4, false, bh)
+                t.registry[cg] = bS .. "." .. b4
+                return cg
+            end
+        end
+        if bS:match("^Enum") then
+            local d1 = bS .. "." .. cP
+            local d2 = bj(d1, false)
+            t.registry[d2] = d1
+            return d2
+        end
+        return bk(cP, bh)
+    end
+
+    bi.__newindex = function(b2, b4, b5)
+        if b4 == F or b4 == "__proxy_id" then
+            rawset(b2, b4, b5)
+            return
+        end
+        local bS = t.registry[bh] or aT or "object"
+        local cP = aE(b4)
+        t.property_store[bh] = t.property_store[bh] or {}
+        t.property_store[bh][b4] = b5
+        if b4 == "Parent" and G(b5) then
+            t.parent_map[bh] = b5
+        end
+        at(string.format("%s.%s = %s", bS, cP, aZ(b5)))
+    end
+
+    bi.__call = function(b2, ...)
+        local bS = t.registry[bh] or aT or "func"
+        if bS == "fenv" or bS == "getgenv" or bS:match("env") then
+            return bh
+        end
+        local bA = {...}
+        local c5 = {}
+        for W, b5 in ipairs(bA) do
+            table.insert(c5, aZ(b5))
+        end
+        local z = bj("result", false)
+        local _ = aW(z, "result")
+        at(string.format("local %s = %s(%s)", _, bS, table.concat(c5, ", ")))
+        return z
+    end
+
+    local function d3(d4)
+        local function d5(bo, aa)
+            local bh, bi = bg()
+            local d6 = "0"
+            if bo ~= nil then
+                d6 = t.registry[bo] or aZ(bo)
+            end
+            local d7 = "0"
+            if aa ~= nil then
+                d7 = t.registry[aa] or aZ(aa)
+            end
+            local d8 = "(" .. d6 .. " " .. d4 .. " " .. d7 .. ")"
+            t.registry[bh] = d8
+            bi.__tostring = function()
+                return d8
+            end
+            bi.__call = function()
+                return bh
+            end
+            bi.__index = function(W, b4)
+                if b4 == F or b4 == "__proxy_id" then
+                    return rawget(bh, b4)
+                end
+                return bj(d8 .. "." .. aE(b4), false)
+            end
+            bi.__add = d3("+")
+            bi.__sub = d3("-")
+            bi.__mul = d3("*")
+            bi.__div = d3("/")
+            bi.__mod = d3("%")
+            bi.__pow = d3("^")
+            bi.__concat = d3("..")
+            bi.__eq = function()
+                return false
+            end
+            bi.__lt = function()
+                return false
+            end
+            bi.__le = function()
+                return false
+            end
+            return bh
+        end
+        return d5
+    end
+
+    bi.__add = d3("+")
+    bi.__sub = d3("-")
+    bi.__mul = d3("*")
+    bi.__div = d3("/")
+    bi.__mod = d3("%")
+    bi.__pow = d3("^")
+    bi.__concat = d3("..")
+    bi.__eq = function()
+        return false
+    end
+    bi.__lt = function()
+        return false
+    end
+    bi.__le = function()
+        return false
+    end
+    bi.__unm = function(bo)
+        local z, d9 = bg()
+        t.registry[z] = "(-" .. (t.registry[bo] or aZ(bo)) .. ")"
+        d9.__tostring = function()
+            return t.registry[z]
+        end
+        return z
+    end
+    bi.__len = function()
+        return 0
+    end
+    bi.__tostring = function()
+        return t.registry[bh] or aT or "Object"
+    end
+    bi.__pairs = function()
+        return function()
+            return nil
+        end, bh, nil
+    end
+    bi.__ipairs = bi.__pairs
+
+    return bh
+end
+
+local function da(am, db)
+    local dc = {}
+    local dd = {}
+    dd.__index = function(b2, b4)
+        if b4 == "new" or db and db[b4] then
+            return function(...)
+                local bA = {...}
+                local c5 = {}
+                for W, b5 in ipairs(bA) do
+                    table.insert(c5, aZ(b5))
+                end
+                local d8 = am .. "." .. b4 .. "(" .. table.concat(c5, ", ") .. ")"
+                local bh, de = bg()
+                t.registry[bh] = d8
+                de.__tostring = function()
+                    return d8
+                end
+                de.__index = function(W, bG)
+                    if bG == F or bG == "__proxy_id" then
+                        return rawget(bh, bG)
+                    end
+                    if bG == "X" or bG == "Y" or bG == "Z" or bG == "W" then
+                        return 0
+                    end
+                    if bG == "Magnitude" then
+                        return 0
+                    end
+                    if bG == "Unit" then
+                        return bh
+                    end
+                    if bG == "Position" then
+                        return bh
+                    end
+                    if bG == "CFrame" then
+                        return bh
+                    end
+                    if bG == "LookVector" or bG == "RightVector" or bG == "UpVector" then
+                        return bh
+                    end
+                    if bG == "Rotation" then
+                        return bh
+                    end
+                    if bG == "R" or bG == "G" or bG == "B" then
+                        return 1
+                    end
+                    if bG == "Width" or bG == "Height" then
+                        return UDim.new(0, 0)
+                    end
+                    if bG == "Min" or bG == "Max" then
+                        return 0
+                    end
+                    if bG == "Scale" or bG == "Offset" then
+                        return 0
+                    end
+                    if bG == "p" then
+                        return bh
+                    end
+                    return 0
+                end
+                local function df(Z)
+                    return function(bo, aa)
+                        local dg, dh = bg()
+                        local O = "(" .. (t.registry[bo] or aZ(bo)) .. " " .. Z .. " " .. (t.registry[aa] or aZ(aa)) .. ")"
+                        t.registry[dg] = O
+                        dh.__tostring = function()
+                            return O
+                        end
+                        dh.__index = de.__index
+                        dh.__add = df("+")
+                        dh.__sub = df("-")
+                        dh.__mul = df("*")
+                        dh.__div = df("/")
+                        return dg
+                    end
+                end
+                de.__add = df("+")
+                de.__sub = df("-")
+                de.__mul = df("*")
+                de.__div = df("/")
+                de.__unm = function(bo)
+                    local dg, dh = bg()
+                    t.registry[dg] = "(-" .. (t.registry[bo] or aZ(bo)) .. ")"
+                    dh.__tostring = function()
+                        return t.registry[dg]
+                    end
+                    return dg
+                end
+                de.__eq = function()
+                    return false
+                end
+                return bh
+            end
+        end
+        return nil
+    end
+    dd.__call = function(b2, ...)
+        return b2.new(...)
+    end
+    return setmetatable(dc, dd)
+end
+
+Vector3 = da("Vector3", {new = true, zero = true, one = true})
+Vector2 = da("Vector2", {new = true, zero = true, one = true})
+UDim = da("UDim", {new = true})
+UDim2 = da("UDim2", {new = true, fromScale = true, fromOffset = true})
+CFrame = da("CFrame", {new = true, Angles = true, lookAt = true, fromEulerAnglesXYZ = true, fromEulerAnglesYXZ = true, fromAxisAngle = true, fromMatrix = true, fromOrientation = true, identity = true})
+Color3 = da("Color3", {new = true, fromRGB = true, fromHSV = true, fromHex = true})
+BrickColor = da("BrickColor", {new = true, random = true, White = true, Black = true, Red = true, Blue = true, Green = true, Yellow = true, palette = true})
+TweenInfo = da("TweenInfo", {new = true})
+Rect = da("Rect", {new = true})
+Region3 = da("Region3", {new = true})
+Region3int16 = da("Region3int16", {new = true})
+Ray = da("Ray", {new = true})
+NumberRange = da("NumberRange", {new = true})
+NumberSequence = da("NumberSequence", {new = true})
+NumberSequenceKeypoint = da("NumberSequenceKeypoint", {new = true})
+ColorSequence = da("ColorSequence", {new = true})
+ColorSequenceKeypoint = da("ColorSequenceKeypoint", {new = true})
+PhysicalProperties = da("PhysicalProperties", {new = true})
+Font = da("Font", {new = true, fromEnum = true, fromName = true, fromId = true})
+RaycastParams = da("RaycastParams", {new = true})
+OverlapParams = da("OverlapParams", {new = true})
+PathWaypoint = da("PathWaypoint", {new = true})
+Axes = da("Axes", {new = true})
+Faces = da("Faces", {new = true})
+Vector3int16 = da("Vector3int16", {new = true})
+Vector2int16 = da("Vector2int16", {new = true})
+CatalogSearchParams = da("CatalogSearchParams", {new = true})
+DateTime = da("DateTime", {now = true, fromUnixTimestamp = true, fromUnixTimestampMillis = true, fromIsoDate = true})
+
+Random = {new = function(di)
+    local x = {}
+    function x:NextNumber(dj, dk)
+        return (dj or 0) + 0.5 * ((dk or 1) - (dj or 0))
+    end
+    function x:NextInteger(dj, dk)
+        return math.floor((dj or 1) + 0.5 * ((dk or 100) - (dj or 1)))
+    end
+    function x:NextUnitVector()
+        return Vector3.new(0.577, 0.577, 0.577)
+    end
+    function x:Shuffle(dl)
+        return dl
+    end
+    function x:Clone()
+        return Random.new()
+    end
+    return x
+end}
+
+setmetatable(Random, {__call = function(b2, di)
+    return b2.new(di)
+end})
+
+Enum = bj("Enum", true)
+local dm = a.getmetatable(Enum)
+dm.__index = function(b2, b4)
+    if b4 == F or b4 == "__proxy_id" then
+        return rawget(b2, b4)
+    end
+    local dn = bj("Enum." .. aE(b4), false)
+    t.registry[dn] = "Enum." .. aE(b4)
+    return dn
+end
+
+Instance = {new = function(bX, bS)
+    local bY = aE(bX)
+    local x = bj(bY, false)
+    local _ = aW(x, bY)
+    if bS then
+        local dp = t.registry[bS] or aZ(bS)
+        at(string.format("local %s = Instance.new(%s, %s)", _, aH(bY), dp))
+        t.parent_map[x] = bS
+    else
+        at(string.format("local %s = Instance.new(%s)", _, aH(bY)))
+    end
+    return x
+end}
+
+game = bj("game", true)
+workspace = bj("workspace", true)
+script = bj("script", true)
+t.property_store[script] = {Name = "DumpedScript", Parent = game, ClassName = "LocalScript"}
+
+-- ENHANCED: Task library with timing bypass
+task = {
+    wait = function(dq)
+        if dq then
+            at(string.format("task.wait(%s)", aZ(dq)))
+        else
+            at("task.wait()")
+        end
+        t.fake_time = t.fake_time + (dq or 0.03)
+        return dq or 0.03, p.clock()
+    end,
+    spawn = function(dr, ...)
+        local bA = {...}
+        at("task.spawn(function()")
+        t.indent = t.indent + 1
+        if j(dr) == "function" then
+            xpcall(function()
+                dr(table.unpack(bA))
+            end, function(ds)
+                at("-- [Error in spawn] " .. tostring(ds))
+            end)
+        end
+        while t.pending_iterator do
+            t.indent = t.indent - 1
+            at("end")
+            t.pending_iterator = false
+        end
+        t.indent = t.indent - 1
+        at("end)")
+    end,
+    delay = function(dq, dr, ...)
+        local bA = {...}
+        at(string.format("task.delay(%s, function()", aZ(dq or 0)))
+        t.indent = t.indent + 1
+        if j(dr) == "function" then
+            xpcall(function()
+                dr(table.unpack(bA))
+            end, function() end)
+        end
+        while t.pending_iterator do
+            t.indent = t.indent - 1
+            at("end")
+            t.pending_iterator = false
+        end
+        t.indent = t.indent - 1
+        at("end)")
+    end,
+    defer = function(dr, ...)
+        local bA = {...}
+        at("task.defer(function()")
+        t.indent = t.indent + 1
+        if j(dr) == "function" then
+            xpcall(function()
+                dr(table.unpack(bA))
+            end, function() end)
+        end
+        t.indent = t.indent - 1
+        at("end)")
+    end,
+    cancel = function(dt)
+        at("task.cancel(thread)")
+    end,
+    synchronize = function()
+        at("task.synchronize()")
+    end,
+    desynchronize = function()
+        at("task.desynchronize()")
+    end
+}
+
+-- ENHANCED: Custom _G.os table for handling large files
+_G.os = {
+    clock = function() 
+        t.fake_time = t.fake_time + 0.001
+        return t.fake_time 
+    end,
+    time = function(t) return p.time(t) end,
+    date = function(format, time) return p.date(format, time) end,
+    difftime = function(t2, t1) return p.difftime(t2, t1) end,
+    execute = function(cmd)
+        at(string.format("os.execute(%s)", aZ(cmd)))
+        at("-- < os.execute > was blocked")
+        local result = bj("executeResult", false)
+        t.registry[result] = "0"
+        return 0, "exit", 0
+    end,
+    remove = function(filename)
+        at(string.format("os.remove(%s)", aH(filename)))
+        return true
+    end,
+    rename = function(oldname, newname)
+        at(string.format("os.rename(%s, %s)", aH(oldname), aH(newname)))
+        return true
+    end,
+    exit = function(code, close)
+        at(string.format("os.exit(%s%s)", code or "nil", close and ", true" or ""))
+    end,
+    tmpname = function()
+        local tmpname = "/tmp/temp_" .. tostring(math.random(100000, 999999))
+        at(string.format("os.tmpname() -- returned %s", aH(tmpname)))
+        return tmpname
+    end,
+    getenv = function(varname)
+        at(string.format("os.getenv(%s)", aH(varname)))
+        local fakeEnv = {
+            PATH = "/usr/bin:/bin",
+            HOME = "/home/user",
+            USER = "user",
+            TEMP = "/tmp",
+            TMP = "/tmp"
+        }
+        return fakeEnv[varname] or nil
+    end,
+    setlocale = function(locale, category)
+        if category then
+            at(string.format("os.setlocale(%s, %s)", aZ(locale), aH(category)))
+        else
+            at(string.format("os.setlocale(%s)", aZ(locale)))
+        end
+        return "C"
+    end
+}
+
+-- ENHANCED: wait function with timing bypass
+wait = function(dq)
+    if dq then
+        at(string.format("wait(%s)", aZ(dq)))
+    else
+        at("wait()")
+    end
+    t.fake_time = t.fake_time + (dq or 0.03)
+    return dq or 0.03, p.clock()
+end
+
+delay = function(dq, dr)
+    at(string.format("delay(%s, function()", aZ(dq or 0)))
+    t.indent = t.indent + 1
+    if j(dr) == "function" then
+        xpcall(dr, function() end)
+    end
+    t.indent = t.indent - 1
+    at("end)")
+end
+
+spawn = function(dr)
+    at("spawn(function())")
+    t.indent = t.indent + 1
+    if j(dr) == "function" then
+        xpcall(dr, function() end)
+    end
+    t.indent = t.indent - 1
+    at("end)")
+end
+
+-- ENHANCED: tick and time with fake time
+tick = function()
+    t.fake_time = t.fake_time + 0.001
+    return t.fake_time
+end
+
+time = function()
+    return p.clock()
+end
+
+elapsedTime = function()
+    return p.clock()
+end
+
+local du = {}
+local dv = 999999999
+
+local function dw(bG, dx)
+    return dx
+end
+
+local function dy()
+    local b2 = {}
+    setmetatable(b2, {
+        __call = function(self, ...)
+            return self
+        end,
+        __index = function(self, b4)
+            if _G[b4] ~= nil then
+                return dw(b4, _G[b4])
+            end
+            if b4 == "game" then
+                return game
+            end
+            if b4 == "workspace" then
+                return workspace
+            end
+            if b4 == "script" then
+                return script
+            end
+            if b4 == "Enum" then
+                return Enum
+            end
+            return nil
+        end,
+        __newindex = function(self, b4, b5)
+            _G[b4] = b5
+            du[b4] = 0
+            at(string.format("_G.%s = %s", aE(b4), aZ(b5)))
+        end
+    })
+    return b2
+end
+
+_G.G = dy()
+_G.g = dy()
+_G.ENV = dy()
+_G.env = dy()
+_G.E = dy()
+_G.e = dy()
+_G.L = dy()
+_G.l = dy()
+_G.F = dy()
+_G.f = dy()
+
+local function dz(dA)
+    local bh = {}
+    local dd = {}
+    local dB = {
+        "hookfunction",
+        "hookmetamethod",
+        "newcclosure",
+        "replaceclosure",
+        "checkcaller",
+        "iscclosure",
+        "islclosure",
+        "getrawmetatable",
+        "setreadonly",
+        "make_writeable",
+        "getrenv",
+        "getgc",
+        "getinstances"
+    }
+    local function dC(dD, bG)
+        local bd = aE(bG)
+        if bd:match("^[%a_][%w_]*$") then
+            if dD then
+                return dD .. "." .. bd
+            end
+            return bd
+        else
+            local aI = bd:gsub("'", "\\\'")
+            if dD then
+                return dD .. "['" .. aI .. "']"
+            end
+            return "['" .. aI .. "']"
+        end
+    end
+    dd.__index = function(b2, b4)
+        for W, dE in ipairs(dB) do
+            if b4 == dE then
+                return nil
+            end
+        end
+        local dF = dC(dA, b4)
+        return dz(dF)
+    end
+    dd.__newindex = function(b2, b4, b5)
+        local dG = dC(dA, b4)
+        at(string.format("getgenv().%s = %s", dG, aZ(b5)))
+    end
+    dd.__call = function(b2, ...)
+        return b2
+    end
+    dd.__pairs = function()
+        return function()
+            return nil
+        end, nil, nil
+    end
+    return setmetatable(bh, dd)
+end
+
+local exploit_funcs = {
+    getgenv = function()
+        return dz(nil)
+    end,
+    getrenv = function()
+        return bj("getrenv()", false)
+    end,
+    getfenv = function(dH)
+        return _G
+    end,
+    setfenv = function(dI, dJ)
+        if j(dI) ~= "function" then
+            return
+        end
+        local L = 1
+        while true do
+            local am = debug.getupvalue(dI, L)
+            if am == "_ENV" then
+                debug.setupvalue(dI, L, dJ)
+                break
+            elseif not am then
+                break
+            end
+            L = L + 1
+        end
+        return dI
+    end,
+    hookfunction = function(dK, dL)
+        return dK
+    end,
+    hookmetamethod = function(x, dM, dN)
+        return function() end
+    end,
+    getrawmetatable = function(x)
+        if G(x) then
+            return a.getmetatable(x)
+        end
+        return {}
+    end,
+    setrawmetatable = function(x, dd)
+        return x
+    end,
+    getnamecallmethod = function()
+        return "__namecall"
+    end,
+    setnamecallmethod = function(dM)
+    end,
+    checkcaller = function()
+        return true
+    end,
+    islclosure = function(dr)
+        return j(dr) == "function"
+    end,
+    iscclosure = function(dr)
+        return false
+    end,
+    newcclosure = function(dr)
+        return dr
+    end,
+    clonefunction = function(dr)
+        return dr
+    end,
+    request = function(dO)
+        at(string.format("request(%s)", aZ(dO)))
+        table.insert(t.string_refs, {value = dO.Url or dO.url or "unknown", hint = "HTTP Request"})
+        return {Success = true, StatusCode = 200, StatusMessage = "OK", Headers = {}, Body = "{}"}
+    end,
+    http_request = function(dO)
+        return exploit_funcs.request(dO)
+    end,
+    syn = {request = function(dO)
+        return exploit_funcs.request(dO)
+    end},
+    http = {request = function(dO)
+        return exploit_funcs.request(dO)
+    end},
+    HttpPost = function(cI, cJ)
+        at(string.format("HttpPost(%s, %s)", aE(cI), aE(cJ)))
+        return "{}"
+    end,
+    setclipboard = function(cJ)
+        at(string.format("setclipboard(%s)", aZ(cJ)))
+    end,
+    getclipboard = function()
+        return '"'
     end,
     identifyexecutor = function()
         return "Dumper", "3.0"
@@ -1316,7 +2657,199 @@ bj = function(aQ, bO, bw)
     end,
     readfile = function(dA)
         at(string.format("readfile(%s)", aH(dA)))
-        return '"'\n    end,\n    writefile = function(dA, ai)\n        at(string.format("writefile(%s, %s)", aH(dA), aZ(ai)))\n    end,\n    appendfile = function(dA, ai)\n        at(string.format("appendfile(%s, %s)", aH(dA), aZ(ai)))\n    end,\n    loadfile = function(dA)\n        return function()\n            return bj("loaded_file", false)\n        end\n    end,\n    listfiles = function(dX)\n        return {}\n    end,\n    isfile = function(dA)\n        return false\n    end,\n    isfolder = function(dA)\n        return false\n    end,\n    makefolder = function(dA)\n        at(string.format("makefolder(%s)", aH(dA)))\n    end,\n    delfolder = function(dA)\n        at(string.format("delfolder(%s)", aH(dA)))\n    end,\n    delfile = function(dA)\n        at(string.format("delfile(%s)", aH(dA)))\n    end,\n    Drawing = {new = function(aO)\n        local dY = aE(aO)\n        local x = bj("Drawing_" .. dY, false)\n        local _ = aW(x, dY)\n        at(string.format("local %s = Drawing.new(%s)", _, aH(dY)))\n        return x\n    end, Fonts = bj("Drawing.Fonts", false)},\n    crypt = {\n        base64encode = function(cJ)\n            return cJ\n        end,\n        base64decode = function(cJ)\n            return cJ\n        end,\n        base64_encode = function(cJ)\n            return cJ\n        end,\n        base64_decode = function(cJ)\n            return cJ\n        end,\n        encrypt = function(cJ, bG)\n            return cJ\n        end,\n        decrypt = function(cJ, bG)\n            return cJ\n        end,\n        hash = function(cJ)\n            return "hash"\n        end,\n        generatekey = function(dZ)\n            return string.rep("0", dZ or 32)\n        end,\n        generatebytes = function(dZ)\n            return string.rep("\\0", dZ or 16)\n        end\n    },\n    base64_encode = function(cJ)\n        return cJ\n    end,\n    base64_decode = function(cJ)\n        return cJ\n    end,\n    base64encode = function(cJ)\n        return cJ\n    end,\n    base64decode = function(cJ)\n        return cJ\n    end,\n    mouse1click = function()\n        at("mouse1click()")\n    end,\n    mouse1press = function()\n        at("mouse1press()")\n    end,\n    mouse1release = function()\n        at("mouse1release()")\n    end,\n    mouse2click = function()\n        at("mouse2click()")\n    end,\n    mouse2press = function()\n        at("mouse2press()")\n    end,\n    mouse2release = function()\n        at("mouse2release()")\n    end,\n    mousemoverel = function(d_, e0)\n        at(string.format("mousemoverel(%s, %s)", aZ(d_), aZ(e0)))\n    end,\n    mousemoveabs = function(d_, e0)\n        at(string.format("mousemoveabs(%s, %s)", aZ(d_), aZ(e0)))\n    end,\n    mousescroll = function(e1)\n        at(string.format("mousescroll(%s)", aZ(e1)))\n    end,\n    keypress = function(bG)\n        at(string.format("keypress(%s)", aZ(bG)))\n    end,\n    keyrelease = function(bG)\n        at(string.format("keyrelease(%s)", aZ(bG)))\n    end,\n    keyclick = function(bG)\n        at(string.format("keyclick(%s)", aZ(bG)))\n    end,\n    isreadonly = function(b2)\n        return false\n    end,\n    setreadonly = function(b2, e2)\n        return b2\n    end,\n    make_writeable = function(b2)\n        return b2\n    end,\n    make_readonly = function(b2)\n        return b2\n    end,\n    getthreadidentity = function()\n        return 7\n    end,\n    setthreadidentity = function(aG)\n    end,\n    getidentity = function()\n        return 7\n    end,\n    setidentity = function(aG)\n    end,\n    getthreadcontext = function()\n        return 7\n    end,\n    setthreadcontext = function(aG)\n    end,\n    getcustomasset = function(dA)\n        return "rbxasset://" .. aE(dA)\n    end,\n    getsynasset = function(dA)\n        return "rbxasset://" .. aE(dA)\n    end,\n    getinfo = function(dr)\n        return {source = "=", what = "Lua", name = "unknown", short_src = "dumper"}\n    end,\n    getconstants = function(dr)\n        return {}\n    end,\n    getupvalues = function(dr)\n        return {}\n    end,\n    getprotos = function(dr)\n        return {}\n    end,\n    getupvalue = function(dr, ba)\n        return nil\n    end,\n    setupvalue = function(dr, ba, bm)\n    end,\n    setconstant = function(dr, ba, bm)\n    end,\n    getconstant = function(dr, ba)\n        return nil\n    end,\n    getproto = function(dr, ba)\n        return function() end\n    end,\n    setproto = function(dr, ba, e3)\n    end,\n    getstack = function(dH, ba)\n        return nil\n    end,\n    setstack = function(dH, ba, bm)\n    end,\n    debug = {\n        getinfo = c or function()\n            return {}\n        end,\n        getupvalue = debug.getupvalue or function()\n            return nil\n        end,\n        setupvalue = debug.setupvalue or function()\n        end,\n        getmetatable = a.getmetatable,\n        setmetatable = debug.setmetatable or setmetatable,\n        traceback = d or function()\n            return '"'
+        return '"'
+    end,
+    writefile = function(dA, ai)
+        at(string.format("writefile(%s, %s)", aH(dA), aZ(ai)))
+    end,
+    appendfile = function(dA, ai)
+        at(string.format("appendfile(%s, %s)", aH(dA), aZ(ai)))
+    end,
+    loadfile = function(dA)
+        return function()
+            return bj("loaded_file", false)
+        end
+    end,
+    listfiles = function(dX)
+        return {}
+    end,
+    isfile = function(dA)
+        return false
+    end,
+    isfolder = function(dA)
+        return false
+    end,
+    makefolder = function(dA)
+        at(string.format("makefolder(%s)", aH(dA)))
+    end,
+    delfolder = function(dA)
+        at(string.format("delfolder(%s)", aH(dA)))
+    end,
+    delfile = function(dA)
+        at(string.format("delfile(%s)", aH(dA)))
+    end,
+    Drawing = {new = function(aO)
+        local dY = aE(aO)
+        local x = bj("Drawing_" .. dY, false)
+        local _ = aW(x, dY)
+        at(string.format("local %s = Drawing.new(%s)", _, aH(dY)))
+        return x
+    end, Fonts = bj("Drawing.Fonts", false)},
+    crypt = {
+        base64encode = function(cJ)
+            return cJ
+        end,
+        base64decode = function(cJ)
+            return cJ
+        end,
+        base64_encode = function(cJ)
+            return cJ
+        end,
+        base64_decode = function(cJ)
+            return cJ
+        end,
+        encrypt = function(cJ, bG)
+            return cJ
+        end,
+        decrypt = function(cJ, bG)
+            return cJ
+        end,
+        hash = function(cJ)
+            return "hash"
+        end,
+        generatekey = function(dZ)
+            return string.rep("0", dZ or 32)
+        end,
+        generatebytes = function(dZ)
+            return string.rep("\\0", dZ or 16)
+        end
+    },
+    base64_encode = function(cJ)
+        return cJ
+    end,
+    base64_decode = function(cJ)
+        return cJ
+    end,
+    base64encode = function(cJ)
+        return cJ
+    end,
+    base64decode = function(cJ)
+        return cJ
+    end,
+    mouse1click = function()
+        at("mouse1click()")
+    end,
+    mouse1press = function()
+        at("mouse1press()")
+    end,
+    mouse1release = function()
+        at("mouse1release()")
+    end,
+    mouse2click = function()
+        at("mouse2click()")
+    end,
+    mouse2press = function()
+        at("mouse2press()")
+    end,
+    mouse2release = function()
+        at("mouse2release()")
+    end,
+    mousemoverel = function(d_, e0)
+        at(string.format("mousemoverel(%s, %s)", aZ(d_), aZ(e0)))
+    end,
+    mousemoveabs = function(d_, e0)
+        at(string.format("mousemoveabs(%s, %s)", aZ(d_), aZ(e0)))
+    end,
+    mousescroll = function(e1)
+        at(string.format("mousescroll(%s)", aZ(e1)))
+    end,
+    keypress = function(bG)
+        at(string.format("keypress(%s)", aZ(bG)))
+    end,
+    keyrelease = function(bG)
+        at(string.format("keyrelease(%s)", aZ(bG)))
+    end,
+    keyclick = function(bG)
+        at(string.format("keyclick(%s)", aZ(bG)))
+    end,
+    isreadonly = function(b2)
+        return false
+    end,
+    setreadonly = function(b2, e2)
+        return b2
+    end,
+    make_writeable = function(b2)
+        return b2
+    end,
+    make_readonly = function(b2)
+        return b2
+    end,
+    getthreadidentity = function()
+        return 7
+    end,
+    setthreadidentity = function(aG)
+    end,
+    getidentity = function()
+        return 7
+    end,
+    setidentity = function(aG)
+    end,
+    getthreadcontext = function()
+        return 7
+    end,
+    setthreadcontext = function(aG)
+    end,
+    getcustomasset = function(dA)
+        return "rbxasset://" .. aE(dA)
+    end,
+    getsynasset = function(dA)
+        return "rbxasset://" .. aE(dA)
+    end,
+    getinfo = function(dr)
+        return {source = "=", what = "Lua", name = "unknown", short_src = "dumper"}
+    end,
+    getconstants = function(dr)
+        return {}
+    end,
+    getupvalues = function(dr)
+        return {}
+    end,
+    getprotos = function(dr)
+        return {}
+    end,
+    getupvalue = function(dr, ba)
+        return nil
+    end,
+    setupvalue = function(dr, ba, bm)
+    end,
+    setconstant = function(dr, ba, bm)
+    end,
+    getconstant = function(dr, ba)
+        return nil
+    end,
+    getproto = function(dr, ba)
+        return function() end
+    end,
+    setproto = function(dr, ba, e3)
+    end,
+    getstack = function(dH, ba)
+        return nil
+    end,
+    setstack = function(dH, ba, bm)
+    end,
+    debug = {
+        getinfo = c or function()
+            return {}
+        end,
+        getupvalue = debug.getupvalue or function()
+            return nil
+        end,
+        setupvalue = debug.setupvalue or function()
+        end,
+        getmetatable = a.getmetatable,
+        setmetatable = debug.setmetatable or setmetatable,
+        traceback = d or function()
+            return '"'
         end,
         profilebegin = function()
         end,
