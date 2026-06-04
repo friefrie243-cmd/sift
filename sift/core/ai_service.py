@@ -89,7 +89,7 @@ class AIService:
                     "max_tokens": 8000
                 }
                 async with aiohttp.ClientSession() as session:
-                    async with session.post(url, json=payload, headers=headers, timeout=120) as resp:
+                    async with session.post(url, json=payload, headers=headers, timeout=35) as resp:
                         if resp.status == 200:
                             data = await resp.json()
                             content = data["choices"][0]["message"]["content"].strip()
@@ -117,7 +117,7 @@ class AIService:
                     "temperature": 0.2
                 }
                 async with aiohttp.ClientSession() as session:
-                    async with session.post(url, json=payload, headers=headers, timeout=120) as resp:
+                    async with session.post(url, json=payload, headers=headers, timeout=35) as resp:
                         if resp.status == 200:
                             data = await resp.json()
                             content = data["choices"][0]["message"]["content"].strip()
@@ -135,7 +135,7 @@ class AIService:
                 "Content-Type": "application/json"
             }
             async with aiohttp.ClientSession() as session:
-                async with session.post(url, json={"code": user_prompt}, headers=headers, timeout=60) as resp:
+                async with session.post(url, json={"code": user_prompt}, headers=headers, timeout=35) as resp:
                     if resp.status == 200:
                         data = await resp.json()
                         return data.get("renamedCode", user_prompt)

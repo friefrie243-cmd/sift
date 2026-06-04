@@ -138,7 +138,11 @@ class DeobfuscatorEngine:
         Runs available Lune and Lua environment loggers/dumpers SEQUENTIALLY,
         with early-exit once a high-quality output is found.
         Logs progress and selects the best output.
+        Enforces a global 80.0-second timeout limit to prevent Bad Gateway.
         """
+        import time
+        start_time = time.time()
+
         all_methods = [
             ("Moonsec Deobfuscator", lambda c: LuneRunner.run_moonsec(c)),
             ("Prometheus Dumper", lambda c: LuneRunner.run_prometheus(c)),
@@ -166,6 +170,10 @@ class DeobfuscatorEngine:
 
         success_outputs = []
         for name, run_func in methods:
+            if time.time() - start_time > 80.0:
+                console_log += f"[!] Dynamic logging sequential timeout limit exceeded (80s). Terminating loop early.\n"
+                break
+
             console_log += f"[*] Running {name}...\n"
             try:
                 ok, out, log = await run_func(code)
@@ -212,8 +220,7 @@ class DeobfuscatorEngine:
     @classmethod
     async def run_all_deobfuscators_concurrently(cls, code: str, include_loggers: bool = False) -> tuple[bool, str, str, list]:
         """
-        Runs all available deobfuscators concurrently via asyncio.gather and returns
-        (success, best_output, console_log, all_outputs_list).
+        Runs all available deobfuscators concurrently via asyncio with a Semaphore limit (3) and a global 90s deadline.
         """
         all_methods = [
             ("IronBrew (Static)", lambda c: asyncio.to_thread(IronBrewDeobfuscator.deobfuscate, c)),
@@ -242,29 +249,63 @@ class DeobfuscatorEngine:
         trace_logger_names = {"Lune httplog2", "25ms HttpLog", "25ms LoadstringLog"}
         methods = [m for m in all_methods if include_loggers or m[0] not in trace_logger_names]
 
+        sem = asyncio.Semaphore(3)
+
         async def run_method(name, func):
-            try:
-                res = await func(code)
-                ok = res[0]
-                out = res[1]
-                log = res[2] if len(res) > 2 else ""
-                
-                is_valid = bool(ok and is_valid_lua_output(out))
-                return {
-                    "name": name,
-                    "success": is_valid,
-                    "output_code": out if is_valid else "",
-                    "console_log": log
-                }
-            except Exception as e:
-                return {
+            async with sem:
+                try:
+                    res = await func(code)
+                    ok = res[0]
+                    out = res[1]
+                    log = res[2] if len(res) > 2 else ""
+                    
+                    is_valid = bool(ok and is_valid_lua_output(out))
+                    return {
+                        "name": name,
+                        "success": is_valid,
+                        "output_code": out if is_valid else "",
+                        "console_log": log
+                    }
+                except Exception as e:
+                    return {
+                        "name": name,
+                        "success": False,
+                        "output_code": "",
+                        "console_log": f"Error: {str(e)}"
+                    }
+
+        tasks = [asyncio.create_task(run_method(name, func)) for name, func in methods]
+        
+        # Enforce 90-second global timeout limit using asyncio.wait
+        done, pending = await asyncio.wait(tasks, timeout=90.0)
+        
+        # Cancel any pending tasks to stop consuming Render resources
+        for t in pending:
+            t.cancel()
+            
+        results = []
+        for t in tasks:
+            if t in done:
+                try:
+                    results.append(t.result())
+                except Exception as e:
+                    idx = tasks.index(t)
+                    name = methods[idx][0]
+                    results.append({
+                        "name": name,
+                        "success": False,
+                        "output_code": "",
+                        "console_log": f"Task error: {str(e)}"
+                    })
+            else:
+                idx = tasks.index(t)
+                name = methods[idx][0]
+                results.append({
                     "name": name,
                     "success": False,
                     "output_code": "",
-                    "console_log": f"Error: {str(e)}"
-                }
-
-        results = await asyncio.gather(*[run_method(name, func) for name, func in methods])
+                    "console_log": "Task timed out (global 90s limit exceeded)."
+                })
         
         # Compile successful outputs
         successful = [r for r in results if r["success"]]

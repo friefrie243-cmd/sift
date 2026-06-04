@@ -46,7 +46,7 @@ class LuneRunner:
             )
 
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=120.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
 
                 if process.returncode == 0 or os.path.exists(output_path):
@@ -56,7 +56,7 @@ class LuneRunner:
                     process.kill()
                 except:
                     pass
-                console_log = "Execution timed out (120s limit exceeded). Infinite loop or anti-tamper detected."
+                console_log = "Execution timed out (30s limit exceeded). Infinite loop or anti-tamper detected."
 
             # If output file exists (even after timeout/error), try to read it
             if os.path.exists(output_path):
@@ -112,7 +112,7 @@ class LuneRunner:
             )
 
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
 
                 if os.path.exists(output_path):
@@ -178,7 +178,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
 
                 if os.path.exists(output_path):
@@ -241,7 +241,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
 
                 if os.path.exists(output_path):
@@ -303,7 +303,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
 
                 if os.path.exists(output_path):
@@ -355,7 +355,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=120.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
                 if os.path.exists(output_path):
                     with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -415,7 +415,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=120.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
                 if os.path.exists(output_path):
                     with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -509,7 +509,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
                 if process.returncode == 0:
                     success = True
@@ -629,7 +629,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=120.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
                 console_log += stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
             except asyncio.TimeoutError:
                 try: process.kill()
@@ -699,7 +699,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=120.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=30.0)
                 console_log += stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
             except asyncio.TimeoutError:
                 try: process.kill()
