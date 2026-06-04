@@ -36,6 +36,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy all source files
 COPY . .
 
+# Build MoonsecDeobfuscator during Docker image compilation
+RUN dotnet build -c Release bot/MoonsecDeobfuscator/MoonsecDeobfuscator.csproj
+
 # Create required dump directories and ensure unluac.jar exists in expected path at build time
 RUN mkdir -p dumps/temp dumps/original dumps/dumped deobfuscate && \
     if [ -f "bot/unluac.jar" ]; then cp bot/unluac.jar deobfuscate/unluac.jar; fi

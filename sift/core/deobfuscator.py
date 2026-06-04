@@ -52,6 +52,10 @@ def score_output(code: str) -> int:
         if is_debug:
             continue
             
+        # Exclude mock environment boilerplate functions
+        if "function(...) end" in line_strip:
+            continue
+            
         score += 1
     return score
 
@@ -408,7 +412,7 @@ class DeobfuscatorEngine:
                 console_log += f"[*] Detected partial/incomplete output (score: {output_score}). Launching AI code recovery/reconstruction...\n"
                 try:
                     from sift.core.ai_service import AIService
-                    recovered_code = await AIService.reconstruct_partial_output(output_code, console_log)
+                    recovered_code = await AIService.reconstruct_partial_output(output_code, code, console_log)
                     if recovered_code and recovered_code.strip() and not recovered_code.startswith("-- [AI Error]"):
                         output_code = recovered_code
                         console_log += "[+] AI successfully completed/reconstructed the partial output.\n"

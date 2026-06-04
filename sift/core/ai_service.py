@@ -157,12 +157,17 @@ class AIService:
     def _get_reconstruct_system_prompt() -> str:
         return (
             "You are a professional Lua deobfuscation and code restoration assistant.\n"
-            "Your task is to take a partial, truncated, or syntactically broken deobfuscated Lua script (due to timeouts, errors, or anti-tamper) and reconstruct or complete it.\n\n"
+            "Your task is to take a partial, truncated, or mock-heavy deobfuscated Lua script (from a dynamic dumper/logger) "
+            "and reconstruct it into its original complete format. You will be provided with the partial/mocked code AND "
+            "the original obfuscated source code for reference.\n\n"
             "CRITICAL INSTRUCTIONS:\n"
-            "1. Fix any syntax errors or incomplete code blocks (e.g. unclosed 'then', 'end', loops, or functions at the end of the script).\n"
-            "2. Complete the code flow logically, matching the conventions and structures used in the preceding code.\n"
-            "3. If error() calls or anti-tamper functions are clearly breaking execution or truncating the output, remove or bypass them to reveal/restore the actual code logic.\n"
-            "4. Keep all original logic, exploit scripts, variables, and string content fully intact.\n"
+            "1. Match the hooked/assigned variables and functions in the partial code (e.g. module.Raycast = function(...) end) "
+            "to their corresponding actual function bodies in the original obfuscated source.\n"
+            "2. Extract the actual logic, conditions, calculations, and loops from the original source and write them "
+            "inside the placeholder/empty functions (e.g. reconstruct function(...) end with the real body).\n"
+            "3. Clean up the script: remove any boilerplate mock library tables (like string = { ... }, math = { ... }) and "
+            "only keep the actual restored exploit/script logic.\n"
+            "4. Fix any syntax errors or incomplete blocks.\n"
             "5. Return ONLY the reconstructed/repaired Lua code. Do not wrap in markdown blocks, and do not write any introductory or explanatory chat response."
         )
 
@@ -196,13 +201,16 @@ class AIService:
         return await cls.query_llm(system, user)
 
     @classmethod
-    async def reconstruct_partial_output(cls, code: str, error_context: str = "") -> str:
+    async def reconstruct_partial_output(cls, code: str, original_code: str = "", error_context: str = "") -> str:
         """Reconstructs, completes, and repairs broken or partial deobfuscation outputs using AI."""
         if not code or not code.strip():
             return ""
         system = cls._get_reconstruct_system_prompt()
-        user = f"Here is the partial/broken deobfuscated code:\n\n{code}\n\n"
+        user = f"Here is the partial/mocked deobfuscated code:\n\n{code}\n\n"
+        if original_code:
+            ref_code = original_code if len(original_code) < 200000 else (original_code[:200000] + "\n... [Truncated for length] ...")
+            user += f"Here is the original obfuscated input script for reference (reconstruct the logic/functions from here):\n\n{ref_code}\n\n"
         if error_context:
             user += f"Context/Errors observed during extraction:\n{error_context}\n\n"
-        user += "Please reconstruct, clean, repair, and complete this Lua code."
+        user += "Please reconstruct the full, original, cleaned Lua script by inserting the actual logic into the hooked function stubs."
         return await cls.query_llm(system, user)

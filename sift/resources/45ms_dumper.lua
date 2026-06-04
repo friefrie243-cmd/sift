@@ -366,12 +366,56 @@ local function buildEnv()
                 end
         end
 
+        local ignoredGlobals = {
+                string = true, xpcall = true, warn = true, package = true, tostring = true,
+                gcinfo = true, os = true, typeof = true, require = true, getfenv = true,
+                setmetatable = true, next = true, assert = true, rawlen = true, tonumber = true,
+                rawequal = true, collectgarbage = true, getmetatable = true, utf8 = true,
+                rawset = true, vector = true, math = true, pcall = true, debug = true,
+                buffer = true, type = true, bit32 = true, _VERSION = true, select = true,
+                _G = true, print = true, rawget = true, unpack = true, table = true,
+                coroutine = true, setfenv = true, pairs = true, ipairs = true, error = true,
+                newproxy = true, makefolder = true, getfflags = true, StarterGui = true,
+                setrawmetatable = true, UDim = true, getfflag = true, rconsoleprint = true,
+                getrawmetatable = true, OverlapParams = true, crypt = true, mouse1press = true,
+                newcclosure = true, request = true, StarterPlayer = true, shared = true,
+                cloneref = true, loadstring = true, Font = true, mousescroll = true,
+                ReplicatedStorage = true, hookfunction = true, CoreGui = true, mouse2release = true,
+                ReplicatedFirst = true, StarterPack = true, UDim2 = true, getrunningscripts = true,
+                Vector3 = true, Players = true, mousemoveabs = true, plugin = true,
+                mouse1click = true, Enums = true, game = true, gethiddenproperty = true,
+                Region3 = true, setrbxclipboard = true, getscripts = true, ServerScriptService = true,
+                getnilinstances = true, iscclosure = true, keypress = true, rconsoleclear = true,
+                script = true, getinputs = true, setclipboard = true, isreadonly = true,
+                mouse2click = true, sethiddenproperty = true, writefile = true, loadfile = true,
+                CFrame = true, getconnections = true, checkcaller = true, task = true,
+                setreadonly = true, Color3 = true, Enum = true, getinstances = true,
+                checkclosure = true, firetouchinterest = true, cache = true, Lighting = true,
+                isnetworkowner = true, compareinstances = true, delfile = true, mouse1release = true,
+                gethui = true, setnamecallmethod = true, PhysicalProperties = true, SoundService = true,
+                getthreadidentity = true, Ray = true, getcustomasset = true, getnamecallmethod = true,
+                delfolder = true, listfiles = true, TextChatService = true, Chat = true,
+                ServerStorage = true, getscripthash = true, getcallstack = true, fireproximityprompt = true,
+                setthreadidentity = true, islclosure = true, rconsolewarn = true, RaycastParams = true,
+                mouse2press = true, keyrelease = true, getrenv = true, getgenv = true,
+                identifyexecutor = true, lz4compress = true, getsenv = true, appendfile = true,
+                mousemoverel = true, Stats = true, PathWaypoint = true, hookmetamethod = true,
+                getgc = true, isfflagenabled = true, workspace = true, lz4decompress = true,
+                setfpscap = true, isfolder = true, isfile = true, http = true,
+                getloadedmodules = true, Teams = true, readfile = true, fireclickdetector = true,
+                Instance = true, rconsoleinput = true, NumberRange = true, getreg = true,
+                rconsolename = true, Rect = true, BrickColor = true, Vector2 = true,
+                rconsoleerr = true, TweenInfo = true, setfflag = true, getcallbackvalue = true,
+        }
+
         setmetatable(env, {
                 __newindex = function(t, k, v)
-                        if type(v) == "function" then
-                                emit("function " .. tostring(k) .. "(...)\nend", true)
-                        else
-                                emit(tostring(k) .. " = " .. serialize(v, d.indent), true)
+                        if not ignoredGlobals[tostring(k)] then
+                                if type(v) == "function" then
+                                        emit("function " .. tostring(k) .. "(...)\nend", true)
+                                else
+                                        emit(tostring(k) .. " = " .. serialize(v, d.indent), true)
+                                end
                         end
                         rawset(t, k, v)
                 end

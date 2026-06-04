@@ -355,7 +355,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=120.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
                 if os.path.exists(output_path):
                     with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -366,6 +366,12 @@ class LuneRunner:
                 try: process.kill()
                 except: pass
                 console_log = f"{script_name} timed out."
+                # Attempt to capture partial dump output if it was written before timeout
+                if os.path.exists(output_path):
+                    with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
+                        output_code = f.read()
+                    if len(output_code.strip()) > 0:
+                        success = True
         except Exception as e:
             console_log += f"\n{script_name} Error: {str(e)}"
         finally:
@@ -436,7 +442,7 @@ class LuneRunner:
 
     @staticmethod
     async def run_zala(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lune_dumper_generic("zala_dumper.lua", input_code)
+        return await LuneRunner.run_lua_dumper_generic("zala_dumper.lua", input_code)
 
     @staticmethod
     async def run_larry_premium(input_code: str) -> tuple[bool, str, str]:
@@ -444,27 +450,27 @@ class LuneRunner:
 
     @staticmethod
     async def run_larry_regular(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lune_dumper_generic("larry_regular.lua", input_code)
+        return await LuneRunner.run_lua_dumper_generic("larry_regular.lua", input_code)
 
     @staticmethod
     async def run_flame(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lune_dumper_generic("flame_dumper.lua", input_code)
+        return await LuneRunner.run_lua_dumper_generic("flame_dumper.lua", input_code)
 
     @staticmethod
     async def run_polyester(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lune_dumper_generic("polyester_dumper.lua", input_code)
+        return await LuneRunner.run_lua_dumper_generic("polyester_dumper.lua", input_code)
 
     @staticmethod
     async def run_pengu(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lune_dumper_generic("pengu_dumper.lua", input_code)
+        return await LuneRunner.run_lua_dumper_generic("pengu_dumper.lua", input_code)
 
     @staticmethod
     async def run_kolenv(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lune_dumper_generic("kolenv_dumper.lua", input_code)
+        return await LuneRunner.run_lua_dumper_generic("kolenv_dumper.lua", input_code)
 
     @staticmethod
     async def run_kolenv_new(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lune_dumper_generic("kolenv_dumper_new.lua", input_code)
+        return await LuneRunner.run_lua_dumper_generic("kolenv_dumper_new.lua", input_code)
 
     @staticmethod
     async def run_httplog_25ms(input_code: str) -> tuple[bool, str, str]:
@@ -536,6 +542,8 @@ class LuneRunner:
         input_path = os.path.join(Config.TEMP_DIR, temp_input_name)
         output_path = os.path.join(Config.TEMP_DIR, temp_output_name)
         decomp_path = os.path.join(Config.TEMP_DIR, temp_decompiled_name)
+        
+        console_log = "[*] Running Moonsec Deobfuscator...\n"
         
         with open(input_path, "w", encoding="utf-8", newline="\n") as f:
             f.write(input_code)

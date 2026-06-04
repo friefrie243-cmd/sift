@@ -1,8 +1,4 @@
-local env = getfenv(3)
-local mt = getmetatable(env)
-local idx = rawget(mt, "__index")
-local req = rawget(idx, "require")
-local fs = req("@lune/fs")
+local fs = require("@lune/fs")
 
 local function scan(path)
     local files = fs.readDir(path)
