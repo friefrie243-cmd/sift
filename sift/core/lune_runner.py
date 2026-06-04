@@ -38,7 +38,7 @@ class LuneRunner:
         output_code = ""
 
         try:
-            # We set a hard timeout of 60 seconds to allow complex scripts more time
+            # We set a hard timeout of 120 seconds to allow complex scripts more time
             process = await asyncio.create_subprocess_exec(
                 *cmd,
                 stdout=asyncio.subprocess.PIPE,
@@ -46,7 +46,7 @@ class LuneRunner:
             )
 
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=120.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
 
                 if process.returncode == 0 or os.path.exists(output_path):
@@ -56,7 +56,7 @@ class LuneRunner:
                     process.kill()
                 except:
                     pass
-                console_log = "Execution timed out (60s limit exceeded). Infinite loop or anti-tamper detected."
+                console_log = "Execution timed out (120s limit exceeded). Infinite loop or anti-tamper detected."
 
             # If output file exists (even after timeout/error), try to read it
             if os.path.exists(output_path):
@@ -409,7 +409,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=60.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=120.0)
                 console_log = stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
                 if os.path.exists(output_path):
                     with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -420,6 +420,12 @@ class LuneRunner:
                 try: process.kill()
                 except: pass
                 console_log = f"{script_name} timed out."
+                # Still try to read output if it exists (partial dumps)
+                if os.path.exists(output_path):
+                    with open(output_path, "r", encoding="utf-8", errors="ignore") as f:
+                        output_code = f.read()
+                    if len(output_code.strip()) > 0:
+                        success = True
         except Exception as e:
             console_log += f"\n{script_name} Error: {str(e)}"
         finally:
@@ -430,15 +436,15 @@ class LuneRunner:
 
     @staticmethod
     async def run_zala(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lua_dumper_generic("zala_dumper.lua", input_code)
+        return await LuneRunner.run_lune_dumper_generic("zala_dumper.lua", input_code)
 
     @staticmethod
     async def run_larry_premium(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lua_dumper_generic("larry_dumper.lua", input_code)
+        return await LuneRunner.run_lune_dumper_generic("larry_dumper.lua", input_code)
 
     @staticmethod
     async def run_larry_regular(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lua_dumper_generic("larry_regular.lua", input_code)
+        return await LuneRunner.run_lune_dumper_generic("larry_regular.lua", input_code)
 
     @staticmethod
     async def run_flame(input_code: str) -> tuple[bool, str, str]:
@@ -454,11 +460,11 @@ class LuneRunner:
 
     @staticmethod
     async def run_kolenv(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lua_dumper_generic("kolenv_dumper.lua", input_code)
+        return await LuneRunner.run_lune_dumper_generic("kolenv_dumper.lua", input_code)
 
     @staticmethod
     async def run_kolenv_new(input_code: str) -> tuple[bool, str, str]:
-        return await LuneRunner.run_lua_dumper_generic("kolenv_dumper_new.lua", input_code)
+        return await LuneRunner.run_lune_dumper_generic("kolenv_dumper_new.lua", input_code)
 
     @staticmethod
     async def run_httplog_25ms(input_code: str) -> tuple[bool, str, str]:
@@ -536,22 +542,79 @@ class LuneRunner:
             
         # Select executable or dotnet dll based on platform
         is_windows = os.name == "nt"
-        bin_dir = os.path.abspath(os.path.join("bot", "MoonsecDeobfuscator", "bin", "Release", "net9.0"))
-        if not os.path.exists(bin_dir):
+        
+        # Check workspace root bot directory, then package subdirectory, then absolute paths
+        bot_base_dirs = [
+            os.path.abspath("bot"),
+            os.path.abspath(os.path.join("dumper-and-env-loggers-main", "bot")),
+            os.path.abspath("/app/bot"),
+            os.path.abspath("/app/dumper-and-env-loggers-main/bot"),
+        ]
+        
+        bin_dir = None
+        for bbd in bot_base_dirs:
+            # Try net9.0 then net8.0
+            for net_ver in ["net9.0", "net8.0"]:
+                test_dir = os.path.join(bbd, "MoonsecDeobfuscator", "bin", "Release", net_ver)
+                # Check for either the DLL or EXE inside
+                if os.path.exists(test_dir):
+                    dll_check = os.path.join(test_dir, "MoonsecDeobfuscator.dll")
+                    exe_check = os.path.join(test_dir, "MoonsecDeobfuscator.exe")
+                    if os.path.exists(dll_check) or os.path.exists(exe_check):
+                        bin_dir = test_dir
+                        break
+            if bin_dir:
+                break
+                
+        if not bin_dir:
+            # Default fallback search directory
             bin_dir = os.path.abspath(os.path.join("bot", "MoonsecDeobfuscator", "bin", "Release", "net8.0"))
+            console_log += f"[!] Warning: Could not locate Moonsec binary release directory. Defaulting to: {bin_dir}\n"
+        else:
+            console_log += f"[*] Located Moonsec binary release directory: {bin_dir}\n"
+            
+        # Ensure unluac.jar is copied to deobfuscate/unluac.jar if it exists in bot directory
+        for bbd in bot_base_dirs:
+            src_jar = os.path.join(bbd, "unluac.jar")
+            if os.path.exists(src_jar):
+                dest_jar = os.path.abspath(Config.UNLUAC_JAR_PATH)
+                os.makedirs(os.path.dirname(dest_jar), exist_ok=True)
+                if not os.path.exists(dest_jar) or os.path.getsize(src_jar) != os.path.getsize(dest_jar):
+                    try:
+                        shutil.copy(src_jar, dest_jar)
+                        console_log += f"[*] Copied unluac.jar to {dest_jar}\n"
+                    except Exception as jar_err:
+                        console_log += f"[!] Failed to copy unluac.jar: {jar_err}\n"
+                break
             
         success = False
-        console_log = "[*] Running Moonsec Deobfuscator...\n"
         output_code = ""
         
         try:
             if is_windows:
                 exe_path = os.path.join(bin_dir, "MoonsecDeobfuscator.exe")
-                cmd = [exe_path, "-dev", "-i", input_path, "-o", output_path]
+                if not os.path.exists(exe_path):
+                    # Check DLL format on windows if EXE is missing
+                    dll_path = os.path.join(bin_dir, "MoonsecDeobfuscator.dll")
+                    if os.path.exists(dll_path):
+                        cmd = ["dotnet", dll_path, "-dev", "-i", input_path, "-o", output_path]
+                    else:
+                        raise FileNotFoundError(f"Moonsec binary not found in {bin_dir} (EXE/DLL missing)")
+                else:
+                    cmd = [exe_path, "-dev", "-i", input_path, "-o", output_path]
             else:
                 dll_path = os.path.join(bin_dir, "MoonsecDeobfuscator.dll")
+                if not os.path.exists(dll_path):
+                    # Try net8.0 DLL if Net9.0 was selected but DLL is missing
+                    alt_bin_dir = bin_dir.replace("net9.0", "net8.0")
+                    alt_dll_path = os.path.join(alt_bin_dir, "MoonsecDeobfuscator.dll")
+                    if os.path.exists(alt_dll_path):
+                        dll_path = alt_dll_path
+                    else:
+                        raise FileNotFoundError(f"Moonsec dll not found in {bin_dir} or {alt_bin_dir}")
                 cmd = ["dotnet", dll_path, "-dev", "-i", input_path, "-o", output_path]
                 
+            console_log += f"[*] Command: {' '.join(cmd)}\n"
             process = await asyncio.create_subprocess_exec(
                 *cmd,
                 stdout=asyncio.subprocess.PIPE,
@@ -609,12 +672,15 @@ class LuneRunner:
             f.write(input_code)
             
         deob_script = os.path.abspath(os.path.join("bot", "PrometheusDumper", "deobfuscator.py"))
-        
+        # fallback path checks
+        if not os.path.exists(deob_script):
+            deob_script = os.path.abspath(os.path.join("dumper-and-env-loggers-main", "bot", "PrometheusDumper", "deobfuscator.py"))
+            
         success = False
         console_log = "[*] Running Prometheus/WeAreDevs Deobfuscator...\n"
         output_code = ""
         
-        cmd = [sys.executable, deob_script, input_path]
+        cmd = [sys.executable, deob_script, os.path.abspath(input_path)]
         
         try:
             # Run in the Prometheus dumper folder as working directory
@@ -625,7 +691,7 @@ class LuneRunner:
                 stderr=asyncio.subprocess.PIPE
             )
             try:
-                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=90.0)
+                stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=120.0)
                 console_log += stdout.decode("utf-8", errors="ignore") + "\n" + stderr.decode("utf-8", errors="ignore")
             except asyncio.TimeoutError:
                 try: process.kill()
@@ -638,7 +704,36 @@ class LuneRunner:
                 if len(output_code.strip()) > 0:
                     success = True
             else:
-                console_log += "[-] Prometheus deobfuscator did not produce deobf output.\n"
+                # Check for script.lua.report.txt or similar trace files and compile them
+                report_path = os.path.join(job_dir, "script.lua.report.txt")
+                alt_report_path = os.path.join(os.path.dirname(deob_script), "temp_deob.lua.report.txt")
+                
+                selected_report = None
+                if os.path.exists(report_path):
+                    selected_report = report_path
+                elif os.path.exists(alt_report_path):
+                    selected_report = alt_report_path
+                    
+                if selected_report:
+                    console_log += f"[+] Prometheus report found at {selected_report}. Invoking trace converter...\n"
+                    try:
+                        import importlib
+                        sys.path.append(os.path.dirname(deob_script))
+                        trace_to_lua = importlib.import_module("trace_to_lua")
+                        trace_to_lua.parse_trace(selected_report)
+                        
+                        generated_deobf = selected_report.replace(".report.txt", ".deobf.lua")
+                        if os.path.exists(generated_deobf):
+                            with open(generated_deobf, "r", encoding="utf-8", errors="ignore") as f:
+                                output_code = f.read()
+                            if len(output_code.strip()) > 0:
+                                success = True
+                                console_log += "[+] Successfully converted raw execution trace to Lua!\n"
+                    except Exception as trace_err:
+                        console_log += f"[!] Trace converter error: {trace_err}\n"
+                
+                if not success:
+                    console_log += "[-] Prometheus deobfuscator did not produce deobf output.\n"
                 
         except Exception as e:
             console_log += f"\nPrometheus Runner Error: {str(e)}"

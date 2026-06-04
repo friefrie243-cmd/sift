@@ -36,8 +36,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy all source files
 COPY . .
 
-# Create required dump directories at build time
-RUN mkdir -p dumps/temp dumps/original dumps/dumped
+# Create required dump directories and ensure unluac.jar exists in expected path at build time
+RUN mkdir -p dumps/temp dumps/original dumps/dumped deobfuscate && \
+    if [ -f "bot/unluac.jar" ]; then cp bot/unluac.jar deobfuscate/unluac.jar; fi
 
 # Expose FastAPI Web Port
 EXPOSE 8000

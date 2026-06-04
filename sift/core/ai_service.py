@@ -71,7 +71,7 @@ class AIService:
         3. Vercel AI renamer fallback (for rename requests only)
         """
         # Strategy 1: DeepSeek API (Standard REST request)
-        deepseek_key = os.getenv("DEEPSEEK_API_KEY", "")
+        deepseek_key = Config.DEEPSEEK_API_KEY
         if deepseek_key:
             try:
                 url = "https://api.deepseek.com/v1/chat/completions"
@@ -153,6 +153,19 @@ class AIService:
             cleaned = re.sub(r"\n```$", "", cleaned)
         return cleaned.strip()
 
+    @staticmethod
+    def _get_reconstruct_system_prompt() -> str:
+        return (
+            "You are a professional Lua deobfuscation and code restoration assistant.\n"
+            "Your task is to take a partial, truncated, or syntactically broken deobfuscated Lua script (due to timeouts, errors, or anti-tamper) and reconstruct or complete it.\n\n"
+            "CRITICAL INSTRUCTIONS:\n"
+            "1. Fix any syntax errors or incomplete code blocks (e.g. unclosed 'then', 'end', loops, or functions at the end of the script).\n"
+            "2. Complete the code flow logically, matching the conventions and structures used in the preceding code.\n"
+            "3. If error() calls or anti-tamper functions are clearly breaking execution or truncating the output, remove or bypass them to reveal/restore the actual code logic.\n"
+            "4. Keep all original logic, exploit scripts, variables, and string content fully intact.\n"
+            "5. Return ONLY the reconstructed/repaired Lua code. Do not wrap in markdown blocks, and do not write any introductory or explanatory chat response."
+        )
+
     @classmethod
     async def rename(cls, code: str) -> str:
         """Rename cryptic variables semantically using AI."""
@@ -180,4 +193,16 @@ class AIService:
                 
         system = cls._get_sift_ui_system_prompt(sift_ui_code)
         user = f"Please translate this Lua script's UI into the Sift UI library format:\n\n{deobf_code}"
+        return await cls.query_llm(system, user)
+
+    @classmethod
+    async def reconstruct_partial_output(cls, code: str, error_context: str = "") -> str:
+        """Reconstructs, completes, and repairs broken or partial deobfuscation outputs using AI."""
+        if not code or not code.strip():
+            return ""
+        system = cls._get_reconstruct_system_prompt()
+        user = f"Here is the partial/broken deobfuscated code:\n\n{code}\n\n"
+        if error_context:
+            user += f"Context/Errors observed during extraction:\n{error_context}\n\n"
+        user += "Please reconstruct, clean, repair, and complete this Lua code."
         return await cls.query_llm(system, user)

@@ -401,6 +401,21 @@ class DeobfuscatorEngine:
             console_log += "[!] All deobfuscators failed. Extracting strings/upvalues statically...\n"
             output_code = cls.extract_strings_statically(code)
             success = True
+        else:
+            # Check if output is a partial/broken code structure (e.g. score < 20 lines or contains execution/tamper comments)
+            output_score = score_output(output_code)
+            if output_score < 20 or "Execution halted" in console_log or "timed out" in console_log or "Error" in console_log:
+                console_log += f"[*] Detected partial/incomplete output (score: {output_score}). Launching AI code recovery/reconstruction...\n"
+                try:
+                    from sift.core.ai_service import AIService
+                    recovered_code = await AIService.reconstruct_partial_output(output_code, console_log)
+                    if recovered_code and recovered_code.strip() and not recovered_code.startswith("-- [AI Error]"):
+                        output_code = recovered_code
+                        console_log += "[+] AI successfully completed/reconstructed the partial output.\n"
+                    else:
+                        console_log += "[!] AI reconstruction failed or timed out. Keeping original partial output.\n"
+                except Exception as ai_err:
+                    console_log += f"[!] AI reconstruction error: {ai_err}\n"
 
         # For single output mode, all_outputs_list just contains the selected best output
         if success and output_code.strip():

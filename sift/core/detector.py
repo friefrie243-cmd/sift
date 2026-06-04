@@ -87,13 +87,17 @@ class ObfuscatorDetector:
         if "Soteria" in code or re.search(r"--\s*Soteria\s*Obfuscator", code, re.IGNORECASE):
             return "Soteria"
 
-        # WynnSfuscate Detection
-        if "WynnSfuscate" in code or "Wynfuscate" in code:
-            return "WynnSfuscate"
-
         # WeAreDevs Obfuscator Detection
-        if re.search(r"v\d+\.\d+\s+https?://wearedevs\.net/obfuscator", code):
+        if re.search(r"v\d+\.\d+\s+https?://wearedevs\.net/obfuscator", code) or "obfuscated with wearedevs" in code.lower():
             return "WeAreDevs"
+            
+        # WynnSfuscate Detection
+        if "WynnSfuscate" in code or "Wynfuscate" in code or "Wynnsufcate" in code.lower():
+            return "WynnSfuscate"
+        
+        # Moonveil Detection
+        if re.search(r"\{\d+,\d+,\w+\},\{\d+,\d+,\w+\},\{\d+,\d+,\w+\}", code) or "moonveil" in code.lower():
+            return "Moonveil"
         
         # PSU (Psu.dev) Detection
         if "PSU" in code and re.search(r"local\s+\w+\s*=\s*string\.byte", code):

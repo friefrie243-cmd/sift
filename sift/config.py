@@ -10,8 +10,9 @@ class Config:
     DISCORD_INTENTS_MESSAGE_CONTENT = os.getenv("DISCORD_INTENTS_MESSAGE_CONTENT", "false").lower() == "true"
     BOT_OWNER_ID = int(os.getenv("BOT_OWNER_ID", "1011417432080003152"))
     
-    # LLM Settings (AI Renamer)
+    # LLM Settings (AI Renamer & Recovery)
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+    DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
     OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
     OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "codellama")
     OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY", "")
@@ -44,6 +45,7 @@ class Config:
         cls.DISCORD_INTENTS_MESSAGE_CONTENT = os.getenv("DISCORD_INTENTS_MESSAGE_CONTENT", "false").lower() == "true"
         cls.BOT_OWNER_ID = int(os.getenv("BOT_OWNER_ID", "1011417432080003152"))
         cls.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+        cls.DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
         cls.OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
         cls.OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "codellama")
         cls.OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY", "")
